@@ -1,8 +1,11 @@
-
 focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
+		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+			add = 100
+			original_tag = EUR
+		}
 	}
 	default = no
 #############
@@ -19,6 +22,7 @@ focus_tree = {
 			country_event = erx_broken_arrow.4
 			hidden_effect = {
 				country_event = { id = erx_broken_arrow_incep.1 days = 5 }
+				country_event = { id = erx_broken_arrow.900 days = 2 } #Disclaimer about disabling Purist Content
 			}
 		}
 	}
@@ -2151,17 +2155,21 @@ focus_tree = {
 	focus = {
 		id = erx_broken_arrow_navarro_crisis
 		icon = GFX_goal_enc_super_soldier
-		cost = 20
+		cost = 1
 		x = -14
 		y = 0
 		relative_position_id = erx_broken_arrow_back_in_business
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = erx_broken_arrow_navarro_crisis_trigger_tt
+			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = "Enables intervention decisions."
+			custom_effect_tooltip = erx_broken_arrow_navarro_crisis_reward_tt
+			add_political_power = 30
 		}
 	}
 	focus = {
@@ -2172,18 +2180,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
 
-		allow_branch = {
-			has_country_flag = eur_navarro_time
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_crisis
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_back_in_business
-		}
-		available = {
-			has_country_flag = victory_in_navarro
-		}
+		#allow_branch = {
+		#	has_country_flag = eur_navarro_time
+		#}
+		prerequisite = { focus = erx_broken_arrow_navarro_crisis }
+		prerequisite = { focus = erx_broken_arrow_back_in_business }
+		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
 			340 = {
@@ -2220,9 +2222,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_development
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_development
-		}
+		prerequisite = { focus = erx_broken_arrow_navarro_development }
+		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
 			340 = {
@@ -2260,9 +2261,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_development
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_development
-		}
+		prerequisite = { focus = erx_broken_arrow_navarro_development }
+		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
 			340 = {
@@ -2330,32 +2330,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_philanthropy
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_philanthropy
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_roadways
-		}
+		prerequisite = { focus = erx_broken_arrow_navarro_philanthropy }
+		prerequisite = { focus = erx_broken_arrow_navarro_roadways }
 
 		available = {
-			340 = {
-				compliance > 89
-			}
-			353 = {
-				compliance > 89
-			}
-			56 = {
-				compliance > 89
-			}
-			548 = {
-				compliance > 89
-			}
-			441 = {
-				compliance > 89
-			}
-			216 = {
-				compliance > 89
-			}
+			NAT = { all_core_land_owned_by_prev_sphere = yes }
+			NAT = { all_core_state = { compliance > 79 } }
+			#340 = { compliance > 79 }
+			#353 = { compliance > 79 }
+			#56 = { compliance > 79 }
+			#548 = { compliance > 79 }
+			#441 = { compliance > 79 }
+			#216 = { compliance > 79 }
 		}
 
 		completion_reward = {
@@ -2379,8 +2365,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_accomplished
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_accomplished
+		prerequisite = { focus = erx_broken_arrow_navarro_accomplished }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2402,9 +2395,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_infrastructure
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_infrastructure
-		}
+		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure }
+		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
 			548 = {
@@ -2460,8 +2452,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_infrastructure_2
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_infrastructure_2
+		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure_2 }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2483,8 +2482,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_accomplished
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_accomplished
+		prerequisite = { focus = erx_broken_arrow_navarro_accomplished }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2506,8 +2512,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_military
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_military
+		prerequisite = { focus = erx_broken_arrow_navarro_military }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2529,8 +2542,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_military_2
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_military_2
+		prerequisite = { focus = erx_broken_arrow_navarro_military_2 }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2557,6 +2577,7 @@ focus_tree = {
 			focus = erx_broken_arrow_navarro_infrastructure
 			focus = erx_broken_arrow_navarro_military
 		}
+		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
 			548 = {
@@ -2617,9 +2638,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_naval
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_naval
-		}
+		prerequisite = { focus = erx_broken_arrow_navarro_naval }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
+		}		
 
 		completion_reward = {
 			548 = {
@@ -2640,16 +2668,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_infrastructure_3
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_infrastructure_3
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_naval_2
+		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure_3 }
+		prerequisite = { focus = erx_broken_arrow_navarro_naval_2 }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
-		completion_reward = {
-			add_research_slot = 1
-		}
+		completion_reward = { add_research_slot = 1 }
 	}
 	focus = {
 		id = erx_broken_arrow_navarro_products
@@ -2659,11 +2690,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_navarro_military_3
 
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_military_3
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_navarro_naval_2
+		prerequisite = { focus = erx_broken_arrow_navarro_military_3 }
+		prerequisite = { focus = erx_broken_arrow_navarro_naval_2 }
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2682,6 +2718,15 @@ focus_tree = {
 			focus = erx_broken_arrow_navarro_labs
 			focus = erx_broken_arrow_navarro_products
 		}
+		available = {
+			548 = {
+				OR = {
+					is_owned_and_controlled_by = ROOT
+					owner = { is_subject_of = ROOT }
+					owner = { is_ally_with = ROOT }
+				}
+			}
+		}
 
 		completion_reward = {
 			set_province_name = {
@@ -2689,6 +2734,9 @@ focus_tree = {
 				name = "U.S Army Base Navarro"
 			}
 			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 50 producer = USA }
+			set_technology = {
+				air_tech_level_settler = 1
+			}
 			set_country_flag = navarro_databases
 			custom_effect_tooltip = navarro_databases_unlocked
 		}

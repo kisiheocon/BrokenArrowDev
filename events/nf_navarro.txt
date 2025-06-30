@@ -231,9 +231,10 @@ news_event = {
 			SHI = {
 				country_event = nf_navarro.5
 			}
-			EUR = {
-				news_event = nf_navarro.6
-			}
+			#Disabled for Broken Arrow - @Deez
+			#EUR = {
+			#	news_event = nf_navarro.6
+			#}
 			every_country = {
 				limit = {
 					OR = {
@@ -340,30 +341,31 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = nf_navarro.6.a
-		ai_chance = {
-			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					EUR_has_ai_behavior_regulators = yes
-					EUR_has_ai_behavior_hubologists = yes
-					EUR_has_ai_behavior_eurekaclave = yes
-				}
-			}
-		}
-		add_ai_strategy = {
-			type = send_volunteers_desire
-			id = "NAT"
-			value = -900
-		}
-	}
+	#Disabled this option for Broken Arrow - @Deez
+	#option = {
+	#	name = nf_navarro.6.a
+	#	ai_chance = {
+	#		base = 100
+	#		modifier = {
+	#			factor = 0
+	#			OR = {
+	#				EUR_has_ai_behavior_regulators = yes
+	#				EUR_has_ai_behavior_hubologists = yes
+	#				EUR_has_ai_behavior_eurekaclave = yes
+	#			}
+	#		}
+	#	}
+	#	add_ai_strategy = {
+	#		type = send_volunteers_desire
+	#		id = "NAT"
+	#		value = -900
+	#	}
+	#}
 	option = {
 		name = nf_navarro.6.b
 		set_country_flag = granite_plots
 		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = nf_navarro.6.b_tt
+		custom_effect_tooltip = nf_navarro.6.b_ba_tt
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -471,11 +473,11 @@ news_event = {
 			target = NVT
 			transfer_troops = yes
 		}
-		every_state = {
+		every_state = { #While I pretty much really like to optimize this, but the tooltip will look ugly and not informational enough - @Deez
 			limit = {
 				is_core_of = NVT
 			}
-			add_compliance = 70
+			add_compliance = 30 #Nerfed for Broken Arrow - @Deez
 		}
 		NCR = {
 			if = {
@@ -489,8 +491,8 @@ news_event = {
 				remove_ideas = ncr_bos_idea_hostility_resumed
 			}
 		}
-		add_to_variable = { EUR_suspicion = 7 }
-		custom_effect_tooltip = nf_eureka_suspicious_very_tt
+		#add_to_variable = { EUR_suspicion = 7 } #Disabled for Broken Arrow - @Deez
+		#custom_effect_tooltip = nf_eureka_suspicious_very_tt #Disabled for Broken Arrow - @Deez
 		set_country_flag = conquered_navarro
 		mark_focus_tree_layout_dirty = yes
 		every_country = {
@@ -503,8 +505,9 @@ news_event = {
 			}
 			news_event = { id = news_cali.3 hours = 6 random_hours = 3 }
 		}
-		country_event = {
-			id = erx_broken_arrow_navarro.2
+		EUR = {
+			set_country_flag = victory_in_navarro
+			country_event = { id = erx_broken_arrow_navarro.2 days = 5 }
 		}
 	}
 }

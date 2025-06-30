@@ -10,5 +10,11 @@ spriteTypes = {
 		name = "GFX_event_broken_arrow_eagle"
 		texturefile = "gfx/event_pictures/broken_arrow_eagle.dds"
 	}
+
+	###Pardon Our Dust###
+	spriteType = {
+		name = "GFX_event_pardon_our_dust_event_pic"
+		texturefile = "gfx/event_pictures/pardon_our_dust_event_pic.dds"
+	}
 	
 }

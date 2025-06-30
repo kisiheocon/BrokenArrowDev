@@ -16,7 +16,7 @@ erx_broken_arrow_navarro_cat = {
 	visible = {
 		#has_completed_focus = erx_broken_arrow_airwaves
 	}
-	icon = GFX_decision_satellite
+	icon = GFX_decision_category_border_war
 	priority = 998
 }
 erx_broken_arrow_radiowaves_cat = {

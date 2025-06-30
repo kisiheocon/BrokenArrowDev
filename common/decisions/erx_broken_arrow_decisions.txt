@@ -310,16 +310,13 @@ erx_broken_arrow_oregon_affairs_cat = {
 #}
 erx_broken_arrow_navarro_cat = {
 	navarro_crisis_old_relations = {
-		icon = x
-		available = {
-		}
+		icon = GFX_decision_trifold_flag
 		cost = 20
 		fire_only_once = yes
+
 		visible = {
 			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		complete_effect = {
 			set_country_flag = eur_navarro_intervention
@@ -343,74 +340,52 @@ erx_broken_arrow_navarro_cat = {
 		}
 	}
 	navarro_crisis_exiles = {
-		icon = x
-		available = {
-			has_country_flag = eur_navarro_intervention
-		}
+		icon = GFX_decision_beacon
+		available = { has_country_flag = eur_navarro_intervention }
 		cost = 50
 		fire_only_once = yes
 		visible = {
 			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		days_remove = 70
-		modifier = {
-			weekly_manpower = 70
-		}
+		modifier = { weekly_manpower = 70 }
 	}
 	navarro_crisis_harass_colonials = {
-		icon = x
+		icon = GFX_decision_deagle
 		available = {
 			has_country_flag = eur_navarro_intervention
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		cost = 20
 		days_re_enable = 30
 		fire_only_once = no
 		visible = {
 			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		complete_effect = {
-			NVT = {
-				add_timed_idea = { idea = nat_atk_bonus days = 20 }
-			}
-			NAT = {
-				add_timed_idea = { idea = nat_atk_nerf days = 20 } 
-			}
+			NVT = { add_timed_idea = { idea = nat_atk_bonus days = 20 } }
+			NAT = { add_timed_idea = { idea = nat_atk_nerf days = 20 } }
 		}
 	}
 	navarro_crisis_harass_chinese = {
-		icon = x
-		available = {
-			has_country_flag = eur_navarro_intervention
-		}
+		icon = GFX_decision_deagle
+		available = { has_country_flag = eur_navarro_intervention }
 		cost = 20
 		days_re_enable = 30
 		fire_only_once = no
 		visible = {
 			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		complete_effect = {
-			NVT = {
-				add_timed_idea = { idea = shi_atk_bonus days = 20 }
-			}
-			NVS = {
-				add_timed_idea = { idea = shi_atk_nerf days = 20 } 
-			}
+			NVT = { add_timed_idea = { idea = shi_atk_bonus days = 20 } }
+			NVS = { add_timed_idea = { idea = shi_atk_nerf days = 20 } }
 		}
 	}
 	navarro_crisis_volunteers = {
-		icon = x
+		icon = GFX_decision_army_helmet
 		available = {
 			has_country_flag = eur_navarro_intervention
 		}
@@ -419,32 +394,142 @@ erx_broken_arrow_navarro_cat = {
 		fire_only_once = no
 		visible = {
 			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = {
-				has_country_flag = conquered_navarro
-			}
+			NOT = { has_country_flag = conquered_navarro }
 		}
 		days_remove = 25
-		modifier = {
-			send_volunteer_size = 1
+		modifier = { send_volunteer_size = 1 }
+	}
+	navarro_ncr_attack_warning_mission = {
+		icon = GFX_decision_border_war
+		days_mission_timeout = 30
+		is_good = no
+		allowed = { always = no } #Handled by events - @Deez
+		available = { always = no } #Can't complete the warning - @Deez
+		war_with_on_timeout = NCR #Letting the AI know to prepare troops on the border
+		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
+		cancel_trigger = {
+			NOT = {
+				OR = {
+					country_exists = EUR
+					country_exists = NCR
+				}
+			}
+		}
+		timeout_effect = {
+			if = { #EUR's POV is just showing the effect, the real declare war effect is on NCR's side
+				limit = { original_tag = EUR }
+				effect_tooltip = {
+					NCR = {
+						declare_war_on = {
+							target = EUR
+							type = annex_everything
+						}
+					}
+				}
+				country_event = erx_broken_arrow_navarro.4
+				activate_mission = navarro_survive_ncr
+				custom_effect_tooltip = navarro_ncr_attack_warning_mission_tt
+			}
+			else = {
+				declare_war_on = {
+					target = EUR
+					type = annex_everything
+				}
+			}
 		}
 	}
 	navarro_survive_ncr = {
-		icon = x
+		icon = GFX_decision_border_war
 		days_mission_timeout = 60
 		is_good = yes
-
-		activation = {
-			has_country_flag = navarro_ncr_revenge
-		}
-		allowed = {
-			original_tag = EUR
-		}
+		allowed = { always = no } #Handled by events - @Deez
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = navarro_survive_ncr_tt
+				controls_province = 4933
+			}
+			#EUR = {
+			#	divisions_in_state = {
+			#		size > 0 
+			#		state = 141
+			#	}
+			#}
+			#NCR = {
+			#	surrender_progress > 0.02
+			#}
+		}
+		complete_effect = {
+			white_peace = NCR
+			country_event = erx_broken_arrow_navarro.6
+			activate_mission = navarro_eur_shi_border_war_warning_mission
+			hidden_effect = { SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } }
 		}
 		timeout_effect = {
-			clr_country_flag = navarro_ncr_revenge
 			white_peace = NCR
+			activate_mission = navarro_eur_shi_border_war_warning_mission
+			hidden_effect = { SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } }
+		}
+	}
+	navarro_eur_shi_border_war_warning_mission = {
+		icon = GFX_decision_border_war
+		days_mission_timeout = 20
+		is_good = no
+		allowed = { always = no } #Handled by events - @Deez
+		available = { always = no } #Can't complete the warning - @Deez
+		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
+		war_with_on_timeout = SHI #Letting the AI know to prepare troops on the border
+		cancel_trigger = {
+			NOT = {
+				OR = {
+					country_exists = EUR
+					country_exists = SHI
+				}
+			}
+		}
+		timeout_effect = {
+			if = { #EUR's POV is just showing the effect, the real declare war effect is on NCR's side
+				limit = { original_tag = EUR }
+				effect_tooltip = {
+					SHI = {
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = 474
+								num_provinces = 2
+								on_win = erx_broken_arrow_navarro.5
+								on_lose = erx_broken_arrow_navarro.5
+								on_cancel = erx_broken_arrow_navarro.5
+							}
+							defender = {
+								state = 216
+								num_provinces = 2
+								on_win = erx_broken_arrow_navarro.5
+								on_lose = erx_broken_arrow_navarro.5
+								on_cancel = erx_broken_arrow_navarro.5
+							}
+						}
+					}
+				}
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 474
+						num_provinces = 2
+						on_win = erx_broken_arrow_navarro.5
+						on_lose = erx_broken_arrow_navarro.5
+						on_cancel = erx_broken_arrow_navarro.5
+					}
+					defender = {
+						state = 216
+						num_provinces = 2
+						on_win = erx_broken_arrow_navarro.5
+						on_lose = erx_broken_arrow_navarro.5
+						on_cancel = erx_broken_arrow_navarro.5
+					}
+				}
+			}
 		}
 	}
 }

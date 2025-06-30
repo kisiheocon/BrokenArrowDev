@@ -1,6 +1,5 @@
 ﻿capital = 39
 oob = "EUR_2275"
-
 set_technology = {
 	infantry_tech_level_tribal = 1
 	infantry_tech_level_settler = 1
@@ -55,13 +54,16 @@ if = {
 	set_technology = {
 		nautics_tech_1 = 1
 		light_navy_hull_tech_1 = 1
-		waterproof_sealing_tech = 1
+		#waterproof_sealing_tech = 1
 		naval_invasion_tech_1 = 1
 	}
 }
+
 if = {
 	limit = {
-		NOT = { has_dlc = "Man the Guns" }
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
 	}
 	set_technology = {
 		nautics_tech_non_mtg_1 = 1
@@ -76,7 +78,6 @@ set_stability = 0.35
 set_war_support = 0.4
 set_research_slots = 4
 set_convoys = 25
-
 set_politics = {
 	ruling_party = elites
 	elections_allowed = no
@@ -91,10 +92,9 @@ set_popularities = {
 
 add_ideas = {
 	eur_mercenary_army
+	#eur_apa_disrepair #Disable for Broken Arrow - @Deez
+	#eur_apa_disrepair_hidden_idea	# Required since the on_add of eur_apa_disrepair doesn't fire when the idea is added via history before gamestart @Tran #Disabled for Broken Arrow - @Deez
 	ncr_sphere
-	enc_civilian_economy
-	concealed_econ
-	eur_enc_cons1
 }
 
 add_timed_idea = {
@@ -102,23 +102,10 @@ add_timed_idea = {
 	days = 1825
 }
 
-
-
-every_unit_leader = {
-	limit = {
-		OR = {
-			has_id = 12176
-			has_id = 12177
-		}
-	}
-	set_unit_leader_flag = eureka_general
-}
-
 add_equipment_to_stockpile = {
 	type = infantry_equipment
 	amount = 50
 }
-
 
 add_equipment_to_stockpile = {
 	type = enclave_power_armour_equipment_1
@@ -126,18 +113,18 @@ add_equipment_to_stockpile = {
 	producer = USA
 }
 
-
 add_equipment_to_stockpile = {
 	type = plasma_equipment_1
 	amount = 159
 	producer = USA
 }
+
 add_equipment_to_stockpile = {
 	type = spec_ops_equipment
 	amount = 25
 }
-# add_manpower = 400
 
+add_manpower = 400
 create_equipment_variant = {
 	name = "River Boat"
 	type = ship_hull_light_1
@@ -161,32 +148,74 @@ set_country_flag = scavenging_disabled
 #Doctrine flag is sometimes changed when the gamerules/default path weights are applied so they can depend on Eureka's path. Before editing these, check the game rule on actions file
 set_country_flag = elite_doctrine_ai
 set_country_flag = is_california_nation
-set_country_flag = has_unique_trade_law
-set_country_flag = has_unique_economic_law
-set_country_flag = has_unique_manpower_law
-
+set_country_flag = has_unique_manpower_law #Unique for Broken Arrow - @Deez
+set_country_flag = has_unique_economic_laws #Unique for Broken Arrow - @Deez
+set_country_flag = has_unique_trade_laws #Not being used by OWB right now but still added in case of OWB re-enable the flag check - @Deez
 # Trying to do valid Eureka volunteers as an array - values are region id's
-add_to_array = { volunteer_targets = 84 }
-add_to_array = { volunteer_targets = 609 }
-add_to_array = { volunteer_targets = 420 }
-add_to_array = { volunteer_targets = 48 }
-add_to_array = { volunteer_targets = 274 }
-add_to_array = { volunteer_targets = 358 }
-add_to_array = { volunteer_targets = 86 }
-add_to_array = { volunteer_targets = 32 }
-add_to_array = { volunteer_targets = 548 }
-add_to_array = { volunteer_targets = 350 }
-add_to_array = { volunteer_targets = 163 }
-add_to_array = { volunteer_targets = 63 }
-add_to_array = { volunteer_targets = 136 }
-add_to_array = { volunteer_targets = 97 }
+add_to_array = {
+	volunteer_targets = 84
+}
+
+add_to_array = {
+	volunteer_targets = 609
+}
+
+add_to_array = {
+	volunteer_targets = 420
+}
+
+add_to_array = {
+	volunteer_targets = 48
+}
+
+add_to_array = {
+	volunteer_targets = 274
+}
+
+add_to_array = {
+	volunteer_targets = 358
+}
+
+add_to_array = {
+	volunteer_targets = 86
+}
+
+add_to_array = {
+	volunteer_targets = 32
+}
+
+add_to_array = {
+	volunteer_targets = 548
+}
+
+add_to_array = {
+	volunteer_targets = 350
+}
+
+add_to_array = {
+	volunteer_targets = 163
+}
+
+add_to_array = {
+	volunteer_targets = 63
+}
+
+add_to_array = {
+	volunteer_targets = 136
+}
+
+add_to_array = {
+	volunteer_targets = 97
+}
+
 recruit_character = MCA_Douglas_Granite
 recruit_character = EUR_portmaster
-recruit_character = EUR_varland_varland_gillett
+recruit_character = EUR_varland_gillett
 recruit_character = ERB_Dwemer
 recruit_character = ERB_Scott
 recruit_character = ERB_Hamilton
 recruit_character = ERB_Shadow
+recruit_character = EUR_scavenger_51
 recruit_character = EUR_coastal_supplier
 recruit_character = EUR_trash_pile_scavenger
 recruit_character = EUR_portmaster_bander
@@ -200,7 +229,6 @@ recruit_character = EUR_land_doctrine_guy
 recruit_character = EUR_sir_rurikhome
 recruit_character = EUR_cordell_hunt
 recruit_character = clayton_schultz
-recruit_character = enc_thomas_kesselhut
 recruit_character = EUR_sally_johnson
 recruit_character = EUR_ms_madaket
 recruit_character = dr_henry
@@ -218,27 +246,38 @@ recruit_character = EUR_morgan_heath
 recruit_character = EUR_lisa_tess
 recruit_character = EUR_tom_barrow
 
-recruit_character = eur_enc_offensive
-recruit_character = eur_enc_indy_neidell
-recruit_character = eur_ERC_defensive_army
-recruit_character = eur_ERC_theorist_navy
-recruit_character = eur_ERC_grand_fleet_navy
-recruit_character = eur_ERC_weather_air_chief
-recruit_character = eur_enc_BrenRadNeo
-recruit_character = eur_army_entrenchment_3_guy
-recruit_character = eur_enc_bomber_guy2
-recruit_character = eur_felix_grayson
-recruit_character = eur_lt_kolyis
-recruit_character = eur_erx_harold_richardson
-recruit_character = eur_boris_t
+every_unit_leader = {
+	set_unit_leader_flag = eureka_general
+}
 
 set_variable = {
-    bribe_cost = 30
+	bribe_cost = 30
 }
+
 set_variable = {
-    bribe_increase = 25
+	bribe_increase = 25
 }
-set_party_name = { ideology = elites  long_name = "Portmasters" name = "Portmasters" }
-set_party_name = { ideology = intellectuals  long_name = "Granite Company" name = "Granite Company" }
-set_party_name = { ideology = ruler  long_name = "Regulators" name = "Regulators" }
-set_party_name = { ideology = people  long_name = "Hubologists" name = "Hubologists" }
+
+set_party_name = {
+	ideology = elites
+	long_name = EUR_elites_party_long
+	name = EUR_elites_party_short
+}
+
+set_party_name = {
+	ideology = intellectuals
+	long_name = EUR_intellectuals_party_long
+	name = EUR_intellectuals_party_short
+}
+
+set_party_name = {
+	ideology = ruler
+	long_name = EUR_ruler_party_long
+	name = EUR_ruler_party_short
+}
+
+set_party_name = {
+	ideology = people
+	long_name = EUR_people_party_long
+	name = EUR_people_party_short
+}

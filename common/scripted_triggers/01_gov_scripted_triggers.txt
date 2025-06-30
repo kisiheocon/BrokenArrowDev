@@ -40,11 +40,7 @@ has_regional_or_cultural_manpower_law = {
 
 has_unique_manpower_law = {
 	hidden_trigger = {
-		OR = {
-			has_country_flag = has_unique_manpower_law
-			original_tag = ERB
-			original_tag = EUR
-		}
+		has_country_flag = has_unique_manpower_law
 	}
 }
 
