@@ -17,4 +17,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/pardon_our_dust_event_pic.dds"
 	}
 	
+	###They Got The Guts### We get this from Kaiserreddux - Credits to Kaiserreddux team Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_they_got_the_guts_event_pic"
+		texturefile = "gfx/event_pictures/they_got_the_guts.dds"
+	}
+
+	###Civil War### - Weird name but it's from KX - We get this from Kaiserreddux - Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_civil_war_event_pic"
+		texturefile = "gfx/event_pictures/civil_war.dds"
+	}
 }

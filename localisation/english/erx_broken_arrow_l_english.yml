@@ -233,11 +233,20 @@ erx_broken_arrow_navarro.8.d: "We have received panicked reports from all over o
 erx_broken_arrow_navarro.8.a: "Yellow Bastards! I Will Handle This Myself"
 erx_broken_arrow_navarro.8_tt: "A §Yborder war§! has broken out in the South!"
 
-erx_broken_arrow_navarro.9.t: "Victory against the Shi!"
-erx_broken_arrow_navarro.9.d: "Placeholder"
-erx_broken_arrow_navarro.9.a: "Soft"
-erx_broken_arrow_navarro.9.b: "Harsh"
+erx_broken_arrow_navarro.9.t: "Victory In The Third Battle For Navarro"
+erx_broken_arrow_navarro.9.d: "After yet another infernal war in Navarro we are finally victorious. The last vestiges of Colonial resistance has surrendered or dispersed. And rebel Chinese settlers have either fled with their southern sponsors or have been captured. While their fate remains to be decided the fate of Navarro and the south is clear. President Granite has made it unequivocally clear that he will tolerate no further interruptions to his reconstruction and reconciliation plans. And we have have been given a blank check. As he has once again departed north to re-assume civil control of the government the garrison has been left with the job of securing the future. Order has been restored and the border regions are once again pacified. However the decision of those who rebelled or aided the invaders must be our first priority. Whatever our decision it will surely affect future relations with the powers that be for years to come. We will not choose lightly."
+erx_broken_arrow_navarro.9.a: "The Price Of Treason Is Death"
+erx_broken_arrow_navarro.9.b: "Perhaps Our Forefathers Can Provide A Better Solution"
 
+erx_broken_arrow_navarro.10.t: "Federal Forces Routed On The Pacific"
+erx_broken_arrow_navarro.10.d: "Despite declaring martial law and President Granite taking direct command of the conflict to the south we have been dealt a crippling blow by the rebels. While we have managed to supress the lingering colonial remnants their settler allies have proven more difficult to pacify. Despite securing the central sectors the south has all but collapsed and we have been left no other alternative but to sue for peace. The Chinese will pay a terrible price for their treachery. But with Shady Sands ensuring their continued independence a larger war is for the moment out of the question.\n\nWe have failed. "
+erx_broken_arrow_navarro.10.a: "One Day The Bear Won’t Be There To Protect Them."
+
+erx_broken_arrow_navarro.11.t: "Our Intervention." #Just for AI etc displaying, no need to be detailed
+
+erx_broken_arrow_navarro.12.t: "The Bear Kept In Check"
+erx_broken_arrow_navarro.12.d: "Despite the insurmountable forces set against us by the tyrants of Shady Sands, we have stood the weight of their armies and held the line. The Bear has been sent slinking back to where they came from, and President Kimball has called for a cessation of hostilities. We have ended the Navarro Question for good. Navarro has been won, it has been defended, and now forevermore it shall belong to the American people. Our people expected a peerless victory, and they have not been found wanting. Celebrate today, for tomorrow we guard our borders against all who would dare follow in their example. "
+erx_broken_arrow_navarro.12.a: "Tomorrow Brings New Battles"
 
 
 #Navarro Tooltips

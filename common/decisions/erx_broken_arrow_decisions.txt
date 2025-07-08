@@ -473,6 +473,7 @@ erx_broken_arrow_navarro_cat = {
 		timeout_effect = {
 			white_peace = NCR
 			activate_mission = navarro_eur_shi_border_war_warning_mission
+			country_event = erx_broken_arrow_navarro.12
 			hidden_effect = { 
 				country_event = {
 					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war

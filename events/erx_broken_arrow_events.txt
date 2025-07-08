@@ -1024,7 +1024,7 @@ country_event = {
 	id = erx_broken_arrow_navarro.6
 	title = erx_broken_arrow_navarro.6.t
 	desc = erx_broken_arrow_navarro.6.d
-	picture = GFX_event_erb_urban_patrol
+	picture = GFX_event_civil_war_event_pic
 
 	is_triggered_only = yes
 
@@ -1105,30 +1105,7 @@ country_event = {
 	}
 
 	option = {
-		name = erx_broken_arrow_navarro.9.a #The soft option
-		add_political_power = 30
-		add_stability = 0.02
-		NAT = {
-			every_core_state = {
-				add_compliance = 5
-				add_resistance = -5
-			}
-		}
-		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
-		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
-		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
-		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
-		SHI = {
-			add_stability = -0.02
-			add_war_support = -0.02
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = protest_action
-			}
-		}
-	}
-	option = {
-		name = erx_broken_arrow_navarro.9.b #The harsh option
+		name = erx_broken_arrow_navarro.9.a #The harsh option
 		NAT = {
 			every_core_state = {
 				add_compliance = 10
@@ -1168,8 +1145,31 @@ country_event = {
 			}
 		}
 	}
+		option = {
+		name = erx_broken_arrow_navarro.9.b #The soft option
+		add_political_power = 30
+		add_stability = 0.02
+		NAT = {
+			every_core_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
+		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
+		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
+		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
+		SHI = {
+			add_stability = -0.02
+			add_war_support = -0.02
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action
+			}
+		}
+	}
 }
-#Lose - Placeholder
+#Lose against Shi in the border war - Federal Forces Routed On The Pacific
 country_event = {
 	id = erx_broken_arrow_navarro.10
 	title = erx_broken_arrow_navarro.10.t
@@ -1248,6 +1248,40 @@ country_event = {
 
 	option = {
 		name = erx_broken_arrow_navarro.11.a #Don't need anything, the rewards/outcome already determined in events by Eureka, not meant for players to see
+	}
+}
+
+#The Bear Kept In Check - Outcome event if player hold out 60 days against NCR
+country_event = {
+	id = erx_broken_arrow_navarro.12
+	title = erx_broken_arrow_navarro.12.t
+	desc = erx_broken_arrow_navarro.12.d
+	picture = GFX_event_they_got_the_guts_event_pic
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			NAT = {
+				every_core_state = {
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.12.a
+		effect_tooltip = { #Just for showing, real effect in the immediate block - @Deez
+			NAT = {
+				every_core_state = {
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			custom_effect_tooltip = erx_broken_arrow_navarro.6_tt
+		}
 	}
 }
 
