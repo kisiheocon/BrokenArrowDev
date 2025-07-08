@@ -40,6 +40,19 @@ country_event = {
 		}
 	}
 }
+#Activate Shi border war decision
+country_event = {
+	id = erx_broken_arrow_debug.3
+	title = erx_broken_arrow_debug.3.t
+	desc = erx_broken_arrow_debug.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_debug.3.a
+		activate_mission = navarro_eur_shi_border_war_warning_mission
+	}
+}
 #SAVED BY THE BELL
 country_event = {
 	id = erx_broken_arrow.1
@@ -885,6 +898,11 @@ country_event = {
 		name = erx_broken_arrow_fireside.6.a
 	}
 }
+
+##################
+##Navarro Events##
+##################
+
 #CRISIS TO THE SOUTH
 country_event = {
 	id = erx_broken_arrow_navarro.1
@@ -963,7 +981,7 @@ country_event = {
 		effect_tooltip = { activate_mission = navarro_ncr_attack_warning_mission }
 	}
 }
-##NCR retaliate##
+##NCR retaliate## - NCR attack Eureka for Navarro
 country_event = {
 	id = erx_broken_arrow_navarro.4
 	title = erx_broken_arrow_navarro.4.t
@@ -988,7 +1006,7 @@ country_event = {
 		}
 	}
 }
-#The Redding Report, Navarro Edition
+#The Redding Report, Navarro Edition - News events during the short NCR war
 country_event = {
 	id = erx_broken_arrow_navarro.5
 	title = erx_broken_arrow_navarro.5.t
@@ -1001,7 +1019,7 @@ country_event = {
 	}
 }
 
-#A Defeat Shady Sands Will Long Remember
+#A Defeat Shady Sands Will Long Remember - Outcome event if player captured Redding
 country_event = {
 	id = erx_broken_arrow_navarro.6
 	title = erx_broken_arrow_navarro.6.t
@@ -1013,18 +1031,223 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_political_power = 30
-			add_stability = 0.03
-			add_war_support = 0.03
+			add_stability = 0.02
+			NAT = {
+				every_core_state = {
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
 		}
 	}
 
 	option = {
 		name = erx_broken_arrow_navarro.6.a
 		effect_tooltip = { #Just for showing, real effect in the immediate block - @Deez
-			add_political_power = 50
-			add_stability = 0.03
-			add_war_support = 0.03
+			add_political_power = 30
+			add_stability = 0.02
+			NAT = {
+				every_core_state = {
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			custom_effect_tooltip = erx_broken_arrow_navarro.6_tt
 		}
+	}
+}
+
+#The Patrol - Shi border war buildup event
+country_event = {
+	id = erx_broken_arrow_navarro.7
+	title = erx_broken_arrow_navarro.7.t
+	desc = erx_broken_arrow_navarro.7.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_navarro.7.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.7_tt
+	}
+}
+
+#Chinese Betrayal On The Border - Shi border war outbreak event
+country_event = {
+	id = erx_broken_arrow_navarro.8
+	title = erx_broken_arrow_navarro.8.t
+	desc = erx_broken_arrow_navarro.8.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_navarro.8.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.8_tt
+	}
+}
+
+##Outcome events for Shi border war
+#Eureka/Player's POV
+#Win - Placeholder
+country_event = {
+	id = erx_broken_arrow_navarro.9
+	title = erx_broken_arrow_navarro.9.t
+	desc = erx_broken_arrow_navarro.9.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			SHI = { army_experience = 50 } #Hidden buff to Shi AI so they can improve their army - @Deez
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.9.a #The soft option
+		add_political_power = 30
+		add_stability = 0.02
+		NAT = {
+			every_core_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
+		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
+		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
+		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
+		SHI = {
+			add_stability = -0.02
+			add_war_support = -0.02
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action
+			}
+		}
+	}
+	option = {
+		name = erx_broken_arrow_navarro.9.b #The harsh option
+		NAT = {
+			every_core_state = {
+				add_compliance = 10
+				add_resistance = -10
+			}
+		}
+		216 = { 
+			add_manpower = -2400 #30% leave Bodega-Eureka
+			damage_building = { #Damage 2 Infrastructure
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = { #Damage 1 Civ
+				type = industrial_complex
+				damage = 1
+			}
+		} 
+		441 = { 
+			add_manpower = -6000 #30% leave Santa Rosa-Eureka
+			damage_building = { #Damage 1 Infrastructure
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = { #Damage 1 Civ
+				type = industrial_complex
+				damage = 1
+			}			
+		} 
+		474 = { add_manpower = 2000 } #25% join San Rafael-Shi
+		511 = { add_manpower = 5000 } #25% join Vallejo-Shi
+		SHI = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action_strong
+			}
+		}
+	}
+}
+#Lose - Placeholder
+country_event = {
+	id = erx_broken_arrow_navarro.10
+	title = erx_broken_arrow_navarro.10.t
+	desc = erx_broken_arrow_navarro.10.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+
+	immediate = { #Effects given immediately here, no need to wait for player to close the event
+		hidden_effect = { #Hide so it don't appear in the description, very ugly
+			add_political_power = -20
+			add_stability = -0.03
+			add_war_support = -0.03
+			army_experience = 50
+			add_opinion_modifier = {
+				target = SHI
+				modifier = protest_action_strong
+			}
+			NAT = {
+				every_core_state = {
+					add_compliance = -5
+					add_resistance = 10
+				}
+			}
+			216 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			441 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			give_resource_rights = {
+				receiver = SHI
+				state = 216
+			}
+			give_resource_rights = {
+				receiver = SHI
+				state = 441
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.10.a
+		effect_tooltip = { #Just for showing the effects, the effects already given out in the immediate block - @Deez
+			add_political_power = -20
+			add_stability = -0.03
+			add_war_support = -0.03
+			army_experience = 50
+			add_opinion_modifier = {
+				target = SHI
+				modifier = protest_action_strong
+			}
+			NAT = {
+				every_core_state = {
+					add_compliance = -5
+					add_resistance = 10
+				}
+			}
+			216 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			441 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			give_resource_rights = {
+				receiver = SHI
+				state = 216
+			}
+			give_resource_rights = {
+				receiver = SHI
+				state = 441
+			}		
+		}
+	}
+}
+#Shi - Placeholder event for outcome, not really matter but needed so they have an outcome events nonetheless - @Deez
+country_event = {
+	id = erx_broken_arrow_navarro.11
+	title = erx_broken_arrow_navarro.11.t
+	desc = erx_broken_arrow_navarro.11.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_navarro.11.a #Don't need anything, the rewards/outcome already determined in events by Eureka, not meant for players to see
 	}
 }
 

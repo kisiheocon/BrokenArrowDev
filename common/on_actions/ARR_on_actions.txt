@@ -1,0 +1,325 @@
+#on_actions = { #Disabled for Broken Arrow - @Deez
+#	on_startup = {
+#		effect = {
+#			every_country = { # To prevent exploits
+#				limit = {
+#					has_idea = arr_rock_and_a_hard_place
+#					is_ai = no
+#				}
+#				remove_ideas = arr_rock_and_a_hard_place
+#			}
+#			ARR = {
+#				country_event = { #Umbra starts
+#					id = nf_arroyo.15
+#					days = 395
+#				}
+#				country_event = {
+#					id = nf_arroyo.33
+#					days = 400
+#				}
+#				country_event = {
+#					id = nf_arroyo.39
+#					days = 451
+#				}
+#				country_event = {
+#					id = nf_arroyo.39
+#					days = 483
+#				}
+#				country_event = {
+#					id = nf_arroyo.41
+#					days = 495
+#				}
+#				country_event = {
+#					id = nf_arroyo.42
+#					days = 505
+#				}
+#				country_event = {
+#					id = nf_arroyo.43
+#					days = 510
+#				}
+#				country_event = {
+#					id = nf_arroyo.44
+#					days = 511
+#				}
+#
+#				country_event = {
+#					id = nf_arroyo.23
+#					days = 543
+#				}
+#
+#				country_event = { #Max Sec starts
+#					id = nf_arroyo.14
+#					days = 580
+#				}
+#				country_event = {
+#					id = nf_arroyo.18
+#					days = 595
+#				}
+#				country_event = {
+#					id = nf_arroyo.19
+#					days = 625
+#				}
+#				country_event = {
+#					id = nf_arroyo.24
+#					days = 645
+#				}
+#				country_event = {
+#					id = nf_arroyo.25
+#					days = 660
+#				}
+#
+#				country_event = { # Misc Dissent
+#					id = nf_arroyo.62
+#					days =  697
+#				}
+#
+#				country_event = { #Packers start
+#					id = nf_arroyo.50
+#					days = 767
+#				}
+#				country_event = {
+#					id = nf_arroyo.51
+#					days = 784
+#				}
+#				country_event = {
+#					id = nf_arroyo.61
+#					days = 804
+#				}
+#
+#				# Remember, Fourways starts below! After second Pac fight
+#
+#				country_event = { # Eureka start (beginning of 2278)
+#					id = nf_arroyo.21
+#					days = 1095
+#				}
+#
+#				# Chosen One Returns timer
+#
+#				country_event = { # Start of 2279
+#					id = nf_arroyo.86
+#					days = 1460
+#				}
+#			}
+#		}
+#	}
+#	on_capitulation = {
+#		effect = {
+#			if = {
+#				limit = {
+#					ROOT = { tag = MXS }
+#				}
+#				ARR = {
+#					country_event = {
+#						id = nf_arroyo.31
+#						days = 2
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					ROOT = { tag = FOU }
+#					FROM = { tag = ARR }
+#				}
+#				ARR = {
+#					country_event = {
+#						id = nf_arroyo.22
+#						days = 2
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					ROOT = { tag = EMB }
+#				}
+#				ARR = {
+#					country_event = {
+#						id = nf_arroyo.45
+#						days = 2
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					ROOT = { tag = PAC }
+#					FROM = {tag = ARR }
+#					ARR = {
+#						NOT = { has_country_flag = packers_insecure }
+#					}
+#				}
+#				ARR = {
+#					annex_country = {
+#						target = PAC
+#						transfer_troops = no
+#					}
+#					set_country_flag = packers_insecure
+#					#activate_decision = arr_pac_populace
+#					#activate_decision = arr_pac_battlefields
+#					#activate_decision = arr_pac_interrogate_prisoners
+#					#activate_decision = arr_pac_slaughter
+#					country_event = {
+#						id = nf_arroyo.52
+#						days = 1
+#					}
+#					country_event = {
+#						id = nf_arroyo.64
+#						days = 27
+#					}
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					ROOT = { tag = PAC }
+#					ARR = {
+#						has_country_flag = packers_insecure
+#						exists = yes
+#					}
+#					FOU = {
+#						is_ai = yes
+#					}
+#				}
+#				ARR = {
+#					clr_country_flag = packers_insecure
+#					set_country_flag = fourways_insecure
+#					country_event = {
+#						id = nf_arroyo.67
+#					}
+#					activate_targeted_decision = { target = FOU decision = arr_stab_for_influence }
+#					activate_targeted_decision = { target = FOU decision = arr_manpower_for_coercion }
+#					activate_targeted_decision = { target = FOU decision = arr_influence_for_coercion }
+#					activate_targeted_decision = { target = FOU decision = arr_coercion_for_influence }
+#				}
+#				if = {
+#					limit = {
+#						country_exists = RDS
+#					}
+#					RDS = {
+#						set_variable = { arr_fou_influence = 0.08 }
+#						set_variable = { arr_fou_coercion = 0.05 }
+#						country_event = {
+#							id = nf_arroyo.67
+#						}
+#						activate_targeted_decision = { target = FOU decision = rds_stab_for_influence }
+#						activate_targeted_decision = { target = FOU decision = rds_manpower_for_coercion }
+#						activate_targeted_decision = { target = FOU decision = rds_influence_for_coercion }
+#						activate_targeted_decision = { target = FOU decision = rds_coercion_for_influence }
+#					}
+#				}
+#				else = {
+#					NCR = {
+#						set_variable = { arr_fou_influence = 0.08 }
+#						set_variable = { arr_fou_coercion = 0.05 }
+#						country_event = {
+#							id = nf_arroyo.67
+#						}
+#						activate_targeted_decision = { target = FOU decision = rds_stab_for_influence }
+#						activate_targeted_decision = { target = FOU decision = rds_manpower_for_coercion }
+#						activate_targeted_decision = { target = FOU decision = rds_influence_for_coercion }
+#						activate_targeted_decision = { target = FOU decision = rds_coercion_for_influence }
+#					}
+#				}
+#			}
+#			if = {
+#				limit = {
+#					ROOT = { tag = EUR }
+#					FROM = {
+#						OR = {
+#							tag = ARR
+#							is_puppet_of = ARR
+#							is_subject_of = ARR
+#						}
+#					}
+#				}
+#				ARR = {
+#					country_event = {
+#						id = nf_arroyo.84
+#					}
+#				}
+#			}
+#		}
+#	}
+#	on_declare_war = {
+#		effect = {
+#			if = {
+#				limit = {
+#					ROOT = { original_tag = EUR }
+#					FROM = { original_tag = ARR }
+#				}
+#				ARR = {
+#					country_event = {
+#						id = nf_arroyo.81
+#					}
+#				}
+#			}
+#		}
+#	}
+#	# Using an on_weekly allows us to track influence and coercion progress for ARR AI in a manner that's much cheaper on performance
+#	# than in a per-tick check of the var itself, for the price of just a little bit of accuracy between weekly ticks
+#	on_weekly_ARR = {
+#		effect = {
+#			if = {
+#				limit = {
+#					has_idea = arr_exerting_influence	# Only bother with these checks during the influence/coercion phase of ARR's gameplay
+#				}
+#				if = {
+#					limit = { check_variable = { arr_mxs_influence > 0.39 } }
+#					set_country_flag = arr_has_40_influence_MXS
+#				}
+#				else = { clr_country_flag = arr_has_40_influence_MXS }
+#
+#				if = {
+#					limit = { check_variable = { arr_mxs_coercion > 0.39 } }
+#					set_country_flag = arr_has_40_coercion_MXS
+#				}
+#				else = { clr_country_flag = arr_has_40_coercion_MXS }
+#
+#				if = {
+#					limit = { check_variable = { arr_umb_influence > 0.39 } }
+#					set_country_flag = arr_has_40_influence_UMB
+#				}
+#				else = { clr_country_flag = arr_has_40_influence_UMB }
+#
+#				if = {
+#					limit = { check_variable = { arr_umb_coercion > 0.39 } }
+#					set_country_flag = arr_has_40_coercion_UMB
+#				}
+#				else = { clr_country_flag = arr_has_40_coercion_UMB }
+#
+#				if = {
+#					limit = { check_variable = { arr_pac_influence > 0.39 } }
+#					set_country_flag = arr_has_40_influence_PAC
+#				}
+#				else = { clr_country_flag = arr_has_40_influence_PAC }
+#
+#				if = {
+#					limit = { check_variable = { arr_pac_coercion > 0.39 } }
+#					set_country_flag = arr_has_40_coercion_PAC
+#				}
+#				else = { clr_country_flag = arr_has_40_coercion_PAC }
+#
+#				if = {
+#					limit = { check_variable = { arr_eur_influence > 0.39 } }
+#					set_country_flag = arr_has_40_influence_EUR
+#				}
+#				else = { clr_country_flag = arr_has_40_influence_EUR }
+#
+#				if = {
+#					limit = { check_variable = { arr_eur_coercion > 0.39 } }
+#					set_country_flag = arr_has_40_coercion_EUR
+#				}
+#				else = { clr_country_flag = arr_has_40_coercion_EUR }
+#
+#				if = {
+#					limit = { check_variable = { arr_fou_influence > 0.39 } }
+#					set_country_flag = arr_has_40_influence_MXS
+#				}
+#				else = { clr_country_flag = arr_has_40_influence_MXS }
+#
+#				if = {
+#					limit = { check_variable = { arr_fou_coercion > 0.39 } }
+#					set_country_flag = arr_has_40_coercion_FOU
+#				}
+#				else = { clr_country_flag = arr_has_40_coercion_FOU }
+#			}
+#		}
+#	}
+#}

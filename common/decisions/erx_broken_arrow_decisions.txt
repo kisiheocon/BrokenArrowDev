@@ -462,12 +462,24 @@ erx_broken_arrow_navarro_cat = {
 			white_peace = NCR
 			country_event = erx_broken_arrow_navarro.6
 			activate_mission = navarro_eur_shi_border_war_warning_mission
-			hidden_effect = { SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } }
+			hidden_effect = { 
+				country_event = {
+					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war
+					days = 10
+				}
+				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission }  #Mission timer for Shi border war - 20 days until outbreak
+			}
 		}
 		timeout_effect = {
 			white_peace = NCR
 			activate_mission = navarro_eur_shi_border_war_warning_mission
-			hidden_effect = { SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } }
+			hidden_effect = { 
+				country_event = {
+					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war
+					days = 10
+				}
+				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } 
+			}
 		}
 	}
 	navarro_eur_shi_border_war_warning_mission = {
@@ -487,25 +499,25 @@ erx_broken_arrow_navarro_cat = {
 			}
 		}
 		timeout_effect = {
-			if = { #EUR's POV is just showing the effect, the real declare war effect is on NCR's side
+			if = { #EUR's POV is just showing the effect, the real border war effect is on Shi's side
 				limit = { original_tag = EUR }
 				effect_tooltip = {
 					SHI = {
 						start_border_war = {
 							change_state_after_war = yes
-							attacker = {
+							attacker = { #Shi
 								state = 474
 								num_provinces = 2
-								on_win = erx_broken_arrow_navarro.5
-								on_lose = erx_broken_arrow_navarro.5
-								on_cancel = erx_broken_arrow_navarro.5
+								on_win = erx_broken_arrow_navarro.11
+								on_lose = erx_broken_arrow_navarro.11
+								on_cancel = erx_broken_arrow_navarro.11
 							}
-							defender = {
+							defender = { #Eureka/player
 								state = 216
 								num_provinces = 2
-								on_win = erx_broken_arrow_navarro.5
-								on_lose = erx_broken_arrow_navarro.5
-								on_cancel = erx_broken_arrow_navarro.5
+								on_win = erx_broken_arrow_navarro.9
+								on_lose = erx_broken_arrow_navarro.10
+								on_cancel = erx_broken_arrow_navarro.9
 							}
 						}
 					}
@@ -514,19 +526,19 @@ erx_broken_arrow_navarro_cat = {
 			else = {
 				start_border_war = {
 					change_state_after_war = no
-					attacker = {
+					attacker = { #Shi
 						state = 474
 						num_provinces = 2
-						on_win = erx_broken_arrow_navarro.5
-						on_lose = erx_broken_arrow_navarro.5
-						on_cancel = erx_broken_arrow_navarro.5
+						on_win = erx_broken_arrow_navarro.11
+						on_lose = erx_broken_arrow_navarro.11
+						on_cancel = erx_broken_arrow_navarro.11
 					}
-					defender = {
+					defender = { #Eureka/player
 						state = 216
 						num_provinces = 2
-						on_win = erx_broken_arrow_navarro.5
-						on_lose = erx_broken_arrow_navarro.5
-						on_cancel = erx_broken_arrow_navarro.5
+						on_win = erx_broken_arrow_navarro.9
+						on_lose = erx_broken_arrow_navarro.10
+						on_cancel = erx_broken_arrow_navarro.9
 					}
 				}
 			}
