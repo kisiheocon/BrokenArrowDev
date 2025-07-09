@@ -98,6 +98,7 @@ country_event = {
 	id = erx_broken_arrow.3
 	title = erx_broken_arrow.3.t
 	desc = erx_broken_arrow.3.d
+	picture = GFX_event_escape_from_sierra_event_pic
 
 	is_triggered_only = yes
 
@@ -1089,12 +1090,12 @@ country_event = {
 
 ##Outcome events for Shi border war
 #Eureka/Player's POV
-#Win - Placeholder
+#Win - Victory In The Third Battle For Navarro
 country_event = {
 	id = erx_broken_arrow_navarro.9
 	title = erx_broken_arrow_navarro.9.t
 	desc = erx_broken_arrow_navarro.9.d
-	picture = GFX_event_erb_urban_patrol
+	picture = GFX_event_victory_against_shi_event_pic
 
 	is_triggered_only = yes
 	
