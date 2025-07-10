@@ -35,6 +35,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/victory_against_shi.dds"
 	}
 
+	###Lose against Shi### - We get this from Kaiserreddux - Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_report_event_soldiers_steppe_event_pic"
+		texturefile = "gfx/event_pictures/report_event_soldiers_steppe.dds"
+	}
+
 	###Escape from Sierra### - WOOHOO OUR FIRST COMMISSIONED ART
 	spriteType = {
 		name = "GFX_event_escape_from_sierra_event_pic"

@@ -98,7 +98,7 @@ country_event = {
 	id = erx_broken_arrow.3
 	title = erx_broken_arrow.3.t
 	desc = erx_broken_arrow.3.d
-	picture = GFX_event_escape_from_sierra_event_pic
+	#picture = GFX_event_escape_from_sierra_event_pic #Look ugly gonna figure out a different way - @Deez
 
 	is_triggered_only = yes
 
@@ -1175,7 +1175,7 @@ country_event = {
 	id = erx_broken_arrow_navarro.10
 	title = erx_broken_arrow_navarro.10.t
 	desc = erx_broken_arrow_navarro.10.d
-	picture = GFX_event_erb_urban_patrol
+	picture = GFX_event_report_event_soldiers_steppe_event_pic
 
 	is_triggered_only = yes
 
