@@ -415,33 +415,36 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = non_negotiable_civilization_tooltip
-			hidden_effect = {
-				239 = {
-					add_core_of = EUR
-				}
-				372 = {
-					add_core_of = EUR
-				}
-				239 = {
-					add_core_of = EUR
-				}
-				372 = {
-					add_core_of = EUR
-				}
-				239 = {
-					add_core_of = EUR
-				}
-				372 = {
-					add_core_of = EUR
-				}
-				239 = {
-					add_core_of = EUR
-				}
-				372 = {
-					add_core_of = EUR
-				}
-			}
+			UMB = { every_core_state = { add_core_of = ROOT } }
+			FOU = { every_core_state = { add_core_of = ROOT } }
+			MXS = { every_core_state = { add_core_of = ROOT } }
+			#custom_effect_tooltip = non_negotiable_civilization_tooltip
+			#hidden_effect = {
+			#	239 = {
+			#		add_core_of = EUR
+			#	}
+			#	372 = {
+			#		add_core_of = EUR
+			#	}
+			#	239 = {
+			#		add_core_of = EUR
+			#	}
+			#	372 = {
+			#		add_core_of = EUR
+			#	}
+			#	239 = {
+			#		add_core_of = EUR
+			#	}
+			#	372 = {
+			#		add_core_of = EUR
+			#	}
+			#	239 = {
+			#		add_core_of = EUR
+			#	}
+			#	372 = {
+			#		add_core_of = EUR
+			#	}
+			#}
 		}
 	}
 

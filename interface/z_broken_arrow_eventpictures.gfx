@@ -41,6 +41,24 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_soldiers_steppe.dds"
 	}
 
+	###The Redding Report### - We get this from TNO - Credits to The New Order team
+	spriteType = {
+		name = "GFX_event_report_event_generic_newspaper_event_pic"
+		texturefile = "gfx/event_pictures/report_event_generic_newspaper.dds"
+	}
+
+	###Captain America### - We get this from Kaiserreddux - Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_USA_captain_america_event_pic"
+		texturefile = "gfx/event_pictures/USA_captain_america.dds"
+	}
+
+	###American Police### - We get this from Kaiserreddux - Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_am_police_event_pic"
+		texturefile = "gfx/event_pictures/am_police.dds"
+	}
+
 	###Escape from Sierra### - WOOHOO OUR FIRST COMMISSIONED ART
 	spriteType = {
 		name = "GFX_event_escape_from_sierra_event_pic"

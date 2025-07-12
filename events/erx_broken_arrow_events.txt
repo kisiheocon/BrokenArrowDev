@@ -524,6 +524,7 @@ country_event = {
 	id = erx_broken_arrow.18
 	title = erx_broken_arrow.18.t
 	desc = erx_broken_arrow.18.d
+	picture = GFX_event_ENC_dark
 
 	is_triggered_only = yes
 
@@ -731,6 +732,7 @@ country_event = {
 	id = erx_broken_arrow.27
 	title = erx_broken_arrow.27.t
 	desc = erx_broken_arrow.27.d
+	picture = GFX_event_vertibird_assault_team
 
 	is_triggered_only = yes
 
@@ -743,6 +745,7 @@ country_event = {
 	id = erx_broken_arrow.28
 	title = erx_broken_arrow.28.t
 	desc = erx_broken_arrow.28.d
+	picture = GFX_event_USA_captain_america_event_pic
 
 	is_triggered_only = yes
 
@@ -755,6 +758,7 @@ country_event = {
 	id = erx_broken_arrow.29
 	title = erx_broken_arrow.29.t
 	desc = erx_broken_arrow.29.d
+	picture = GFX_event_am_police_event_pic
 
 	is_triggered_only = yes
 
@@ -988,6 +992,7 @@ country_event = {
 	title = erx_broken_arrow_navarro.4.t
 	desc = erx_broken_arrow_navarro.4.d
 	is_triggered_only = yes
+	picture = GFX_event_com_southern_crisis
 
 	option = {
 		name = erx_broken_arrow_navarro.4.a
@@ -1013,6 +1018,7 @@ country_event = {
 	title = erx_broken_arrow_navarro.5.t
 	desc = erx_broken_arrow_navarro.5.d
 	is_triggered_only = yes
+	picture = GFX_event_report_event_generic_newspaper_event_pic
 
 	option = {
 		name = erx_broken_arrow_navarro.5.a

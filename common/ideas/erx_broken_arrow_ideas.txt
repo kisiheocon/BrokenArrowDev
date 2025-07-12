@@ -80,7 +80,7 @@ ideas = {
         }
         republic_dreams = {
 
-            picture = x
+            picture = flag_USA
             allowed = {
             }
             removal_cost = -1
@@ -93,7 +93,7 @@ ideas = {
         }
         arr_atk_bonus = {
 
-            picture = x
+            picture = generic_vehicle_vertibird_fo4
             allowed = {
             }
             removal_cost = -1
@@ -106,7 +106,7 @@ ideas = {
         }
         shock_and_awe_dec_idea = {
 
-            picture = x
+            picture = FRA_scw_intervention_nationalists_focus
             allowed = {
             }
             removal_cost = -1
@@ -543,7 +543,7 @@ ideas = {
             }
         }
         logistics_cons_bonus = {
-            picture = x
+            picture = generic_build_infrastructure
             allowed = {
             }
             removal_cost = -1
