@@ -741,11 +741,11 @@ navarro_survive_ncr: "Survive the Bear!"
 navarro_survive_ncr_desc: "By holding out long enough the Bear will have to bite the bullet and back off!"
 
 navarro_eur_shi_border_war_warning_mission: "Skirmishes in the south!"
-navarro_eur_shi_border_war_warning_mission_desc: "While we aren't in a full on conflict with the Shi, we have noticed troops amassing on their border. Simultaneously there are reports of clashes on the border between our troops. What were at first isolated incidents have become more and more common in the last weeks. We should be prepared to deal with those issues, as they grow at an alarming rate.\n\nWhile we haven't formally declared war on the Chinese, reconnaissance reports indicate significant buildups of Imperial Chinese forces on the frontier. Furthermore, we have received additional reports of minor skirmishes and border clashes from Southern Command. These reports, while initially isolated, have become increasingly frequent. As of yet, we cannot predict the Emperor's plans for the region, but whatever the case, we must be on high alert."
+navarro_eur_shi_border_war_warning_mission_desc: "While we haven't formally declared war on the Chinese, reconnaissance reports indicate significant buildups of Imperial Chinese forces on the frontier. Furthermore, we have received additional reports of minor skirmishes and border clashes from Southern Command. These reports, while initially isolated, have become increasingly frequent. As of yet, we cannot predict the Emperor's plans for the region, but whatever the case, we must be on high alert."
 navarro_eur_shi_border_war_warning_mission_tt: "Shout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
 
 
-ARR_chosen_one_spirit_idea: "The Chosen One Spirit"
+ARR_chosen_one_spirit_idea: "The Spirit Of The Chosen One"
 
 lineage_of_professionalism: "Lineage of Professionalism"
 arcata_company: "Arcata Company"
