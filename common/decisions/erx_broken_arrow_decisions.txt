@@ -408,11 +408,9 @@ erx_broken_arrow_navarro_cat = {
 		war_with_on_timeout = NCR #Letting the AI know to prepare troops on the border
 		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
 		cancel_trigger = {
-			NOT = {
-				OR = {
-					country_exists = EUR
-					country_exists = NCR
-				}
+			OR = {
+				EUR = { exists = no }
+				NCR = { exists = no }
 			}
 		}
 		timeout_effect = {
@@ -464,8 +462,12 @@ erx_broken_arrow_navarro_cat = {
 			activate_mission = navarro_eur_shi_border_war_warning_mission
 			hidden_effect = { 
 				country_event = {
-					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war
-					days = 10
+					id = erx_broken_arrow_navarro.13 #Buildup event for Shi border war part 1
+					days = 8
+				}
+				country_event = {
+					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war part 2
+					days = 15
 				}
 				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission }  #Mission timer for Shi border war - 20 days until outbreak
 			}
@@ -474,10 +476,14 @@ erx_broken_arrow_navarro_cat = {
 			white_peace = NCR
 			activate_mission = navarro_eur_shi_border_war_warning_mission
 			country_event = erx_broken_arrow_navarro.12
-			hidden_effect = { 
+			hidden_effect = {
+				country_event = {
+					id = erx_broken_arrow_navarro.13 #Buildup event for Shi border war part 1
+					days = 8
+				}
 				country_event = {
 					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war
-					days = 10
+					days = 15
 				}
 				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } 
 			}
@@ -492,11 +498,9 @@ erx_broken_arrow_navarro_cat = {
 		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
 		war_with_on_timeout = SHI #Letting the AI know to prepare troops on the border
 		cancel_trigger = {
-			NOT = {
-				OR = {
-					country_exists = EUR
-					country_exists = SHI
-				}
+			OR = {
+				EUR = { exists = no }
+				SHI = { exists = no }
 			}
 		}
 		timeout_effect = {
@@ -523,6 +527,7 @@ erx_broken_arrow_navarro_cat = {
 						}
 					}
 				}
+				custom_effect_tooltip = navarro_eur_shi_border_war_warning_mission_tt
 			}
 			else = {
 				start_border_war = {

@@ -248,6 +248,11 @@ erx_broken_arrow_navarro.12.t: "The Bear Kept In Check"
 erx_broken_arrow_navarro.12.d: "Despite the insurmountable forces set against us by the tyrants of Shady Sands, we have stood the weight of their armies and held the line. The Bear has been sent slinking back to where they came from, and President Kimball has called for a cessation of hostilities. We have ended the Navarro Question for good. Navarro has been won, it has been defended, and now forevermore it shall belong to the American people. Our people expected a peerless victory, and they have not been found wanting. Celebrate today, for tomorrow we guard our borders against all who would dare follow in their example. "
 erx_broken_arrow_navarro.12.a: "Tomorrow Brings New Battles"
 
+erx_broken_arrow_navarro.13.t: "Calm Before The Storm"
+erx_broken_arrow_navarro.13.d: "He had been here for three months, and so far the most exciting thing that had happened was the clearing of a nest of molerats a few weeks ago. Granted, it had been a bigger one, but still, nothing exciting. As he got up from his bunk and headed to the mess hall, he tried to clear his head. After all, it was good that it had been so calm on the new border, he knew that. He got his food and sat down by his squad. \"Have you heard the news, John?\" That was Bill. \"They're sending down reinforcements from the north. Apparently, some heavy hitters from Arcata, exciting real tough crowd, they're coming later tonight.\" That was... interesting, to say the least. \"Really? You think this means that something's going to happen?\" Bill considered his question for a moment before shaking his head. \"Nah, if so, they would have at the very least given us orders to be prepared, right?\" He nodded. \"Yes, I suppose that does make sense. Though it's a bit strange. Why now, out of all times? As far as I can tell, everything's fine, right? I mean, from what I've heard, there are some issues with the settlers again, but why would they reinforce the border for that?\" Bill shrugged. \"Beats me. Might be some intel that they aren't so sure about? Anyway, let's just finish up, alright?\""
+erx_broken_arrow_navarro.13.a: "Another Day, Business As Usual."
+erx_broken_arrow_navarro.13_tt: "Something is §Rbrewing§! in the South.\n\nShout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
+
 
 #Navarro Tooltips
 nf_navarro.6.b_ba_tt: "It is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
@@ -736,6 +741,11 @@ navarro_survive_ncr: "Survive the Bear!"
 navarro_survive_ncr_desc: "By holding out long enough the Bear will have to bite the bullet and back off!"
 
 navarro_eur_shi_border_war_warning_mission: "Skirmishes in the south!"
+navarro_eur_shi_border_war_warning_mission_desc: "While we aren't in a full on conflict with the Shi, we have noticed troops amassing on their border. Simultaneously there are reports of clashes on the border between our troops. What were at first isolated incidents have become more and more common in the last weeks. We should be prepared to deal with those issues, as they grow at an alarming rate.\n\nWhile we haven't formally declared war on the Chinese, reconnaissance reports indicate significant buildups of Imperial Chinese forces on the frontier. Furthermore, we have received additional reports of minor skirmishes and border clashes from Southern Command. These reports, while initially isolated, have become increasingly frequent. As of yet, we cannot predict the Emperor's plans for the region, but whatever the case, we must be on high alert."
+navarro_eur_shi_border_war_warning_mission_tt: "Shout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
+
+
+ARR_chosen_one_spirit_idea: "The Chosen One Spirit"
 
 lineage_of_professionalism: "Lineage of Professionalism"
 arcata_company: "Arcata Company"

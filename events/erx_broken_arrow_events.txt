@@ -1064,7 +1064,22 @@ country_event = {
 	}
 }
 
-#The Patrol - Shi border war buildup event
+#Calm Before The Storm - Shi border war buildup event part 1
+country_event = {
+	id = erx_broken_arrow_navarro.13
+	title = erx_broken_arrow_navarro.13.t
+	desc = erx_broken_arrow_navarro.13.d
+	picture = GFX_event_erb_urban_patrol
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_navarro.13.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.13_tt
+	}
+}
+
+#The Patrol - Shi border war buildup event part 2
 country_event = {
 	id = erx_broken_arrow_navarro.7
 	title = erx_broken_arrow_navarro.7.t
