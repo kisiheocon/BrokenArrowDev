@@ -2,10 +2,10 @@ focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
-		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
-			add = 100
-			original_tag = EUR
-		}
+		#modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+		#	add = 100
+		#	original_tag = EUR
+		#}
 	}
 	default = no
 #############
