@@ -916,23 +916,20 @@ country_event = {
 	picture = GFX_event_ncr_trenches
 
 	is_triggered_only = yes
-
-	option = {
-		name = erx_broken_arrow_navarro.1.a
-		custom_effect_tooltip = erx_broken_arrow_navarro.1_tt
-		NVT = {
-			add_ideas = navarro_intervention_no_surrender
-		}
-		EUR = {
-			set_country_flag = eur_navarro_time
-		}
-		EUR = {
-			complete_national_focus = erx_broken_arrow_navarro_crisis
-		}
-		EUR = {
-			mark_focus_tree_layout_dirty = yes
-		}
+	immediate = {
 		hidden_effect = {
+			NVT = {
+				add_ideas = navarro_intervention_no_surrender
+			}
+			EUR = {
+				set_country_flag = eur_navarro_time
+			}
+			EUR = {
+				complete_national_focus = erx_broken_arrow_navarro_crisis
+			}
+			EUR = {
+				mark_focus_tree_layout_dirty = yes
+			}
 			set_victory_points = {
 				province = 4924
 				value = 5
@@ -946,6 +943,23 @@ country_event = {
 				name = eureka_vp_fob
 			}
 		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.1.a
+		effect_tooltip = {
+			NVT = {
+				add_ideas = navarro_intervention_no_surrender
+			}
+			EUR = {
+				set_country_flag = eur_navarro_time
+			}
+			EUR = {
+				complete_national_focus = erx_broken_arrow_navarro_crisis
+			}
+		}
+		custom_effect_tooltip = erx_broken_arrow_navarro.1_tt
+		#custom_effect_tooltip = nf_navarro.6.b_ba_tt
 	}
 }
 #VICTORY 
@@ -1069,7 +1083,7 @@ country_event = {
 	id = erx_broken_arrow_navarro.13
 	title = erx_broken_arrow_navarro.13.t
 	desc = erx_broken_arrow_navarro.13.d
-	picture = GFX_event_erb_urban_patrol
+	picture = GFX_event_sunset_binoculars
 
 	is_triggered_only = yes
 

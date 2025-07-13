@@ -497,6 +497,14 @@ erx_broken_arrow_navarro_cat = {
 		available = { always = no } #Can't complete the warning - @Deez
 		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
 		war_with_on_timeout = SHI #Letting the AI know to prepare troops on the border
+		highlight_states = {
+			highlight_state_targets = {
+				state = 216
+				state = 474
+			}
+			highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 		cancel_trigger = {
 			OR = {
 				EUR = { exists = no }
