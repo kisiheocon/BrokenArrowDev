@@ -51,6 +51,7 @@ country_event = {
 	option = {
 		name = erx_broken_arrow_debug.3.a
 		activate_mission = navarro_eur_shi_border_war_warning_mission
+		add_ideas = building_intel_agency
 	}
 }
 #SAVED BY THE BELL

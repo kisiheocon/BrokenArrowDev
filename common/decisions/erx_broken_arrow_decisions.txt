@@ -196,7 +196,7 @@ erx_broken_arrow_oregon_affairs_cat = {
 			has_completed_focus = erx_broken_arrow_anguish_mourning
 		}
 		complete_effect = {
-			add_timed_idea = { idea = arr_atk_bonus days = 30 }
+			add_timed_idea = { idea = arr_atk_bonus days = 60 }
 			add_to_variable = { arr_atk_prep = 1 }
 		}
 	}
