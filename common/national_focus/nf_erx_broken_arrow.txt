@@ -2338,7 +2338,14 @@ focus_tree = {
 
 		available = {
 			NAT = { all_core_land_owned_by_prev_sphere = yes }
-			NAT = { all_core_state = { compliance > 79 } }
+			NAT = { 
+				all_core_state = { 
+					OR = {
+						compliance > 79
+						is_core_of = EUR
+					}
+				} 
+			}
 			#340 = { compliance > 79 }
 			#353 = { compliance > 79 }
 			#56 = { compliance > 79 }
