@@ -23,16 +23,6 @@ state = {
 			5005 = {
 				naval_base = 1
 			}
-			2728 = {
-				bunker = 2
-				bunker2 = 2
-			}
-			5004 = {
-				bunker = 2
-			}
-			1743 = {
-				bunker = 2
-			}
 		}
 	}
 

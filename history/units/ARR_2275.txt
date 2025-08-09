@@ -21,62 +21,6 @@ division_template = {
 	}
 }
 units = {
-	division = {
-		name = "Arroyo-Guard" #Increased in numbers for Broken Arrow
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
-		division = {
-		name = "Arroyo-Guard"
-		location = 2722
-		division_template = "Settlement-Guard"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-	}
 		division = {
 		name = "Arroyo-Guard"
 		location = 2722

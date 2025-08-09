@@ -918,16 +918,24 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			NVT = {
-				add_ideas = navarro_intervention_no_surrender
+			NCR = { #Hidden effect to ensure Kimball win the no confidence vote
+				country_event = {
+					id = erx_broken_arrow.901
+					days = 30
+				}
+				country_event = {
+					id = erx_broken_arrow.901
+					days = 60
+				}
+				country_event = {
+					id = erx_broken_arrow.901
+					days = 90
+				}
 			}
+			NVT = { add_ideas = navarro_intervention_no_surrender }
 			EUR = {
 				set_country_flag = eur_navarro_time
-			}
-			EUR = {
 				complete_national_focus = erx_broken_arrow_navarro_crisis
-			}
-			EUR = {
 				mark_focus_tree_layout_dirty = yes
 			}
 			set_victory_points = {
@@ -948,15 +956,8 @@ country_event = {
 	option = {
 		name = erx_broken_arrow_navarro.1.a
 		effect_tooltip = {
-			NVT = {
-				add_ideas = navarro_intervention_no_surrender
-			}
-			EUR = {
-				set_country_flag = eur_navarro_time
-			}
-			EUR = {
-				complete_national_focus = erx_broken_arrow_navarro_crisis
-			}
+			NVT = { add_ideas = navarro_intervention_no_surrender }
+			EUR = { complete_national_focus = erx_broken_arrow_navarro_crisis }
 		}
 		custom_effect_tooltip = erx_broken_arrow_navarro.1_tt
 		#custom_effect_tooltip = nf_navarro.6.b_ba_tt
@@ -1053,6 +1054,10 @@ country_event = {
 		hidden_effect = {
 			add_political_power = 30
 			add_stability = 0.02
+			country_event = { #NCR increase troop present in Fourways and Max Sec
+				id = erx_broken_arrow_navarro.14
+				days = 60
+			}
 			NAT = {
 				every_core_state = {
 					add_compliance = 5
@@ -1298,6 +1303,10 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			country_event = { #NCR increase troop present in Fourways and Max Sec
+				id = erx_broken_arrow_navarro.14
+				days = 60
+			}
 			NAT = {
 				every_core_state = {
 					add_compliance = 5
@@ -1320,6 +1329,182 @@ country_event = {
 		}
 	}
 }
+#Shady Sands Shifts Priorities - Event for NCR to reinforce their influence in Arroyo Region
+country_event = {
+	id = erx_broken_arrow_navarro.14
+	title = erx_broken_arrow_navarro.14.t
+	desc = erx_broken_arrow_navarro.14.d
+	picture = GFX_event_NCR_caravan
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = erx_broken_arrow_navarro.15
+				days = 10
+			}
+			NCR = {
+				set_nationality = {
+					target_country = FOU
+					character = NCR_big_jim
+				}
+			}
+			NAT = {
+				set_nationality = {
+					target_country = MXS
+					character = NAT_lieutenant_morton
+				}
+			}
+			FOU = {
+				create_faction = "NCREF"
+				add_to_faction = MXS
+				set_technology = { #FOU don't start out with this so they need this so their rangers unit get bugged without the required tech
+					spec_ops_equipment_tech_1 = 1
+				}
+				set_politics = {
+					ruling_party = ruler
+				}
+				set_political_party = {
+					ideology = ruler
+					popularity = 60
+				}
+				add_country_leader_role = {
+					character = NCR_big_jim
+					promote_leader = yes
+					country_leader = {
+						ideology = military_government
+						expire = "3000.01.01.01"
+						traits = { the_baron }
+					}
+				}
+				add_manpower = 500 #Extra NCR Manpower reinforcement
+				add_ideas = {
+					mot_idea_support_from_shady_sands
+					war_economy
+					four_year_conscription
+				}
+				load_oob = "FOU_NCR_reinforcement_oob"
+			}
+			MXS = {
+				set_technology = { #MXS don't start out with these tech needed for the reinforcement units
+					spec_ops_equipment_tech_1 = 1
+					support_weaponry = 1
+					fireteam_weaponry_tech = 1
+					anti_tank_equipment_tech_1 = 1
+					recon_company_tech_1 = 1
+				}
+				set_politics = {
+					ruling_party = ruler
+				}
+				set_political_party = {
+					ideology = ruler
+					popularity = 60
+				}
+				add_country_leader_role = {
+					character = NAT_lieutenant_morton
+					promote_leader = yes
+					country_leader = {
+						ideology = military_government
+						expire = "3000.01.01.01"
+						traits = { war_hero }
+					}
+				}
+				add_corps_commander_role = {
+					character = NAT_lieutenant_morton
+					skill = 3
+   					attack_skill = 2
+   					defense_skill = 2
+   					planning_skill = 3
+   					logistics_skill = 1
+					traits = {
+						perceptive_trait #The goggles
+						enduring_trait #The leg
+						hill_fighter #Navarro main terrain
+					}
+				}
+				add_manpower = 200 #Extra NCR Manpower reinforcement
+				add_ideas = {
+					mot_idea_support_from_shady_sands
+					war_economy
+					four_year_conscription
+				}
+				load_oob = "MXS_NCR_reinforcement_oob"
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.14.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.14_tt
+	}
+}
+#Writing On The Wall - Event for Arroyo preparing against the player
+country_event = {
+	id = erx_broken_arrow_navarro.15
+	title = erx_broken_arrow_navarro.15.t
+	desc = erx_broken_arrow_navarro.15.d
+	picture = GFX_event_ARR_arroyo
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ARR = {
+				add_manpower = 1000 #Quick Mobiize
+				add_ideas = {
+					ARR_chosen_one_spirit_idea
+					partial_economic_mobilisation
+					funded_militia_conscription
+				}
+				load_oob = "ARR_small_mobilisation_oob"
+				32 = { #Sixes
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 2728 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 5004 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 1743 instant_build = yes }
+				}
+				337 = { #Arroyo
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 2722 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 1752 instant_build = yes }
+				}
+				96 = { #Arroyo
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 7151 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 7152 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 4189 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 8586 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 7135 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.15.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.15_tt
+	}
+}
+#Fall of NCREF
+country_event = {
+	id = erx_broken_arrow_navarro.16
+	title = erx_broken_arrow_navarro.16.t
+	desc = erx_broken_arrow_navarro.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_navarro.16.a
+	}
+}
+
 
 ###Early Election Events
 #An Election Despoiled

@@ -196,7 +196,6 @@ add_ideas = {
 	currencyncrdollar
 	ARR_legacy_of_the_dweller
 	volunteer_militia_conscription
-	ARR_chosen_one_spirit_idea
 }
 
 add_equipment_to_stockpile = {

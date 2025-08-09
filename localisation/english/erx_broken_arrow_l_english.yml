@@ -253,6 +253,15 @@ erx_broken_arrow_navarro.13.d: "He had been here for three months, and so far th
 erx_broken_arrow_navarro.13.a: "Another Day, Business As Usual."
 erx_broken_arrow_navarro.13_tt: "Something is §Rbrewing§! in the South.\n\nShout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
 
+erx_broken_arrow_navarro.14.t: "Shady Sands Shifts Priorities"
+erx_broken_arrow_navarro.14.d: "Operatives in the N.C.R.'s northern frontier have sent concerning reports of troop convoys entering the Four-ways in considerable numbers. This, in conjunction with a recent statement from the President's office stating a “Realignment of National Priorities” was occurring in the region. It seems Kimball has finally relented on Navarro and has instead vied to bolster his influence in the north. While we can only speculate, this is likely an effort to salvage his reputation after the fiasco in Navarro and appease the frontier barons who are likely less than pleased seeing their fortunes lost in Navarro. Rumours also persist that Arroyo is potentially preparing to fortify their own position and influence. Whether these efforts are aimed at maintaining the status quo or an attempt to maneuver around the Navarro border to isolate and starve us into submission is unclear."
+erx_broken_arrow_navarro.14.a: "A Power Play? Or Conspiracy?"
+erx_broken_arrow_navarro.14_tt: "§L[NCR.GetNameWithFlag]§! §Yhas increased their presence in the Arroyo region!§!\n - §1[FOU.GetNameWithFlag]§! §Yhas received additional units!§!\n - §t[MXS.GetNameWithFlag]§! §Yhas received additional units!§!"
+
+erx_broken_arrow_navarro.15.t: "Writing On The Wall"
+erx_broken_arrow_navarro.15.d: "The Arroyoan Government has made a surprising announcement that he would not be sending further troops beyond a mere token security force to the Fourways in spite of recent N.C.R buildups and instead will focus internally on “Other Threats” We can only logically assume the Chosen One is referring to us as we are the only other threat in the region capable of challenging their power. This wise decision is unexpected and we can now expect them to further bolster their fortifications in the future. It seems we are the true power in this region…. Not Shady Sands."
+erx_broken_arrow_navarro.15.a: "Well Played... For Now"
+erx_broken_arrow_navarro.15_tt: "§8[ARR.GetNameWithFlag]§! §Yhas begin to mobilize for any future wars!§!\n - §8[ARR.GetNameWithFlag]§! §Yhas mobilized additional units!§!\n - §8[ARR.GetNameWithFlag]§! §Yhas built additional fortifications!§!"
 
 #Navarro Tooltips
 nf_navarro.6.b_ba_tt: "It is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"

@@ -5,4 +5,18 @@ on_actions = {
 			ERB = { country_event = { id = erx_broken_arrow.100 days = 15 } }
 		}
 	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = EUR 
+					NOT = { has_country_flag = eur_defeated_ncref_flag }
+					FOU = { all_core_land_owned_by_prev_sphere = yes }
+					MXS = { all_core_land_owned_by_prev_sphere = yes }
+				}
+				set_country_flag = eur_defeated_ncref_flag
+				country_event = erx_broken_arrow_navarro.16
+			}
+		}
+	}
 }

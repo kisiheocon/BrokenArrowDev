@@ -3,6 +3,17 @@
 # ID's must not include spaces!
 # Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
 #####################################################################################################################
+debug_decisions = {
+	load_broken_arrow_focus_tree = {
+		allowed = {
+			original_tag = EUR
+		}
+		complete_effect = {
+			load_focus_tree = nf_erx_broken_arrow
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
 erx_broken_arrow_radiowaves_cat = {	
 	clear_radio = {
 		icon = GFX_decision_enc_propaganda
@@ -196,7 +207,7 @@ erx_broken_arrow_oregon_affairs_cat = {
 			has_completed_focus = erx_broken_arrow_anguish_mourning
 		}
 		complete_effect = {
-			add_timed_idea = { idea = arr_atk_bonus days = 60 }
+			add_timed_idea = { idea = arr_atk_bonus days = 100 }
 			add_to_variable = { arr_atk_prep = 1 }
 		}
 	}
