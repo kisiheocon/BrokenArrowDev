@@ -1378,6 +1378,10 @@ country_event = {
 						traits = { the_baron }
 					}
 				}
+				set_country_leader_description = {
+					ideology = ruler
+					desc = FOU_big_jim_country_leader_desc
+				}
 				add_manpower = 500 #Extra NCR Manpower reinforcement
 				add_ideas = {
 					mot_idea_support_from_shady_sands
@@ -1409,6 +1413,10 @@ country_event = {
 						expire = "3000.01.01.01"
 						traits = { war_hero }
 					}
+				}
+				set_country_leader_description = {
+					ideology = ruler
+					desc = MXS_lieutenant_morton_country_leader_desc
 				}
 				add_corps_commander_role = {
 					character = NAT_lieutenant_morton
@@ -1497,11 +1505,38 @@ country_event = {
 	id = erx_broken_arrow_navarro.16
 	title = erx_broken_arrow_navarro.16.t
 	desc = erx_broken_arrow_navarro.16.d
+	picture = GFX_event_NCR_battle
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			FOU = {
+				set_nationality = { #Jim retreat to NCR
+					target_country = NCR
+					character = NCR_big_jim
+				}
+			}
+			MXS = {
+				set_nationality = { #Morton retreat to Arroyo
+					target_country = ARR
+					character = NAT_lieutenant_morton
+				}
+			}
+			ARR = {
+				set_technology = {
+					fireteam_weaponry_tech = 1
+					recon_company_tech_1 = 1
+					add_manpower = 100 #Additional Manpower without equipments retreated from MXS
+				}
+				load_oob = "ARR_FOU_retreat_oob"
+			}			
+		}
+	}
+
 	option = {
 		name = erx_broken_arrow_navarro.16.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.16_tt
 	}
 }
 

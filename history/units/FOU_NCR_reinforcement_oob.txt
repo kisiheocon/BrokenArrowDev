@@ -78,6 +78,13 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
+		name = "8th NCREF Troopers"
+		location = 4936
+		division_template = "NCREF Troopers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
 		name = "1st NCREF Rangers"
 		location = 4936
 		division_template = "NCREF Rangers"

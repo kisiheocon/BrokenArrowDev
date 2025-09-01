@@ -30,51 +30,37 @@ division_template = {
 units = {
 	division = {
 		name = "9th NCREF Troopers"
-		location = 4365
+		location = 7152
 		division_template = "NCREF Troopers"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "10th NCREF Troopers"
-		location = 4365
+		location = 7152
 		division_template = "NCREF Troopers"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "11st NCREF Troopers"
-		location = 4365
-		division_template = "NCREF Troopers"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "12nd NCREF Troopers"
-		location = 4365
+		location = 7152
 		division_template = "NCREF Troopers"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "3rd NCREF Rangers"
-		location = 4365
+		location = 7152
 		division_template = "NCREF Rangers"
-		start_experience_factor = 0.75
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "4th NCREF Rangers"
-		location = 4365
-		division_template = "NCREF Rangers"
-		start_experience_factor = 0.75
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "5th NCREF Rangers"
-		location = 4365
+		location = 7152
 		division_template = "NCREF Rangers"
-		start_experience_factor = 0.75
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.7
 	}
 }
