@@ -768,11 +768,24 @@ country_event = {
 		PAC = {
 			set_cosmetic_tag = ERB_EUR_PAC
 		}
-		PAC = {
-			hidden_effect = {
-				country_event = { id = erx_broken_arrow.30 hours = 1 }
+		hidden_effect = {
+			PAC = {
+				set_politics = { ruling_party = ruler }
+				set_country_leader_description = {
+					ideology = ruler
+					desc = EUR_Jim_leader_desc
+				}
+				add_popularity = {
+					ideology = ruler
+					popularity = 60
+				}
 			}
 		}
+		#PAC = {
+		#	hidden_effect = {
+		#		country_event = { id = erx_broken_arrow.30 hours = 1 }
+		#	}
+		#}
 		custom_effect_tooltip = erx_broken_arrow_sf
 	}
 }
@@ -1142,11 +1155,27 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			SHI = { army_experience = 50 } #Hidden buff to Shi AI so they can improve their army - @Deez
+			add_corps_commander_role = {
+				character = EUR_oscar_mccormick
+				desc = EUR_oscar_mccormick_desc
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+				traits = {
+					EUR_BA_youthful_vigor_unit_leader_trait
+					EUR_BA_authoritarian_tendencies_unit_leader_trait
+					EUR_BA_navarro_unit_leader_trait
+					hill_fighter
+				}
+			}
 		}
 	}
 
 	option = {
 		name = erx_broken_arrow_navarro.9.a #The harsh option
+		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
 		NAT = {
 			every_core_state = {
 				add_compliance = 10
@@ -1186,8 +1215,9 @@ country_event = {
 			}
 		}
 	}
-		option = {
+	option = {
 		name = erx_broken_arrow_navarro.9.b #The soft option
+		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
 		add_political_power = 30
 		add_stability = 0.02
 		NAT = {
@@ -1245,12 +1275,28 @@ country_event = {
 				receiver = SHI
 				state = 441
 			}
+			add_corps_commander_role = {
+				character = EUR_oscar_mccormick
+				desc = EUR_oscar_mccormick_desc
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+				traits = {
+					EUR_BA_youthful_vigor_unit_leader_trait
+					EUR_BA_authoritarian_tendencies_unit_leader_trait
+					EUR_BA_navarro_unit_leader_trait
+					hill_fighter
+				}
+			}
 		}
 	}
 
 	option = {
 		name = erx_broken_arrow_navarro.10.a
 		effect_tooltip = { #Just for showing the effects, the effects already given out in the immediate block - @Deez
+			recruit_character = EUR_oscar_mccormick
 			add_political_power = -20
 			add_stability = -0.03
 			add_war_support = -0.03
@@ -1539,7 +1585,56 @@ country_event = {
 		custom_effect_tooltip = erx_broken_arrow_navarro.16_tt
 	}
 }
+#Arroyo Secure Umbra
+country_event = {
+	id = erx_broken_arrow_navarro.17
+	title = erx_broken_arrow_navarro.17.t
+	desc = erx_broken_arrow_navarro.17.d
+	picture = GFX_event_ARR_arroyo
 
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ARR = {
+				add_war_support = 0.1
+				add_ideas = {
+					two_year_conscription
+					war_economy
+				}
+				puppet = UMB
+			}
+			UMB = {
+				add_war_support = 0.2
+				add_manpower = 500
+				add_ideas = {
+					two_year_conscription
+					war_economy
+				}
+				239 = { #Crescent
+					add_building_construction = { type = bunker level = 2 province = 4917 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 4918 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 1258 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 4913 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 2170 instant_build = yes }
+				}
+				372 = { #Kerby
+					add_building_construction = { type = bunker level = 2 province = 4919 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 7059 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 4910 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 1755 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 2171 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 province = 5002 instant_build = yes }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.17.a
+		custom_effect_tooltip = erx_broken_arrow_navarro.17_tt
+	}
+}
 
 ###Early Election Events
 #An Election Despoiled

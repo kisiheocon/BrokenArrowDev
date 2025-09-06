@@ -1,0 +1,84 @@
+﻿division_template = {
+	name = "Arroyo Desperate Militia"
+	regiments = {
+		militia = { x = 0 y = 0 } militia = { x = 1 y = 0 } militia = { x = 2 y = 0 }
+		militia = { x = 0 y = 1 } militia = { x = 1 y = 1 } militia = { x = 2 y = 1 }
+		militia = { x = 0 y = 2 } militia = { x = 1 y = 2 }
+	}
+	support = {
+		anti_tank_company = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "9. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10. Arroyo Desperate Militia"
+		location = 2722
+		division_template = "Arroyo Desperate Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}

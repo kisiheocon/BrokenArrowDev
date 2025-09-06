@@ -1,0 +1,18 @@
+﻿l_english:
+######################
+###Characters Names###
+######################
+EUR_oscar_mccormick_name: "Oscar McCormick"
+EUR_oscar_mccormick_desc: "§YName:§! Oscar McCormick\n§YPlace Of Birth:§! Arcata (West Coast)\n§YAge:§! Twenty-seven\n§YRank:§! Brigadier General\n§YTraits:§! Youthful Vigor\n          Authoritarian Tendecies\n          Navarro War Veteran\n§YDescription:§! The would be General hailing from far off Arcata did not have military service planned for his future, let alone in a military as spontaneous and incredulous as this new \"Federal Government\" He was drafted from his uneventful job as a general store clerk on the outskirts of his hometown to fight in the Navarro wars by the new administration and fought with distinction against both the Colonials and the Chinese throughout the course of the war. The rising casualty lists and a need for experienced command saw him being promoted to lieutenant Colonel by the conclusion of the 3rd war for Navarro. Following the formal annexation of these territories by the Federal Government the newly minted \"General\" was uplifted alongside several others to help corral the territories and the swaths of fresh recruits from various tribes and counties."
+
+#######################
+###Characters Traits###
+#######################
+EUR_BA_youthful_vigor_unit_leader_trait: "Youthful Vigor"
+EUR_BA_youthful_vigor_unit_leader_trait_desc: "While young this commander is not without skill or intellect. His lack of experience is quite beneficial at times. Granting him an energy and vigor not found among older officers. Though his lack of experience can also simply be a lack of experience..."
+
+EUR_BA_authoritarian_tendencies_unit_leader_trait: "Authoritarian Tendecies"
+EUR_BA_authoritarian_tendencies_unit_leader_trait_desc: "While generally committed to just treatment and respect for the rule of law, this commander at times can have... §Rdarker moments§!. Spurring rash acts of cruelty or what some may consider dictatorial behavior when faced with intense pressure or fighting particularly heinous foes. Much to his and the people's dismay. Though it at times has its uses..."
+
+EUR_BA_navarro_unit_leader_trait: "Medal of Navarro"
+EUR_BA_navarro_unit_leader_trait_desc: "This medal is awarded to those who have distinguished themselves during the Wars for Navarro."

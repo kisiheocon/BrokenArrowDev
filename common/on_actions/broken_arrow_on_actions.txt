@@ -19,4 +19,24 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = UMB }
+					FROM = { 
+						original_tag = EUR
+						NOT = { has_country_flag = EUR_UMB_defeated }
+					}
+				}
+				ARR = {
+					load_oob = "ARR_large_mobilisation_oob"
+					add_manpower = 500
+				}
+				FROM = {
+					set_country_flag = EUR_UMB_defeated
+				}
+			}
+		}
+	}
 }

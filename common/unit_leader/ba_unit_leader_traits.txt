@@ -1,0 +1,41 @@
+leader_traits = {
+	#Youthful Vigor
+	EUR_BA_youthful_vigor_unit_leader_trait = {
+		type = all
+		trait_type = personality_trait
+		allowed = { always = no }
+		non_shared_modifier = {
+			wounded_chance_factor = 0.1
+			experience_gain_factor = 0.15
+			reassignment_duration_factor = -0.2
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+	#Authoritarian Tendecies
+	EUR_BA_authoritarian_tendencies_unit_leader_trait = {
+		type = all
+		trait_type = personality_trait
+		allowed = { always = no }
+		attack_skill = 1
+		attack_skill_factor = 1
+		non_shared_modifier = {
+			army_morale_factor = -0.1
+			out_of_supply_factor = -0.1
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+	#Medal of Navarro
+	EUR_BA_navarro_unit_leader_trait = {
+		type = all
+		trait_type = personality_trait
+		allowed = { always = no }
+		non_shared_modifier = {
+			experience_gain_factor = 0.05
+			army_morale_factor = 0.05
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+}

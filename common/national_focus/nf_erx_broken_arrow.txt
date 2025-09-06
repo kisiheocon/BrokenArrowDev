@@ -277,9 +277,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_american_exceptionalism
 
-		prerequisite = {
-			focus = erx_broken_arrow_american_exceptionalism
-		}
+		prerequisite = { focus = erx_broken_arrow_american_exceptionalism }
 		
 		completion_reward = {
 			country_event = erx_broken_arrow.28
@@ -289,20 +287,12 @@ focus_tree = {
 		id = erx_broken_arrow_welcome_democracy
 		icon = GFX_goal_GFX_USA_hoovers_america-62869
 		cost = 30
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = erx_broken_arrow_prep_expansion
-	
-		available = {
-		}
-		bypass = {
-			PAC = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_prep_expansion
-		}
+
+		prerequisite = { focus = erx_broken_arrow_prep_expansion }
+		bypass = { PAC = { all_core_land_owned_by_prev_sphere = yes } }
 		
 		completion_reward = {
 			country_event = erx_broken_arrow.29
@@ -312,139 +302,106 @@ focus_tree = {
 		id = erx_broken_arrow_calamity_days
 		icon = GFX_goal_GFX_USA_investigate_the_military-62362
 		cost = 30
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = erx_broken_arrow_prep_expansion
 	
-		available = {
-			has_completed_focus = erx_broken_arrow_welcome_democracy
-		}
+		prerequisite = { focus = erx_broken_arrow_prep_expansion }
+		available = { has_completed_focus = erx_broken_arrow_welcome_democracy }
 		bypass = {
-			MXS = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_prep_expansion
+			MXS = { all_core_land_owned_by_prev_sphere = yes }
+			FOU = { all_core_land_owned_by_prev_sphere = yes }
 		}
 		
+		will_lead_to_war_with = MXS
+		will_lead_to_war_with = FOU
+
 		completion_reward = {
-			will_lead_to_war_with = MXS
 			MXS = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_sever_economic
-		icon = GFX_goal_USA_sweep_farm_tariffs
-		cost = 30
-		x = -2
-		y = 1
-		relative_position_id = erx_broken_arrow_prep_expansion
-	
-		available = {
-			has_completed_focus = erx_broken_arrow_welcome_democracy
-		}
-		bypass = {
-			FOU = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_prep_expansion
-		}
-		
-		completion_reward = {
-			will_lead_to_war_with = FOU
 			FOU = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 		}
 	}
-	focus = {
-		id = erx_broken_arrow_break_tribe
-		icon = GFX_goal_USA_congressional_authority
-		cost = 30
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_welcome_democracy
-	
-		available = {
-		}
-		bypass = {
-			UMB = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_sever_economic
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_calamity_days
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_welcome_democracy
-		}
-		
-		completion_reward = {
-			will_lead_to_war_with = UMB
-			UMB = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
-			add_timed_idea = { idea = EUR_fury_civilization  days = 30 }
-		}
-	}
+	#focus = {
+	#	id = erx_broken_arrow_sever_economic
+	#	icon = GFX_goal_USA_sweep_farm_tariffs
+	#	cost = 30
+	#	x = -2
+	#	y = 1
+	#	relative_position_id = erx_broken_arrow_prep_expansion
+	#
+	#	available = {
+	#		has_completed_focus = erx_broken_arrow_welcome_democracy
+	#	}
+	#	bypass = {
+	#		FOU = {
+	#			all_core_land_owned_by_prev_sphere = yes
+	#		}
+	#	}
+	#	prerequisite = {
+	#		focus = erx_broken_arrow_prep_expansion
+	#	}
+	#	
+	#	completion_reward = {
+	#		will_lead_to_war_with = FOU
+	#		FOU = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
+	#	}
+	#}
+	#focus = {
+	#	id = erx_broken_arrow_break_tribe
+	#	icon = GFX_goal_USA_congressional_authority
+	#	cost = 30
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = erx_broken_arrow_welcome_democracy
+	#
+	#	available = {
+	#	}
+	#	bypass = {
+	#		UMB = {
+	#			all_core_land_owned_by_prev_sphere = yes
+	#		}
+	#	}
+	#
+	#	prerequisite = {
+	#		focus = erx_broken_arrow_sever_economic
+	#	}
+	#	prerequisite = {
+	#		focus = erx_broken_arrow_calamity_days
+	#	}
+	#	prerequisite = {
+	#		focus = erx_broken_arrow_welcome_democracy
+	#	}
+	#	
+	#	completion_reward = {
+	#		will_lead_to_war_with = UMB
+	#		UMB = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
+	#		add_timed_idea = { idea = EUR_fury_civilization  days = 30 }
+	#	}
+	#}
 	focus = {
 		id = erx_broken_arrow_non_negotiable_civilization
 		icon = GFX_goal_enc_ANT_establish_tributaries
 		cost = 20
 		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_break_tribe
-	
-		available = {
-			UMB = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-			FOU = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-			MXS = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
+		y = 2
+		relative_position_id = erx_broken_arrow_prep_expansion
 
-		prerequisite = {
-			focus = erx_broken_arrow_break_tribe
+		prerequisite = { focus = erx_broken_arrow_welcome_democracy }
+		prerequisite = { focus = erx_broken_arrow_calamity_days }
+		available = {
+			FOU = { all_core_land_owned_by_prev_sphere = yes }
+			MXS = { all_core_land_owned_by_prev_sphere = yes }
 		}
 		
 		completion_reward = {
-			UMB = { every_core_state = { add_core_of = ROOT } }
-			FOU = { every_core_state = { add_core_of = ROOT } }
-			MXS = { every_core_state = { add_core_of = ROOT } }
-			#custom_effect_tooltip = non_negotiable_civilization_tooltip
-			#hidden_effect = {
-			#	239 = {
-			#		add_core_of = EUR
-			#	}
-			#	372 = {
-			#		add_core_of = EUR
-			#	}
-			#	239 = {
-			#		add_core_of = EUR
-			#	}
-			#	372 = {
-			#		add_core_of = EUR
-			#	}
-			#	239 = {
-			#		add_core_of = EUR
-			#	}
-			#	372 = {
-			#		add_core_of = EUR
-			#	}
-			#	239 = {
-			#		add_core_of = EUR
-			#	}
-			#	372 = {
-			#		add_core_of = EUR
-			#	}
-			#}
+			hidden_effect = {
+				369 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+				467 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+				182 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+				372 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+				239 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+			}
+			custom_effect_tooltip = erx_broken_arrow_non_negotiable_civilization_tt
 		}
 	}
 
@@ -475,31 +432,24 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_anguish_mourning
-	
+
+		prerequisite = { focus = erx_broken_arrow_anguish_mourning }
 		available = {
-			MXS = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-			UMB = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-			FOU = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
+			MXS = { all_core_land_owned_by_prev_sphere = yes }
+			FOU = { all_core_land_owned_by_prev_sphere = yes }
 			custom_trigger_tooltip = {
 				tooltip = arr_atk_prep_tt
 				check_variable = { arr_atk_prep =  3 }
 			}
 		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_anguish_mourning
-		}
-		
+		will_lead_to_war_with = ARR
+		will_lead_to_war_with = UMB
+
 		completion_reward = {
 			country_event = erx_broken_arrow.27
-			will_lead_to_war_with = ARR
 			ARR = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
+			UMB = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 		}
 	}
 	focus = {
@@ -509,15 +459,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_war_plan_gold
-	
-		available = {
-			ARR = {
-				all_core_land_owned_by_prev_sphere = yes
-			}
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_war_plan_gold
+		prerequisite = { focus = erx_broken_arrow_war_plan_gold }
+		available = {
+			ARR = { all_core_land_owned_by_prev_sphere = yes }
+			UMB = { all_core_land_owned_by_prev_sphere = yes } 
 		}
 		
 		completion_reward = {

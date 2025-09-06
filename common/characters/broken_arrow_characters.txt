@@ -329,4 +329,15 @@
             }
         }
 	}
+    EUR_oscar_mccormick = {
+        name = EUR_oscar_mccormick_name
+        portraits = {
+            army = {
+                large = GFX_portrait_eur_oscar_mccormick_large
+            }
+            civilian = {
+                large = GFX_portrait_eur_oscar_mccormick_large
+            }
+        }
+    }
 }
