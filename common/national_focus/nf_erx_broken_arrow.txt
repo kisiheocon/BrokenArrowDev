@@ -378,9 +378,35 @@ focus_tree = {
 	#		add_timed_idea = { idea = EUR_fury_civilization  days = 30 }
 	#	}
 	#}
+	#focus = {
+	#	id = erx_broken_arrow_non_negotiable_civilization
+	#	icon = GFX_goal_enc_ANT_establish_tributaries
+	#	cost = 20
+	#	x = 0
+	#	y = 2
+	#	relative_position_id = erx_broken_arrow_prep_expansion
+	#
+	#	prerequisite = { focus = erx_broken_arrow_welcome_democracy }
+	#	prerequisite = { focus = erx_broken_arrow_calamity_days }
+	#	available = {
+	#		FOU = { all_core_land_owned_by_prev_sphere = yes }
+	#		MXS = { all_core_land_owned_by_prev_sphere = yes }
+	#	}
+	#	
+	#	completion_reward = {
+	#		hidden_effect = {
+	#			369 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+	#			467 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+	#			182 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+	#			372 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+	#			239 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
+	#		}
+	#		custom_effect_tooltip = erx_broken_arrow_non_negotiable_civilization_tt
+	#	}
+	#}
 	focus = {
-		id = erx_broken_arrow_non_negotiable_civilization
-		icon = GFX_goal_enc_ANT_establish_tributaries
+		id = erx_broken_arrow_anguish_mourning
+		icon = GFX_goal_enc_remember_rig
 		cost = 20
 		x = 0
 		y = 2
@@ -391,33 +417,6 @@ focus_tree = {
 		available = {
 			FOU = { all_core_land_owned_by_prev_sphere = yes }
 			MXS = { all_core_land_owned_by_prev_sphere = yes }
-		}
-		
-		completion_reward = {
-			hidden_effect = {
-				369 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-				467 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-				182 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-				372 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-				239 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-			}
-			custom_effect_tooltip = erx_broken_arrow_non_negotiable_civilization_tt
-		}
-	}
-
-	focus = {
-		id = erx_broken_arrow_anguish_mourning
-		icon = GFX_goal_enc_remember_rig
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_non_negotiable_civilization
-	
-		available = {
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_non_negotiable_civilization
 		}
 		
 		completion_reward = {
