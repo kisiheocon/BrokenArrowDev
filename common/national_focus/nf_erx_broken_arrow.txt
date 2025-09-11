@@ -300,7 +300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = erx_broken_arrow_calamity_days
-		icon = GFX_goal_GFX_USA_investigate_the_military-62362
+		icon = GFX_goal_EUR_attack_ncref
 		cost = 30
 		x = 1
 		y = 1
@@ -434,8 +434,6 @@ focus_tree = {
 
 		prerequisite = { focus = erx_broken_arrow_anguish_mourning }
 		available = {
-			MXS = { all_core_land_owned_by_prev_sphere = yes }
-			FOU = { all_core_land_owned_by_prev_sphere = yes }
 			custom_trigger_tooltip = {
 				tooltip = arr_atk_prep_tt
 				check_variable = { arr_atk_prep =  3 }

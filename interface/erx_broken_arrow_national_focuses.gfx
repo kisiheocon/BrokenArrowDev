@@ -159,4 +159,8 @@ spriteTypes = {
 		name = "GFX_goal_BRX2_strikedeal"
 		texturefile = "gfx/interface/goals/BRX2_strikedeal.dds"
 	}
+	spriteType = { #Special thanks to TNO for this asset
+		name = "GFX_goal_EUR_attack_ncref"
+		texturefile = "gfx/interface/goals/EUR_attack_ncref.dds"
+	}
 }
