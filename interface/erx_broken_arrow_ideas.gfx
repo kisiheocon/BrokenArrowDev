@@ -14,4 +14,8 @@ spriteTypes = {
 		name = "GFX_idea_eur_ncr_eco_high"
 		textureFile = "gfx/interface/ideas/idea_EUR_NCR_eco_high.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_EUR_oregon_military_department"
+		textureFile = "gfx/interface/ideas/EUR_oregon_military_department.dds"
+	}
 }

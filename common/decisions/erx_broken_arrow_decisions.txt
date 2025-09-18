@@ -13,6 +13,32 @@ debug_decisions = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	add_stuff = {
+		allowed = {
+			original_tag = EUR
+		}
+		complete_effect = {
+			add_ideas = eur_enc_complete_chaos
+		}
+	}
+	delete_all_unit = {
+		allowed = {
+			original_tag = EUR
+		}
+		complete_effect = {
+			country_lock_all_division_template = no
+			load_oob = "EUR_granite_company"
+			delete_unit_template_and_units = { division_template = "Portmasters" }
+			delete_unit_template_and_units = { division_template = "Eureka Motorgangers" }
+			delete_unit_template_and_units = { division_template = "True Fishermen" }
+			delete_unit_template_and_units = { division_template = "Metalbreakers" }
+			delete_unit_template_and_units = { division_template = "Regulators" }
+			delete_unit_template_and_units = { division_template = "Enclave Auxiliaries" }
+			delete_unit_template_and_units = { division_template = "Rapid Response Division" }
+			delete_unit_template_and_units = { division_template = "Militia" }
+			EUR = { set_occupation_law = default_law }
+		}
+	}
 }
 erx_broken_arrow_radiowaves_cat = {	
 	clear_radio = {

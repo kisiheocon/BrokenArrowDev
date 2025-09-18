@@ -1,4 +1,8 @@
 ﻿l_english:
+###Bookmark###
+erx_broken_arrow_granite_bookmark: "Douglas Granite"
+erx_broken_arrow_granite_bookmark_desc: "After spending most of his youth and teenage years in the cramped confines of a Enclave control vault Granite jumped at the first opportunity to leave the vault for the open expanses known as the wasteland. Quickly reconnecting with his father Granite Sr, and his company. Quickly rising through the ranks through dedication and no small amount of Faith.\n\nFollowing the death of his father Granite assumed command of Granite Division. And after the death of President Richardson and the destruction of the Posiden Oil Rig, Granite and his company found themselves stranded in northern California, where they quickly took to mercenary work in the land of Eureka.\n\nHad it not been for Sergeant Dornan disclosing the location of the Sierra Army Depot, that's likely where Granite would have stayed. Fate is an unpredictable mistress however. And Granite and his men soon found themselves in a new home in Nevada. All is not well however. As Granite Division would discover with the unfortunate arrival of Doctor Anderson, a titan of Science and Influence for the purists of the Enclave.\n\nThe Future however, is not set. And it remains to be seen how Granite will tackle this new purist threat. One thing is certain however, whatever decisions are made, the future of the Enclave, and indeed the entire United States sits in the balance. \n\nGranites faith in the Enclave has long been tested, with exile and defeat a common turn of events for the reformers. Should all be lost again, Granite may decide to take his fate into his own hands, potentially leaving the Enclave to the pages of history with it..."
+
 erx_broken_arrow.1.t: "Saved By The Bell"
 erx_broken_arrow.1.d: "He stood there, seconds away from execution by those he once considered his brothers in arms. He felt something he had never felt before. Rage. Not petty and fleeting but rage that radiated through his soul. Anger at the men standing before him, anger at Dr. Anderson, and at the state of America. But mostly anger at himself, for he knew with his death he had failed both himself and his country. So when seconds later his thoughts were interrupted by an unexpected blinding flash and an explosion that left his ears ringing, the last thing he expected as his vision hazily began to return was several men rushing into the room and gunning down the men who were mere moments ago about to execute him. One of the men started unshackling his handcuffs and it was then that he noticed that he knew the man. As he was about to ask what he was doing here the man interrupted him and said 'Mr President! There's no time, we have to go now! Take this and stay down!' As he was handed the officer’s M1911 he heard sirens beginning to blare and chaos erupting around him. As they left the room he was held in he saw that hundreds of men,women and children who he knew to be his supporters stood outside waiting for his instructions."
 erx_broken_arrow.1.a: "Better late than never huh"
@@ -75,7 +79,7 @@ erx_broken_arrow.155.d: "'On the other hand, you have those who sought a more pe
 erx_broken_arrow.155.a: "A rousing nodding of heads answered the question he had no need to ask."
 
 erx_broken_arrow.16.t: "The Yankee Doodle Boy"
-erx_broken_arrow.16.d: "It used to be that sitting with your family, listening to the radio was an American pastime, much like baseball or voting. Douglas himself remembered his father talking about how he used to stand around listening to the radio blare over the speakers of his post on the Rig. How surprised he was when he came to the mainland, expecting nothing but silence and memories of the songs to fill his remaining days, only to one day fiddle with his helmet's headset and begin to hear a familiar tune, not from the Rig, but from Pre-War broadcasts and even New California Republic stations.\n\nGeneral broadcasts were also something that he fondly, yet sadly, remembered as he recalled his father's last days, not resting in bed as he should have, surrounded by loving family, but instead serving on yet another mercenary mission that he had been forced to come along to. Canadian and Mexican radio, what little there was, certainly was interesting when he could understand their foreign tongues, but most of the time, he was concerned with his father, who had been slipping more and more into senility with each passing day. Mentats had helped for so long, but even they were beginning to falter.\n\nOne day, close to the day the Sergeant finally passed, the tune of 'Yankee Doodle' began to play on loop. Many of the Enclave Control Company members quickly tired of it, but the Sergeant surprisingly became lucid whenever the song was played, despite him mumbling and even bumbling the lyrics at points. It was at one of these moments that he took his son under his wing, pulling him out of earshot and view of any prying eyes, and disclosed something he hoped his son would never forget.\n\nS.F"
+erx_broken_arrow.16.d: "It used to be that sitting with your family, listening to the radio was an American pastime, much like baseball or voting. Douglas himself remembered his father talking about how he used to stand around listening to the radio blare over the speakers of his post on the Rig. How surprised he was when he came to the mainland, expecting nothing but silence and memories of the songs to fill his remaining days, only to one day fiddle with his helmet's headset and begin to hear a familiar tune, not from the Rig, but from Pre-War broadcasts and even New California Republic stations.\n\nGeneral broadcasts were also something that he fondly, yet sadly, remembered as he recalled his father's last days, not resting in bed as he should have, surrounded by loving family, but instead serving on yet another mercenary mission that he had been forced to come along to. Canadian and Mexican radio, what little there was, certainly was interesting when he could understand their foreign tongues, but most of the time, he was concerned with his father, who had been slipping more and more into senility with each passing day. Mentats had helped for so long, but even they were beginning to falter.\n\nOne day, close to the day the Sergeant finally passed, the tune of 'Yankee Doodle' began to play on loop. Many of the Enclave Control Division members quickly tired of it, but the Sergeant surprisingly became lucid whenever the song was played, despite him mumbling and even bumbling the lyrics at points. It was at one of these moments that he took his son under his wing, pulling him out of earshot and view of any prying eyes, and disclosed something he hoped his son would never forget.\n\nS.F"
 erx_broken_arrow.16.a: "'Son, never lose sight of yourself, always do what you think is right.'"
 erx_broken_arrow.16.b: "'When I pass on, make sure these lazy louts never forget what America meant.'"
 erx_broken_arrow.16.c: "'The Enclave Richardson made is no more, but you can carry it on like I once did.'"
@@ -176,7 +180,7 @@ erx_broken_arrow_fireside.1.d: "This is Douglass Granite, your island of hope an
 erx_broken_arrow_fireside.1.a: "..."
 
 erx_broken_arrow_fireside.2.t: "Decadence & Debauchery"
-erx_broken_arrow_fireside.2.d: "The New California Republic portrays itself as a beacon of truth. The epitome of law and order in the wastes. The Republic and its goons gallivant around as if they are the top of the world. As if the rest of us are mere mortals. Im sure many of you have had the displeasure of experiencing this for yourselves. They project strength. And yet they lack vigor of any kind. In fact their entire nation. Is built on the same principles. They claim to reflect the Pre War United states. Yet they image themselves on America at its worst. Corruption, racial discrimination. Economic disparity. These are the foundations of which the republic has built its empire. They parody truth, but Truth built on fallacies are no truth at all. They are nothing but elaborate ruses. Houses of cards meant to imitate sincerity. But in reality they do not offer closure or truth. But only empty and hollow promises. They may build a strong house. But the strength of a house is only dependent on its foundations. And when it's foundations are weak. So to is the entire structure.\n\nThey parrot democracy yet their senators are bought out by the corrupt, or silenced by the criminal. They mirror freedom of the press yet journalists are puppetered or silenced.  They feign respect for human rights. Yet they allow Cattle Barron in the north to push their own citizens into glorified slavery. They claim to value the working class, yet they routinely bring scabs and crush strikes rather then improve the life's of those under them. They project great economic and military strength, but like a rotten building, you need only kick open the door for the entire structure to collapse.\n\nAnd now, dearest America, we at KPDJ must say farewell. This has been Douglass Granite, Commander of Arcata Company."
+erx_broken_arrow_fireside.2.d: "The New California Republic portrays itself as a beacon of truth. The epitome of law and order in the wastes. The Republic and its goons gallivant around as if they are the top of the world. As if the rest of us are mere mortals. Im sure many of you have had the displeasure of experiencing this for yourselves. They project strength. And yet they lack vigor of any kind. In fact their entire nation. Is built on the same principles. They claim to reflect the Pre War United states. Yet they image themselves on America at its worst. Corruption, racial discrimination. Economic disparity. These are the foundations of which the republic has built its empire. They parody truth, but Truth built on fallacies are no truth at all. They are nothing but elaborate ruses. Houses of cards meant to imitate sincerity. But in reality they do not offer closure or truth. But only empty and hollow promises. They may build a strong house. But the strength of a house is only dependent on its foundations. And when it's foundations are weak. So to is the entire structure.\n\nThey parrot democracy yet their senators are bought out by the corrupt, or silenced by the criminal. They mirror freedom of the press yet journalists are puppetered or silenced.  They feign respect for human rights. Yet they allow Cattle Barron in the north to push their own citizens into glorified slavery. They claim to value the working class, yet they routinely bring scabs and crush strikes rather then improve the life's of those under them. They project great economic and military strength, but like a rotten building, you need only kick open the door for the entire structure to collapse.\n\nAnd now, dearest America, we at KPDJ must say farewell. This has been Douglass Granite, Commander of Arcata Division."
 erx_broken_arrow_fireside.2.a: "..."
 
 erx_broken_arrow_fireside.3.t: "Spectre"
@@ -269,7 +273,7 @@ erx_broken_arrow_navarro.15_tt: "§8[ARR.GetNameWithFlag]§! §Yhas begin to mob
 erx_broken_arrow_navarro.16.t: "One Flag Falls... Another Rises"
 erx_broken_arrow_navarro.16.d: "After several engagements against the N.C.R.E.F,local militas , and several forcibly conscripted penal battalions from the maximum security facilities north of the Fourways we've stamped out any traces of organized resistance and seized control over every major sector in the region. Primarily the important trade hubs of the Fourways alongside the vast N.C.R sponsored prison complexes to the north as well as various smaller settlements. Disorganized rebel activity is rampent and will persist until we have cut off their support from the local populations. Not to mention the complete collapse of order in the prison complexes to the north with internal gangs apparently seizing control of the facilities and dispersing into the masses.\n\nThe impacts of these events have not merely affecting this region however, initial reports and news from Shady Sands are indicating that the Shady Sands stock exchange has been several hampered by these events. Our economic advisors tell us that while the N.C.Rs economy has been strained. Further collapse or wider economic impacts throughout the West Coast is not expected. What is more pertinent however is yet another blow to President Kimball’s hampered administration in yet another national embarrassment for the Californian Republic. Blame has of course been shifted to the Baron commanders tasked with leading the expedition and other factors but the impact is clear. Shady Sands military power in the north has been crippled. And their ability to project power either economically or militarily has been for all intents and purposes eliminated for the foreseeable future.\n\nAccording to reconnaissance by friendly tribal scouts their forces(those who haven’t surrendered, capitulated or slinked back across the N.C.R border) have fled north into the arms of the Chosen One. While the Arroyo government has so far failed to give any official statements on the matter we can only assume they intent to use said forces as a bulwark against us should we enter into a conflict. Our operatives in the sector while unable to steal any precise information report that we have an old friend in the midst.\n\nLance Marton.\n\n\"Hero Of Navarro\" ironically disgraced after his failure during the Navarro Wars against both the petulant Chinese and our forces. It seems his fall from Grace has seen him fall in more ways then one. What role he will play in the future is as of now uncertain. But we can assume he is less then happy with yet another defeat to Federal Forces."
 erx_broken_arrow_navarro.16.a: "To Old Friends... And Bitter Enemies"
-erx_broken_arrow_navarro.16_tt: "§YMorton's Company have retreated to§! §8[ARR.GetnameWithFlag]!§!\n\nShout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
+erx_broken_arrow_navarro.16_tt: "§YMorton's Division have retreated to§! §8[ARR.GetnameWithFlag]!§!\n\nShout out to §YFinanzberater§! for the writing and §BJumpStartGaming§! for editing."
 erx_broken_arrow_navarro.17.t: "Arroyo Make Their Move!"
 erx_broken_arrow_navarro.17.d: "Arroyo has now secured their influence over Umbra and now preparing for war against us!"
 erx_broken_arrow_navarro.17.a: "Damn it!"
@@ -302,8 +306,8 @@ erx_broken_arrow_setting_up_shop_desc: "We arrived in the cover of darkness and 
 setting_up_shop_tt: "Enables decision to excise Woodley Island"
 erx_broken_arrow_warm_welcome: "A Surprisingly Warm Welcome"
 erx_broken_arrow_warm_welcome_desc: "Despite our sudden arrival it seems that our presence here so many years ago was remembered quite well by the people of this state."
-erx_broken_arrow_arcata_company: "Arcata Company"
-erx_broken_arrow_arcata_company_desc: "Granite Company is no more. We must change In order to prevent premature discovery by the N.C.R & Anderson."
+erx_broken_arrow_arcata_company: "Arcata Division"
+erx_broken_arrow_arcata_company_desc: "Granite Division is no more. We must change In order to prevent premature discovery by the N.C.R & Anderson."
 erx_broken_arrow_back_in_business: "Back In Business"
 erx_broken_arrow_back_in_business_desc: "With our position for the moment secured and some breathing room its high time we got back to work."
 erx_broken_arrow_local_affairs: "Local Affairs"
@@ -689,12 +693,17 @@ erx_war_plan_green_desc: "To the north of our borders lies the outcome of perver
 erx_selective_amnesty: "Selective Amnesty"
 erx_selective_amnesty_desc: "With our victory over the mutant horde, and our capture of Mariposa, some of the less “Rabid” mutants under our purview claim they were forced under pain of death to follow the orders of the First. And are willing to assist and support our government. Whilst of course we must investigate each of their claims. Some may just prove useful to us. "
 
-
 erx_erasing_our_mistakes: "Erasing Our Mistakes"
 erx_erasing_our_mistakes_desc: "With our victory over the mutant horde, and our capture of Mariposa.  We are now host to a great many super mutants…\n\nGranite's orders are clear, the American people cannot know what horrors happened here.\n\nEvery databank will be copied and wiped, every trace of FEV from the base will be destroyed. The Mutant scourge ends with us. Our mistakes cannot be repeated. \n\nClear The Drawing Board. No witnesses."
+erx_oregon_polk_offensive: "The Polk Offensive"
+erx_oregon_polk_offensive_desc: "With the self-named \"Attis Of The West\" and his mutant followers handled, we can now turn our attention to the remaining criminal rabble left within the state. Preliminary analysis and information from the locals tells us these rats cannot and should not be negotiated with. Thus, leaving the only viable alternative to be the crucible of war.\n\nOur military planners suggest that rather than allowing these criminal bands to group together to oppose us, we should circumvent any such possibilities with one final sweeping offensive in a series of pre-planned pitched battles. \n\n\"Victory Is At Hand\""
 
 erx_oregon_RCA: "Oregon Reconstruction Authority"
 erx_oregon_RCA_desc: "With the main powers in the region dealt with we just need to mop up the rest of the state, barring acts of God or foreign interventions, should be a piece of cake."
+
+ba_EUR_oregon_military_department_army_guard: "Oregon Army National Guard"
+ba_EUR_oregon_military_department_army_guard_tt: "Raise 2 £GFX_div_templ_6_small §YNational Guard Division§! in §YSalem§! with:\n - 6 £GFX_unit_heavy_infantry_icon_small|1 §YEnforcers§! Battalions\n - 4 £GFX_unit_militia_icon_small|1 §YMilitia§! Battalions\n - £GFX_unit_dog_company_icon_small|1 §YDogs§! Support Company"
+
 
 erx_broken_arrow..t: ""
 erx_broken_arrow..d: ""
@@ -744,7 +753,7 @@ rescue_granite: "Rescue Granite"
 erx_broken_arrow_navarro_cat: "The Navarro Crisis"
 erx_broken_arrow_navarro_cat_desc: "The Navarro Territories are in flames.\nSmells like Opportunity"
 navarro_crisis_old_relations: "Reignite Old Relationships"
-navarro_crisis_old_relations_desc: "During our time as Granite Company we made many contracts with the local tribal's in exchange for land rights and influence in the region.  With our renewed presence in the region and the ongoing crisis, we should reignite these relations. "
+navarro_crisis_old_relations_desc: "During our time as Granite Division we made many contracts with the local tribal's in exchange for land rights and influence in the region.  With our renewed presence in the region and the ongoing crisis, we should reignite these relations. "
 navarro_crisis_exiles: "Contact Exiles and Retirees"
 navarro_crisis_exiles_desc: "Following the devastating defeat at Navarro many members of what was the enclave either retired in the region under false aliases, Or were subsequently exiled for their reformist views, in contrary to the Purist majority at the time. Time to call our wayward sons home. "
 navarro_crisis_harass_colonials: "Harass the Colonials"
@@ -768,7 +777,7 @@ navarro_eur_shi_border_war_warning_mission_tt: "Shout out to §YFinanzberater§!
 ARR_chosen_one_spirit_idea: "The Spirit Of The Chosen One"
 
 lineage_of_professionalism: "Lineage of Professionalism"
-arcata_company: "Arcata Company"
+arcata_company: "Arcata Division"
 statewide_broadcasts: "Statewide Broadcasts"
 broken_arrow: "Broken Arrow"
 aircaft_experimentation: "Clandestine Aircraft Experimentation"
@@ -827,7 +836,7 @@ shi_atk_nerf: "Shi Harrassment"
 navarro_aid: "Sending Aid to Navarro"
 navarro_roads: "Navarro Development"
 navarro_military: "Military Reconstruction Charter"
-navarro_products: "Navarro Arms Company"
+navarro_products: "Navarro Arms Division"
 building_intel_agency: "Building An Intelligence Agency"
 domestic_sec: "Domestic Security"
 domestic_sec_div: "Domestic Security Division"
@@ -874,7 +883,7 @@ EUR_fury_civilization: "The Fury of Civilization"
 eur_enc_cons1: "Deperate Dreamers and Volunteers"
 eur_enc_cons1_desc: "Lost Causes are the only ones worth fighting for."
 eur_enc_cons2: "Open Recruitment Policy"
-eur_enc_cons2_desc: "Join Arcata Company, fighting for a better America, today!"
+eur_enc_cons2_desc: "Join Arcata Division, fighting for a better America, today!"
 eur_enc_cons3: "Selective Service Act"
 eur_enc_cons3_desc: "America is at war, we need all hands on deck."
 eur_enc_cons4: "Back On The Wall"
@@ -900,8 +909,8 @@ enc_war_economy_desc: "We have stoked the fires of our engines of war."
 enc_tot_economic_mobilisation: "Total Mobilization"
 enc_tot_economic_mobilisation_desc: "The Sleeping Giant is awoken. We will crush our enemies with mountains of steel."
 
-ERB_EUR1_intellectuals_party: "Arcata Company"
-ERB_EUR1_intellectuals_party_long: "Arcata Company"
+ERB_EUR1_intellectuals_party: "Arcata Division"
+ERB_EUR1_intellectuals_party_long: "Arcata Division"
 ERB_EUR2_intellectuals_party: "Federalists"
 ERB_EUR2_intellectuals_party_long: "Federalists"
 
@@ -936,7 +945,7 @@ eur_ncr_eco_high_desc: "We've strucken a deal with the Bear. Despite our better 
 erx_broken_arrow_sf: "Special thanks to §OSoleful Phoenix§!"
 
 ##Reconstruction Authorities/Development Projects
-erx_oregon_RCA_tt: "§YUnlock Decisions to interact with the state of Oregon§!"
+erx_oregon_RCA_tt: "Unlock §Y£GFX_decision_icon_small Decisions§! to develop §YOregon§!"
 erx_broken_arrow_development_oregon_cat: "The Beaver State"
 erx_broken_arrow_development_oregon_cat_desc: "     Oregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered 'Silicon Forest'. With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\n     Nevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
 #Salem-Oregon
@@ -971,8 +980,19 @@ erx_broken_arrow_development_oregon_silicon_forest: "Silicon Forest"
 eur_silicon_forest: "Silicon Forest"
 erx_broken_arrow_development_oregon_timber_industry: "Oregon Timber Industry"
 eur_timber_industry: "Oregon Timber Industry"
-eur_oregon_cannibal: "Oregon Cannibals Problem"
+eur_oregon_cannibal: "The Donner Legacy"
+eur_oregon_cannibal_desc: "While the collapse of law and order following the Great War resulted in countless acts of depravity and atrocities, Oregon in particular proves difficult to be tamed. Cannibalism is rampant in the rural regions and until we stamp out this disgusting practice it will be a significant drain on the state."
 erx_broken_arrow_development_oregon_cannibal_remove: "Take care of the cannibals issue"
+
+ba_eur_oregon_military_department_dynamic_modifier: "Oregon Military Department"
+ba_eur_oregon_military_department_dynamic_modifier_desc: "\"Always Ready!\n Always There!\""
+ba_EUR_oregon_military_department_template_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_start_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_army_guard_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_army_academy_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_civil_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_air_academy_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_naval_militia_hidden_idea: "Oregon Military Department"
 
 #Mariposa-Oregon - Cut Contents, written by Soleful Phoenix - @Deez
 erx_broken_arrow_mariposa.1.t: "Semi-Permanent Erasure"
@@ -980,7 +1000,7 @@ erx_broken_arrow_mariposa.1.d: "PRESIDENT'S EYES ONLY\n\nCaptain Church Reportin
 erx_broken_arrow_mariposa.1.a: "'Even the largest pool masks the smallest, yet purest, drops.'"
 
 erx_broken_arrow_mariposa.2.t: "Enclave Communication Uncovered May 2285 "
-erx_broken_arrow_mariposa.2.d: "Property Of The Department Of Defense\nAuthorized Personnel Only\nSierra Army Depot\nAddendum: The Discovery of new reports from the data banks in Sierra now indicate that the Enclave was aware of and monitoring Federal Forces much earlier then originally anticipated. The implications of this discovery for the moment are unclear. This matter should be investigated further.\n\nCommunique: Request For Orders Regarding Mariposa\nEnclave Purification Company, Monroe Division\n\nMr. President,\n\nThe interloper known as Granite has blundered his way back to the site of one of the previous administration's greatest failures. We of course are referring to Mariposa Military Base. An addendum of the base's history has been briefed to you in anticipation of reading our report, but it appears that things are worse than we thought.\n\nThankfully, due to their vacating of the Sierra Army Depot, the upstart has been forced to go without the security of encryption, which our superior Enclave technology has broken with ease. Although we can only garner basic communications, it does not appear Granite is making any major moves or attempts to compromise our operations. And appears to be completely unaware of our presence.\n\nThe EPC has reported a presence of one known former division, under the command of one Private-turned-'Captain' Church. Why Granite promoted them despite their constant failures is beyond any of us. Commander Dinos performed recon around Mariposa, and aside from a few mutie habitats, the so-called 'Federals' have only made out with a single sample of the FEV Virus.\nAlthough orders were not to engage, our division took the liberty of eradicating the mutie habitats under the cover of night and using a failed FEV 'cure' to liquify internal organs and bone structures of the mutants, making it appear that they had simply undergone spontaneous mutation due to the proximity of their rock houses near Mariposa.\n\nAt this time, it does not appear that Granite's forces, what little we could make out, have equivalent equipment to us in the slightest. We even watched as one of the would-be soldiers fiddled with their weapon, almost shooting their eye out with it.\n\nAll of this is to say, President Anderson, is that right now, the potential threat Granite poses to us is...\n\nS.F"
+erx_broken_arrow_mariposa.2.d: "Property Of The Department Of Defense\nAuthorized Personnel Only\nSierra Army Depot\nAddendum: The Discovery of new reports from the data banks in Sierra now indicate that the Enclave was aware of and monitoring Federal Forces much earlier then originally anticipated. The implications of this discovery for the moment are unclear. This matter should be investigated further.\n\nCommunique: Request For Orders Regarding Mariposa\nEnclave Purification Division, Monroe Division\n\nMr. President,\n\nThe interloper known as Granite has blundered his way back to the site of one of the previous administration's greatest failures. We of course are referring to Mariposa Military Base. An addendum of the base's history has been briefed to you in anticipation of reading our report, but it appears that things are worse than we thought.\n\nThankfully, due to their vacating of the Sierra Army Depot, the upstart has been forced to go without the security of encryption, which our superior Enclave technology has broken with ease. Although we can only garner basic communications, it does not appear Granite is making any major moves or attempts to compromise our operations. And appears to be completely unaware of our presence.\n\nThe EPC has reported a presence of one known former division, under the command of one Private-turned-'Captain' Church. Why Granite promoted them despite their constant failures is beyond any of us. Commander Dinos performed recon around Mariposa, and aside from a few mutie habitats, the so-called 'Federals' have only made out with a single sample of the FEV Virus.\nAlthough orders were not to engage, our division took the liberty of eradicating the mutie habitats under the cover of night and using a failed FEV 'cure' to liquify internal organs and bone structures of the mutants, making it appear that they had simply undergone spontaneous mutation due to the proximity of their rock houses near Mariposa.\n\nAt this time, it does not appear that Granite's forces, what little we could make out, have equivalent equipment to us in the slightest. We even watched as one of the would-be soldiers fiddled with their weapon, almost shooting their eye out with it.\n\nAll of this is to say, President Anderson, is that right now, the potential threat Granite poses to us is...\n\nS.F"
 erx_broken_arrow_mariposa.2.a: "'Risk Assessment: Negligible.'"
 
 erx_broken_arrow_mariposa.3.t: "Orbital Cleansing"

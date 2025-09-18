@@ -1,0 +1,91 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BOS  = {
+				news_event = {
+					id = nf_navarro.3 days = 7
+				}
+			}
+			SHI  = {
+				news_event = {
+					id = nf_navarro.2 days = 7
+				}
+			}
+			NCR  = {
+				news_event = {
+					id = nf_navarro.1 days = 7
+				}
+			}
+			RDS  = {
+				news_event = {
+					id = nf_navarro.1 days = 7
+				}
+			}
+			MOT  = {
+				news_event = {
+					id = nf_navarro.1 days = 7
+				}
+			}
+			NAT  = {
+				news_event = {
+					id = nf_navarro.4 days = 100
+				}
+			}
+			#EUR  = {
+			#	news_event = {
+			#		id = nf_navarro.10 days = 40
+			#	}
+			#}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = NVS
+					}
+					owns_state = 56
+					owns_state = 548
+				}
+				SHI = {
+					news_event = nf_navarro.7
+				}
+				NCR = {
+					remove_ideas = navarro_intervention
+					remove_ideas = ncr_bos_idea_hostility_resumed
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						tag = NVT
+					}
+					owns_state = 56
+					owns_state = 216
+				}
+				EUR = {
+					news_event = nf_navarro.8
+				}
+				NCR = {
+					remove_ideas = navarro_intervention
+					remove_ideas = ncr_bos_idea_hostility_resumed
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						tag = NAT
+					}
+					owns_state = 340
+					owns_state = 216
+				}
+				NCR = {
+					news_event = nf_navarro.9
+					remove_ideas = navarro_intervention
+					remove_ideas = ncr_bos_idea_hostility_resumed
+				}
+			}
+		}
+	}
+}

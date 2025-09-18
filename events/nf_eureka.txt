@@ -530,7 +530,7 @@ country_event = { #Easter egg continuation
 	}
 }
 
-country_event = { #Granite Company
+country_event = { #Granite Division
 	id = nf_eureka.20
 	title = nf_eureka.20.t
 	desc = nf_eureka.20.d

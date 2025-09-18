@@ -163,4 +163,8 @@ spriteTypes = {
 		name = "GFX_goal_EUR_attack_ncref"
 		texturefile = "gfx/interface/goals/EUR_attack_ncref.dds"
 	}
+	spriteType = { #Special thanks to Kaiserreduxx for this asset
+		name = "GFX_goal_USA_crying_eagle"
+		texturefile = "gfx/interface/goals/USA_crying_eagle.dds"
+	}
 }

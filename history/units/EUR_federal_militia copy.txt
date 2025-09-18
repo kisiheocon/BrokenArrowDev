@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Federal Militia"
+	name = "National Guard"
 	is_locked = no
 	regiments = {
 		militia = { x = 0 y = 0 } militia = { x = 1 y = 0 } militia = { x = 2 y = 0 }
@@ -11,21 +11,21 @@ units = {
 	division = {
 		name = "1st Arcata Reserve"
 		location = 1191
-		division_template = "Federal Militia"
+		division_template = "National Guard"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Arcata Reserve"
 		location = 1191
-		division_template = "Federal Militia"
+		division_template = "National Guard"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Arcata Reserve"
 		location = 1191
-		division_template = "Federal Militia"
+		division_template = "National Guard"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 	}
