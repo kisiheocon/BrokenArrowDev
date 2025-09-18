@@ -7,16 +7,6 @@ spriteTypes = {
 	##Tier 0 Gun - Springfield
 	SpriteType = {
 		name = "GFX_EUR_standard_weaponry_tech_medium"
-		texturefile = "gfx/interface/technologies/EUR/springfield.dds"
-	}
-	#Tier 1 Gun - Garand
-	SpriteType = {
-		name = "GFX_EUR_ballistic_weaponry_tech_1_medium"
-		texturefile = "gfx/interface/technologies/EUR/garand.dds"
-	}
-	#Tier 2 Gun - Thompson
-	SpriteType = {
-		name = "GFX_EUR_ballistic_weaponry_tech_2_medium"
-		texturefile = "gfx/interface/technologies/EUR/thompson.dds"
+		texturefile = "gfx/interface/equipment/cosmetic/ballistic/springfield.dds"
 	}
 }

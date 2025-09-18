@@ -1,0 +1,16 @@
+﻿l_english:
+##################
+###Technologies###
+##################
+#Tier 0 Guns
+EUR_infantry_equipment_1: "M1903 Springfield"
+EUR_infantry_equipment_1_short: "M1903 Springfield"
+EUR_infantry_equipment_1_desc: "The M1903 Springfield, officially the U.S. Rifle, Caliber .30, M1903, is an American five-round, non-removable, staggered-row box magazine-fed, bolt-action, repeating service rifle, used primarily during the first half of the 20th century."
+#Tier 1 Guns
+EUR_ballistic_equipment_1: "M1 Garand"
+EUR_ballistic_equipment_1_short: "M1 Garand"
+EUR_ballistic_equipment_1_desc: "The M1 Garand or M1 rifle is a semi-automatic rifle that was the service rifle of the U.S. Army during World War II and the Korean War. The rifle is chambered for the .30-06 Springfield cartridge and is named after its Canadian-American designer, John Garand. It was the first standard-issue autoloading rifle for the United States."
+#Tier 2 Guns
+EUR_ballistic_equipment_2: "M1A1 Thompson"
+EUR_ballistic_equipment_2_short: "M1A1 Thompson"
+EUR_ballistic_equipment_2_desc: "The Thompson submachine gun (also known as the \"Tommy gun\", \"Chicago typewriter\", or \"trench broom\") is a blowback-operated, selective-fire submachine gun, invented and developed by Brigadier General John T. Thompson, a United States Army officer, in 1918."
