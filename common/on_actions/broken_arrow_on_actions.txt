@@ -39,4 +39,80 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			###Oregon Military Department in Salem
+			##Note: Idk how but this is some machine spirit shit telling me how to optimize the code, using else_if while in theory don't reduce the amount of maximum possible check needed but reduced the minimum by 2 (or 4 if you're counting both removing and adding), +40% optimized compared to maximum 5 checks - @Deez
+			#Loses Salem - Oregon
+			if = {
+				limit = {
+					FROM.FROM = { state = 493 } #Salem
+					FROM = { 
+						original_tag = EUR
+						has_completed_focus = nf_ba_eur_oregon_military_department_formation
+					}
+				}
+				FROM = {
+					remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_academy }
+						remove_ideas = ba_EUR_oregon_military_department_army_academy_hidden_idea
+						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+					}
+					else_if = {
+						limit = { has_completed_focus = nf_eur_oregon_military_department_army_guard }
+						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+					}
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia }
+						remove_ideas = ba_EUR_oregon_military_department_naval_militia_hidden_idea
+						remove_ideas = ba_EUR_oregon_military_department_civil_hidden_idea
+					}
+					else_if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_civil_defense }
+						remove_ideas = ba_EUR_oregon_military_department_civil_hidden_idea
+					}
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_air_academy }
+						remove_ideas = ba_EUR_oregon_military_department_air_academy_hidden_idea
+					}
+				}
+			}
+			#Retook Salem - Oregon
+			if = {
+				limit = {
+					FROM.FROM = { state = 493 } #Salem
+					ROOT = { 
+						original_tag = EUR
+						has_completed_focus = nf_ba_eur_oregon_military_department_formation
+					}
+				}
+				ROOT = {
+					add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_academy }
+						add_ideas = ba_EUR_oregon_military_department_army_academy_hidden_idea
+						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+					}
+					else_if = {
+						limit = { has_completed_focus = nf_eur_oregon_military_department_army_guard }
+						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+					}
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia }
+						add_ideas = ba_EUR_oregon_military_department_naval_militia_hidden_idea
+						add_ideas = ba_EUR_oregon_military_department_civil_hidden_idea
+					}
+					else_if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_civil_defense }
+						add_ideas = ba_EUR_oregon_military_department_civil_hidden_idea
+					}
+					if = {
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_air_academy }
+						add_ideas = ba_EUR_oregon_military_department_air_academy_hidden_idea
+					}
+				}
+			}
+		}
+	}
 }

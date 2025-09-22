@@ -1,0 +1,11 @@
+spriteTypes = {
+	##################
+	##Embed Pictures##
+	##################
+	#Oregon Military Department
+	spriteType = {
+		name = "GFX_embed_oregon_military_department"
+		textureFile = "gfx/texticons/embeds/oregon_military_department.dds"
+		legacy_lazy_load = no
+	}
+}

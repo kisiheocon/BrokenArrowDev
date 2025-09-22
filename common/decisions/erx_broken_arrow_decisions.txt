@@ -351,10 +351,6 @@ erx_broken_arrow_navarro_cat = {
 		cost = 20
 		fire_only_once = yes
 
-		visible = {
-			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = { has_country_flag = conquered_navarro }
-		}
 		complete_effect = {
 			set_country_flag = eur_navarro_intervention
 			add_ideas = relationships_rekindled
@@ -381,26 +377,17 @@ erx_broken_arrow_navarro_cat = {
 		available = { has_country_flag = eur_navarro_intervention }
 		cost = 50
 		fire_only_once = yes
-		visible = {
-			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = { has_country_flag = conquered_navarro }
-		}
+
 		days_remove = 70
 		modifier = { weekly_manpower = 70 }
 	}
 	navarro_crisis_harass_colonials = {
 		icon = GFX_decision_deagle
-		available = {
-			has_country_flag = eur_navarro_intervention
-			NOT = { has_country_flag = conquered_navarro }
-		}
+		available = { has_country_flag = eur_navarro_intervention }
 		cost = 20
 		days_re_enable = 30
 		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = { has_country_flag = conquered_navarro }
-		}
+
 		complete_effect = {
 			NVT = { add_timed_idea = { idea = nat_atk_bonus days = 20 } }
 			NAT = { add_timed_idea = { idea = nat_atk_nerf days = 20 } }
@@ -412,10 +399,7 @@ erx_broken_arrow_navarro_cat = {
 		cost = 20
 		days_re_enable = 30
 		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = { has_country_flag = conquered_navarro }
-		}
+
 		complete_effect = {
 			NVT = { add_timed_idea = { idea = shi_atk_bonus days = 20 } }
 			NVS = { add_timed_idea = { idea = shi_atk_nerf days = 20 } }
@@ -423,16 +407,11 @@ erx_broken_arrow_navarro_cat = {
 	}
 	navarro_crisis_volunteers = {
 		icon = GFX_decision_army_helmet
-		available = {
-			has_country_flag = eur_navarro_intervention
-		}
+		available = { has_country_flag = eur_navarro_intervention }
 		cost = 50
 		days_re_enable = 30
 		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_navarro_crisis
-			NOT = { has_country_flag = conquered_navarro }
-		}
+
 		days_remove = 25
 		modifier = { send_volunteer_size = 1 }
 	}

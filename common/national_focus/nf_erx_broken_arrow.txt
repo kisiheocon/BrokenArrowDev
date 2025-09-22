@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = erx_broken_arrow_welcome_democracy
-		icon = GFX_goal_GFX_USA_hoovers_america-62869
+		icon = GFX_goal_GFX_USA_hoovers_america
 		cost = 30
 		x = -1
 		y = 1
@@ -842,36 +842,41 @@ focus_tree = {
 			custom_effect_tooltip = erx_oregon_RCA_tt
 		}
 	}
+	###Oregon Military Branch###
+	#Oregon Military Department
 	focus = {
-		id = ba_EUR_oregon_military_department_formation
-		#icon = GFX_goal_BRX2_ORA
+		id = nf_ba_eur_oregon_military_department_formation
+		icon = GFX_goal_oregon_military_department
 		cost = 30
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = erx_oregon_RCA
 
 		prerequisite = { focus = erx_oregon_RCA }
+		available = {
+			493 = { is_owned_and_controlled_by = ROOT }
+		}
 
 		completion_reward = {
 			effect_tooltip = { #To simulate giving the spirit to Salem
 				493 = { add_ideas = ba_EUR_oregon_military_department_start_hidden_idea }
 			}
 			hidden_effect = {
-				add_to_variable = { 493.training_time_army_factor_var = -0.1 }
 				493 = { add_dynamic_modifier = { modifier = ba_eur_oregon_military_department_dynamic_modifier } }
 				add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
 			}
 		}
 	}
+	#Oregon Army National Guard
 	focus = {
-		id = ba_EUR_oregon_military_department_army_guard
-		#icon = GFX_goal_BRX2_ORA
+		id = nf_eur_oregon_military_department_army_guard
+		icon = GFX_goal_oregon_army_national_guard
 		cost = 20
 		x = -2
 		y = 1
-		relative_position_id = ba_EUR_oregon_military_department_formation
+		relative_position_id = nf_ba_eur_oregon_military_department_formation
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_formation }
+		prerequisite = { focus = nf_ba_eur_oregon_military_department_formation }
 
 		completion_reward = {
 			effect_tooltip = { #To simulate giving the spirit to Salem
@@ -888,13 +893,13 @@ focus_tree = {
 			}
 			else = {
 				add_tech_bonus = {
-					name = ba_EUR_oregon_military_department_army_guard
+					name = nf_eur_oregon_military_department_army_guard
 					category = enforcer_tech_category
 					bonus = 0.5
 					uses = 1
 				}
 			}
-			custom_effect_tooltip = ba_EUR_oregon_military_department_army_guard_tt
+			custom_effect_tooltip = nf_eur_oregon_military_department_army_guard_tt
 			hidden_effect = {
 				load_oob = "EUR_national_guard"
 				add_to_variable = { 493.mobilization_speed_var = 0.1 }
@@ -905,15 +910,16 @@ focus_tree = {
 			}
 		}
 	}
+	#Ebstablishing Polk Academy
 	focus = {
-		id = ba_EUR_oregon_military_department_army_academy
-		#icon = GFX_goal_BRX2_ORA
-		cost = 20
+		id = nf_ba_eur_oregon_military_department_army_academy
+		icon = GFX_goal_oregon_army_academy
+		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = ba_EUR_oregon_military_department_army_guard
+		relative_position_id = nf_eur_oregon_military_department_army_guard
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_army_guard }
+		prerequisite = { focus = nf_eur_oregon_military_department_army_guard }
 
 		completion_reward = {
 			effect_tooltip = { #To simulate giving the spirit to Salem
@@ -925,7 +931,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = ba_EUR_oregon_military_department_army_academy
+				name = nf_ba_eur_oregon_military_department_army_academy
 				bonus = 0.5
 				uses = 2
 				category = cat_land_doctrine
@@ -937,15 +943,16 @@ focus_tree = {
 			}
 		}
 	}
+	#Oregon Civil Defense Force
 	focus = {
-		id = ba_EUR_oregon_military_department_civil_defense
-		#icon = GFX_goal_BRX2_ORA
+		id = nf_ba_eur_oregon_military_department_civil_defense
+		icon = GFX_goal_oregon_civil_defense_force
 		cost = 20
 		x = 0
 		y = 1
-		relative_position_id = ba_EUR_oregon_military_department_formation
+		relative_position_id = nf_ba_eur_oregon_military_department_formation
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_formation }
+		prerequisite = { focus = nf_ba_eur_oregon_military_department_formation }
 
 		completion_reward = {
 			effect_tooltip = { #To simulate giving the spirit to Salem
@@ -966,35 +973,37 @@ focus_tree = {
 			}
 		}
 	}
+	#Oregon Air National Guard
 	focus = {
-		id = ba_EUR_oregon_military_department_air_guard
-		#icon = GFX_goal_BRX2_ORA
+		id = nf_ba_eur_oregon_military_department_air_guard
+		icon = GFX_goal_oregon_air_national_guard
 		cost = 20
 		x = 2
 		y = 1
-		relative_position_id = ba_EUR_oregon_military_department_formation
+		relative_position_id = nf_ba_eur_oregon_military_department_formation
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_formation }
+		prerequisite = { focus = nf_ba_eur_oregon_military_department_formation }
 
 		completion_reward = {
 			air_experience = 30
 			add_tech_bonus = {
-				name = ba_EUR_oregon_military_department_air_guard
+				name = nf_ba_eur_oregon_military_department_air_guard
 				bonus = 0.25
 				uses = 3
 				category = air_tech_category
 			}
 		}
 	}
+	#Establishing Kingsley Air Academy
 	focus = {
-		id = ba_EUR_oregon_military_department_air_academy
-		#icon = GFX_goal_BRX2_ORA
-		cost = 20
+		id = nf_ba_eur_oregon_military_department_air_academy
+		icon = GFX_enc_industrial_air
+		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = ba_EUR_oregon_military_department_air_guard
+		relative_position_id = nf_ba_eur_oregon_military_department_air_guard
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_air_guard }
+		prerequisite = { focus = nf_ba_eur_oregon_military_department_air_guard }
 
 		completion_reward = {
 			effect_tooltip = { #To simulate giving the spirit to Salem
@@ -1013,18 +1022,19 @@ focus_tree = {
 			}
 		}
 	}
+	#Oregon Naval Militia
 	focus = {
-		id = ba_EUR_oregon_military_department_naval_militia
-		#icon = GFX_goal_BRX2_ORA
+		id = nf_ba_eur_oregon_military_department_naval_militia
+		icon = GFX_goal_generic_wooden_ship
 		cost = 20
 		x = 0
 		y = 2
-		relative_position_id = ba_EUR_oregon_military_department_civil_defense
+		relative_position_id = nf_ba_eur_oregon_military_department_civil_defense
 
-		prerequisite = { focus = ba_EUR_oregon_military_department_civil_defense }
+		prerequisite = { focus = nf_ba_eur_oregon_military_department_civil_defense }
 		prerequisite = {
-			focus = ba_EUR_oregon_military_department_air_academy 
-			focus = ba_EUR_oregon_military_department_army_academy 
+			focus = nf_ba_eur_oregon_military_department_air_academy 
+			focus = nf_ba_eur_oregon_military_department_army_academy 
 		}
 
 		completion_reward = {
@@ -1542,7 +1552,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			load_oob = EUR_federal_militia
+			#load_oob = EUR_federal_militia
 		}
 	}
 #####################
@@ -1601,7 +1611,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			load_oob = EUR_federal_militia
+			#load_oob = EUR_federal_militia
 			add_ideas = the_continental_army
 		}
 	}
@@ -1647,7 +1657,7 @@ focus_tree = {
 	}
 	focus = {
 		id = erx_broken_arrow_prussian_ingenuity
-		icon = GFX_goal_GFX_USA_peace_through_trade-62866
+		icon = GFX_goal_GFX_USA_peace_through_trade
 		cost = 20
 		x = 0
 		y = 1
@@ -1748,7 +1758,7 @@ focus_tree = {
 	###Civil War Legacy
 	focus = {
 		id = erx_broken_arrow_nation_divided
-		icon = GFX_goal_goal_USA_No_Chauvinism
+		icon = GFX_goal_USA_No_Chauvinism
 		cost = 5
 		x = 0
 		y = 1
@@ -2265,7 +2275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = erx_broken_arrow_rebuild_humboldt
-		icon = GFX_goal_goal_USA_By_the_People_For_the_People
+		icon = GFX_goal_USA_By_the_People_For_the_People
 		cost = 25
 		x = 0
 		y = 1
@@ -2314,11 +2324,12 @@ focus_tree = {
 			}
 		}
 	}
-##################
-##Navarro Crisis##
-##################
+	##################
+	##Navarro Crisis##
+	##################
+	#The Navarro Crisis
 	focus = {
-		id = erx_broken_arrow_navarro_crisis
+		id = nf_ba_eur_navarro_crisis
 		icon = GFX_goal_enc_super_soldier
 		cost = 1
 		x = -14
@@ -2328,27 +2339,25 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				always = no
-				tooltip = erx_broken_arrow_navarro_crisis_trigger_tt
+				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
 			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = erx_broken_arrow_navarro_crisis_reward_tt
+			custom_effect_tooltip = nf_ba_eur_navarro_crisis_reward_tt
 			add_political_power = 30
 		}
 	}
+	#Navarro Pacification Campaign
 	focus = {
-		id = erx_broken_arrow_navarro_development
+		id = nf_ba_eur_navarro_development
 		icon = GFX_goal_enc_citizenship_for_service
 		cost = 25
 		x = -14
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
 
-		#allow_branch = {
-		#	has_country_flag = eur_navarro_time
-		#}
-		prerequisite = { focus = erx_broken_arrow_navarro_crisis }
+		prerequisite = { focus = nf_ba_eur_navarro_crisis }
 		prerequisite = { focus = erx_broken_arrow_back_in_business }
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
@@ -2379,17 +2388,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Philanthropy and Humanitarianism
 	focus = {
-		id = erx_broken_arrow_navarro_philanthropy
+		id = nf_ba_eur_navarro_philanthropy
 		icon = GFX_goal_america_goal_eagle_deal
 		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_development
+		relative_position_id = nf_ba_eur_navarro_development
 
-		prerequisite = { focus = erx_broken_arrow_navarro_development }
+		prerequisite = { focus = nf_ba_eur_navarro_development }
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
+		continue_if_invalid = yes
 
+		select_effect = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		completion_reward = {
 			340 = {
 				add_resistance = -5
@@ -2415,20 +2427,24 @@ focus_tree = {
 				add_resistance = -5
 				add_compliance = 2.5
 			}
-			add_timed_idea = { idea = navarro_aid days = 60 }
+			custom_effect_tooltip = nf_ba_eur_navarro_philanthropy_tt
+			effect_tooltip = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		}
 	}
+	#Rebuilding the Roadways
 	focus = {
-		id = erx_broken_arrow_navarro_roadways
+		id = nf_ba_eur_navarro_roadways
 		icon = GFX_goal_generic_usa_building
 		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_development
+		relative_position_id = nf_ba_eur_navarro_development
 
-		prerequisite = { focus = erx_broken_arrow_navarro_development }
+		prerequisite = { focus = nf_ba_eur_navarro_development }
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
+		continue_if_invalid = yes
 
+		select_effect = { add_timed_idea = { idea = navarro_roads days = 60 } }
 		completion_reward = {
 			340 = {
 				add_resistance = -5
@@ -2484,19 +2500,21 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_timed_idea = { idea = navarro_roads days = 60 }
+			custom_effect_tooltip = nf_ba_eur_navarro_roadways_tt
+			effect_tooltip = { add_timed_idea = { idea = navarro_roads days = 60 } }
 		}
 	}
+	#Mission Accomplished
 	focus = {
-		id = erx_broken_arrow_navarro_accomplished
+		id = nf_ba_eur_navarro_accomplished
 		icon = GFX_goal_enc_reform_douglas
 		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_philanthropy
+		relative_position_id = nf_ba_eur_navarro_philanthropy
 
-		prerequisite = { focus = erx_broken_arrow_navarro_philanthropy }
-		prerequisite = { focus = erx_broken_arrow_navarro_roadways }
+		prerequisite = { focus = nf_ba_eur_navarro_philanthropy }
+		prerequisite = { focus = nf_ba_eur_navarro_roadways }
 
 		available = {
 			NAT = { all_core_land_owned_by_prev_sphere = yes }
@@ -2505,15 +2523,10 @@ focus_tree = {
 					OR = {
 						compliance > 79
 						is_core_of = EUR
+						owner = { is_ally_with = ROOT }
 					}
 				} 
 			}
-			#340 = { compliance > 79 }
-			#353 = { compliance > 79 }
-			#56 = { compliance > 79 }
-			#548 = { compliance > 79 }
-			#441 = { compliance > 79 }
-			#216 = { compliance > 79 }
 		}
 
 		completion_reward = {
@@ -2529,20 +2542,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Repairing Civil Infrastructure
 	focus = {
-		id = erx_broken_arrow_navarro_infrastructure
+		id = nf_ba_eur_navarro_infrastructure_1
 		icon = GFX_goal_USA_city_on_a_hill
 		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_accomplished
+		relative_position_id = nf_ba_eur_navarro_accomplished
 
-		prerequisite = { focus = erx_broken_arrow_navarro_accomplished }
+		prerequisite = { focus = nf_ba_eur_navarro_accomplished }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2559,15 +2572,16 @@ focus_tree = {
 			}
 		}
 	}
+	#Scale Up Civilian Construction Efforts
 	focus = {
-		id = erx_broken_arrow_navarro_infrastructure_2
+		id = nf_ba_eur_navarro_infrastructure_2
 		icon = GFX_goal_enc_reform_industry_2
 		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_infrastructure
+		relative_position_id = nf_ba_eur_navarro_infrastructure_1
 
-		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure }
+		prerequisite = { focus = nf_ba_eur_navarro_infrastructure_1 }
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
@@ -2616,20 +2630,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Finalize Civilian Reconstruction Efforts
 	focus = {
-		id = erx_broken_arrow_navarro_infrastructure_3
+		id = nf_ba_eur_navarro_infrastructure_3
 		icon = GFX_goal_enc_reform_industry_1
 		cost = 25
 		x = 0
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_infrastructure_2
+		relative_position_id = nf_ba_eur_navarro_infrastructure_2
 
-		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure_2 }
+		prerequisite = { focus = nf_ba_eur_navarro_infrastructure_2 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2646,20 +2660,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Reignite The Navarro Military Behemoth
 	focus = {
-		id = erx_broken_arrow_navarro_military
+		id = nf_ba_eur_navarro_military_1
 		icon = GFX_goal_enc_military_sphere_reform
 		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_accomplished
+		relative_position_id = nf_ba_eur_navarro_accomplished
 
-		prerequisite = { focus = erx_broken_arrow_navarro_accomplished }
+		prerequisite = { focus = nf_ba_eur_navarro_accomplished }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2676,20 +2690,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Scale Up Military Construction Efforts
 	focus = {
-		id = erx_broken_arrow_navarro_military_2
+		id = nf_ba_eur_navarro_military_2
 		icon = GFX_goal_enc_power_armor_integration
 		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_military
+		relative_position_id = nf_ba_eur_navarro_military_1
 
-		prerequisite = { focus = erx_broken_arrow_navarro_military }
+		prerequisite = { focus = nf_ba_eur_navarro_military_1 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2706,20 +2720,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Finalize Armament Production Plans
 	focus = {
-		id = erx_broken_arrow_navarro_military_3
+		id = nf_ba_eur_navarro_military_3
 		icon = GFX_goal_enc_industrial_vehicles
 		cost = 25
 		x = 0
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_military_2
+		relative_position_id = nf_ba_eur_navarro_military_2
 
-		prerequisite = { focus = erx_broken_arrow_navarro_military_2 }
+		prerequisite = { focus = nf_ba_eur_navarro_military_2 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2737,17 +2751,18 @@ focus_tree = {
 			add_timed_idea = { idea = navarro_military days = 30 }
 		}
 	}
+	#Kickstart Maritime Industry
 	focus = {
-		id = erx_broken_arrow_navarro_naval
+		id = nf_ba_eur_navarro_naval_1
 		icon = GFX_goal_USA_ports_atlantic
 		cost = 25
 		x = 1 
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_infrastructure
+		relative_position_id = nf_ba_eur_navarro_infrastructure_1
 
 		prerequisite = {
-			focus = erx_broken_arrow_navarro_infrastructure
-			focus = erx_broken_arrow_navarro_military
+			focus = nf_ba_eur_navarro_infrastructure_1
+			focus = nf_ba_eur_navarro_military_1
 		}
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
@@ -2802,20 +2817,20 @@ focus_tree = {
 			}
 		}
 	}
+	#Finalize Dockyard Repair Operations
 	focus = {
-		id = erx_broken_arrow_navarro_naval_2
+		id = nf_ba_eur_navarro_naval_2
 		icon = GFX_goal_enc_goal_enc_navy_dockyards
 		cost = 25
 		x = 0
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_naval
+		relative_position_id = nf_ba_eur_navarro_naval_1
 
-		prerequisite = { focus = erx_broken_arrow_navarro_naval }
+		prerequisite = { focus = nf_ba_eur_navarro_naval_1 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2832,21 +2847,21 @@ focus_tree = {
 			}
 		}
 	}
+	#Reopen the Laboratories
 	focus = {
-		id = erx_broken_arrow_navarro_labs
+		id = nf_ba_eur_navarro_labs
 		icon = GFX_goal_enc_science_reform
 		cost = 25
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_infrastructure_3
+		relative_position_id = nf_ba_eur_navarro_infrastructure_3
 
-		prerequisite = { focus = erx_broken_arrow_navarro_infrastructure_3 }
-		prerequisite = { focus = erx_broken_arrow_navarro_naval_2 }
+		prerequisite = { focus = nf_ba_eur_navarro_infrastructure_3 }
+		prerequisite = { focus = nf_ba_eur_navarro_naval_2 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2854,21 +2869,21 @@ focus_tree = {
 
 		completion_reward = { add_research_slot = 1 }
 	}
+	#Top Shelf Products
 	focus = {
-		id = erx_broken_arrow_navarro_products
+		id = nf_ba_eur_navarro_products
 		icon = GFX_goal_USA_arsenal_of_democracy
 		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_military_3
+		relative_position_id = nf_ba_eur_navarro_military_3
 
-		prerequisite = { focus = erx_broken_arrow_navarro_military_3 }
-		prerequisite = { focus = erx_broken_arrow_navarro_naval_2 }
+		prerequisite = { focus = nf_ba_eur_navarro_military_3 }
+		prerequisite = { focus = nf_ba_eur_navarro_naval_2 }
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2878,23 +2893,23 @@ focus_tree = {
 			add_ideas = navarro_products
 		}
 	}
+	#Unveil The Navarro Databases
 	focus = {
-		id = erx_broken_arrow_navarro_databases
+		id = nf_ba_eur_navarro_databases
 		icon = GFX_goal_enc_restore_the_base
 		cost = 30
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_navarro_labs
+		relative_position_id = nf_ba_eur_navarro_labs
 
 		prerequisite = {
-			focus = erx_broken_arrow_navarro_labs
-			focus = erx_broken_arrow_navarro_products
+			focus = nf_ba_eur_navarro_labs
+			focus = nf_ba_eur_navarro_products
 		}
 		available = {
 			548 = {
 				OR = {
 					is_owned_and_controlled_by = ROOT
-					owner = { is_subject_of = ROOT }
 					owner = { is_ally_with = ROOT }
 				}
 			}
@@ -2914,18 +2929,20 @@ focus_tree = {
 			custom_effect_tooltip = navarro_databases_unlocked
 		}
 	}
-#######Local/Regional Economics
+	###################
+	###NCR Economics###
+	###################
+	##Start
+	#Taking The Reigns
 	focus = {
-		id = erx_broken_arrow_eco_start
+		id = nf_ba_eur_ncr_trade_start
 		icon = GFX_goal_BRX_eco_economy
 		cost = 30
 		x = -6
 		y = 1
 		relative_position_id = erx_broken_arrow_new_city
 
-		prerequisite = {
-			focus = erx_broken_arrow_new_city
-		}
+		prerequisite = { focus = erx_broken_arrow_new_city }
 
 		completion_reward = {
 			swap_ideas = {
@@ -2934,16 +2951,79 @@ focus_tree = {
 			}
 		}
 	}
+	##Trade Reforms
+	#Economics Under The Bear
 	focus = {
-		id = erx_broken_arrow_eco_currency
+		id = nf_ba_eur_ncr_trade_eco_start
+		icon = GFX_goal_BRX_eco_bear
+		cost = 20
+		x = -2
+		y = 1
+		relative_position_id = nf_ba_eur_ncr_trade_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_start }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = eur_ncr_eco_mid_1
+				add_idea = eur_ncr_eco_mid_2
+			}
+		}
+	}
+	#Making An Accord
+	focus = {
+		id = nf_ba_eur_ncr_trade_eco_high
+		icon = GFX_goal_BRX_eco_shake
+		cost = 20
+		x = -1
+		y = 1
+		relative_position_id = nf_ba_eur_ncr_trade_eco_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_eco_start }
+		available = { has_completed_focus = nf_ba_eur_ncr_trade_currency_ncr }
+		mutually_exclusive = { focus = nf_ba_eur_ncr_trade_eco_low }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = eur_ncr_eco_mid_2
+				add_idea = eur_ncr_eco_high
+			}
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+		}
+	}
+	#Smuggler's Run
+	focus = {
+		id = nf_ba_eur_ncr_trade_eco_low
+		icon = GFX_goal_BRX_eco_smuggle
+		cost = 20
+		x = 1
+		y = 1
+		relative_position_id = nf_ba_eur_ncr_trade_eco_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_eco_start }
+		mutually_exclusive = { focus = nf_ba_eur_ncr_trade_eco_high }
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = eur_ncr_eco_mid_2
+				add_idea = eur_ncr_eco_low
+			}
+			set_temp_variable = { caps_to_add = 25 }
+			add_caps = yes
+		}
+	}
+	##Currencies Reform
+	#Popping Caps Or Counting Dollars?
+	focus = {
+		id = nf_ba_eur_ncr_trade_currency_start
 		icon = GFX_goal_BRX_eco_capsorcash
 		cost = 20
 		x = 2
 		y = 1
-		relative_position_id = erx_broken_arrow_eco_start
-		prerequisite = {
-			focus = erx_broken_arrow_eco_start
-		}
+		relative_position_id = nf_ba_eur_ncr_trade_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_start }
 
 		completion_reward = {
 			swap_ideas = {
@@ -2952,38 +3032,36 @@ focus_tree = {
 			}
 		}
 	}
+	#Cap Connoisseur
 	focus = {
-		id = erx_broken_arrow_eco_currency_caps
+		id = nf_ba_eur_ncr_trade_currency_caps
 		icon = GFX_goal_BRX_eco_caps
 		cost = 20
 		x = -1
 		y = 1
-		relative_position_id = erx_broken_arrow_eco_currency
-		prerequisite = {
-			focus = erx_broken_arrow_eco_currency
-		}
-		mutually_exclusive = {
-			focus = erx_broken_arrow_eco_currency_ncr
-		}
+		relative_position_id = nf_ba_eur_ncr_trade_currency_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_currency_start }
+		mutually_exclusive = { focus = nf_ba_eur_ncr_trade_currency_ncr }
+
 		completion_reward = {
 			remove_ideas = eur_worthless_currencies_3
 			set_temp_variable = { caps_to_add = 50 }
 			add_caps = yes
 		}
 	}
+	#Making It Rain
 	focus = {
-		id = erx_broken_arrow_eco_currency_ncr
+		id = nf_ba_eur_ncr_trade_currency_ncr
 		icon = GFX_goal_BRX_eco_rich
 		cost = 20
 		x = 1
 		y = 1
-		relative_position_id = erx_broken_arrow_eco_currency
-		prerequisite = {
-			focus = erx_broken_arrow_eco_currency
-		}
-		mutually_exclusive = {
-			focus = erx_broken_arrow_eco_currency_caps
-		}
+		relative_position_id = nf_ba_eur_ncr_trade_currency_start
+
+		prerequisite = { focus = nf_ba_eur_ncr_trade_currency_start }
+		mutually_exclusive = { focus = nf_ba_eur_ncr_trade_currency_caps }
+
 		completion_reward = {
 			remove_ideas = eur_worthless_currencies_3
 			set_temp_variable = { caps_to_add = 25 }
@@ -3000,74 +3078,6 @@ focus_tree = {
 				target = NCR
 				modifier = ncr_bear_economy_sphere
 			}
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_eco_ncr_start
-		icon = GFX_goal_BRX_eco_bear
-		cost = 20
-		x = -2
-		y = 1
-		relative_position_id = erx_broken_arrow_eco_start
-		prerequisite = {
-			focus = erx_broken_arrow_eco_start
-		}
-		
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = eur_ncr_eco_mid_1
-				add_idea = eur_ncr_eco_mid_2
-			}
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_eco_ncr_high
-		icon = GFX_goal_BRX_eco_shake
-		cost = 20
-		x = -1
-		y = 1
-		relative_position_id = erx_broken_arrow_eco_ncr_start
-		prerequisite = {
-			focus = erx_broken_arrow_eco_ncr_start
-		}
-		available = {
-			has_completed_focus = erx_broken_arrow_eco_currency_ncr
-		}
-		mutually_exclusive = {
-			focus = erx_broken_arrow_eco_ncr_low
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = eur_ncr_eco_mid_2
-				add_idea = eur_ncr_eco_high
-			}
-			set_temp_variable = { caps_to_add = 50 }
-			add_caps = yes
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_eco_ncr_low
-		icon = GFX_goal_BRX_eco_smuggle
-		cost = 20
-		x = 1
-		y = 1
-		relative_position_id = erx_broken_arrow_eco_ncr_start
-		prerequisite = {
-			focus = erx_broken_arrow_eco_ncr_start
-		}
-		mutually_exclusive = {
-			focus = erx_broken_arrow_eco_ncr_high
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = eur_ncr_eco_mid_2
-				add_idea = eur_ncr_eco_low
-			}
-			set_temp_variable = { caps_to_add = 25 }
-			add_caps = yes
 		}
 	}
 }

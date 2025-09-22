@@ -418,13 +418,13 @@ country_event = {
     		name = ERB_intellectuals_party
 		}
 		retire_character = EUR_portmaster
-		hidden_effect = {
-			load_oob = EUR_federal_militia	
-			set_division_template_lock = {
-				division_template = "National Guard"
-				is_locked = no
-			}
-		}
+		#hidden_effect = {
+		#	load_oob = EUR_federal_militia	
+		#	set_division_template_lock = {
+		#		division_template = "National Guard"
+		#		is_locked = no
+		#	}
+		#}
 	}
 }
 #FORMING A GOVERNMENT
@@ -964,7 +964,7 @@ country_event = {
 			NVT = { add_ideas = navarro_intervention_no_surrender }
 			EUR = {
 				set_country_flag = eur_navarro_time
-				complete_national_focus = erx_broken_arrow_navarro_crisis
+				complete_national_focus = nf_ba_eur_navarro_crisis
 				mark_focus_tree_layout_dirty = yes
 			}
 			set_victory_points = {
@@ -986,7 +986,7 @@ country_event = {
 		name = erx_broken_arrow_navarro.1.a
 		effect_tooltip = {
 			NVT = { add_ideas = navarro_intervention_no_surrender }
-			EUR = { complete_national_focus = erx_broken_arrow_navarro_crisis }
+			EUR = { complete_national_focus = nf_ba_eur_navarro_crisis }
 		}
 		custom_effect_tooltip = erx_broken_arrow_navarro.1_tt
 		#custom_effect_tooltip = nf_navarro.6.b_ba_tt

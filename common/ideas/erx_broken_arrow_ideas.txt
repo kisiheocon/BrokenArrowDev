@@ -7,7 +7,8 @@ ideas = {
         ba_EUR_oregon_military_department_template_hidden_idea = {}
         ba_EUR_oregon_military_department_start_hidden_idea = {
             modifier = {
-                training_time_army_factor = -0.1
+                civilian_factory_use = 5
+                training_time_army_factor = -0.15
             }
         }
         ba_EUR_oregon_military_department_army_guard_hidden_idea = {

@@ -9,83 +9,83 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_USA_sweep_farm_tariffs"
-		texturefile = "gfx/interface/goals/USA_sweep_farm_tariffs.png"
+		texturefile = "gfx/interface/goals/USA_sweep_farm_tariffs.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_GFX_USA_investigate_the_military-62362"
-		texturefile = "gfx/interface/goals/GFX_USA_investigate_the_military-62362.png"
+		name = "GFX_goal_GFX_USA_investigate_the_military"
+		texturefile = "gfx/interface/goals/GFX_USA_investigate_the_military.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_congressional_authority"
-		texturefile = "gfx/interface/goals/USA_congressional_authority.png"
+		texturefile = "gfx/interface/goals/USA_congressional_authority.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_GFX_USA_hoovers_america-62869"
-		texturefile = "gfx/interface/goals/GFX_USA_hoovers_america-62869.png"
+		name = "GFX_goal_GFX_USA_hoovers_america"
+		texturefile = "gfx/interface/goals/GFX_USA_hoovers_america.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_modern_recon"
-		texturefile = "gfx/interface/goals/USA_modern_recon.png"
+		texturefile = "gfx/interface/goals/USA_modern_recon.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_democracy_savior"
-		texturefile = "gfx/interface/goals/USA_democracy_savior.png"
+		texturefile = "gfx/interface/goals/USA_democracy_savior.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_call_of_race"
-		texturefile = "gfx/interface/goals/USA_call_of_race.png"
+		texturefile = "gfx/interface/goals/USA_call_of_race.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_goal_USA_By_the_People_For_the_People"
-		texturefile = "gfx/interface/goals/goal_USA_By_the_People_For_the_People.png"
+		name = "GFX_goal_USA_By_the_People_For_the_People"
+		texturefile = "gfx/interface/goals/goal_USA_By_the_People_For_the_People.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_ports_atlantic"
-		texturefile = "gfx/interface/goals/USA_ports_atlantic.png"
+		texturefile = "gfx/interface/goals/USA_ports_atlantic.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_support_new_mexico"
-		texturefile = "gfx/interface/goals/USA_support_new_mexico.png"
+		texturefile = "gfx/interface/goals/USA_support_new_mexico.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_break_windsor"
-		texturefile = "gfx/interface/goals/USA_break_windsor.png"
+		texturefile = "gfx/interface/goals/USA_break_windsor.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_beautiful_pacific"
-		texturefile = "gfx/interface/goals/USA_beautiful_pacific.png"
+		texturefile = "gfx/interface/goals/USA_beautiful_pacific.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_arsenal_of_democracy"
-		texturefile = "gfx/interface/goals/USA_arsenal_of_democracy.png"
+		texturefile = "gfx/interface/goals/USA_arsenal_of_democracy.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_city_on_a_hill"
-		texturefile = "gfx/interface/goals/USA_city_on_a_hill.png"
+		texturefile = "gfx/interface/goals/USA_city_on_a_hill.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_avenge_mexican_crimes"
-		texturefile = "gfx/interface/goals/USA_avenge_mexican_crimes.png"
+		texturefile = "gfx/interface/goals/USA_avenge_mexican_crimes.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_goal_USA_No_Chauvinism"
-		texturefile = "gfx/interface/goals/goal_USA_No_Chauvinism.png"
+		name = "GFX_goal_USA_No_Chauvinism"
+		texturefile = "gfx/interface/goals/goal_USA_No_Chauvinism.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_sphere_of_influence"
-		texturefile = "gfx/interface/goals/USA_sphere_of_influence.png"
+		texturefile = "gfx/interface/goals/USA_sphere_of_influence.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_payment_protection"
-		texturefile = "gfx/interface/goals/USA_payment_protection.png"
+		texturefile = "gfx/interface/goals/USA_payment_protection.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_USA_antileftist_action"
-		texturefile = "gfx/interface/goals/USA_antileftist_action.png"
+		texturefile = "gfx/interface/goals/USA_antileftist_action.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_GFX_USA_peace_through_trade-62866"
-		texturefile = "gfx/interface/goals/GFX_USA_peace_through_trade-62866.png"
+		name = "GFX_goal_GFX_USA_peace_through_trade"
+		texturefile = "gfx/interface/goals/GFX_USA_peace_through_trade.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_BRX_eco_smuggle"
@@ -166,5 +166,25 @@ spriteTypes = {
 	spriteType = { #Special thanks to Kaiserreduxx for this asset
 		name = "GFX_goal_USA_crying_eagle"
 		texturefile = "gfx/interface/goals/USA_crying_eagle.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_oregon_military_department"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_military_department.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_oregon_army_national_guard"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_army_national_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_oregon_civil_defense_force"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_civil_defense_force.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_oregon_air_national_guard"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_air_national_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_oregon_army_academy"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_army_academy.dds"
 	}
 }

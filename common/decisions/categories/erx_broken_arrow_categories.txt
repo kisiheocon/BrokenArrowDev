@@ -14,7 +14,8 @@ erx_broken_arrow_navarro_cat = {
 		original_tag = EUR
 	}
 	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
+		has_completed_focus = nf_ba_eur_navarro_crisis
+		NOT = { has_country_flag = conquered_navarro }
 	}
 	icon = GFX_decision_category_border_war
 	priority = 998

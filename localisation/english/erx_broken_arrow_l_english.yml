@@ -1,5 +1,8 @@
 ﻿l_english:
+##############
 ###Bookmark###
+##############
+##Granite
 erx_broken_arrow_granite_bookmark: "Douglas Granite"
 erx_broken_arrow_granite_bookmark_desc: "After spending most of his youth and teenage years in the cramped confines of a Enclave control vault Granite jumped at the first opportunity to leave the vault for the open expanses known as the wasteland. Quickly reconnecting with his father Granite Sr, and his company. Quickly rising through the ranks through dedication and no small amount of Faith.\n\nFollowing the death of his father Granite assumed command of Granite Division. And after the death of President Richardson and the destruction of the Posiden Oil Rig, Granite and his company found themselves stranded in northern California, where they quickly took to mercenary work in the land of Eureka.\n\nHad it not been for Sergeant Dornan disclosing the location of the Sierra Army Depot, that's likely where Granite would have stayed. Fate is an unpredictable mistress however. And Granite and his men soon found themselves in a new home in Nevada. All is not well however. As Granite Division would discover with the unfortunate arrival of Doctor Anderson, a titan of Science and Influence for the purists of the Enclave.\n\nThe Future however, is not set. And it remains to be seen how Granite will tackle this new purist threat. One thing is certain however, whatever decisions are made, the future of the Enclave, and indeed the entire United States sits in the balance. \n\nGranites faith in the Enclave has long been tested, with exile and defeat a common turn of events for the reformers. Should all be lost again, Granite may decide to take his fate into his own hands, potentially leaving the Enclave to the pages of history with it..."
 
@@ -602,64 +605,66 @@ erx_broken_arrow_ncr_prep_desc: "Regardless of our public views we have reached 
 erx_broken_arrow_ncr_resistance: "Forming Militia Units"
 erx_broken_arrow_ncr_resistance_desc: "For months since our broadcasts  started we have been receiving supporters of our cause from across the west coast, Primarily from the N.C.R. With war on the horizon we must form these men into formal units. "
 
-erx_broken_arrow_eco_start: "Taking the Reigns"
-erx_broken_arrow_eco_start_desc: "The economy is in a free-fall, and now that we control the apparatus of governance we need to decide our economic policies, or this endeavor is gonna be over before it even starts."
+nf_ba_eur_ncr_trade_start: "Taking The Reigns"
+nf_ba_eur_ncr_trade_start_desc: "The economy is in a free-fall, and now that we control the apparatus of governance we need to decide our economic policies, or this endeavor is gonna be over before it even starts."
 
-erx_broken_arrow_eco_currency: "Popping Caps Or Counting Dollars?"
-erx_broken_arrow_eco_currency_desc: "Bottle Caps and Republic Dollars. As it stands those are the main currencies on the West Coast. Both have their advantages. And using either will leave some happy, and others not so much. One eases our ways into the Lucrative business of the Republic, whilst the other allows us universal trade and stability with everyone this side of the Atlantic. "
+nf_ba_eur_ncr_trade_currency_start: "Popping Caps Or Counting Dollars?"
+nf_ba_eur_ncr_trade_currency_start_desc: "Bottle Caps and Republic Dollars. As it stands those are the main currencies on the West Coast. Both have their advantages. And using either will leave some happy, and others not so much. One eases our ways into the Lucrative business of the Republic, whilst the other allows us universal trade and stability with everyone this side of the Atlantic. "
 
-erx_broken_arrow_eco_currency_ncr: "Making It Rain"
-erx_broken_arrow_eco_currency_ncr_desc: "We’ve chosen the Dollar, and Shady Sands is more then pleased.(Alongside their counterfeiters) as a result weve opened up business opportunities with the largest companies the West Coast have to offer. However those in the interior and the north are not so pleased. Citing the unfair Exchange rates as they close trade routes. \n\nGuess Thats the Cost of Doing Business"
+nf_ba_eur_ncr_trade_currency_ncr: "Making It Rain"
+nf_ba_eur_ncr_trade_currency_ncr_desc: "We’ve chosen the Dollar, and Shady Sands is more then pleased.(Alongside their counterfeiters) as a result weve opened up business opportunities with the largest companies the West Coast have to offer. However those in the interior and the north are not so pleased. Citing the unfair Exchange rates as they close trade routes. \n\nGuess Thats the Cost of Doing Business"
 
-erx_broken_arrow_eco_currency_caps: "Cap Connoisseur"
-erx_broken_arrow_eco_currency_caps_desc: "Who needs the NCR and all their corrupt regulations? Business is booming all over the continent, and caps are the currency of the Realm. Shady Sands is not happy. But the sheer number of business partners outside the west coast that weve opened up makes it worth it.(Hopefully?)"
+nf_ba_eur_ncr_trade_currency_caps: "Cap Connoisseur"
+nf_ba_eur_ncr_trade_currency_caps_desc: "Who needs the NCR and all their corrupt regulations? Business is booming all over the continent, and caps are the currency of the Realm. Shady Sands is not happy. But the sheer number of business partners outside the west coast that weve opened up makes it worth it.(Hopefully?)"
 
-erx_broken_arrow_eco_ncr_start: "Economics under the Bear"
-erx_broken_arrow_eco_ncr_start_desc: "Like It Or Not The N.C.R controls the economics of the entire west coast. There isn't much that happens that they don’t hear about or get a piece of. One way or the other we have to deal with them."
+nf_ba_eur_ncr_trade_eco_start: "Economics Under The Bear"
+nf_ba_eur_ncr_trade_eco_start_desc: "Like It Or Not The N.C.R controls the economics of the entire west coast. There isn't much that happens that they don’t hear about or get a piece of. One way or the other we have to deal with them."
 
-erx_broken_arrow_eco_ncr_high: "Making an Accord"
-erx_broken_arrow_eco_ncr_high_desc: "We don’t like them, and they are still pretty pissed at us. But they recognize a good deal when they see one. We will trade through their networks, getting the benefits therein. And in exchange we will tone down some of our more…. Belligerent Rhetoric."
+nf_ba_eur_ncr_trade_eco_high: "Making An Accord"
+nf_ba_eur_ncr_trade_eco_high_desc: "We don’t like them, and they are still pretty pissed at us. But they recognize a good deal when they see one. We will trade through their networks, getting the benefits therein. And in exchange we will tone down some of our more…. Belligerent Rhetoric."
 
-erx_broken_arrow_eco_ncr_low: "Smuggler's Run"
-erx_broken_arrow_eco_ncr_low_desc: "A Deal with the Bear would be to costly. And the peering eyes of a hostile government in our core economics is the last thing we need. Luckily for us… there is alternatives. If your willing to take a cruise Down Mexico Way."
+nf_ba_eur_ncr_trade_eco_low: "Smuggler's Run"
+nf_ba_eur_ncr_trade_eco_low_desc: "A Deal with the Bear would be to costly. And the peering eyes of a hostile government in our core economics is the last thing we need. Luckily for us… there is alternatives. If your willing to take a cruise Down Mexico Way."
 
 
-######## NAVARRO ########
-erx_broken_arrow_navarro_crisis: "The Navarro Crisis"
-erx_broken_arrow_navarro_crisis_desc: "The Navarro Territories are in flames.\n\nSmells like Opportunity"
-erx_broken_arrow_navarro_crisis_trigger_tt: "This §YFocus§! will be completed by an §YEvent§!"
-erx_broken_arrow_navarro_crisis_reward_tt: "Unlocks §Ydecisions§! to help our §4ally§! in §YNavarro§!."
-erx_broken_arrow_navarro.1_tt: "New §YDecisions§! are available to help our allies in §YNavarro§!!\nIt is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
-erx_broken_arrow_navarro_development: "Navarro Pacification Campaign"
-erx_broken_arrow_navarro_development_desc: "Despite our victory of the region, enemy militants from Fusang and the Colonial Government still harass our troops from the roadways and countrysides. Granite has ordered an operation to pacify these rogue elements. "
-erx_broken_arrow_navarro_philanthropy: "Philanthropy and Humanitarianism"
-erx_broken_arrow_navarro_philanthropy_desc: "The Navarro Territories have been devastated by the three way war just waged in the region. By sending logistical support and general aid, we can increase public support amongst the population, and hopefully convince those still up in arms against us to lay down their arms. "
-erx_broken_arrow_navarro_roadways: "Rebuilding the Roadways"
-erx_broken_arrow_navarro_roadways_desc: "Much like Eureka, The roadways and rail systems in Navarro have been left in a sorry state, which has only been exacerbated by the brutal war so recently waged"
-erx_broken_arrow_navarro_accomplished: "Mission Accomplished"
-erx_broken_arrow_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation. "
-erx_broken_arrow_navarro_infrastructure: "Repairing Civil Infrastructure"
-erx_broken_arrow_navarro_infrastructure_desc: "During the war, many homes, businesses and food production plants were either destroyed, or made temporarily unlivable, With peace returning to the region we should begin construction efforts to rebuild or repair these structures. "
-erx_broken_arrow_navarro_infrastructure_2: "Scale Up Civilian Construction Efforts"
-erx_broken_arrow_navarro_infrastructure_2_desc: "Via robotics and advanced construction technology we can vastly increase the pace in which we restore civil infrastructure. "
-erx_broken_arrow_navarro_infrastructure_3: "Finalize Civilian Reconstruction Efforts"
-erx_broken_arrow_navarro_infrastructure_3_desc: "After months of hard work, we have not only repaired the damage from the Navarro War, but we have managed to actually redevelop many areas damaged by the war and organize them more efficiently, leaving extra room for more construction in the near future. "
-erx_broken_arrow_navarro_military: "Reiginite the Navarro Military Behemoth"
-erx_broken_arrow_navarro_military_desc: "Navarro was once the epicenter of military production on the East Coast, but after a nuclear war, two centuries of neglect and looting not to mention a regional war. This military giant has been left to rot. Gutted to the very foundation. Therefore we must begin the slow process of waking the forge of Navarro military production. "
-erx_broken_arrow_navarro_military_2: "Scale Up Military Construction Efforts"
-erx_broken_arrow_navarro_military_2_desc: "Via Robotics and engineers handpicked by Granite, we can vastly increase the pace in which we restore military infrastructure"
-erx_broken_arrow_navarro_military_3: "Finalize Aramament Production Plans"
-erx_broken_arrow_navarro_military_3_desc: "After months of repairing derelict factory's long abandoned, or constructing fresh ones from abandoned buildings, The first US Munitions plant has officially kicked off operations, with the President Personally delivering the order for the first new batch of M16 Assault Rifles since 2077. "
-erx_broken_arrow_navarro_naval: "Kickstart Maritime Industry"
-erx_broken_arrow_navarro_naval_desc: "Navarro was also host to a sizable US Naval Presence, as well as associated dockyards, To rebuild our naval presence we must begin clearing and repairing these dockyards. "
-erx_broken_arrow_navarro_naval_2: "Finalize Dockyard Repair Operations"
-erx_broken_arrow_navarro_naval_2_desc: "After months of clearing wrecks of old vessels and repairing the rusted dockyards along Navarro's Coast, we have finally restored them to functional order, and already the first order for Naval ships have been hand delivered by the President.\n\nNon Sibi Sed Patriae "
-erx_broken_arrow_navarro_labs: "Reopen the Laboratories"
-erx_broken_arrow_navarro_labs_desc: "The Labs of Navarro, long since abandoned or left to incompetent hands was prior to our arrival producing half efforts at best. With our best and brightest on the scene, Our research capabilities will double."
-erx_broken_arrow_navarro_products: "Top Shelf Products"
-erx_broken_arrow_navarro_products_desc: "Due to Granite's hand picked experts, and Local talents, we have managed to not only improve manufacturing efficiency, but improve the armament designs themselves."
-erx_broken_arrow_navarro_databases: "Unveil The Navarro Databases"
-erx_broken_arrow_navarro_databases_desc: "In the vast bunker complexes and halls of Navarro Military base lie our most glittering prize, The famed Navarro Databases. Thankfully due to the Enclave Cyber security division, most of its secrets documents and information lays untainted by the fools in Lost Hills and Shady Sands."
+###NAVARRO CRISIS###
+nf_ba_eur_navarro_crisis: "The Navarro Crisis"
+nf_ba_eur_navarro_crisis_desc: "The Navarro Territories are in flames.\n\nSmells like Opportunity"
+nf_ba_eur_navarro_crisis_trigger_tt: "This §YFocus§! will be completed by an §YEvent§!"
+nf_ba_eur_navarro_crisis_reward_tt: "Unlocks £GFX_decision_icon_small §YDecisions§! to help our §4ally§! in §YNavarro§!."
+erx_broken_arrow_navarro.1_tt: "New £GFX_decision_icon_small §YDecisions§! are available to help our allies in §YNavarro§!!\nIt is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
+nf_ba_eur_navarro_development: "Navarro Pacification Campaign"
+nf_ba_eur_navarro_development_desc: "Despite our victory of the region, enemy militants from Fusang and the Colonial Government still harass our troops from the roadways and countrysides. Granite has ordered an operation to pacify these rogue elements. "
+nf_ba_eur_navarro_philanthropy: "Philanthropy and Humanitarianism"
+nf_ba_eur_navarro_philanthropy_desc: "The Navarro Territories have been devastated by the three way war just waged in the region. By sending logistical support and general aid, we can increase public support amongst the population, and hopefully convince those still up in arms against us to lay down their arms."
+nf_ba_eur_navarro_philanthropy_tt: "§YWhen this focus is selected:§!"
+nf_ba_eur_navarro_roadways: "Rebuilding the Roadways"
+nf_ba_eur_navarro_roadways_desc: "Much like Eureka, The roadways and rail systems in Navarro have been left in a sorry state, which has only been exacerbated by the brutal war so recently waged"
+nf_ba_eur_navarro_roadways_tt: "§YWhen this focus is selected:§!"
+nf_ba_eur_navarro_accomplished: "Mission Accomplished"
+nf_ba_eur_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation. "
+nf_ba_eur_navarro_infrastructure_1: "Repairing Civil Infrastructure"
+nf_ba_eur_navarro_infrastructure_1_desc: "During the war, many homes, businesses and food production plants were either destroyed, or made temporarily unlivable, With peace returning to the region we should begin construction efforts to rebuild or repair these structures. "
+nf_ba_eur_navarro_infrastructure_2: "Scale Up Civilian Construction Efforts"
+nf_ba_eur_navarro_infrastructure_2_desc: "Via robotics and advanced construction technology we can vastly increase the pace in which we restore civil infrastructure. "
+nf_ba_eur_navarro_infrastructure_3: "Finalize Civilian Reconstruction Efforts"
+nf_ba_eur_navarro_infrastructure_3_desc: "After months of hard work, we have not only repaired the damage from the Navarro War, but we have managed to actually redevelop many areas damaged by the war and organize them more efficiently, leaving extra room for more construction in the near future. "
+nf_ba_eur_navarro_military_1: "Reignite The Navarro Military Behemoth"
+nf_ba_eur_navarro_military_1_desc: "Navarro was once the epicenter of military production on the East Coast, but after a nuclear war, two centuries of neglect and looting not to mention a regional war. This military giant has been left to rot. Gutted to the very foundation. Therefore we must begin the slow process of waking the forge of Navarro military production. "
+nf_ba_eur_navarro_military_2: "Scale Up Military Construction Efforts"
+nf_ba_eur_navarro_military_2_desc: "Via Robotics and engineers handpicked by Granite, we can vastly increase the pace in which we restore military infrastructure"
+nf_ba_eur_navarro_military_3: "Finalize Armament Production Plans"
+nf_ba_eur_navarro_military_3_desc: "After months of repairing derelict factory's long abandoned, or constructing fresh ones from abandoned buildings, The first US Munitions plant has officially kicked off operations, with the President Personally delivering the order for the first new batch of M16 Assault Rifles since 2077. "
+nf_ba_eur_navarro_naval_1: "Kickstart Maritime Industry"
+nf_ba_eur_navarro_naval_1_desc: "Navarro was also host to a sizable US Naval Presence, as well as associated dockyards, To rebuild our naval presence we must begin clearing and repairing these dockyards. "
+nf_ba_eur_navarro_naval_2: "Finalize Dockyard Repair Operations"
+nf_ba_eur_navarro_naval_2_desc: "After months of clearing wrecks of old vessels and repairing the rusted dockyards along Navarro's Coast, we have finally restored them to functional order, and already the first order for Naval ships have been hand delivered by the President.\n\nNon Sibi Sed Patriae "
+nf_ba_eur_navarro_labs: "Reopen the Laboratories"
+nf_ba_eur_navarro_labs_desc: "The Labs of Navarro, long since abandoned or left to incompetent hands was prior to our arrival producing half efforts at best. With our best and brightest on the scene, Our research capabilities will double."
+nf_ba_eur_navarro_products: "Top Shelf Products"
+nf_ba_eur_navarro_products_desc: "Due to Granite's hand picked experts, and Local talents, we have managed to not only improve manufacturing efficiency, but improve the armament designs themselves."
+nf_ba_eur_navarro_databases: "Unveil The Navarro Databases"
+nf_ba_eur_navarro_databases_desc: "In the vast bunker complexes and halls of Navarro Military base lie our most glittering prize, The famed Navarro Databases. Thankfully due to the Enclave Cyber security division, most of its secrets documents and information lays untainted by the fools in Lost Hills and Shady Sands."
 
 erx_beaver_state: "Bringing Civilization Back To The Beaver State"
 erx_beaver_state_desc: "With our hands full with domestic matters the last thing we needed was another war. However, our recent border states in Arroyo and its former vassals have as of late been the victim of countless brazen assaults and raiding parties by bordering cultists, savages, and terrorists (THEY'RE STILL AMERICANS EVEN IF THEY DISAGREE). We'd declare war, but really, we're just reminding the uneducated masses about Good Ol' Uncle Sam."
@@ -688,7 +693,7 @@ erx_redskin_back: "Redskins Back In Town"
 erx_redskin_back_desc: "While the Mirelurk tribe was much larger and stronger then originally anticipated we still crushed them as expected. Some of the refugees from the Apostles even volunteered as scouts in the conflict, surely saving quite a few lives in the process, as a thanks and to relieve our strained resources. We have decided to give them first pick of the now vacant lands we just occupied, likely making our integration into the region far easier in the process."
 
 erx_war_plan_green: "War Plan §GGreen§!"
-erx_war_plan_green_desc: "To the north of our borders lies the outcome of perverted science and unchecked progress. An entire army of super mutants operating outside of the Mariposa Military Base… Or whats left of it. They have rampaged throughout the north, killing and converting all they find, threatening even the dreaded Washington Brotherhood. This “Warren” lead by the enigmatic “First” has declared a crusade against humanity, and have made us their next target… This threat cannot be allowed to exist. This is our mess."
+erx_war_plan_green_desc: "To the north of our borders lies the outcome of perverted science and unchecked progress. An entire army of super mutants operating outside of the Mariposa Military Base... Or what's left of it. They have rampaged throughout the north, killing and converting all they find, threatening even the dreaded Washington Chapter of the Brotherhood.\nThis \"Warren\" led by the enigmatic \"First\" has declared a crusade against humanity, giving himself the mantle of \"The Attis Of The West\" and has made us their next target... This unholy perversion of science cannot be allowed to continue. This is the result of our hubris, it seems...\nWe have called forth all forces and assets at our disposal to defeat this threat in one decisive battle."
 
 erx_selective_amnesty: "Selective Amnesty"
 erx_selective_amnesty_desc: "With our victory over the mutant horde, and our capture of Mariposa, some of the less “Rabid” mutants under our purview claim they were forced under pain of death to follow the orders of the First. And are willing to assist and support our government. Whilst of course we must investigate each of their claims. Some may just prove useful to us. "
@@ -701,9 +706,28 @@ erx_oregon_polk_offensive_desc: "With the self-named \"Attis Of The West\" and h
 erx_oregon_RCA: "Oregon Reconstruction Authority"
 erx_oregon_RCA_desc: "With the main powers in the region dealt with we just need to mop up the rest of the state, barring acts of God or foreign interventions, should be a piece of cake."
 
-ba_EUR_oregon_military_department_army_guard: "Oregon Army National Guard"
-ba_EUR_oregon_military_department_army_guard_tt: "Raise 2 £GFX_div_templ_6_small §YNational Guard Division§! in §YSalem§! with:\n - 6 £GFX_unit_heavy_infantry_icon_small|1 §YEnforcers§! Battalions\n - 4 £GFX_unit_militia_icon_small|1 §YMilitia§! Battalions\n - £GFX_unit_dog_company_icon_small|1 §YDogs§! Support Company"
+#Oregon Military-National Guard Branch
+nf_ba_eur_oregon_military_department_formation: "Oregon Military Department"
+nf_ba_eur_oregon_military_department_formation_desc: "For months front-line troops and garrisons from other stations have been acting as the peacekeeping force in Oregon. But now with the war concluded and the slow but steady return of stability and order these forces are desperately needed elsewhere on our other frontiers. By forming a dedicated force to guard Oregon we can divert important forces elsewhere and begin the recruitment of local citizenry rather then calling on all our manpower from Eureka and Navarro."
 
+nf_eur_oregon_military_department_army_guard: "Oregon Army National Guard"
+nf_eur_oregon_military_department_army_guard_desc: "The most integral component of our new military buildup in the state will be organized and formally trained National Guard divisions. While informal militias and garrisons will always be indispensable, Army trained units will be the centerpiece of our pacification and defense strategy in the region.\n§Y\"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\"§!"
+nf_eur_oregon_military_department_army_guard_tt: "Raise 2 £GFX_div_templ_6_small §YNational Guard Division§! in §YSalem§! with:\n - 6 £GFX_unit_heavy_infantry_icon_small|1 §YEnforcers§! Battalions\n - 4 £GFX_unit_militia_icon_small|1 §YMilitia§! Battalions\n - £GFX_unit_dog_company_icon_small|1 §YDogs§! Support Company"
+
+nf_ba_eur_oregon_military_department_army_academy: "Establishing Polk Academy"
+nf_ba_eur_oregon_military_department_army_academy_desc: "As it stands we have no formal training program for our officers and military and have been replying on “Prior Experience” as it were. While it has brought us great success it is unsustainable. Our advisors and military command have argued for and won funding for the establishment of a formalized military Academy to train the officers and generals of tomorrow.\n§Y\"West Point? Eh Who Needs It?\"§!"
+
+nf_ba_eur_oregon_military_department_civil_defense: "Oregon Civil Defense Force"
+nf_ba_eur_oregon_military_department_civil_defense_desc: "While formal militarized National Guard units will form the Vanguard of our defense and pacification needs, they cannot be everywhere, as such we need to rely on the people themselves. Local militias funded by towns and armed by the state can fill in the gaps.\n\n§Y\"Ready at a moment's notice.\"§!"
+
+nf_ba_eur_oregon_military_department_air_guard: "Oregon Air National Guard"
+nf_ba_eur_oregon_military_department_air_guard_desc: "While our air arm of Vertibirds have proven their worth time and time again their numbers have proven insufficient in the wake of our expansions. As a result of this our garrison forces in Oregon have been faced with a critical lack of air support. To solve this problem our general staff have authorized the creation of the Oregon Air National Guard and the creation of an engineering team to research the creation of more conventional and easily produced prop planes."
+
+nf_ba_eur_oregon_military_department_air_academy: "Establishing Kingsley Air Academy"
+nf_ba_eur_oregon_military_department_air_academy_desc: "As it stands we have no formal training program for our pilots and and have been replying on \"Prior Experience\" with Vertibirds. While it has brought us great success it is unsustainable. Our advisors and military command have argued for and won funding for the establishment of a formalized aerial Academy to train the pilots and air fleet commanders of tomorrow. "
+
+nf_ba_eur_oregon_military_department_naval_militia: "Oregon Naval Militia"
+nf_ba_eur_oregon_military_department_naval_militia_desc: "While the formation of a proper naval force is a daunting task we are actively working towards we as of now require a naval arm to combat piracy on Oregons Shore. While this force likely wont extend beyond refurbished fishing vessels and tug boats armed with ad hoc weaponry it will send a message that we are not to be trifled with."
 
 erx_broken_arrow..t: ""
 erx_broken_arrow..d: ""
@@ -985,7 +1009,7 @@ eur_oregon_cannibal_desc: "While the collapse of law and order following the Gre
 erx_broken_arrow_development_oregon_cannibal_remove: "Take care of the cannibals issue"
 
 ba_eur_oregon_military_department_dynamic_modifier: "Oregon Military Department"
-ba_eur_oregon_military_department_dynamic_modifier_desc: "\"Always Ready!\n Always There!\""
+ba_eur_oregon_military_department_dynamic_modifier_desc: "\n\n\n £GFX_embed_oregon_military_department   §Y\"Always Ready, Always There!\"§!\n\n\n\nThe Oregon Military Department is an agency of the government of the U.S. state of Oregon, which oversees the armed forces of the state of Oregon. Under the authority and direction of the governor as commander-in-chief, the agency is responsible for planning, establishing, and enforcing rules and procedures governing the administration, supply, and training of the Oregon National Guard."
 ba_EUR_oregon_military_department_template_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_start_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_army_guard_hidden_idea: "Oregon Military Department"
@@ -994,7 +1018,7 @@ ba_EUR_oregon_military_department_civil_hidden_idea: "Oregon Military Department
 ba_EUR_oregon_military_department_air_academy_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_naval_militia_hidden_idea: "Oregon Military Department"
 
-#Mariposa-Oregon - Cut Contents, written by Soleful Phoenix - @Deez
+###Mariposa-Oregon - Cut Contents, written by Soleful Phoenix - @Deez
 erx_broken_arrow_mariposa.1.t: "Semi-Permanent Erasure"
 erx_broken_arrow_mariposa.1.d: "PRESIDENT'S EYES ONLY\n\nCaptain Church Reporting:\n\nMr. President,\nThe second excavation has gone according to schedule. Any FEV present in both the air and soil samples we've taken indicate that about 40 years of being left relatively untouched (save a presence of mutagen on the 4th level) has left the virus vastly weakened compared to its gradual effectiveness the last time we were around here. Luckily, just like last time, our Power Armor and environmental suits filter out the virus. Since we also refrain from outside 'help', unlike the last time, we were able to guarantee no outside infiltration, and drove off nosy wastelanders through simple commands and a disarming a nuclear device cover story.\n\nI'm sure you're getting sick of me bringing up the past, but I have already taken the liberty rigging the entrance to the base to collapse as soon as the pure sample of FEV you requested was obtained. As a small side note, it appeared that by the time we arrived, contrary to the reports of one Col. Sanders, a collapse or perhaps explosion caused by unknown means allowed reentry into the base. Although it doesn't appear much was disturbed, save the corpses of the mutant miners, it gives cause for concern that perhaps someone else out there has a sample or mutation of FEV.\n\nThe real threat, however, was our discovery of a pipeline on the 5th level, unknown to the previous Enclave. When investigated, we found it led to the Pre-War location known as 'Crater Lake' in Oregon. Upon arriving, we discovered almost the entire lake had been filled with FEV. How or why such an event occurred may never be known to us, but we do know it allegedly served as the source of the 'Troll Warren' Super Mutant group we had encountered a while back. Unlike Mariposa, we do not believe this requires careful investigation, as much of the samples have been contaminated with all sorts of organic material and corrupted deceased lifeforms fused over and over within the lake.\n\nS.F"
 erx_broken_arrow_mariposa.1.a: "'Even the largest pool masks the smallest, yet purest, drops.'"
