@@ -18,4 +18,12 @@ spriteTypes = {
 		name = "GFX_idea_EUR_oregon_military_department"
 		textureFile = "gfx/interface/ideas/EUR_oregon_military_department.dds"
 	}
+	spriteType = { #Special Thanks to Kaiserredux
+		name = "GFX_idea_EUR_ba_donner_idea"
+		textureFile = "gfx/interface/ideas/EUR_ba_donner_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EUR_ba_oregon_department_transportation_company"
+		textureFile = "gfx/interface/ideas/EUR_ba_oregon_department_transportation_company.dds"
+	}
 }

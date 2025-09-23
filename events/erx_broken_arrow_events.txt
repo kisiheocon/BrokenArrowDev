@@ -375,10 +375,6 @@ country_event = {
 
 	option = {
 		name = erx_broken_arrow.10.a 
-		promote_character = {
-			character = ERB_Douglas_Granite
-			ideology = technocracy
-		}
 		set_politics = {
 			ruling_party = intellectuals
    			elections_allowed = no
@@ -405,12 +401,8 @@ country_event = {
 
 	option = {
 		name = erx_broken_arrow.11.a 
-		custom_effect_tooltip = fed_militia_tt
+		#custom_effect_tooltip = fed_militia_tt
 		set_country_flag = forceful_enc_takeover
-		promote_character = {
-			character = ERB_Douglas_Granite
-			ideology = technocracy
-		}
 		set_politics = {
 			ruling_party = intellectuals
    			elections_allowed = no

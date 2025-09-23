@@ -183,8 +183,40 @@ spriteTypes = {
 		name = "GFX_goal_oregon_air_national_guard"
 		texturefile = "gfx/interface/goals/GFX_goal_oregon_air_national_guard.dds"
 	}
-	spriteType = {
+	spriteType = { 
 		name = "GFX_goal_oregon_army_academy"
 		texturefile = "gfx/interface/goals/GFX_goal_oregon_army_academy.dds"
+	}
+	spriteType = { #Special Thanks to TNO
+		name = "GFX_goal_oregon_pacification_start"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_pacification_start.dds"
+	}
+	spriteType = { #Special Thanks to Kaiserredux
+		name = "GFX_goal_oregon_pacification_left"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_pacification_left.dds"
+	}
+	spriteType = { #Special Thanks to Kaiserredux
+		name = "GFX_goal_oregon_pacification_right"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_pacification_right.dds"
+	}
+	spriteType = { #Special Thanks to TNO
+		name = "GFX_goal_oregon_pacification_end"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_pacification_end.dds"
+	}
+	spriteType = { #Special Thanks to TNO
+		name = "GFX_goal_oregon_industry_start"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_industry_start.dds"
+	}
+	spriteType = { #Special Thanks to TNO
+		name = "GFX_goal_oregon_industry_left"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_industry_left.dds"
+	}
+	spriteType = { #Special Thanks to TNO
+		name = "GFX_goal_oregon_industry_end"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_industry_end.dds"
+	}
+	spriteType = { #Special Thanks to Kaiserredux
+		name = "GFX_goal_oregon_end"
+		texturefile = "gfx/interface/goals/GFX_goal_oregon_end.dds"
 	}
 }

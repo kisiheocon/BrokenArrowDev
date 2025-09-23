@@ -1,0 +1,15 @@
+leader_traits = {
+    erx_ba_anti_communist = {
+        random = no
+        war_support_factor = 0.05
+    }
+    #Authoritarian Tendencies
+    EUR_BA_authoritarian_tendencies_country_leader_trait = {
+        random = no
+        political_power_factor = 0.1
+        stability_factor = -0.05
+        war_support_factor = -0.05
+        weekly_casualties_war_support = 0.002
+        custom_modifier_tooltip = EUR_BA_authoritarian_tendencies_country_leader_trait_tt
+    }
+}

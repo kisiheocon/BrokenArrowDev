@@ -1,13 +1,10 @@
+#Oregon Reconstruction Authority - The Beaver State
 erx_broken_arrow_development_oregon_cat = {
-	picture = GFX_decision_cat_picture_oregon_flag
-	allowed = {
-		original_tag = EUR
-	}
-	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
-	}
-	icon = x
-	priority = 999
+	#picture = GFX_decision_cat_picture_oregon_flag
+	allowed = { original_tag = EUR }
+	#visible = { has_completed_focus = erx_oregon_RCA }
+	icon = GFX_decision_cat_oregon_reconstruction_authority
+	priority = 2000
 }
 erx_broken_arrow_navarro_cat = {
 	allowed = {

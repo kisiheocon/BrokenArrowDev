@@ -1,0 +1,11 @@
+leader_traits = {
+    #Oregon Department of Transportation Company
+    oregon_department_transportation_company_trait = {
+        consumer_goods_factor = 0.1
+        caps_expense_modifier = 0.15
+        production_speed_industrial_complex_factor = 0.05
+        production_speed_infrastructure_factor = 0.1
+        production_speed_air_base_factor = 0.1
+        production_speed_naval_base_factor = 0.1
+    }
+}

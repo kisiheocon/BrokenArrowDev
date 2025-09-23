@@ -60,7 +60,7 @@ on_actions = {
 						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					else_if = {
-						limit = { has_completed_focus = nf_eur_oregon_military_department_army_guard }
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_guard }
 						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					if = {
@@ -95,7 +95,7 @@ on_actions = {
 						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					else_if = {
-						limit = { has_completed_focus = nf_eur_oregon_military_department_army_guard }
+						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_guard }
 						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					if = {

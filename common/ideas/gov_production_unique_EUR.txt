@@ -1,0 +1,20 @@
+ideas = {
+	###############################
+	#		Major Businesses	  #
+	###############################
+	construction_firm = {
+		designer = yes
+		#Oregon Department of Transportation Company
+		oregon_department_transportation_company = {
+			picture = EUR_ba_oregon_department_transportation_company
+			allowed = { original_tag = EUR }
+			available = { 
+				has_completed_focus = nf_ba_eur_oregon_industry_start
+				493 = { is_owned_and_controlled_by = ROOT }
+			}
+			cost = 50
+			research_bonus = { construction_category = 0.1 }
+			traits = { oregon_department_transportation_company_trait }
+		}
+	}
+}

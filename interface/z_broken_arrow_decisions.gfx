@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_decision_cat_picture_oregon_flag"
 		texturefile = "gfx/interface/decisions/decision_cat_picture_oregon_flag.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_cat_oregon_reconstruction_authority"
+		texturefile = "gfx/interface/decisions/GFX_decision_cat_oregon_reconstruction_authority.dds"
+	}
 }

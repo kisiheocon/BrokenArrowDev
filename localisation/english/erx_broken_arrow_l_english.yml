@@ -705,14 +705,29 @@ erx_oregon_polk_offensive_desc: "With the self-named \"Attis Of The West\" and h
 
 erx_oregon_RCA: "Oregon Reconstruction Authority"
 erx_oregon_RCA_desc: "With the main powers in the region dealt with we just need to mop up the rest of the state, barring acts of God or foreign interventions, should be a piece of cake."
+###Oregon Pacification Branch
+nf_ba_eur_oregon_pacification_start: "Taking Out The Trash"
+nf_ba_eur_oregon_pacification_start_desc: "While we have nominally secured the state, many sectors are still for all intents and purposes lawless with criminal and cannibal gangs running rampant. Attempting to resist us either out of insanity or just pure stubbornness. Either way we need to crack down on this rabble before this entire endeavor turns into an unwinnable guerrilla war. Not to mention the massive workload of reconstructing an entire state from scratch.\n§Y\"We have a heavy task before us.\"§!"
+nf_ba_eur_oregon_pacification_end_tt: "Gains §G60% reduction in coring cost§! for §YOregon§! states."
 
-#Oregon Military-National Guard Branch
+nf_ba_eur_oregon_pacification_left: "Stamp Em Out"
+nf_ba_eur_oregon_pacification_left_desc: "In our efforts to stamp out the various criminal bands throughout Oregon, it has come to our attention that some particularly stubborn elements have elected to wage their terror campaigns from the various cave and mountain networks throughout the state. Negotiation efforts have failed. And even attack dogs are having little success. We have grown tired of this nonsense and have lost our patience. If they refuse reason and order, then they leave us no choice.\n§Y\"Send in the Rangers.\"§!"
+nf_ba_eur_oregon_pacification_left_tt: "§GSpecial Forces Will Be Sent To Eradicate This Threat§!"
+
+nf_ba_eur_oregon_pacification_right: "Round Up The Survivors"
+nf_ba_eur_oregon_pacification_right_desc: "Through a series of pitched offensive operations and the introduction of special forces, we have been met with resounding success. The last vestiges of resistance in Oregon have been eradicated or have surrendered and scattered in the wind. Now all that remains is to mop up what's left with National Guard and militia forces. Justice for these vile barbarians will soon be at hand."
+
+nf_ba_eur_oregon_pacification_end: "Order At Long Last"
+nf_ba_eur_oregon_pacification_end_desc: "It is a bright day for Oregon! Local garrisons have reported an absolute success in the region and resistance activities have plummeted. It will be our honor to report home that we have successfully held and secured the state. Celebrate your victory! For I am sure we will soon be marching onwards to our next campaign!"
+
+###Oregon Military Branch
 nf_ba_eur_oregon_military_department_formation: "Oregon Military Department"
 nf_ba_eur_oregon_military_department_formation_desc: "For months front-line troops and garrisons from other stations have been acting as the peacekeeping force in Oregon. But now with the war concluded and the slow but steady return of stability and order these forces are desperately needed elsewhere on our other frontiers. By forming a dedicated force to guard Oregon we can divert important forces elsewhere and begin the recruitment of local citizenry rather then calling on all our manpower from Eureka and Navarro."
+ba_eur_oregon_salem_rebuilt_flag: "§Y£GFX_decision_icon_small Cleansing The Streets Of Salem§! is §YCompleted§!"
 
-nf_eur_oregon_military_department_army_guard: "Oregon Army National Guard"
-nf_eur_oregon_military_department_army_guard_desc: "The most integral component of our new military buildup in the state will be organized and formally trained National Guard divisions. While informal militias and garrisons will always be indispensable, Army trained units will be the centerpiece of our pacification and defense strategy in the region.\n§Y\"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\"§!"
-nf_eur_oregon_military_department_army_guard_tt: "Raise 2 £GFX_div_templ_6_small §YNational Guard Division§! in §YSalem§! with:\n - 6 £GFX_unit_heavy_infantry_icon_small|1 §YEnforcers§! Battalions\n - 4 £GFX_unit_militia_icon_small|1 §YMilitia§! Battalions\n - £GFX_unit_dog_company_icon_small|1 §YDogs§! Support Company"
+nf_ba_eur_oregon_military_department_army_guard: "Oregon Army National Guard"
+nf_ba_eur_oregon_military_department_army_guard_desc: "The most integral component of our new military buildup in the state will be organized and formally trained National Guard divisions. While informal militias and garrisons will always be indispensable, Army trained units will be the centerpiece of our pacification and defense strategy in the region.\n§Y\"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\"§!"
+nf_eur_oregon_military_department_army_guard_tt: "Raise 2 £GFX_div_templ_6_small §YNational Guard Division§! in §YSalem§! with:\n - 6 £GFX_unit_heavy_infantry_icon_small|1 §YEnforcers§! Battalions\n - 4 £GFX_unit_militia_icon_small|1 §YMilitia§! Battalions\n - £GFX_unit_dog_company_icon_small|1 §YDogs§! Support Company\n§Y£GFX_decision_icon_small Increase Oregon National Guard Funding§! is §Gavailable§!:"
 
 nf_ba_eur_oregon_military_department_army_academy: "Establishing Polk Academy"
 nf_ba_eur_oregon_military_department_army_academy_desc: "As it stands we have no formal training program for our officers and military and have been replying on “Prior Experience” as it were. While it has brought us great success it is unsustainable. Our advisors and military command have argued for and won funding for the establishment of a formalized military Academy to train the officers and generals of tomorrow.\n§Y\"West Point? Eh Who Needs It?\"§!"
@@ -728,6 +743,24 @@ nf_ba_eur_oregon_military_department_air_academy_desc: "As it stands we have no 
 
 nf_ba_eur_oregon_military_department_naval_militia: "Oregon Naval Militia"
 nf_ba_eur_oregon_military_department_naval_militia_desc: "While the formation of a proper naval force is a daunting task we are actively working towards we as of now require a naval arm to combat piracy on Oregons Shore. While this force likely wont extend beyond refurbished fishing vessels and tug boats armed with ad hoc weaponry it will send a message that we are not to be trifled with."
+
+###Oregon Industry Branch
+nf_ba_eur_oregon_industry_start: "Welcoming The Eurekan Construction Companies"
+nf_ba_eur_oregon_industry_start_desc: "The conquest of Oregon has been a hell of a headache. However, it has also opened up many opportunities. The sheer amount of space and infrastructure has opened up contracts for construction companies and demolition companies alike. With contracts being bid over like wild mobs. \n\nWhat can we say? It's Just Good Business."
+
+nf_ba_eur_oregon_industry_left: "Riches Beyond Belief"
+nf_ba_eur_oregon_industry_left_desc: "The state of Oregon despite looking worse for wear is host to unimaginable natural and scientific resources. Research facilities, Power Plants ,Military sectors , and Natural Resources are all ours for the taking, With some smart funding and hard work we can make something of this state yet!"
+nf_ba_eur_oregon_industry_left_tt: "§Y£GFX_decision_icon_small Silicon Forest§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Oregon Timber Industry§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project Bonneville Dam§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project McNary Dam§! is §Gavailable!§!"
+
+nf_ba_eur_oregon_industry_right: "Construction Frenzy"
+nf_ba_eur_oregon_industry_right_desc: "Further openings of government contracts have opened up a tidal wave of construction works in an apparent gold rush of people drawn in by solid, reliable pay and the potential for new homes in the vast land of Oregon.\n\nThe American Dream is coming into fruition."
+ba_eur_oregon_construction_dynamic_modifier: "Oregon Construction Boom"
+
+nf_ba_eur_oregon_industry_end: "The State Of Tomorrow"
+nf_ba_eur_oregon_industry_end_desc: "Industry is booming and Oregon is quickly becoming host to one of the most advanced research and development hubs in the west. The future is now! With more time and funding our technological and governmental superiority will be unquestionable!"
+
+nf_ba_eur_oregon_end: "A Bold New Day For Oregon"
+nf_ba_eur_oregon_end_desc: "The Road has been long, and it has been hard. But we can finally shout out with hope and pride. Oregon Is Reborn.\nOur faith, our hard work and dedication has brought a new age to this state. And it will now be a new shining beacon for all of the world to see the results of our rule. First Oregon. Then the Nation. Be proud. For you have done that which no one thought possible."
 
 erx_broken_arrow..t: ""
 erx_broken_arrow..d: ""
@@ -971,7 +1004,7 @@ erx_broken_arrow_sf: "Special thanks to §OSoleful Phoenix§!"
 ##Reconstruction Authorities/Development Projects
 erx_oregon_RCA_tt: "Unlock §Y£GFX_decision_icon_small Decisions§! to develop §YOregon§!"
 erx_broken_arrow_development_oregon_cat: "The Beaver State"
-erx_broken_arrow_development_oregon_cat_desc: "     Oregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered 'Silicon Forest'. With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\n     Nevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
+erx_broken_arrow_development_oregon_cat_desc: "\n\n\n\n\n\n\n\n £GFX_embed_oregon_reconstruction_authority_decision_text_picture \n\n\n\n\n\n\n\n\n\n\nOregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered 'Silicon Forest'. With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\nNevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
 #Salem-Oregon
 erx_broken_arrow_development_oregon_salem: "Cleansing The Streets Of Salem"
 erx_broken_arrow_development_oregon_salem_desc: "The Capture Of Salem has marked a turning point in our campaign. With the Capitol of Oregon now in our hands the conquest of the remainder of the state seems all but assured. Nevertheless while the flames have finally settled and the last vestiges of organized resistance have been eradicated our mission here is not yet completed. Obviously it will take months or even years to rebuild the city from the damage the Cannibals and anarchists have inflicted alongside the two centuries of decay. However we make the first step in this project right here and now. By supplying the Garrison with the equipment it needs and the provisional city government with the funds they require we can simultaneously crush the rampant criminal gangs in the city and fund several infrastructure and repair operations in the city.\n\nSetting the stage for the future."
@@ -984,20 +1017,11 @@ erx_broken_arrow_development_oregon_portland: "Making Port At Portland"
 #Dams-Oregon
 erx_broken_arrow_dam_oregon_bonneville: "Project Bonneville Dam"
 erx_broken_arrow_dam_oregon_mcnary: "Project McNary Dam"
-erx_broken_arrow_dam_oregon_mcnary_desc: "McNary Dam, an Imposing symbol to the ingenuity of the American People and the Army Corps of Engineers. Is....  well frankly its a dumpster fire. It's a miracle the damn thing hasn't fallen over.  But if we can secure that Dam and get it operational, we just might have a chance to get one over on the Immortal."
+erx_broken_arrow_dam_oregon_mcnary_desc: "McNary Dam, an Imposing symbol to the ingenuity of the American People and the Army Corps of Engineers. Is... well frankly its a dumpster fire. It's a miracle the damn thing hasn't fallen over. But if we can secure that Dam and get it operational, we just might have a chance to get one over on the Immortal."
 
-erx_broken_arrow_oregon_destroy_rib: "Destroy §9[RBT.GetNameWithFlag]§!"
-erx_broken_arrow_oregon_destroy_rib_desc: "For decades the streets and hills of Oregon have been plagued by quite a number of gangs and violent groups of criminals. Time passes and names change. It doesn't really matter. What does matter is getting these outlaws off the streets and making the State of Oregon safe again. No man can outrun §RUn§!§Wcle§! §BSam§!"
-erx_broken_arrow_oregon_destroy_marrow: "Destroy §g[MDT.GetNameWithFlag]§!"
-erx_broken_arrow_oregon_destroy_marrow_desc: "For decades the streets and hills of Oregon have been plagued by quite a number of gangs and violent groups of criminals. Time passes and names change. It doesn't really matter. What does matter is getting these outlaws off the streets and making the State of Oregon safe again. No man can outrun §RUn§!§Wcle§! §BSam§!"
-erx_broken_arrow_oregon_destroy_bone: "Destroy §0[BDT.GetNameWithFlag]§!"
-erx_broken_arrow_oregon_destroy_bone_desc: "For decades the streets and hills of Oregon have been plagued by quite a number of gangs and violent groups of criminals. Time passes and names change. It doesn't really matter. What does matter is getting these outlaws off the streets and making the State of Oregon safe again. No man can outrun §RUn§!§Wcle§! §BSam§!"
-erx_broken_arrow_oregon_destroy_chem: "Mothballing §R[CHE.GetNameWithFlag]§!"
-erx_broken_arrow_oregon_destroy_chem_desc: "For decades the streets and hills of Oregon have been plagued by quite a number of gangs and violent groups of criminals. Time passes and names change. It doesn't really matter. What does matter is getting these outlaws off the streets and making the State of Oregon safe again. No man can outrun §RUn§!§Wcle§! §BSam§!"
 erx_broken_arrow_oregon_invite_timberline: "Invite §8[TIM.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_packers: "Annex §W[PAC.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_apostle: "Annex §G[DIS.GetNameWithFlag]§!"
-erx_broken_arrow_oregon_annex_timberline: "Annex §8[TIM.GetNameWithFlag]§!"
 
 #Ideas-Oregon
 erx_broken_arrow_development_oregon_silicon_forest: "Silicon Forest"
@@ -1013,6 +1037,8 @@ ba_eur_oregon_military_department_dynamic_modifier_desc: "\n\n\n £GFX_embed_ore
 ba_EUR_oregon_military_department_template_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_start_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_army_guard_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_army_guard_funding_fake_hidden_idea: "Oregon Military Department"
+ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_army_academy_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_civil_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_air_academy_hidden_idea: "Oregon Military Department"
