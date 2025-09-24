@@ -14,6 +14,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_embed_oregon_mcnarry_dam"
+		textureFile = "gfx/texticons/embeds/oregon_mcnarry_dam.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_embed_oregon_bonneville_dam"
+		textureFile = "gfx/texticons/embeds/oregon_bonneville_dam.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_embed_oregon_reconstruction_authority_decision_text_picture"
 		textureFile = "gfx/texticons/embeds/oregon_reconstruction_authority_decision_text_picture.dds"
 		legacy_lazy_load = no

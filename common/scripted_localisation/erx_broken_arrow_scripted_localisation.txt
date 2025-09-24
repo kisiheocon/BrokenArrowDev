@@ -36,3 +36,28 @@ defined_text = {
         localization_key = spies_no
     }
 }
+defined_text = {
+    name = ba_custom_cost_30_PP
+    text = {
+        trigger =  {
+            has_political_power > 29
+        }
+        localization_key = ba_custom_cost_30_PP_yes
+    }
+    text = {
+        localization_key = ba_custom_cost_30_PP_no
+    }
+}
+defined_text = {
+    name = ba_custom_cost_30_CP
+    text = {
+        trigger =  {
+            command_power > 29
+        }
+        localization_key = ba_custom_cost_30_CP_yes
+    }
+    text = {
+        localization_key = ba_custom_cost_30_CP_no
+    }
+}
+

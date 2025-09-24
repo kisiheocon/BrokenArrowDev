@@ -26,3 +26,19 @@ ba_eur_oregon_construction_dynamic_modifier = {
 	}
 	state_production_speed_buildings_factor = 0.1
 }
+
+##Dams Project##
+#McNary Dam
+ba_eur_oregon_mcnary_dam_dynamic_modifier = { 
+	icon = GFX_idea_EUR_usace_idea
+	local_building_slots = 2
+	state_resource_water = 30
+	state_resource_energy = 20
+}
+#Bonneville Dam
+ba_eur_oregon_bonneville_dam_dynamic_modifier = { 
+	icon = GFX_idea_EUR_oregon_bonneville_dam
+	local_building_slots = 2
+	state_resource_water = 40
+	state_resource_energy = 30
+}

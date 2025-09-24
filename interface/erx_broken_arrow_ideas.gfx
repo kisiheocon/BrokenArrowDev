@@ -26,4 +26,12 @@ spriteTypes = {
 		name = "GFX_idea_EUR_ba_oregon_department_transportation_company"
 		textureFile = "gfx/interface/ideas/EUR_ba_oregon_department_transportation_company.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_EUR_usace_idea"
+		textureFile = "gfx/interface/ideas/EUR_usace_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EUR_oregon_bonneville_dam"
+		textureFile = "gfx/interface/ideas/EUR_oregon_bonneville_dam.dds"
+	}
 }

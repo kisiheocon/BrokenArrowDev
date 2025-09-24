@@ -42,7 +42,6 @@ on_actions = {
 	on_state_control_changed = {
 		effect = {
 			###Oregon Military Department in Salem
-			##Note: Idk how but this is some machine spirit shit telling me how to optimize the code, using else_if while in theory don't reduce the amount of maximum possible check needed but reduced the minimum by 2 (or 4 if you're counting both removing and adding), +40% optimized compared to maximum 5 checks - @Deez
 			#Loses Salem - Oregon
 			if = {
 				limit = {
@@ -53,15 +52,31 @@ on_actions = {
 					}
 				}
 				FROM = {
-					remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
 					if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_academy }
+						if = {
+							limit = { has_country_flag = eur_ba_oregon_guard_funded }
+							remove_ideas = ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea
+						}
+						else = {
+							remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+							remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+						}
 						remove_ideas = ba_EUR_oregon_military_department_army_academy_hidden_idea
-						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					else_if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_guard }
-						remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+						if = {
+							limit = { has_country_flag = eur_ba_oregon_guard_funded }
+							remove_ideas = ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea
+						}
+						else = {
+							remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+							remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+						}
+					}
+					else = {
+						remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
 					}
 					if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia }
@@ -88,15 +103,31 @@ on_actions = {
 					}
 				}
 				ROOT = {
-					add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
 					if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_academy }
+						if = {
+							limit = { has_country_flag = eur_ba_oregon_guard_funded }
+							add_ideas = ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea
+						}
+						else = {
+							add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+							add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+						}
 						add_ideas = ba_EUR_oregon_military_department_army_academy_hidden_idea
-						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
 					}
 					else_if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_army_guard }
-						add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+						if = {
+							limit = { has_country_flag = eur_ba_oregon_guard_funded }
+							add_ideas = ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea
+						}
+						else = {
+							add_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+							add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+						}
+					}
+					else = {
+						add_ideas = ba_EUR_oregon_military_department_start_hidden_idea
 					}
 					if = {
 						limit = { has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia }

@@ -622,21 +622,65 @@ erx_broken_arrow_development_oregon_cat = {
 			annex_country = { target = DIS }
 		}
 	}
+	#Increase Oregon National Guard Funding
+	eur_ba_oregon_reconstruction_guard_funding_decision = {
+		icon = GFX_decision_army_helmet
+		cost = 50
+		fire_only_once = yes
+
+		available = { 
+			has_completed_focus = nf_ba_eur_oregon_military_department_army_guard
+			493 = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		days_remove = 60
+		modifier = { civilian_factory_use = 5 }
+		remove_effect = {
+			set_country_flag = eur_ba_oregon_guard_funded
+			effect_tooltip = {
+				493 = {
+					swap_ideas = {
+						remove_idea = ba_EUR_oregon_military_department_template_hidden_idea
+						add_idea = ba_EUR_oregon_military_department_army_guard_funding_fake_hidden_idea
+					}
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { 493.caps_flat_income_modifier_var = -10 }
+				add_to_variable = { 493.civilian_factory_use_var = 5 }
+				add_to_variable = { 493.mobilization_speed_var = 0.1 }
+				add_to_variable = { 493.modifier_army_sub_unit_heavy_infantry_attack_factor_var = 0.05 }
+				add_to_variable = { 493.modifier_army_sub_unit_heavy_infantry_defence_factor_var = 0.05 }
+				493 = { force_update_dynamic_modifier = yes }
+				remove_ideas = ba_EUR_oregon_military_department_start_hidden_idea
+				remove_ideas = ba_EUR_oregon_military_department_army_guard_hidden_idea
+				add_ideas = ba_EUR_oregon_military_department_army_guard_funding_real_hidden_idea
+			}
+		}
+	}
 	#Cleansing The Streets Of Salem
 	erx_broken_arrow_development_oregon_salem = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		cost = 30
 		fire_only_once = yes
 
+		custom_cost_trigger = { 
+			command_power > 29
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30_PP_30
+
 		available = {
-			has_full_control_of_state = 493
+			493 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 3
 			has_equipment = { infantry_equipment > 799 }
 			has_equipment = { support_equipment_1 > 99 }
+			has_manpower > 799
 		}
 
 		modifier = { civilian_factory_use = 4 }
 		complete_effect = {
+			add_manpower = -800
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -800
@@ -645,9 +689,14 @@ erx_broken_arrow_development_oregon_cat = {
 				type = support_equipment_1
 				amount = -100
 			}
+			hidden_effect = {
+				add_political_power = -30
+				add_command_power = -30
+			}
 		}
 		days_remove = 120
 		remove_effect = {
+			add_manpower = 650
 			set_country_flag = ba_eur_oregon_salem_rebuilt_flag
 			493 = {
 				set_temp_variable = { pop_add = 2500 }
@@ -679,13 +728,19 @@ erx_broken_arrow_development_oregon_cat = {
 	#Enough Crabs for One Day
 	erx_broken_arrow_development_oregon_eugene = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		cost = 30
 		fire_only_once = yes
 
+		custom_cost_trigger = { 
+			command_power > 29
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30_PP_30
+
 		available = {
-			has_full_control_of_state = 358
+			358 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 3
 			has_equipment = { support_equipment_1 > 299 }
+			has_manpower > 499
 		}
 
 		modifier = { civilian_factory_use = 4 }
@@ -694,9 +749,15 @@ erx_broken_arrow_development_oregon_cat = {
 				type = support_equipment_1
 				amount = -300
 			}
+			add_manpower = -500
+			hidden_effect = {
+				add_political_power = -30
+				add_command_power = -30
+			}
 		}
 		days_remove = 120
 		remove_effect = {
+			add_manpower = 400
 			358 = {
 				set_temp_variable = { pop_add = 2000 }
                 add_state_population_no_state_name = yes
@@ -732,8 +793,8 @@ erx_broken_arrow_development_oregon_cat = {
 		fire_only_once = yes
 
 		available = {
-			has_full_control_of_state = 23
-			has_full_control_of_state = 37
+			23 = { is_owned_and_controlled_by = ROOT }
+			37 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 7
 		}
 
@@ -811,8 +872,8 @@ erx_broken_arrow_development_oregon_cat = {
 		fire_only_once = yes
 
 		available = { 
-			num_of_civilian_factories_available_for_projects > 1
 			has_completed_focus = nf_ba_eur_oregon_industry_left 
+			num_of_civilian_factories_available_for_projects > 1
 		}
 
 		days_remove = 60
@@ -828,9 +889,9 @@ erx_broken_arrow_development_oregon_cat = {
 		fire_only_once = yes
 
 		available = {
-			num_of_civilian_factories_available_for_projects > 3
-			has_full_control_of_state = 71
 			has_completed_focus = nf_ba_eur_oregon_industry_left 
+			71 = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 3
 		}
 
 		days_remove = 60
@@ -864,57 +925,37 @@ erx_broken_arrow_development_oregon_cat = {
 	#Project Bonneville Dam
 	erx_broken_arrow_dam_oregon_bonneville = {
 		icon = GFX_decision_generic_construction
-		cost = 20
+		cost = 30
 		fire_only_once = yes
 
 		available = {
-			has_full_control_of_state = 37
-			num_of_civilian_factories_available_for_projects > 1
 			has_completed_focus = nf_ba_eur_oregon_industry_left
+			345 = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 2
 		}
 
-		days_remove = 60
-		modifier = { civilian_factory_use = 2 }
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
 		remove_effect = {
-			37 = {
-				add_extra_state_shared_building_slots = 2
-				add_resource = {
-					type = water
-					amount = 40
-				}
-				add_resource = {
-					type = energy
-					amount = 30
-				}
-			}
+			345 = { add_dynamic_modifier = { modifier = ba_eur_oregon_bonneville_dam_dynamic_modifier } }
 		}
 	}
 	#Project McNary Dam
 	erx_broken_arrow_dam_oregon_mcnary = {
 		icon = GFX_decision_generic_construction
-		cost = 20
+		cost = 30
 		fire_only_once = yes
 
 		available = {
-			has_full_control_of_state = 51
-			num_of_civilian_factories_available_for_projects > 1
 			has_completed_focus = nf_ba_eur_oregon_industry_left
+			178 = { is_owned_and_controlled_by = ROOT }
+			num_of_civilian_factories_available_for_projects > 2
 		}
 
-		days_remove = 60
-		modifier = { civilian_factory_use = 2 }
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
 		remove_effect = {
-			51 = {
-				add_extra_state_shared_building_slots = 2
-				add_resource = {
-					type = water
-					amount = 30
-				}
-				add_resource = {
-					type = energy
-					amount = 20
-				}
-			}
+			178 = { add_dynamic_modifier = { modifier = ba_eur_oregon_mcnary_dam_dynamic_modifier } }
 		}
 	}
 }
