@@ -1205,6 +1205,7 @@ focus_tree = {
 				493 = { force_update_dynamic_modifier = yes }
 				add_ideas = ba_EUR_oregon_military_department_naval_militia_hidden_idea
 			}
+			custom_effect_tooltip = nf_ba_eur_oregon_military_department_naval_militia_tt
 		}
 	}
 	###Oregon Industry Branch###
@@ -1376,6 +1377,12 @@ focus_tree = {
 		prerequisite = { focus = nf_ba_eur_oregon_industry_end }
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+			swap_ruler_traits = {
+				remove = EUR_BA_president_level_1_country_leader_trait
+				add = EUR_BA_president_level_2_country_leader_trait
+			}
 		}
 	}
 

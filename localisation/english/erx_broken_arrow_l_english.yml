@@ -705,6 +705,7 @@ erx_oregon_polk_offensive_desc: "With the self-named \"Attis Of The West\" and h
 
 erx_oregon_RCA: "Oregon Reconstruction Authority"
 erx_oregon_RCA_desc: "With the main powers in the region dealt with we just need to mop up the rest of the state, barring acts of God or foreign interventions, should be a piece of cake."
+erx_oregon_RCA_tt: "Unlock §Y£GFX_decision_icon_small The Beaver State§! to develop §YOregon§!"
 ###Oregon Pacification Branch
 nf_ba_eur_oregon_pacification_start: "Taking Out The Trash"
 nf_ba_eur_oregon_pacification_start_desc: "While we have nominally secured the state, many sectors are still for all intents and purposes lawless with criminal and cannibal gangs running rampant. Attempting to resist us either out of insanity or just pure stubbornness. Either way we need to crack down on this rabble before this entire endeavor turns into an unwinnable guerrilla war. Not to mention the massive workload of reconstructing an entire state from scratch.\n§Y\"We have a heavy task before us.\"§!"
@@ -743,6 +744,7 @@ nf_ba_eur_oregon_military_department_air_academy_desc: "As it stands we have no 
 
 nf_ba_eur_oregon_military_department_naval_militia: "Oregon Naval Militia"
 nf_ba_eur_oregon_military_department_naval_militia_desc: "While the formation of a proper naval force is a daunting task we are actively working towards we as of now require a naval arm to combat piracy on Oregons Shore. While this force likely wont extend beyond refurbished fishing vessels and tug boats armed with ad hoc weaponry it will send a message that we are not to be trifled with."
+nf_ba_eur_oregon_military_department_naval_militia_tt: "§Y£GFX_decision_icon_small Reedsport Federal Naval Station§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Port of Salem§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Portland Naval Facilities§! is §Gavailable!!"
 
 ###Oregon Industry Branch
 nf_ba_eur_oregon_industry_start: "Welcoming The Eurekan Construction Companies"
@@ -1019,11 +1021,15 @@ decision_cost_CP_20_blocked: "£command_power  §R20§!"
 decision_cost_CP_20_tooltip: "It costs £command_power  §Y20§! to take the decision"
 
 ##Reconstruction Authorities/Development Projects
-erx_oregon_RCA_tt: "Unlock §Y£GFX_decision_icon_small Decisions§! to develop §YOregon§!"
 erx_broken_arrow_development_oregon_cat: "The Beaver State"
 erx_broken_arrow_development_oregon_cat_desc: "\n\n\n\n\n\n\n\n £GFX_embed_oregon_reconstruction_authority_decision_text_picture \n\n\n\n\n\n\n\n\n\n\nOregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered \"Silicon Forest\". With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\nNevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
 
 eur_ba_oregon_reconstruction_guard_funding_decision: "Increase Oregon National Guard Funding"
+
+#Excavation Projects
+eur_ba_oregon_excavate_futuretec_decision: "Excavate Future-Tec Facility"
+
+eur_ba_oregon_excavate_umatilla_decision: "Umatilla Chemical Depot"
 
 #Oregon-Pacification
 eur_ba_oregon_pacification_deploy_national_guard_decision: "Deploy National Guards"
@@ -1052,6 +1058,11 @@ ba_eur_oregon_mcnary_dam_dynamic_modifier_desc: "\n\n£GFX_embed_oregon_mcnarry_
 erx_broken_arrow_oregon_invite_timberline: "Invite §8[TIM.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_packers: "Annex §W[PAC.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_apostle: "Annex §G[DIS.GetNameWithFlag]§!"
+
+eur_ba_oregon_reedsport_port_decision: "Reedsport Federal Naval Station"
+eur_ba_oregon_salem_port_decision: "Port of Salem"
+eur_ba_oregon_portland_port_decision: "Portland Naval Facilities"
+eur_ba_oregon_salem_port_decision_tt: "If §YWest Portland§! and §YEast Portland§! are under our control, the effects will be §Gdouble!§!"
 
 ############
 ###Events###

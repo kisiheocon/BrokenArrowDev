@@ -12,6 +12,7 @@ characters = {
 			expire = "3000.1.1"
 			traits = {
 				EUR_BA_authoritarian_tendencies_country_leader_trait
+				EUR_BA_president_level_1_country_leader_trait
 			}
 		}
 	}

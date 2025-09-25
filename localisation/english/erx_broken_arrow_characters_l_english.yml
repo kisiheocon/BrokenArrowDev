@@ -22,6 +22,12 @@ EUR_BA_navarro_unit_leader_trait_desc: "This medal is awarded to those who have 
 EUR_BA_authoritarian_tendencies_country_leader_trait: "Authoritarian Tendecies"
 EUR_BA_authoritarian_tendencies_country_leader_trait_tt: "§gWhile generally committed to just treatment and respect for the pinnacle of American principles, The rule of law, Granite is a complicated man with a violent and brutal past. As such he can at times can have... §!§Rdarker moments§!§g. Spurring rash acts of cruelty in battle or in governance with what some may consider dictatorial behavior when faced with intense pressure or fighting particularly heinous foes. Much to his and the people's dismay. Though it at times has its uses...§!"
 
+EUR_BA_president_level_1_country_leader_trait: "President In Name Only"
+EUR_BA_president_level_1_country_leader_trait_tt: "§gDespite taking the role and title of President Granite was not duly elected by the citizenry he now represents. While their support was integral to his rise, Granite is a military leader at heart and is both untrained and unprepared for higher office. He will have to make significant efforts to win over both the people and himself. For only then will he be able to truly claim the mantle of §!§C\"President Of The United States\"§!"
+
+EUR_BA_president_level_2_country_leader_trait: "President In More Than Name"
+EUR_BA_president_level_2_country_leader_trait_tt: ""
+
 ###################
 ###Company Names###
 ###################

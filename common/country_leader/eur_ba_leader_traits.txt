@@ -12,4 +12,17 @@ leader_traits = {
         weekly_casualties_war_support = 0.002
         custom_modifier_tooltip = EUR_BA_authoritarian_tendencies_country_leader_trait_tt
     }
+    #President In Name Only - Level 1
+    EUR_BA_president_level_1_country_leader_trait = {
+        random = no
+        political_power_factor = -0.05
+        custom_modifier_tooltip = EUR_BA_president_level_1_country_leader_trait_tt
+    }
+    #President In More Than Name - Level 2
+    EUR_BA_president_level_2_country_leader_trait = {
+        random = no
+        political_power_factor = 0.05
+        command_power_gain_mult = 0.15
+        #custom_modifier_tooltip = EUR_BA_president_level_2_country_leader_trait_tt
+    }
 }
