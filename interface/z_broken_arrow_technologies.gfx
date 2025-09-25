@@ -4,9 +4,96 @@ spriteTypes = {
 	#######################
 
 	###EUR###
-	##Tier 0 Gun - Springfield
+	#Tier 0 Ballistic Gun - Springfield
 	SpriteType = {
 		name = "GFX_EUR_standard_weaponry_tech_medium"
 		texturefile = "gfx/interface/equipment/cosmetic/ballistic/springfield.dds"
+	}
+	#Tier 4 Energy Gun
+	spriteType = {
+		name = "GFX_EUR_energy_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/energy/energy_weaponry_tech_icon_3_adv_laser_rifle.dds"
+	}
+	##Planes##
+	#Tier 2 Recon Plane
+	SpriteType = {
+		name = "GFX_EUR_spotter_plane_equipment_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_helicopter_1.dds"
+	}	
+	#Tier 2 CAS
+	SpriteType = {
+		name = "GFX_EUR_cas_bomber_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS1.dds"
+	}
+	#Tier 2 Fighter
+	SpriteType = {
+		name = "GFX_EUR_fighter_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter1.dds"
+	}
+	#Tier 1 Strat Bomber
+	SpriteType = {
+		name = "GFX_EUR_strat_bomber_tech_1_medium"
+		texturefile = "gfx/interface/technologies/USA_strategic_bomber1.dds"
+	}
+	#Tier 2 Strat Bomber
+	SpriteType = {
+		name = "GFX_EUR_strat_bomber_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_strategic_bomber3.dds"
+	}
+	#Tier 2 Transport Plane
+	SpriteType = {
+		name = "GFX_EUR_cargo_plane_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_transport_plane_equipment_3.dds"
+	}
+	##Vehicle##
+	#Tier 1 Light Vehicle
+	SpriteType = {
+		name = "GFX_EUR_light_motorized_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/vehicle/m1_armored_car.dds"
+	}
+	#Tier 2 Light Vehicle
+	SpriteType = {
+		name = "GFX_EUR_light_motorized_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/vehicle/m3_scout_car.dds"
+	}
+	#Tier 3 Light Vehicle
+	SpriteType = {
+		name = "GFX_EUR_light_motorized_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/vehicle/m8_greyhound.dds"
+	}
+	#Tier 1 Heavy Vehicle
+	SpriteType = {
+		name = "GFX_EUR_heavy_motorized_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/technologies/USA_motorized_equipment_0.dds"
+	}
+	#Tier 2 Heavy Vehicle
+	SpriteType = {
+		name = "GFX_EUR_heavy_motorized_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_motorized_equipment_1.dds"
+	}
+	#Tier 3 Heavy Vehicle
+	SpriteType = {
+		name = "GFX_EUR_heavy_motorized_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/vehicle/m3_halftrack.dds"
+	}
+	#Tier 1 Tank
+	SpriteType = {
+		name = "GFX_EUR_tank_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/technologies/USA_basic_light_tank.dds"
+	}
+	#Tier 2 Tank
+	SpriteType = {
+		name = "GFX_EUR_tank_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/technologies/USA_basic_main_tank.dds"
+	}
+	#Tier 3 Tank
+	SpriteType = {
+		name = "GFX_EUR_tank_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/technologies/USA_imp_main_tank.dds"
+	}
+	#Tier 4 Tank
+	SpriteType = {
+		name = "GFX_EUR_tank_equipment_vehicle_tech_4_medium"
+		texturefile = "gfx/interface/technologies/USA_main_battle_tank.dds"
 	}
 }

@@ -26,6 +26,17 @@ ba_eur_oregon_construction_dynamic_modifier = {
 	}
 	state_production_speed_buildings_factor = 0.1
 }
+#Oregon State Park
+ba_eur_oregon_state_park_dynamic_modifier = { 
+	icon = GFX_idea_EUR_national_park
+	local_building_slots_factor = -0.3
+	local_non_core_manpower = -0.5
+	local_resources = -0.3
+	enemy_local_supplies = -0.2
+	dig_in_speed_factor = 0.2
+	enemy_attrition = 0.1
+	enemy_army_speed_factor = -0.2
+}
 
 ##Dams Project##
 #McNary Dam

@@ -34,4 +34,8 @@ spriteTypes = {
 		name = "GFX_idea_EUR_oregon_bonneville_dam"
 		textureFile = "gfx/interface/ideas/EUR_oregon_bonneville_dam.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_EUR_national_park"
+		textureFile = "gfx/interface/ideas/EUR_national_park.dds"
+	}
 }

@@ -607,6 +607,7 @@ erx_broken_arrow_development_oregon_cat = {
 		days_remove = 60
 		remove_effect = {
 			annex_country = { target = PAC }
+			PAC = { every_core_state = { add_compliance = 50 } }
 		}
 	}
 	#Annex Apostle
@@ -620,6 +621,64 @@ erx_broken_arrow_development_oregon_cat = {
 		days_remove = 60
 		remove_effect = {
 			annex_country = { target = DIS }
+			DIS = { every_core_state = { add_compliance = 50 } }
+		}
+	}
+	#Deploy National Guard
+	eur_ba_oregon_pacification_deploy_national_guard_decision = {
+		icon = GFX_div_templ_6_large
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_CP_10
+
+		available = { 
+			has_completed_focus = nf_ba_eur_oregon_pacification_left
+			has_manpower > 500
+		}
+		visible = { NOT = { has_completed_focus = nf_ba_eur_oregon_pacification_end } }
+
+		days_remove = 20
+		complete_effect = { 
+			hidden_effect = { add_command_power = -10 }
+			add_manpower = -500
+		}
+		remove_effect = {
+			add_manpower = 400
+			every_controlled_state = {
+				limit = {
+					OR = {
+						region = 11
+						region = 59
+						region = 58
+					}
+				}
+				add_resistance = -10
+				add_compliance = 5
+			}
+		}
+	}
+	#Deploy Special Forces
+	eur_ba_oregon_pacification_deploy_special_forces_decision = {
+		icon = GFX_unit_category_spec_ops
+		custom_cost_trigger = { command_power > 19 }
+		custom_cost_text = decision_cost_CP_20
+
+		available = { 
+			has_completed_focus = nf_ba_eur_oregon_pacification_left
+			has_manpower > 200
+		}
+		visible = { has_idea = eur_oregon_cannibal }
+
+		days_remove = 20
+		complete_effect = {
+			hidden_effect = { add_command_power = -20 }
+			add_manpower = -200
+		}
+		remove_effect = {
+			add_manpower = 150
+			modify_timed_idea = {
+				idea = eur_oregon_cannibal
+				days = -100
+			}
 		}
 	}
 	#Increase Oregon National Guard Funding
@@ -659,7 +718,7 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Cleansing The Streets Of Salem
+	#A City Divided
 	erx_broken_arrow_development_oregon_salem = {
 		icon = GFX_decision_generic_merge_plant_materiel
 		fire_only_once = yes
@@ -725,7 +784,7 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Enough Crabs for One Day
+	#Civilization Triumphant
 	erx_broken_arrow_development_oregon_eugene = {
 		icon = GFX_decision_generic_merge_plant_materiel
 		fire_only_once = yes
@@ -778,12 +837,14 @@ erx_broken_arrow_development_oregon_cat = {
 					instant_build = yes
 				}
 				set_province_name = { id = 4200 name = "Eugene" }
+				set_province_name = { id = 1983 name = "Rowland" }
 				set_state_category = large_city
 				add_victory_points = {
 					province = 4200
 					value = 12
 				}
 			}
+			country_event = erx_broken_arrow_event_oregon.1
 		}
 	}
 	#Making Port At Portland
@@ -809,12 +870,10 @@ erx_broken_arrow_development_oregon_cat = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
 					level = 1
-					instant_build = yes
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -882,7 +941,7 @@ erx_broken_arrow_development_oregon_cat = {
 			add_ideas = eur_silicon_forest
 		}
 	}
-	#Oregon timber Industry
+	#Tree Cuttin Frenzy
 	erx_broken_arrow_development_oregon_timber_industry = {
 		icon = GFX_decision_generic_forestry
 		cost = 50

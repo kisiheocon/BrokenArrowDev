@@ -9,6 +9,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_embed_national_park"
+		textureFile = "gfx/texticons/embeds/national_park.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_embed_oregon_department_transportation"
 		textureFile = "gfx/texticons/embeds/oregon_department_transportation.dds"
 		legacy_lazy_load = no

@@ -708,22 +708,22 @@ erx_oregon_RCA_desc: "With the main powers in the region dealt with we just need
 ###Oregon Pacification Branch
 nf_ba_eur_oregon_pacification_start: "Taking Out The Trash"
 nf_ba_eur_oregon_pacification_start_desc: "While we have nominally secured the state, many sectors are still for all intents and purposes lawless with criminal and cannibal gangs running rampant. Attempting to resist us either out of insanity or just pure stubbornness. Either way we need to crack down on this rabble before this entire endeavor turns into an unwinnable guerrilla war. Not to mention the massive workload of reconstructing an entire state from scratch.\n§Y\"We have a heavy task before us.\"§!"
-nf_ba_eur_oregon_pacification_end_tt: "Gains §G60% reduction in coring cost§! for §YOregon§! states."
 
 nf_ba_eur_oregon_pacification_left: "Stamp Em Out"
 nf_ba_eur_oregon_pacification_left_desc: "In our efforts to stamp out the various criminal bands throughout Oregon, it has come to our attention that some particularly stubborn elements have elected to wage their terror campaigns from the various cave and mountain networks throughout the state. Negotiation efforts have failed. And even attack dogs are having little success. We have grown tired of this nonsense and have lost our patience. If they refuse reason and order, then they leave us no choice.\n§Y\"Send in the Rangers.\"§!"
-nf_ba_eur_oregon_pacification_left_tt: "§GSpecial Forces Will Be Sent To Eradicate This Threat§!"
+nf_ba_eur_oregon_pacification_left_tt: "§GSpecial Forces Will Be Sent To Eradicate This Threat§!\n§Y£GFX_decision_icon_small Deploy National Guards§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Deploy Special Forces§! is §Gavailable!§!"
 
 nf_ba_eur_oregon_pacification_right: "Round Up The Survivors"
 nf_ba_eur_oregon_pacification_right_desc: "Through a series of pitched offensive operations and the introduction of special forces, we have been met with resounding success. The last vestiges of resistance in Oregon have been eradicated or have surrendered and scattered in the wind. Now all that remains is to mop up what's left with National Guard and militia forces. Justice for these vile barbarians will soon be at hand."
 
 nf_ba_eur_oregon_pacification_end: "Order At Long Last"
 nf_ba_eur_oregon_pacification_end_desc: "It is a bright day for Oregon! Local garrisons have reported an absolute success in the region and resistance activities have plummeted. It will be our honor to report home that we have successfully held and secured the state. Celebrate your victory! For I am sure we will soon be marching onwards to our next campaign!"
+nf_ba_eur_oregon_pacification_end_tt: "Gains §G60% reduction in coring cost§! for §YOregon§! states.\n§Y£GFX_decision_icon_small Deploy National Guards§! will be §Runavailable!§!"
 
 ###Oregon Military Branch
 nf_ba_eur_oregon_military_department_formation: "Oregon Military Department"
 nf_ba_eur_oregon_military_department_formation_desc: "For months front-line troops and garrisons from other stations have been acting as the peacekeeping force in Oregon. But now with the war concluded and the slow but steady return of stability and order these forces are desperately needed elsewhere on our other frontiers. By forming a dedicated force to guard Oregon we can divert important forces elsewhere and begin the recruitment of local citizenry rather then calling on all our manpower from Eureka and Navarro."
-ba_eur_oregon_salem_rebuilt_flag: "§Y£GFX_decision_icon_small Cleansing The Streets Of Salem§! is §YCompleted§!"
+ba_eur_oregon_salem_rebuilt_flag: "§Y£GFX_decision_icon_small A City Divided§! is §YCompleted§!"
 
 nf_ba_eur_oregon_military_department_army_guard: "Oregon Army National Guard"
 nf_ba_eur_oregon_military_department_army_guard_desc: "The most integral component of our new military buildup in the state will be organized and formally trained National Guard divisions. While informal militias and garrisons will always be indispensable, Army trained units will be the centerpiece of our pacification and defense strategy in the region.\n§Y\"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\"§!"
@@ -750,7 +750,7 @@ nf_ba_eur_oregon_industry_start_desc: "The conquest of Oregon has been a hell of
 
 nf_ba_eur_oregon_industry_left: "Riches Beyond Belief"
 nf_ba_eur_oregon_industry_left_desc: "The state of Oregon despite looking worse for wear is host to unimaginable natural and scientific resources. Research facilities, Power Plants ,Military sectors , and Natural Resources are all ours for the taking, With some smart funding and hard work we can make something of this state yet!"
-nf_ba_eur_oregon_industry_left_tt: "§Y£GFX_decision_icon_small Silicon Forest§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Oregon Timber Industry§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project Bonneville Dam§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project McNary Dam§! is §Gavailable!§!"
+nf_ba_eur_oregon_industry_left_tt: "§Y£GFX_decision_icon_small Silicon Forest§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Tree Cuttin Frenzy§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project Bonneville Dam§! is §Gavailable!§!\n§Y£GFX_decision_icon_small Project McNary Dam§! is §Gavailable!§!"
 
 nf_ba_eur_oregon_industry_right: "Construction Frenzy"
 nf_ba_eur_oregon_industry_right_desc: "Further openings of government contracts have opened up a tidal wave of construction works in an apparent gold rush of people drawn in by solid, reliable pay and the potential for new homes in the vast land of Oregon.\n\nThe American Dream is coming into fruition."
@@ -1010,19 +1010,32 @@ decision_cost_CP_30_PP_30: "£command_power  [ba_custom_cost_30_CP] £GFX_pol_po
 decision_cost_CP_30_PP_30_blocked: "£command_power  [ba_custom_cost_30_CP] £GFX_pol_power  [ba_custom_cost_30_PP]"
 decision_cost_CP_30_PP_30_tooltip: "It costs £command_power  [ba_custom_cost_30_CP] and £GFX_pol_power  [ba_custom_cost_30_PP] to take the decision"
 
+decision_cost_CP_10: "£command_power  §Y10§!"
+decision_cost_CP_10_blocked: "£command_power  §R10§!"
+decision_cost_CP_10_tooltip: "It costs £command_power  §Y10§! to take the decision"
+
+decision_cost_CP_20: "£command_power  §Y20§!"
+decision_cost_CP_20_blocked: "£command_power  §R20§!"
+decision_cost_CP_20_tooltip: "It costs £command_power  §Y20§! to take the decision"
+
 ##Reconstruction Authorities/Development Projects
 erx_oregon_RCA_tt: "Unlock §Y£GFX_decision_icon_small Decisions§! to develop §YOregon§!"
 erx_broken_arrow_development_oregon_cat: "The Beaver State"
-erx_broken_arrow_development_oregon_cat_desc: "\n\n\n\n\n\n\n\n £GFX_embed_oregon_reconstruction_authority_decision_text_picture \n\n\n\n\n\n\n\n\n\n\nOregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered 'Silicon Forest'. With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\nNevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
+erx_broken_arrow_development_oregon_cat_desc: "\n\n\n\n\n\n\n\n £GFX_embed_oregon_reconstruction_authority_decision_text_picture \n\n\n\n\n\n\n\n\n\n\nOregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered \"Silicon Forest\". With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\nNevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
 
 eur_ba_oregon_reconstruction_guard_funding_decision: "Increase Oregon National Guard Funding"
 
+#Oregon-Pacification
+eur_ba_oregon_pacification_deploy_national_guard_decision: "Deploy National Guards"
+
+eur_ba_oregon_pacification_deploy_special_forces_decision: "Deploy Special Forces"
+
 #Salem-Oregon
-erx_broken_arrow_development_oregon_salem: "Cleansing The Streets Of Salem"
-erx_broken_arrow_development_oregon_salem_desc: "The Capture Of Salem has marked a turning point in our campaign. With the Capitol of Oregon now in our hands the conquest of the remainder of the state seems all but assured. Nevertheless while the flames have finally settled and the last vestiges of organized resistance have been eradicated our mission here is not yet completed. Obviously it will take months or even years to rebuild the city from the damage the Cannibals and anarchists have inflicted alongside the two centuries of decay. However we make the first step in this project right here and now. By supplying the Garrison with the equipment it needs and the provisional city government with the funds they require we can simultaneously crush the rampant criminal gangs in the city and fund several infrastructure and repair operations in the city.\n\nSetting the stage for the future."
+erx_broken_arrow_development_oregon_salem: "A City Divided"
+erx_broken_arrow_development_oregon_salem_desc: "The Capture Of Eastern Salem has marked a turning point in our campaign. With the eastern half of the Oregon State Capitol now in our hands, the liberation of the remainder of the state outside of Brotherhood-held lands is underway and seems all but assured. Nevertheless, while the flames have finally settled and the last vestiges of organized resistance have been eradicated, our mission here is not yet completed. Obviously it will take months or even years to rebuild our half of the city from the damage the Cannibalistic savages have inflicted alongside two centuries of decay and barbarism. However, we make the first step in this project right here and now. By supplying the Garrison with the equipment it needs and the provisional military administration with the funds they require, we can simultaneously crush whatever cannibal elements remain in the city, forcing them into the wilderness and across the river to be the slavers' problem. While also funding several infrastructure and repair operations within the city limits."
 #Eugene-Oregon
-erx_broken_arrow_development_oregon_eugene: "Enough Crabs for One Day"
-erx_broken_arrow_development_oregon_eugene_desc: "While certainly not a major achievement the capture of the city of Eugene from the Crab Cultists is something to be proud of. Though looking at the state of the city we almost wished we hadn't. More then half the city is at least partially flooded as a deliberate action by the cultists to better worship their 'God' with blocked sewers and drainage pipes to purposely destroyed water maintenance systems. The half that isn't flooded is torn to shreds and covered top to bottom in 'Human Sacrifices' and Overgrown vegetation. We certainly have our hands full on this one. However if we can drain the city and repair the pumps  there is hope for the city yet.\n\nGotta start somewhere I guess."
+erx_broken_arrow_development_oregon_eugene: "Civilization Triumphant"
+erx_broken_arrow_development_oregon_eugene_desc: "The Mirelurk tribe has been in a word eradicated. Organized resistance has crumbled under the weight of Federal armies marching through their heartlands and the live cremation of their \"God\" has resulted in the surrender of what rabble remained. We can now begin the long and arduous job of freeing the slaves these savages kept and rebuilding the ruins of this sector of Oregon. Thankfully due to its comparative anonymity most of the damage to this sectors cities and infrastructure is from post war decay and anarchy rather then Communist bombardments. Nevertheless we have our work set out for us."
 #Portland-Oregon
 erx_broken_arrow_development_oregon_portland: "Making Port At Portland"
 
@@ -1040,14 +1053,29 @@ erx_broken_arrow_oregon_invite_timberline: "Invite §8[TIM.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_packers: "Annex §W[PAC.GetNameWithFlag]§!"
 erx_broken_arrow_oregon_annex_apostle: "Annex §G[DIS.GetNameWithFlag]§!"
 
+############
+###Events###
+############
+###Oregon###
+erx_broken_arrow_event_oregon.1.t: "Anyone Know A Good Plumber?"
+erx_broken_arrow_event_oregon.1.d: "While certainly not a major achievement the capture of the city of Eugene from the crab worshipers was something to be proud of. Though looking at the state of the city we almost wished we hadn't. Upon the defeat of the cultists and the arrival of our forces we found more then half the city is at least partially flooded as a deliberate action by the cultists to better worship their 'God' with blocked sewers and drainage pipes to purposely destroyed water maintenance systems. The half that isn't flooded is torn to shreds and covered top to bottom in 'Human Sacrifices' and Overgrown vegetation. We have since been working diligently to turn this town into something beyond a glorified swamp. But much work remains. Hope persists in spite of this situation thankfully. As our engineers work to unclog the rusting pipe networks and sewer systems that litter the town the population has slowly but surely started to return. Children swim in what hopefully will soon be parks. Fishermen travel out to open waters through the flooded streets in an almost endearing American interpretation of Venice canals. And for the first time in who knows how long laughter can be heard in what housing has been made habitable.  We certainly still have our hands full on this one."
+erx_broken_arrow_event_oregon.1.a: "But Things Are Looking Up."
+
+erx_broken_arrow_event_oregon.2.t: "Oregon Park Rangers"
+erx_broken_arrow_event_oregon.2.d: "PLACEHOLDER: Imagine Granite and Bunyan make out with eachothers and they have a baby called Oregon Park Rangers"
+erx_broken_arrow_event_oregon.2.a: "Peak Writing - Deez"
+TIM_park_ranger_cosmetic_tag: "Oregon Park Rangers"
+TIM_park_ranger_cosmetic_tag_ADJ: "Oregonian Rangers"
+TIM_park_ranger_cosmetic_tag_DEF: "the Oregon Park Rangers"
+
 #Ideas-Oregon
 erx_broken_arrow_development_oregon_silicon_forest: "Silicon Forest"
 eur_silicon_forest: "Silicon Forest"
-erx_broken_arrow_development_oregon_timber_industry: "Oregon Timber Industry"
+erx_broken_arrow_development_oregon_timber_industry: "Tree Cuttin Frenzy"
+erx_broken_arrow_development_oregon_timber_industry_desc: "The Great War has had many consequences, most of them horrible. But in an ironic twist of fate it has led to an almost concerning overgrowth of forest all across Oregon. Without a proper authority to harness them they have for 200 years grown unabated, possibly aided by background radiation. This is wondrous news as already lumber companies from our other territories have been chomping at the bit to gain access to them and are offering increasingly palatable amounts of money for contracts.\n\n\"Come One, Come All.\""
 eur_timber_industry: "Oregon Timber Industry"
 eur_oregon_cannibal: "The Donner Legacy"
 eur_oregon_cannibal_desc: "While the collapse of law and order following the Great War resulted in countless acts of depravity and atrocities, Oregon in particular proves difficult to be tamed. Cannibalism is rampant in the rural regions and until we stamp out this disgusting practice it will be a significant drain on the state."
-erx_broken_arrow_development_oregon_cannibal_remove: "Take care of the cannibals issue"
 
 ba_eur_oregon_military_department_dynamic_modifier: "Oregon Military Department"
 ba_eur_oregon_military_department_dynamic_modifier_desc: "\n\n\n£GFX_embed_oregon_military_department   §Y\"Always Ready, Always There!\"§!\n\n\n\nThe Oregon Military Department is an agency of the government of the U.S. state of Oregon, which oversees the armed forces of the state of Oregon. Under the authority and direction of the governor as commander-in-chief, the agency is responsible for planning, establishing, and enforcing rules and procedures governing the administration, supply, and training of the Oregon National Guard."
@@ -1060,6 +1088,9 @@ ba_EUR_oregon_military_department_army_academy_hidden_idea: "Oregon Military Dep
 ba_EUR_oregon_military_department_civil_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_air_academy_hidden_idea: "Oregon Military Department"
 ba_EUR_oregon_military_department_naval_militia_hidden_idea: "Oregon Military Department"
+
+ba_eur_oregon_state_park_dynamic_modifier: "National Park"
+ba_eur_oregon_state_park_dynamic_modifier_desc: "\n\n\n                            £GFX_embed_national_park \n\n\n\nThe National Park Service is an agency of the United States federal government, within the U.S. Department of the Interior. The service manages all national parks; most national monuments; and other natural, historical, and recreational properties, with various title designations. The United States Congress created the agency on August 25, 1916, through the National Park Service Organic Act."
 
 ###Mariposa-Oregon - Cut Contents, written by Soleful Phoenix - @Deez
 erx_broken_arrow_mariposa.1.t: "Semi-Permanent Erasure"

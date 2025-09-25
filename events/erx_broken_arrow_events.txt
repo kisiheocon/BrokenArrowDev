@@ -4,6 +4,7 @@ add_namespace = erx_broken_arrow_fireside
 add_namespace = erx_broken_arrow_navarro
 add_namespace = erx_broken_arrow_mariposa
 add_namespace = erx_broken_arrow_incep
+add_namespace = erx_broken_arrow_event_oregon
 
 
 #debug event
@@ -1794,6 +1795,95 @@ country_event = {
 		add_political_power = 50
 	}
 }
+###################
+###Oregon Events###
+###################
+
+#Anyone Know A Good Plumber?
+country_event = {
+	id = erx_broken_arrow_event_oregon.1
+	title = erx_broken_arrow_event_oregon.1.t
+	desc = erx_broken_arrow_event_oregon.1.d
+	#picture = GFX_event_ARR_arroyo
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_event_oregon.1.a
+	}
+}
+
+#Oregon Park Rangers
+country_event = {
+	id = erx_broken_arrow_event_oregon.2
+	title = erx_broken_arrow_event_oregon.2.t
+	desc = erx_broken_arrow_event_oregon.2.d
+	#picture = GFX_event_ARR_arroyo
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			TIM = {
+				set_capital = { state = 587 }
+				587 = { set_province_name = { id = 1462 name = "Enterprise National Park H.Q" } }
+				every_core_state = {
+					if = {
+						limit = {
+							NOT = {
+								state = 345
+								state = 178
+								state = 51
+							}
+						}
+						add_dynamic_modifier = { modifier = ba_eur_oregon_state_park_dynamic_modifier }
+					}
+				}
+				345 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				178 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				51 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				149 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				399 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				322 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+				491 = { 
+					transfer_state_to = EUR
+					add_compliance = 50
+				}
+			}
+			EUR = { puppet = TIM  }
+			TIM = {
+				set_politics = { ruling_party = people }
+				add_popularity = {
+					ideology = people
+					popularity = 0.6
+				}
+				set_cosmetic_tag = TIM_park_ranger_cosmetic_tag
+			}
+		}
+	}
+	option = {
+		name = erx_broken_arrow_event_oregon.2.a
+	}
+}
+
 #######DEBUG STUFF
 country_event = { #Disclaimer for disabling ERX's Purists - @Deez
 	id = erx_broken_arrow.900

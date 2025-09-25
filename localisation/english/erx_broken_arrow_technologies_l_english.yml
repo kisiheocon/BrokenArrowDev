@@ -2,15 +2,135 @@
 ##################
 ###Technologies###
 ##################
-#Tier 0 Guns
+##Gun
+#Tier 0 Ballistic Gun
 EUR_infantry_equipment_1: "M1903 Springfield"
 EUR_infantry_equipment_1_short: "M1903 Springfield"
 EUR_infantry_equipment_1_desc: "The M1903 Springfield, officially the U.S. Rifle, Caliber .30, M1903, is an American five-round, non-removable, staggered-row box magazine-fed, bolt-action, repeating service rifle, used primarily during the first half of the 20th century."
-#Tier 1 Guns
+
+#Tier 1 Ballistic Gun
 EUR_ballistic_equipment_1: "M1A1 Thompson"
 EUR_ballistic_equipment_1_short: "M1A1 Thompson"
 EUR_ballistic_equipment_1_desc: "The Thompson submachine gun (also known as the \"Tommy gun\", \"Chicago typewriter\", or \"trench broom\") is a blowback-operated, selective-fire submachine gun, invented and developed by Brigadier General John T. Thompson, a United States Army officer, in 1918."
-#Tier 2 Guns
+
+#Tier 2 Ballistic Gun
 EUR_ballistic_equipment_2: "M1 Garand"
 EUR_ballistic_equipment_2_short: "M1 Garand"
 EUR_ballistic_equipment_2_desc: "The M1 Garand or M1 rifle is a semi-automatic rifle that was the service rifle of the U.S. Army during World War II and the Korean War. The rifle is chambered for the .30-06 Springfield cartridge and is named after its Canadian-American designer, John Garand. It was the first standard-issue autoloading rifle for the United States."
+
+#Tier 3 Ballistic Gun
+EUR_ballistic_equipment_3: "M16A1 Service Rifle"
+EUR_ballistic_equipment_3_short: "M16A1"
+EUR_ballistic_equipment_3_desc: "The M16 (officially Rifle, Caliber 5.56 mm, M16) is a family of assault rifles, chambered for the 5.56x45mm NATO cartridge with a 20-round magazine adapted from the ArmaLite AR-15 family of rifles for the United States military."
+
+#Tier 4 Ballistic Gun
+EUR_ballistic_equipment_4: "M4A1 Carbine"
+EUR_ballistic_equipment_4_short: "M4A1"
+EUR_ballistic_equipment_4_desc: "The M4 Carbine (officially Carbine, Caliber 5.56 mm, M4) is an assault rifle developed in the United States during the 1980s. It is a shortened version of the M16A2 assault rifle. The M4 is extensively used by the US military, with decisions to largely replace the M16 rifle in US Army and US Marine Corps combat units as the primary infantry weapon and service rifle. The M4 has been adopted by over 60 countries worldwide, and has been described as \"one of the defining firearms of the 21st century\"."
+
+#Tier 1 Energy Gun
+EUR_energy_equipment_1: "AER9 Laser Pistol"
+EUR_energy_equipment_1_short: "AER9 Laser Pistol"
+EUR_energy_equipment_1_desc: "The AER9 features a titanium housed crystal array which proved to withstand long years of exposure to the elements much better than the gold alloy housing of the later models. As a result, the crystal arrays stayed focused within operating parameters, rather than falling completely out of focus like the newer models. Power is drawn from microfusion cells and processed through a wave/particle diverter manufactured by General Atomics International."
+
+#Tier 2 Energy Gun
+EUR_energy_equipment_2: "AER9E3 Laser Rifle"
+EUR_energy_equipment_2_short: "AER9 Laser Rifle"
+EUR_energy_equipment_2_desc: "The standard issue laser rifle Pre-War, the AER9 features a features a titanium housed crystal array which proved to withstand long years of exposure to the elements compared to other top of the line models. While it was replaced by the YK42B pulse rifle before the Rig fell, we're not in a position to mass produce those rifles again. The AER9 itself if tough, reliable, and we are able to produce it in mass numbers as the standard issue energy weapon for frontline forces."
+
+#Tier 3 Energy Gun
+EUR_energy_equipment_3: "AER9A1 Laser Rifle"
+EUR_energy_equipment_3_short: "AER9A1 Laser Rifle"
+EUR_energy_equipment_3_desc: "Building off the success of the AER9, the A1 variant includes a rotating gyro to allow for fully automatic fire, whilst counter rotating gyros allow for a stable platform for firing. Weapon designers have considered this an improvement on even the Pre-War model, though it still remains a variant on the AER9. Combined with our expanded infantry kit this will considerably reduce the number of casualties our troops suffer."
+
+#Tier 4 Energy Gun
+EUR_energy_equipment_4: "AER9A2 Laser Rifle"
+EUR_energy_equipment_4_short: "AER9A2 Laser Rifle"
+EUR_energy_equipment_4_desc: "Refinement of all our previous upgrades have allowed for a more ergonomically designed model that does away with the obtuse rotating gyro for a smaller contained system housed within a titanium shell. Integration of pulse rifle breeder cell technology creates the most advanced laser energy weapon in the post-war era, suitable for the enclave. Combined with an infantry kit focused on energy weapons allows for even our auxiliary troops to dominate on the battlefield."
+
+##Plane
+#Tier 2 Recon Plane 
+EUR_spotter_plane_equipment_2: "Arcata R-4"
+EUR_spotter_plane_equipment_2_short: "Arcata R-4"
+EUR_spotter_plane_equipment_2_desc: "Arcata R-4 is a reverse engineered design based on the The Sikorsky R-4, a two-seat light helicopter that was designed by Igor Sikorsky with a single, three-bladed main rotor and powered by a radial engine. The R-4 was the world's first large-scale mass-produced helicopter and the first helicopter used by the United States Army Air Forces, the United States Navy, the United States Coast Guard and the United Kingdom's Royal Air Force and Royal Navy."
+
+#Tier 2 Fighter
+EUR_fighter_equipment_3: "Curtiss P-40 Warhawk"
+EUR_fighter_equipment_3_short: "Warhawk"
+EUR_fighter_equipment_3_desc: "The Curtiss P-40 Warhawk is an American single-engined, single-seat, all-metal fighter-bomber that first flew in 1938. The P-40 design was a modification of the previous Curtiss P-36 Hawk which reduced development time and enabled a rapid entry into production and operational service."
+
+#Tier 2 CAS
+EUR_cas_equipment_2: "SBD Dauntless Dive-Bomber"
+EUR_cas_equipment_2_short: "Dauntless"
+EUR_cas_equipment_2_desc: "The Douglas SBD Dauntless is a World War II American naval scout plane and dive bomber that was manufactured by Douglas Aircraft from 1940 through 1944. The SBD (\"Scout Bomber Douglas\") was the United States Navy's main carrier-based scout/dive bomber from mid-1940 through mid-1944. The SBD was also flown by the United States Marine Corps, both from land air bases and aircraft carriers."
+
+#Tier 1 Strat Bomber
+EUR_strategic_bomber_equipment_1: "Boeing B-17 Flying Fortress"
+EUR_strategic_bomber_equipment_1_short: "Flying Fortress"
+EUR_strategic_bomber_equipment_1_desc: "The Boeing B-17 Flying Fortress is an American four-engined heavy bomber aircraft developed in the 1930s for the United States Army Air Corps (USAAC). A fast and high-flying bomber, the B-17 dropped more bombs than any other aircraft during World War II, used primarily in the European Theater of Operations."
+
+#Tier 2 Strat Bomber
+EUR_strategic_bomber_equipment_2: "Boeing B-29 Superfortress"
+EUR_strategic_bomber_equipment_2_short: "Superfortress"
+EUR_strategic_bomber_equipment_2_desc: "The Boeing B-29 Superfortress is a American four-engined propeller-driven heavy bomber, designed by Boeing and flown primarily by the United States during World War II and the Korean War. Named in allusion to its predecessor, the Boeing B-17 Flying Fortress, the Superfortress was designed for high-altitude strategic bombing, but also excelled in low-altitude night incendiary bombing, and in dropping naval mines to blockade Japan."
+
+#Tier 1 Transport Plane
+EUR_cargo_plane_equipment_2: "Douglas C-47 Skytrain"
+EUR_cargo_plane_equipment_2_short: "Skytrain"
+EUR_cargo_plane_equipment_2_desc: "The Douglas C-47 Skytrain is a military transport aircraft developed from the civilian Douglas DC-3 airliner. It was used extensively by the Allies during World War II. During the war the C-47 was used for troop transport, cargo, paratrooper drops, glider towing, and military cargo parachute drops. The C-47 remained in front-line service with various military operators for many years."
+
+##Vehicle
+#Tier 1 Light Vehicle
+EUR_light_motorized_equipment_1: "Cunningham M1 Armored Car"
+EUR_light_motorized_equipment_1_short: "M1 Armored Car"
+EUR_light_motorized_equipment_1_desc: "The M1 Armored Car was a four-wheel drive American armored car tested by the United States Army Ordnance Department in 1931 and briefly in 1932. It was built by James Cunningham, Son and Company of Rochester, New York, and during testing demarcated as the Model T4."
+
+#Tier 2 Light Vehicle
+EUR_light_motorized_equipment_2: "White M3 Scout Car"
+EUR_light_motorized_equipment_2_short: "M3 Scout Car"
+EUR_light_motorized_equipment_2_desc: "The M3 Scout Car (known as the White Scout Car in British Commonwealth service) was an American armored car produced in the World War II era, from 1939 to 1944. The original M3 Scout Car was produced in limited numbers, while the improved M3A1 Scout Car saw wide service during World War II and after."
+
+#Tier 3 Light Vehicle
+EUR_light_motorized_equipment_3: "M8 \"Greyhound\" Light Armored Car"
+EUR_light_motorized_equipment_3_short: "M8 Greyhound"
+EUR_light_motorized_equipment_3_desc: "The M8 Light Armored Car is a 6x6 armored car produced by the Ford Motor Company during World War II. It was used from 1943 by United States and British forces in Europe and the Pacific until the end of the war. In British service, the M8 was known as the \"Greyhound\", a service name seldom, if ever, used by the US."
+
+#Tier 4 Light Vehicle
+EUR_light_motorized_equipment_4: "High Mobility Multipurpose Wheeled Vehicle"
+EUR_light_motorized_equipment_4_short: "Humvee"
+EUR_light_motorized_equipment_4_desc: "The High Mobility Multipurpose Wheeled Vehicle (HMMWV; colloquial: Humvee) is a family of light, four-wheel drive military trucks and utility vehicles produced by AM General. It has largely supplanted the roles previously performed by the original jeep, and others such as the Vietnam War-era M151 Jeep, the M561 \"Gama Goat\", their M718A1 and M792 ambulance versions, the Commercial Utility Cargo Vehicle, and other light trucks. Primarily used by the United States military, it is also used by numerous other countries and organizations and even in civilian adaptations."
+
+#Tier 1 Heavy Vehicle
+EUR_heavy_motorized_equipment_1: "Class-B Standardized Military Truck"
+EUR_heavy_motorized_equipment_1_short: "B \"Liberty\" Truck"
+EUR_heavy_motorized_equipment_1_desc: "The Class-B Standardized Military Truck or \"Liberty Truck\" was a heavy-duty truck produced by the United States Army during World War I. It was designed by the Quartermaster Corps with help from the Society of Automotive Engineers in 1917 in an effort to help standardize the immense parts catalogue and multiple types of vehicles then in use by the US military, as well as create a truck which possessed all the best features of heavy truck technology then available."
+
+#Tier 2 Heavy Vehicle
+EUR_heavy_motorized_equipment_2: "Dodge DC Series Military Truck"
+EUR_heavy_motorized_equipment_2_short: "Dodge DC Series"
+EUR_heavy_motorized_equipment_2_desc: "The Dodge WC series, nicknamed \"Beeps\", and at first (from 1940-1942), nicknamed jeeps, is a prolific range of light 4WD and medium 6WD military utility trucks, produced by Chrysler under the Dodge and Fargo marques during World War II. Together with the later 1/4-ton jeeps produced by Willys and Ford, the Dodge 1/2-ton G-505 and 3/4-ton G-502 trucks made up nearly all of the light 4WD trucks supplied to the U.S. military in WW II"
+
+#Tier 3 Heavy Vehicle
+EUR_heavy_motorized_equipment_3: "M3 Half-track"
+EUR_heavy_motorized_equipment_3_short: "M3 Half-track"
+EUR_heavy_motorized_equipment_3_desc: "The M3 Half-track is an American armored personnel carrier half-track widely used by the Allies during World War II and in the Cold War. Derived from the M2 Half-track car, the M3 was extensively produced, with about 15,000 standard M3s and more than 38,000 variant units manufactured."
+
+#Tier 1 Tank 
+EUR_tank_equipment_1: "M3 Stuart Light Tank"
+EUR_tank_equipment_1_short: "M3 Stuart"
+EUR_tank_equipment_1_desc: "The M3 Stuart/light tank M3 was a US light tank of World War II first introduced into service in the British Army in early 1941. Later, an improved version of the tank entered service as the M5 in 1942, to be supplied to British and other allied Commonwealth forces under lend-lease, prior to the entry of the United States into the war."
+
+#Tier 2 Tank 
+EUR_tank_equipment_2: "M3 Lee Medium Tank"
+EUR_tank_equipment_2_short: "M3 Lee"
+EUR_tank_equipment_2_desc: "The M3 Lee, officially Medium Tank, M3, was an American medium tank used during World War II. The turret was produced in two different forms, one for US needs and one modified to British requirements to place the radio next to the commander. In British Commonwealth service, the tank was called by two names: tanks employing US-pattern turrets were called \"Lee\", named after Confederate general Robert E. Lee, while those with British-pattern turrets were known as \"Grant\", named after Union general Ulysses S. Grant."
+
+#Tier 3 Tank 
+EUR_tank_equipment_3: "M4 Sherman Medium Tank"
+EUR_tank_equipment_3_short: "M4 Sherman"
+EUR_tank_equipment_3_desc: "The M4 Sherman, officially Medium Tank, M4, was the medium tank most widely used by the United States and Western Allies in World War II. The M4 Sherman proved to be reliable, relatively cheap to produce, and available in great numbers. It was also the basis of several other armored fighting vehicles including self-propelled artillery, tank destroyers, and armored recovery vehicles."
+
+#Tier 4 Tank 
+EUR_tank_equipment_4: "M26 Pershing Heavy Tank"
+EUR_tank_equipment_4_short: "M26 Pershing"
+EUR_tank_equipment_4_desc: "The M26 Pershing is a heavy tank, later designated as a medium tank, formerly used by the United States Army. It was used in the last months of World War II during the Invasion of Germany and extensively during the Korean War. The tank was named after General of the Armies John J. Pershing, who led the American Expeditionary Force in Europe during World War I."
