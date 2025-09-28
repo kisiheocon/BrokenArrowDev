@@ -1,0 +1,22 @@
+﻿units = {
+    fleet = {
+        name = "1st Eurekan Naval fleet"
+        naval_base = 7064
+        task_force = {
+            name = "1st Eurekan Naval Taskforce"
+            location = 7064
+            ship = {
+                name = "U.S.S Carolina"
+                pride_of_the_fleet = yes
+                definition = light_ship_unit
+                equipment = { 
+                    ship_hull_light_5 = {
+                        amount = 1
+                        owner = EUR
+                        version_name = "River Boat"
+                    }
+                }
+            }
+        }
+    }
+}

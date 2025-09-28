@@ -64,4 +64,9 @@ spriteTypes = {
 		name = "GFX_event_escape_from_sierra_event_pic"
 		texturefile = "gfx/event_pictures/escape_from_sierra.dds"
 	}
+
+	spriteType = {
+		name = "GFX_event_attis_west"
+		texturefile = "gfx/event_pictures/GFX_event_attis_west.dds"
+	}
 }

@@ -3,6 +3,19 @@ on_actions = {
 		effect = {
 			EUR = { country_event = { id = erx_broken_arrow_navarro.1 days = 100 } }
 			ERB = { country_event = { id = erx_broken_arrow.100 days = 15 } }
+			TRL = { 
+				set_cosmetic_tag = TRL_mutant_west_cosmetic_tag
+				remove_country_leader_trait = tyrant_of_the_warren
+				add_country_leader_trait = trl_ba_attis_of_the_west_country_leader_trait
+				add_country_leader_trait = trl_ba_tyrant_of_mariposa_country_leader_trait
+				set_country_leader_description = { desc = trl_ba_the_first_desc }
+			}
+			235 = {
+				set_province_name = {
+					id = 2158
+					name = "Mariposa Military Base Ruins"
+				}
+			}
 		}
 	}
 	on_peaceconference_ended = {
@@ -23,6 +36,15 @@ on_actions = {
 					is_neighbor_of = KLA
 				}
 				complete_national_focus = trl_redriver
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = TRL
+						original_tag = EUR
+					}
+				}
+				EUR = { country_event = erx_broken_arrow_event_oregon.3 }
 			}
 		}
 	}

@@ -1024,7 +1024,12 @@ decision_cost_CP_20_tooltip: "It costs £command_power  §Y20§! to take the dec
 erx_broken_arrow_development_oregon_cat: "The Beaver State"
 erx_broken_arrow_development_oregon_cat_desc: "\n\n\n\n\n\n\n\n £GFX_embed_oregon_reconstruction_authority_decision_text_picture \n\n\n\n\n\n\n\n\n\n\nOregon's economy before the war was primarily powered by various forms of agriculture, fishing, logging, and hydroelectric industries, all of which brought great boons to the state. And by 2055 was the top lumber producer of the contiguous US dominating the industry. Amongst these smaller practices the state was also host to a mass of technological and Military R&D Centers, all centered around the much revered \"Silicon Forest\". With such industries such as Brigam Labs, Intel, Chromax Genetics, G.D.A Fusion and Future Tec, just to name a few. Raking in money by the billions. However the Great War has not been kind  to anyone. Least of all the people of Oregon. The state is in ruins and its once proud hub of scientific advancement once meant to launch America into the 22nd Century is now nothing but abandoned ruins or looted shells. And the state of infrastructure and Oregons once great cities is no less grand.\n\nNevertheless, as we advance north and secure the state for our great nation. We must begin the Process of healing the state and in so doing the nation."
 
-eur_ba_oregon_reconstruction_guard_funding_decision: "Increase Oregon National Guard Funding"
+eur_ba_oregon_reconstruction_guard_funding_decision: "Divert Funds To The National Guard"
+eur_ba_oregon_reconstruction_guard_funding_decision_desc: "Our pacification, reconciliation and reconstruction efforts in Oregon are well underway. However both those in government and the garrison forces deployed within the state demand further resources being diverted to their efforts. Citing sharp spikes in rebel activity and equipment shortages across the board. Whatever they need they shall have.\n\"There Had Better Be Results.\""
+
+#Restore the USS Carolina
+eur_ba_oregon_carolina_decision: "Restore the §YU.S.S Carolina§!"
+eur_ba_oregon_carolina_decision_tt: "The §YU.S.S Carolina§! will be afloat with §Y*hopefully*§! all her glory!"
 
 #Excavation Projects
 eur_ba_oregon_excavate_futuretec_decision: "Excavate Future-Tec Facility"
@@ -1032,9 +1037,11 @@ eur_ba_oregon_excavate_futuretec_decision: "Excavate Future-Tec Facility"
 eur_ba_oregon_excavate_umatilla_decision: "Umatilla Chemical Depot"
 
 #Oregon-Pacification
-eur_ba_oregon_pacification_deploy_national_guard_decision: "Deploy National Guards"
+eur_ba_oregon_pacification_deploy_national_guard_decision: "General Crackdowns"
+eur_ba_oregon_pacification_deploy_national_guard_decision_desc: "Resistance activities and general noncompliance with military ordinances are causing problems across the board. And we at home are starting to feel the impact. Enough is enough. A series of door by door raids, inspections and detainment’s for rebels or noncompliance will show these rabble their place."
 
-eur_ba_oregon_pacification_deploy_special_forces_decision: "Deploy Special Forces"
+eur_ba_oregon_pacification_deploy_special_forces_decision: "Focused Raids On Cannibal Strongholds"
+eur_ba_oregon_pacification_deploy_special_forces_decision_desc: "Unlike the common criminal rabble that inhabited most of the state, the Cannibals act as organized coherent groups who to boot are armed to the teeth. They are a veritable cult who have defended with beast like resolve in the name of their “Beliefs” They have so far thwarted the efforts of the National Guard through guerrilla warfare and barbarism. Command has identified several strongholds within the Oregon interior where these rabid dogs are festering. We have even received word from local informants that the leader of the Cannibal Bands “The Odious King” may be in one of these locations. This is our chance to end the cannibal threat for good. Through a series of planned strikes headed by Special Forces alongside tanks and mechanized infantry we can deliver a crippling blow to these strongholds and cut off their escapes simultaneously."
 
 #Salem-Oregon
 erx_broken_arrow_development_oregon_salem: "A City Divided"
@@ -1079,8 +1086,17 @@ TIM_park_ranger_cosmetic_tag: "Oregon Park Rangers"
 TIM_park_ranger_cosmetic_tag_ADJ: "Oregonian Rangers"
 TIM_park_ranger_cosmetic_tag_DEF: "the Oregon Park Rangers"
 
+erx_broken_arrow_event_oregon.3.t: "The Master Lives?"
+erx_broken_arrow_event_oregon.3.d: "In the northern frontier, there are often enough no real borders. The real delineation between nations is settlements, roads, rivers, and military outposts. Still, while there are seldom borders between coherent groups like there once was in the days of yore, conflicts and clashes over imagined borders persist nonetheless. Such a conflict occurred yesterday, when in the furthest spearhead of our northern territories, connected with a new force, reportedly a super mutant force of unknown make or number.  Immediately after the report made it up the wire, local garrisons were sent to aid the frontier outpost. A later report from these garrisons revealed that their arrival was unchallenged. Even stranger and more concerning still was the report by the force holding the outpost. The force that attacked the outpost wasn't some disorganized raiding party consisting of a handful of mutants. But rather a coherent and organized force of both mutants and tribals led by a Mutant commander. It was said that after an initial disorganized assault by the mutants and tribals after wandering into the outposts' killzone, the so-called \"Leader\" actually recalled his forces out of firing distance and was observing from a distance. The reinforcements sent to the outpost immediately consolidated and gave chase, but the mutant leader, apparently seeing enough, fled into the nearby woodlands. \n\nWe are frankly at a loss. While there are rumours of organized mutant bands in far-off Texas, the last time any organized mutant force existed was decades ago in the time of the Master, who, from all accounts, perished long ago."
+erx_broken_arrow_event_oregon.3.a: "Who are these mutants?"
+erx_broken_arrow_event_oregon.3.a_tt: "What are their numbers?\nWho was the mutant leading them? \n\n§RHas the Master returned?§!"
+TRL_mutant_west_cosmetic_tag: "Mutant Army Of The West"
+TRL_mutant_west_cosmetic_tag_ADJ: "Super Mutants"
+TRL_mutant_west_cosmetic_tag_DEF: "the Mutant Army Of The West"
+
 #Ideas-Oregon
-erx_broken_arrow_development_oregon_silicon_forest: "Silicon Forest"
+erx_broken_arrow_development_oregon_silicon_forest: "Clearing The Remains Of Silicon Forest"
+erx_broken_arrow_development_oregon_silicon_forest_desc: "While Oregon is host to a great many technology and industrial centers none are as important, diversified or significant as Silicon Forest. Sitting just 48 miles north of Salem within the greater Portland area it was before the war host to unparalleled research and other scientific projects netting nearly 25% of the states entire annual revenue. As it stands it sits abandoned save for wildlife and the odd squatter and appears to be nominally intact. We have been given the order to clear the facilities in the \"Forest\" and begin reconstruction efforts to restore it to working order.\nSo be it."
 eur_silicon_forest: "Silicon Forest"
 erx_broken_arrow_development_oregon_timber_industry: "Tree Cuttin Frenzy"
 erx_broken_arrow_development_oregon_timber_industry_desc: "The Great War has had many consequences, most of them horrible. But in an ironic twist of fate it has led to an almost concerning overgrowth of forest all across Oregon. Without a proper authority to harness them they have for 200 years grown unabated, possibly aided by background radiation. This is wondrous news as already lumber companies from our other territories have been chomping at the bit to gain access to them and are offering increasingly palatable amounts of money for contracts.\n\n\"Come One, Come All.\""

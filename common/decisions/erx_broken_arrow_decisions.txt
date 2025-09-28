@@ -577,6 +577,29 @@ erx_broken_arrow_navarro_cat = {
 }
 #Oregon Reconstruction Authority - The Beaver State
 erx_broken_arrow_development_oregon_cat = {
+	#The Carolina
+	eur_ba_oregon_carolina_decision = {
+		icon = GFX_decision_generic_naval
+		fire_only_once = yes
+
+		allowed = { always = no }
+		available = { always = no }
+
+		days_mission_timeout = 400
+		is_good = yes
+		timeout_effect = {
+			hidden_effect = {
+				set_technology = {
+					light_navy_hull_tech_2 = 1
+					light_navy_hull_tech_3 = 1
+					light_navy_hull_tech_4 = 1
+					light_navy_hull_tech_5 = 1
+				}
+				load_oob = "EUR_carolina"
+			}
+			custom_effect_tooltip = eur_ba_oregon_carolina_decision_tt
+		}
+	}
 	#Invite Timberline
 	erx_broken_arrow_oregon_invite_timberline = {
 		icon = GFX_decision_eng_trade_unions_support
@@ -766,13 +789,32 @@ erx_broken_arrow_development_oregon_cat = {
 
 		available = {
 			178 = { is_owned_and_controlled_by = ROOT }
+			has_equipment = { infantry_equipment > 299 }
+			has_equipment = { support_equipment_1 > 99 }
+			has_manpower > 300
 		}
 
 		complete_effect = {
 			hidden_effect = { add_command_power = -10 }
+			add_manpower = -300
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -300
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -100
+			}
 		}
 		days_remove = 60
 		remove_effect = {
+			add_manpower = 200
+			add_tech_bonus = {
+				name = eur_ba_oregon_excavate_umatilla_decision
+				uses = 2
+				bonus = 0.5
+				category = support_demolitions_tech_category
+			}
 		}
 	}
 	#A City Divided
@@ -1104,6 +1146,10 @@ erx_broken_arrow_development_oregon_cat = {
 					value = 5
 				}
 			}
+			add_days_mission_timeout = {
+				mission = eur_ba_oregon_carolina_decision
+				days = -60
+			}
 		}
 	}
 	eur_ba_oregon_salem_port_decision = {
@@ -1153,6 +1199,10 @@ erx_broken_arrow_development_oregon_cat = {
 				}
 				custom_effect_tooltip = eur_ba_oregon_salem_port_decision_tt
 			}
+			add_days_mission_timeout = {
+				mission = eur_ba_oregon_carolina_decision
+				days = -60
+			}
 		}
 	}
 	eur_ba_oregon_portland_port_decision = {
@@ -1197,6 +1247,10 @@ erx_broken_arrow_development_oregon_cat = {
 			23 = {
 				set_temp_variable = { development_to_add = 1 }
 				add_development_to_node = yes
+			}
+			add_days_mission_timeout = {
+				mission = eur_ba_oregon_carolina_decision
+				days = -60
 			}
 		}
 	}

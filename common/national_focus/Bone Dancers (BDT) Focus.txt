@@ -2072,6 +2072,7 @@ focus_tree = {
 		}
 		available = {
 			#Hide this if you are going down the secret path
+			always = no
 			if = {
 				limit = {
 					has_government = elites

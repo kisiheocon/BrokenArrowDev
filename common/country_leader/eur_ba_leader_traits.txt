@@ -1,4 +1,21 @@
 leader_traits = {
+    ##Attis Of The West
+    trl_ba_attis_of_the_west_country_leader_trait = {
+        random = no
+        conscription = 0.03
+        stability_weekly = -0.01
+        offensive_war_stability_factor = 0.4
+        max_planning_factor = 0.1
+        planning_speed = 0.2
+        supply_consumption_factor = -0.1
+    }
+    ##Tyrant of Mariposa
+    trl_ba_tyrant_of_mariposa_country_leader_trait = {
+        random = no
+		offensive_war_stability_factor = 0.30
+		mobilization_speed = 0.30
+		ruler_drift = 0.05
+    }
     erx_ba_anti_communist = {
         random = no
         war_support_factor = 0.05
