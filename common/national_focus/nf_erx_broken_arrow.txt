@@ -2,10 +2,10 @@ focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
-		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
-			add = 100
-			original_tag = EUR
-		}
+		#modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+		#	add = 100
+		#	original_tag = EUR
+		#}
 	}
 	default = no
 	###Fake Focus for Bookmark###
@@ -838,8 +838,17 @@ focus_tree = {
 		prerequisite = { focus = erx_oregon_polk_offensive }
 
 		completion_reward = {
-			add_ideas = eur_oregon_cannibal
 			custom_effect_tooltip = erx_oregon_RCA_tt
+			hidden_effect = {
+				country_event = {
+					id = erx_broken_arrow_event_oregon.4
+					days = 50
+				}
+				country_event = {
+					id = erx_broken_arrow_event_oregon.5
+					days = 5
+				}
+			}
 		}
 	}
 	###Oregon Pacification Branch###
@@ -855,10 +864,13 @@ focus_tree = {
 		prerequisite = { focus = erx_oregon_RCA }
 
 		completion_reward = {
-			remove_ideas = eur_oregon_cannibal
-			add_timed_idea = {
-				idea = eur_oregon_cannibal
-				days = 1000
+			if = {
+				limit = { has_idea = eur_oregon_cannibal }
+				remove_ideas = eur_oregon_cannibal
+				add_timed_idea = {
+					idea = eur_oregon_cannibal
+					days = 1000
+				}
 			}
 			every_controlled_state = {
 				limit = {
