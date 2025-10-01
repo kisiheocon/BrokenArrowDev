@@ -87,6 +87,19 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = erx_broken_arrow_debug.6
+	title = erx_broken_arrow_debug.6.t
+	desc = erx_broken_arrow_debug.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_debug.6.a
+		345 = { add_dynamic_modifier = { modifier = ba_eur_oregon_bonneville_dam_dynamic_modifier } }
+		178 = { add_dynamic_modifier = { modifier = ba_eur_oregon_mcnary_dam_dynamic_modifier } }
+	}
+}
 #SAVED BY THE BELL
 country_event = {
 	id = erx_broken_arrow.1
@@ -142,7 +155,7 @@ country_event = {
 			set_country_flag = eur_enclave_exiles
 			add_manpower = 2000
 			add_equipment_to_stockpile = {type = energy_equipment_2 producer = USA amount = 300}
-			add_equipment_to_stockpile = {type = enclave_power_armour_equipment_1 producer = ERB amount = 200}
+			add_equipment_to_stockpile = {type = enclave_power_armour_equipment_1 producer = USA amount = 200}
 			add_stability = 0.05
 			add_war_support = -0.05
 			change_tag_from = ERB
@@ -215,7 +228,7 @@ country_event = {
 			add_war_support = 0.05
 			add_manpower = 1000
 			add_equipment_to_stockpile = {type = energy_equipment_2 producer = USA amount = 200}
-			add_equipment_to_stockpile = {type = enclave_power_armour_equipment_1 producer = ERB amount = 100}
+			add_equipment_to_stockpile = {type = enclave_power_armour_equipment_1 producer = USA amount = 100}
 			add_equipment_to_stockpile = {type = support_robot_thruster_equipment_2 producer = USA amount = 200}
 			change_tag_from = ERB
 		}
@@ -1445,6 +1458,7 @@ country_event = {
 				}
 			}
 			FOU = {
+				bypass_generic_settler_political_focuses_scripted_effect = yes
 				create_faction = "NCREF"
 				add_to_faction = MXS
 				set_technology = { #FOU don't start out with this so they need this so their rangers unit get bugged without the required tech
@@ -1479,6 +1493,7 @@ country_event = {
 				load_oob = "FOU_NCR_reinforcement_oob"
 			}
 			MXS = {
+				bypass_generic_settler_political_focuses_scripted_effect = yes
 				set_technology = { #MXS don't start out with these tech needed for the reinforcement units
 					spec_ops_equipment_tech_1 = 1
 					support_weaponry = 1
@@ -1937,7 +1952,7 @@ country_event = {
 	id = erx_broken_arrow_event_oregon.4
 	title = erx_broken_arrow_event_oregon.4.t
 	desc = erx_broken_arrow_event_oregon.4.d
-	#picture = GFX_event_attis_west
+	picture = GFX_event_carolina
 	fire_only_once = yes
 	is_triggered_only = yes
 

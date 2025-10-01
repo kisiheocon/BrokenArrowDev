@@ -1,7 +1,4 @@
 scripted_gui = {
-	############################
-	# Reformer GUI
-	############################
 	connect_to_power = {
 		context_type = selected_state_context
 		window_name = "connect_to_power_container"
@@ -31,7 +28,7 @@ scripted_gui = {
 			connect_to_power_click_enabled = {
 				civilian_power_grid > 0
 				OR = {
-					compliance > 0.90
+					compliance > 80
 					has_resistance = no
 				}
 				custom_trigger_tooltip = {
@@ -158,6 +155,7 @@ scripted_gui = {
 					original_tag = EUR
 					has_completed_focus = erx_broken_arrow_seize_state_apparatus
 				}
+			}
 		}
 
 		effects = {

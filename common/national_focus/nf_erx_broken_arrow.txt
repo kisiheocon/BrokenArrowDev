@@ -963,7 +963,7 @@ focus_tree = {
 		completion_reward = {
 			for_each_scope_loop = {
 				array = global.oregon_state_array
-				set_variable = { coring_cost_targeted_state_factor@EUR = -0.6 }
+				set_variable = { coring_cost_targeted_state_factor@EUR = -0.9 }
 			}
 			custom_effect_tooltip = nf_ba_eur_oregon_pacification_end_tt
 		}
@@ -2863,7 +2863,6 @@ focus_tree = {
 					OR = {
 						compliance > 79
 						is_core_of = EUR
-						owner = { is_ally_with = ROOT }
 					}
 				} 
 			}

@@ -616,7 +616,7 @@ erx_broken_arrow_development_oregon_cat = {
 
 		days_remove = 20
 		remove_effect = {
-			add_to_faction = TIM
+			country_event = erx_broken_arrow_event_oregon.2
 		}
 	}
 	#Annex Packers

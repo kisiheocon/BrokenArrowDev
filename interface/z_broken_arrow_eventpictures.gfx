@@ -69,4 +69,10 @@ spriteTypes = {
 		name = "GFX_event_attis_west"
 		texturefile = "gfx/event_pictures/GFX_event_attis_west.dds"
 	}
+
+	#We get this from Kaiserreddux - Credits to Kaiserreddux team
+	spriteType = {
+		name = "GFX_event_carolina"
+		texturefile = "gfx/event_pictures/USA_navy.dds"
+	}
 }
