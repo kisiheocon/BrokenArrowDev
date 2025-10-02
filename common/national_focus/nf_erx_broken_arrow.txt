@@ -157,7 +157,7 @@ focus_tree = {
 		relative_position_id = erx_broken_arrow_local_affairs
 
 		available = {
-			intellectuals > 0.70
+			intellectuals > 0.50
 		}
 
 		prerequisite = {

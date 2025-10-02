@@ -1,0 +1,76 @@
+﻿division_template = {
+	name = "Super Mutant Unit"
+	regiments = {
+		super_mutant_infantry = { x = 0 y = 0 } super_mutant_infantry = { x = 1 y = 0 } super_mutant_infantry = { x = 2 y = 0 } super_mutant_infantry = { x = 3 y = 0 }
+		super_mutant_infantry = { x = 0 y = 1 } super_mutant_infantry = { x = 1 y = 1 } super_mutant_infantry = { x = 2 y = 1 } super_mutant_infantry = { x = 3 y = 1 }
+		super_mutant_infantry = { x = 0 y = 2 } super_mutant_infantry = { x = 1 y = 2 } super_mutant_infantry = { x = 2 y = 2 }
+	}
+	support = {
+		anti_tank_company = { x = 0 y = 0 }
+		fireteam_support = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tribal Auxiliary Unit"
+	regiments = {
+		militia = { x = 0 y = 0 } militia = { x = 1 y = 0 } militia = { x = 2 y = 0 } militia = { x = 3 y = 0 }
+		militia = { x = 0 y = 1 } militia = { x = 1 y = 1 } militia = { x = 2 y = 1 } militia = { x = 3 y = 1 }
+		militia = { x = 0 y = 2 } militia = { x = 1 y = 2 } militia = { x = 2 y = 2 } militia = { x = 3 y = 2 }
+	}
+	support = {
+		anti_tank_company = { x = 0 y = 0 }
+		fireteam_support = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Behemoth Unit"
+	regiments = {
+		behemoth = { x = 0 y = 0 } behemoth = { x = 1 y = 0 } behemoth = { x = 2 y = 0 }
+		behemoth = { x = 0 y = 1 } behemoth = { x = 1 y = 1 } behemoth = { x = 2 y = 1 }
+		behemoth = { x = 0 y = 2 } behemoth = { x = 1 y = 2 } 
+	}
+	support = {
+		anti_tank_company = { x = 0 y = 0 }
+		fireteam_support = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Super Mutant Unit"
+		location = 2158
+		division_template = "Super Mutant Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Super Mutant Unit"
+		location = 2158
+		division_template = "Super Mutant Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Tribal Unit"
+		location = 2158
+		division_template = "Tribal Auxiliary Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Tribal Unit"
+		location = 2158
+		division_template = "Tribal Auxiliary Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Behemoth Unit"
+		location = 2158
+		division_template = "Behemoth Unit"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
