@@ -102,6 +102,7 @@ focus_tree = {
 			}
 		}
 	}
+	#Back In Business
 	focus = {
 		id = erx_broken_arrow_back_in_business
 		icon = GFX_goal_enc_pass_the_amunition
@@ -110,22 +111,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_setting_up_shop
 
-		available = {
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_arcata_company
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_setting_up_shop
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_warm_welcome
-		}
+		prerequisite = { focus = erx_broken_arrow_arcata_company }
+		prerequisite = { focus = erx_broken_arrow_setting_up_shop }
+		prerequisite = { focus = erx_broken_arrow_warm_welcome }
 
 		completion_reward = {
 			remove_ideas = eur_enc_complete_chaos
 			country_event = erx_broken_arrow.6
+			custom_effect_tooltip = erx_broken_arrow_back_in_business_tt
 		}
 	}
 	focus = {

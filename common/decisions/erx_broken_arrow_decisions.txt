@@ -140,28 +140,34 @@ erx_broken_arrow_radiowaves_cat = {
 	}
 }
 ###Local Affairs
-erx_broken_arrow_oregon_affairs_cat = {
+ba_local_affairs_decision_cat = {
+	##Generic Popularity Boost
 	#Mercenary Works
-	merc_work = {
+	ba_local_affairs_merc_work_decision = {
 		icon = GFX_decision_enclave_pa_helm
-		cost = 30
+		cost = 50
+		custom_cost_trigger = { command_power > 14 }
+		custom_cost_text = decision_cost_CP_15
 		days_remove = 30
 		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
+		modifier = { weekly_manpower = -3 }
 		remove_effect = {
 			add_popularity = {
 				ideology = intellectuals
-				popularity = 0.05
+				popularity = 0.03
 			}
+			hidden_effect = { add_command_power = -15 }
 		}
 	}
 	#Cleaning House
-	cleaning_house = {
+	ba_local_affairs_cleaning_house_decision = {
 		icon = GFX_decision_deagle
 		cost = 30
 		days_remove = 30
 		available = { has_completed_focus = erx_broken_arrow_local_affairs }
 		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
 		modifier = {
+			weekly_manpower = -5
 			intellectuals_drift = 0.1
 		}
 		remove_effect = {
@@ -172,7 +178,7 @@ erx_broken_arrow_oregon_affairs_cat = {
 		}
 	}
 	#Essentials of Civilization
-	essentials = {
+	ba_local_affairs_essentials_decision = {
 		icon = GFX_decision_stew_pot
 		cost = 20
 		days_remove = 30
@@ -189,6 +195,115 @@ erx_broken_arrow_oregon_affairs_cat = {
 			}
 		}
 	}
+	##Navarro Development
+	#Housing
+	ba_local_affairs_navarro_housing_decision = {
+		icon = GFX_decision_generic_electricity
+		cost = 30
+		days_remove = 60
+		available = { has_completed_focus = nf_ba_eur_navarro_philanthropy }
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.2
+			consumer_goods_factor = 0.25
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.05
+			}
+			NAT = { 
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_compliance = 5
+					add_manpower = 500
+				} 
+			}
+			548 = {
+				add_extra_state_shared_building_slots = 1
+				add_manpower = 2500
+			}
+		}
+	}
+	#Workplace
+	ba_local_affairs_navarro_workplace_decision = {
+		icon = GFX_decision_generic_merge_plant_materiel
+		cost = 30
+		days_remove = 60
+		available = { has_completed_focus = nf_ba_eur_navarro_roadways }
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.3
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.05
+			}
+			NAT = { every_core_state = { add_compliance = 5 } }
+			548 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
+			}
+		}
+	}
+	##Eureka
+	#Housing
+	ba_local_affairs_eureka_housing_decision = {
+		icon = GFX_decision_generic_electricity
+		cost = 40
+		days_remove = 60
+		available = { has_completed_focus = erx_broken_arrow_first_brick }
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.2
+			consumer_goods_factor = 0.2
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.05
+			}
+			39 = {
+				add_extra_state_shared_building_slots = 3
+				add_manpower = 1500
+			}
+		}
+	}
+	#Invest
+	ba_local_affairs_eureka_invest_decision = {
+		icon = GFX_decision_single_cap
+		days_remove = 60
+		custom_cost_trigger = {
+			set_temp_variable = { temp_cap_cost = 50 }
+			check_variable = { caps_number_display > temp_cap_cost }
+		}
+		custom_cost_text = "caps_decisions_cost_text"
+		available = { has_completed_focus = erx_broken_arrow_rebuild_humboldt }
+		fire_only_once = yes
+		modifier = {
+			consumer_goods_factor = 0.2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = { caps_to_add = -50 }
+				add_caps = yes
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = intellectuals
+				popularity = 0.05
+			}
+			39 = {
+				set_temp_variable = { development_to_add = 1 }
+				add_development_to_node = yes
+			}
+		}
+	}
+
 	commandeer_convoys = {
 		icon = x
 		cost = 30
