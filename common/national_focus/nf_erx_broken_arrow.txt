@@ -1249,8 +1249,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_business
-			show_ideas_tooltip = oregon_department_transportation_company
+			custom_effect_tooltip = available_economic_advisor
+			show_ideas_tooltip = EUR_oregon_dot_eco_advisor_token
 		}
 	}
 	#Riches Beyond Belief

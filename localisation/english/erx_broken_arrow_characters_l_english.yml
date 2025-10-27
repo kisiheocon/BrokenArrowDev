@@ -35,10 +35,8 @@ trl_ba_the_first_desc: "§gThe First stands separate from his mutant brethren. F
 ###################
 ###Company Names###
 ###################
-oregon_department_transportation_company: "Oregon D.O.T"
-oregon_department_transportation_company_desc: "\n\n\n £GFX_embed_oregon_department_transportation \n\n\n\nThe Oregon Department of Transportation is a department of the state government of the U.S. state of Oregon responsible for systems of transportation. It was first established in 1969. It had been preceded by the Oregon State Highway Department which, along with the Oregon State Highway Commission, was created by an act of the Oregon Legislative Assembly in 1913. It works closely with the five-member Oregon Transportation Commission in managing the state's transportation systems."
 
-####################
-###Company Traits###
-####################
-oregon_department_transportation_company_trait: "Infrastructure Concern"
+###Economic Advisor###
+EUR_oregon_dot_name: "Oregon D.O.T"
+EUR_oregon_dot_eco_advisor_token_desc: "£GFX_embed_empty \n\n\n£GFX_embed_oregon_department_transportation \n\n\n\nThe Oregon Department of Transportation is a department of the state government of the U.S. state of Oregon responsible for systems of transportation. It was first established in 1969. It had been preceded by the Oregon State Highway Department which, along with the Oregon State Highway Commission, was created by an act of the Oregon Legislative Assembly in 1913. It works closely with the five-member Oregon Transportation Commission in managing the state's transportation systems."
+oregon_department_transportation_company_trait: "Infrastructure Development"

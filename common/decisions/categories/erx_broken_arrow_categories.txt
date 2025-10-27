@@ -2,7 +2,12 @@
 erx_broken_arrow_development_oregon_cat = {
 	#picture = GFX_decision_cat_picture_oregon_flag
 	allowed = { original_tag = EUR }
-	visible = { has_completed_focus = erx_oregon_RCA }
+	visible = {
+		OR = {
+			has_completed_focus = erx_oregon_RCA
+			is_debug = yes
+		}
+	}
 	icon = GFX_decision_cat_oregon_reconstruction_authority
 	priority = 2000
 }
@@ -26,15 +31,17 @@ erx_broken_arrow_radiowaves_cat = {
 	}
 	icon = GFX_decision_satellite
 }
+#Local Affairs
 erx_broken_arrow_oregon_affairs_cat = {
-	allowed = {
-		original_tag = EUR
-	}
+	allowed = { original_tag = EUR }
 	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
+		OR = {
+			has_completed_focus = erx_broken_arrow_back_in_business
+			is_debug = yes
+		}
 	}
-	icon = x
-	priority = 997
+	icon = GFX_decision_category_generic_propaganda
+	priority = 1900
 }
 erx_broken_arrow_stashes_cat = {
 	allowed = {

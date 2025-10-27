@@ -340,4 +340,28 @@
             }
         }
     }
+    EUR_oregon_dot = {
+        name = EUR_oregon_dot_name
+        portraits = {
+            army = {
+                small = GFX_idea_EUR_ba_oregon_department_transportation_company
+            }
+            civilian = {
+                small = GFX_idea_EUR_ba_oregon_department_transportation_company
+            }
+        }
+        advisor = {
+            slot = economic_advisor
+            idea_token = EUR_oregon_dot_eco_advisor_token
+            cost = 50
+            available = { 
+				has_completed_focus = nf_ba_eur_oregon_industry_start
+				493 = { is_owned_and_controlled_by = ROOT }
+			}
+            traits = {
+                oregon_department_transportation_company_trait
+            }
+            research_bonus = { construction_category = 0.1 }
+        }
+    }
 }

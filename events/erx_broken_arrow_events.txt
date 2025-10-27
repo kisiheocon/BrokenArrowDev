@@ -211,7 +211,11 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Enclave Auxiliaries" }
 				delete_unit_template_and_units = { division_template = "Rapid Response Division" }
 				delete_unit_template_and_units = { division_template = "Militia" }
-				EUR = { set_occupation_law = default_law }
+				set_occupation_law = default_law
+				country_event = {
+					id = erx_broken_arrow.902
+					days = 5
+				}
 			}
 			#ERB = {
 			#	clr_country_flag = ncr_suspicious
@@ -294,7 +298,11 @@ country_event = {
 				delete_unit_template_and_units = { division_template = "Enclave Auxiliaries" }
 				delete_unit_template_and_units = { division_template = "Rapid Response Division" }
 				delete_unit_template_and_units = { division_template = "Militia" }
-				EUR = { set_occupation_law = default_law }
+				set_occupation_law = default_law
+				country_event = {
+					id = erx_broken_arrow.902
+					days = 5
+				}
 			}
 			#ERB = {
 			#	clr_country_flag = ncr_suspicious
@@ -362,11 +370,13 @@ country_event = {
 	id = erx_broken_arrow.6
 	title = erx_broken_arrow.6.t
 	desc = erx_broken_arrow.6.d
+	picture = GFX_event_foggy_boathouse_harbor
 
 	is_triggered_only = yes
-
+	
 	option = {
-		name = erx_broken_arrow.6.a 
+		name = erx_broken_arrow.6.a
+		custom_effect_tooltip = erx_broken_arrow.6.a_tt
 	}
 }
 #TIME FOR A PRESS CONFERENCE?
@@ -1277,7 +1287,7 @@ country_event = {
 		add_stability = 0.02
 		NAT = {
 			every_core_state = {
-				add_compliance = 5
+				add_compliance = 5`
 				add_resistance = -5
 			}
 		}
@@ -2013,6 +2023,27 @@ country_event = {
 			set_temp_variable = { vonc_change = 100 }
 			increase_kimball_score = yes
 		}
+	}
+}
+country_event = { #Difficulty Setting - @Deez
+	id = erx_broken_arrow.902
+	title = erx_broken_arrow.902.title
+	desc = erx_broken_arrow.902.desc
+	picture = GFX_event_pardon_our_dust_event_pic
+
+	is_triggered_only = yes
+	option = { #Nothing changed
+		name = erx_broken_arrow.902.a
+	}
+	option = { #Easier
+		name = erx_broken_arrow.902.b
+		custom_effect_tooltip = erx_broken_arrow.902.b_tt
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 50 producer = USA }
+		add_popularity = {
+			ideology = intellectuals
+			popularity = 0.15
+		}
+		hidden_effect = { load_oob = "EUR_easy_setting" }
 	}
 }
 			

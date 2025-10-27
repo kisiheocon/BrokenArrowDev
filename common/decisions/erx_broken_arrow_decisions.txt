@@ -139,70 +139,50 @@ erx_broken_arrow_radiowaves_cat = {
 		}
 	}
 }
+###Local Affairs
 erx_broken_arrow_oregon_affairs_cat = {
+	#Mercenary Works
 	merc_work = {
-		icon = x
-		cost = 35
-		days_re_enable = 30
-		available = {
-		}
-		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_local_affairs
-			NOT = {
-				has_completed_focus = erx_broken_arrow_seize_state_apparatus
-			}
-		}
-		complete_effect = {
+		icon = GFX_decision_enclave_pa_helm
+		cost = 30
+		days_remove = 30
+		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
+		remove_effect = {
 			add_popularity = {
 				ideology = intellectuals
 				popularity = 0.05
 			}
 		}
 	}
+	#Cleaning House
 	cleaning_house = {
-		icon = x
-		cost = 50
-		days_re_enable = 10
+		icon = GFX_decision_deagle
+		cost = 30
 		days_remove = 30
-		available = {
-		}
-		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_local_affairs
-			NOT = {
-				has_completed_focus = erx_broken_arrow_seize_state_apparatus
-			}
-		}
+		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
 		modifier = {
 			intellectuals_drift = 0.1
 		}
-		complete_effect = {
+		remove_effect = {
 			add_popularity = {
 				ideology = intellectuals
 				popularity = 0.03
 			}
 		}
 	}
+	#Essentials of Civilization
 	essentials = {
-		icon = x
-		cost = 25
+		icon = GFX_decision_stew_pot
+		cost = 20
 		days_remove = 30
-		days_re_enable = 10
-		available = {
-		}
-		fire_only_once = no
-		visible = {
-			has_completed_focus = erx_broken_arrow_local_affairs
-			NOT = {
-				has_completed_focus = erx_broken_arrow_seize_state_apparatus
-			}
-		}
+		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
 		modifier = {
 			intellectuals_drift = 0.1
 			consumer_goods_factor = 0.2
 		}
-		complete_effect = {
+		remove_effect = {
 			add_popularity = {
 				ideology = intellectuals
 				popularity = 0.03
