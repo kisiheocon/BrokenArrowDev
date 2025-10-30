@@ -789,6 +789,10 @@ ba_local_affairs_cleaning_house_decision: "Cleaning House"
 ba_local_affairs_cleaning_house_decision_desc: "Within the cities and towns of Eureka there is an epidemic of vagrants, criminals and other unruly characters. Due to the lack of a proper police force they are often left to fend for themselves. Helping them with this problem will guarantee their support in future matters"
 ba_local_affairs_essentials_decision: "Essentials of Civilization"
 ba_local_affairs_essentials_decision_desc: "The lifeblood of any modern civilization, the citizens of Eureka either because of scarcity, ignorance or plain old corruption often lack these basic necessities. By providing them not only with these tools, but the know-how to construct their own, we will guarantee that they will support us in future matters,(also that they will live long enough to do so.)"
+
+ba_local_affairs_navarro_housing_decision: "Building Affordable Housing In Navarro"
+ba_local_affairs_navarro_housing_decision_desc: "In conjunction with our other reconstruction and reconciliation efforts in the Navarro Territories, President Granite has authorized a substantial aid package alongside funding for the clearing of and purchasing of a multitude of woodland and tribal owned sectors. With agreements being made with the native tribes we will clear the land and construct affordable housing and civil infrastructure for Navarro veterans, refugees and the natives themselves.\n\n\"A Foolproof Plan To Be Sure.\""
+
 commandeer_convoys: "Comandeer Civilian Ships"
 coordinate_vertibirds: "Coordinate the Vertibird Squadrons"
 shock_and_awe_tactics: "Prepare Shock and Awe Tactics"
