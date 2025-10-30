@@ -2,10 +2,10 @@ focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
-		#modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
-		#	add = 100
-		#	original_tag = EUR
-		#}
+		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+			add = 100
+			original_tag = EUR
+		}
 	}
 	default = no
 	###Fake Focus for Bookmark###
@@ -2695,29 +2695,11 @@ focus_tree = {
 		available = { NAT = { all_core_land_owned_by_prev_sphere = yes } }
 
 		completion_reward = {
-			340 = {
-				add_resistance = -10
-				add_compliance = 10
-			}
-			353 = {
-				add_resistance = -10
-				add_compliance = 10
-			}
-			56 = {
-				add_resistance = -10
-				add_compliance = 10
-			}
-			548 = {
-				add_resistance = -10
-				add_compliance = 10
-			}
-			441 = {
-				add_resistance = -10
-				add_compliance = 10
-			}
-			216 = {
-				add_resistance = -10
-				add_compliance = 10
+			NAT = {
+				every_core_state = {
+					add_resistance = -10
+					add_compliance = 10
+				}
 			}
 		}
 	}
@@ -2736,29 +2718,11 @@ focus_tree = {
 
 		select_effect = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		completion_reward = {
-			340 = {
-				add_resistance = -5
-				add_compliance = 2.5
-			}
-			353 = {
-				add_resistance = -5
-				add_compliance = 2.5
-			}
-			56 = {
-				add_resistance = -5
-				add_compliance = 2.5
-			}
-			548 = {
-				add_resistance = -5
-				add_compliance = 2.5
-			}
-			441 = {
-				add_resistance = -5
-				add_compliance = 2.5
-			}
-			216 = {
-				add_resistance = -5
-				add_compliance = 2.5
+			NAT = {
+				every_core_state = {
+					add_resistance = -5
+					add_compliance = 2.5
+				}
 			}
 			custom_effect_tooltip = nf_ba_eur_navarro_philanthropy_tt
 			effect_tooltip = { add_timed_idea = { idea = navarro_aid days = 60 } }
@@ -2779,58 +2743,15 @@ focus_tree = {
 
 		select_effect = { add_timed_idea = { idea = navarro_roads days = 60 } }
 		completion_reward = {
-			340 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			353 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			56 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			548 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			441 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			216 = {
-				add_resistance = -5
-				add_compliance = 2.5
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			NAT = {
+				every_core_state = {
+					add_resistance = -5
+					add_compliance = 2.5
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			custom_effect_tooltip = nf_ba_eur_navarro_roadways_tt
