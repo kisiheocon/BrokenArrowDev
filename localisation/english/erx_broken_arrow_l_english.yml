@@ -504,6 +504,7 @@ trains_tt: "Adds construction bonuses for railways, and decisions/missions etc.(
 ######### THE FIRST BRICK ###########
 erx_broken_arrow_first_brick: "The First Brick"
 erx_broken_arrow_first_brick_desc: "Rome wasnt built in a day, neither was America.\n\nLets get to work."
+erx_broken_arrow_first_brick_tt: "\n£GFX_decision_icon_small §YHalf Measures§! is §Gavailable!§!"
 erx_broken_arrow_broken_glass: "Broken Glass and Cracked Pavement"
 erx_broken_arrow_broken_glass_desc: "We cant fix much of anything if the roads are unusable. Who would've thought we'd be paving roads?"
 erx_broken_arrow_mic: "Military Industrial Complex"
@@ -516,6 +517,7 @@ erx_broken_arrow_internal_security: "Internal Security"
 erx_broken_arrow_internal_security_desc: "Despite our best efforts, our forces cannot be everywhere, as such our advisors tell us we should establish outposts throughout our country as a stopgap measure."
 erx_broken_arrow_rebuild_humboldt: "Rebuilding Humboldt Bay Incorporated"
 erx_broken_arrow_rebuild_humboldt_desc: "Before the war Eureka was host to one of the largest fishing companies on the entire western seaboard. Following the war this legacy was taken up by an army of private fisherman and small contracters, rebuilding the company, and supporting the fishing industry crippled by years of neglect by the port-masters will do wonders for our economy."
+erx_broken_arrow_rebuild_humboldt_tt: "\n£GFX_decision_icon_small §YDivert Funding To Trawling Industries§! is §Gavailable!§!"
 ######### FREEDOM ###############
 erx_broken_arrow_ensuring_liberty: "Ensuring Liberty"
 erx_broken_arrow_ensuring_liberty_desc: "Though we are a long way from restoring the constitution, We can act on our promises and restore the civil rights enshrined to all free men."
@@ -643,7 +645,7 @@ nf_ba_eur_navarro_philanthropy_desc: "The Navarro Territories have been devastat
 nf_ba_eur_navarro_philanthropy_tt: "\n£GFX_decision_icon_small §YBuilding Affordable Housing In Navarro§! is §Gavailable!§!\n\n§YWhen this focus is selected:§!"
 nf_ba_eur_navarro_roadways: "Rebuilding the Roadways"
 nf_ba_eur_navarro_roadways_desc: "Much like Eureka, The roadways and rail systems in Navarro have been left in a sorry state, which has only been exacerbated by the brutal war so recently waged"
-nf_ba_eur_navarro_roadways_tt: "§YWhen this focus is selected:§!"
+nf_ba_eur_navarro_roadways_tt: "\n£GFX_decision_icon_small §YSelf-Sufficient Work Programs§! is §Gavailable!§!\n\n§YWhen this focus is selected:§!"
 nf_ba_eur_navarro_accomplished: "Mission Accomplished"
 nf_ba_eur_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation. "
 nf_ba_eur_navarro_infrastructure_1: "Repairing Civil Infrastructure"
@@ -781,6 +783,8 @@ fireside_chat_4: "Espionage and Infiltration"
 fireside_chat_5: "Faith"
 
 ba_local_affairs_decision_cat: "Local Affairs"
+ba_local_affairs_decision_cat_desc: "While we as a whole were not expecting much in Eureka regarding governance and basic infrastructure, we are, in a word... displeased. Conditions before our exit were as expected for a post-war coastal region. Entirely unmaintained, rust-covered, and reeking of fish. But it would appear that in the interim, the new portmaster Smith has succeeded wonderfully in his tenure. If his objective was to turn the region into a fish oil-smelling landfill. Poverty is rampant, crime is commonplace, and even basic necessities like clean water and food are barely, if ever, being met. Were it not for the portmaster's iron grip on the region through their bands of mercenaries, their rule would have collapsed long ago.\n\nSo it would again appear that it is our responsibility to provide for the people. Both for the common good and honestly for our own sanity."
+
 woodley_island: "Clear Out Woodley Island"
 woodley_island_desc: "The Anarchist filth that inhabit Woodley Island must be cleared out for our plans."
 ba_local_affairs_merc_work_decision: "Mercenary Work"
@@ -792,6 +796,14 @@ ba_local_affairs_essentials_decision_desc: "The lifeblood of any modern civiliza
 
 ba_local_affairs_navarro_housing_decision: "Building Affordable Housing In Navarro"
 ba_local_affairs_navarro_housing_decision_desc: "In conjunction with our other reconstruction and reconciliation efforts in the Navarro Region, President Granite has authorized a substantial aid package alongside funding for the clearing of and purchasing of a multitude of woodland and tribal owned sectors. With agreements being made with the native tribes we will clear the land and construct affordable housing and civil infrastructure for Navarro veterans, refugees and the natives themselves.\n\n\"A Foolproof Plan To Be Sure.\""
+ba_local_affairs_navarro_workplace_decision: "Self-Sufficient Work Programs"
+ba_local_affairs_navarro_workplace_decision_desc: "In our efforts to provide housing for the countless refugees, Veterans, and tribals within our recently acquired territory, we have been tasked with providing these individuals with gainful employment. And it just so happens that, ironically, in the process of clearing said land, we have acquired abundant stockpiles of rock, timber, and various other natural resources perfect for civil construction projects like dams, factories for vital equipment, and even further construction of housing and roadways. These projects will, in a sense, pay for themselves in perpetuity.\n\n\"Excellent.\""
+
+ba_local_affairs_eureka_housing_decision: "Half Measures"
+ba_local_affairs_eureka_housing_decision_desc: "While we would obviously prefer to construct new housing complexes or completely renovate the swaths of civil infrastructure within Eureka, our lack of resources and civil construction experience makes this, for a moment, impossible to initiate en masse. Given this, we have been forced to make the decision to build what temporary structures we can, whilst focusing our core efforts on retrofitting and repairing existing structures to the best of our capabilities. While it should, for the moment, alleviate the unacceptable state of housing in this region, we should be prepared to make much more extensive programs in the near future. \n\n\"Unfortunate, But Not Entirely Unexpected.\""
+
+ba_local_affairs_eureka_invest_decision: "Divert Funding To Trawling Industries"
+ba_local_affairs_eureka_invest_decision_desc: "While we have made significant efforts to rehabilitate the domestic trawling industries that fund a great deal of Eurekas current economy, more can be done. By diverting funds from less vital projects we can garner support amongst the fishermen and ensure our economy will have a strong standing for the near future. \n\n\"A Smart Investment.\""
 
 commandeer_convoys: "Comandeer Civilian Ships"
 coordinate_vertibirds: "Coordinate the Vertibird Squadrons"

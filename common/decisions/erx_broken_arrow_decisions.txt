@@ -196,7 +196,7 @@ ba_local_affairs_decision_cat = {
 		}
 	}
 	##Navarro Development
-	#Housing
+	#Building Affordable Housing in Navarro
 	ba_local_affairs_navarro_housing_decision = {
 		icon = GFX_decision_generic_electricity
 		cost = 30
@@ -225,7 +225,7 @@ ba_local_affairs_decision_cat = {
 			}
 		}
 	}
-	#Workplace
+	#Self-Sufficient Work Programs
 	ba_local_affairs_navarro_workplace_decision = {
 		icon = GFX_decision_generic_merge_plant_materiel
 		cost = 30

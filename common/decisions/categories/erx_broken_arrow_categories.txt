@@ -40,7 +40,8 @@ ba_local_affairs_decision_cat = {
 		}
 	}
 	icon = GFX_decision_category_generic_propaganda
-	priority = 99799999
+	picture = GFX_decision_cat_local_affairs
+	priority = 997
 }
 erx_broken_arrow_stashes_cat = {
 	allowed = {

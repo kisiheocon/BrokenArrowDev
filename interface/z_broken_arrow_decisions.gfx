@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_decision_cat_oregon_reconstruction_authority"
 		texturefile = "gfx/interface/decisions/GFX_decision_cat_oregon_reconstruction_authority.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_local_affairs"
+		texturefile = "gfx/interface/decisions/GFX_decision_cat_picture_local_affairs.dds"
+	}
 }

@@ -2,10 +2,10 @@ focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
-		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
-			add = 100
-			original_tag = EUR
-		}
+		#modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+		#	add = 100
+		#	original_tag = EUR
+		#}
 	}
 	default = no
 	###Fake Focus for Bookmark###
@@ -129,12 +129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
 
-		available = {
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_back_in_business
-		}
+		prerequisite = { focus = erx_broken_arrow_back_in_business }
 
 		completion_reward = {
 			country_event = erx_broken_arrow.7
@@ -2452,13 +2447,8 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
-	
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_back_in_business
-		}
+		prerequisite = { focus = erx_broken_arrow_back_in_business }
 		
 		completion_reward = {
 			39 = {
@@ -2479,6 +2469,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = erx_broken_arrow_first_brick_tt
 		}
 	}
 	focus = {
@@ -2614,12 +2605,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_internal_security
 
-		available = {
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_internal_security
-		}
+		prerequisite = { focus = erx_broken_arrow_internal_security }
 		
 		completion_reward = {
 			39 = {
@@ -2655,6 +2641,7 @@ focus_tree = {
 				}
 				create_map_node = yes
 			}
+			custom_effect_tooltip = erx_broken_arrow_rebuild_humboldt_tt
 		}
 	}
 	##################
@@ -2783,12 +2770,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_state_core = 340
-			add_state_core = 353
-			add_state_core = 56
-			add_state_core = 548
-			add_state_core = 441
-			add_state_core = 216
+			NAT = { every_core_state = { add_core_of = ROOT } }
 			set_province_name = {
 				id = 3434
 				name = "Camp Navarro"
@@ -3111,14 +3093,6 @@ focus_tree = {
 
 		prerequisite = { focus = nf_ba_eur_navarro_infrastructure_3 }
 		prerequisite = { focus = nf_ba_eur_navarro_naval_2 }
-		available = {
-			548 = {
-				OR = {
-					is_owned_and_controlled_by = ROOT
-					owner = { is_ally_with = ROOT }
-				}
-			}
-		}
 
 		completion_reward = { add_research_slot = 1 }
 	}
@@ -3133,14 +3107,6 @@ focus_tree = {
 
 		prerequisite = { focus = nf_ba_eur_navarro_military_3 }
 		prerequisite = { focus = nf_ba_eur_navarro_naval_2 }
-		available = {
-			548 = {
-				OR = {
-					is_owned_and_controlled_by = ROOT
-					owner = { is_ally_with = ROOT }
-				}
-			}
-		}
 
 		completion_reward = {
 			add_ideas = navarro_products
