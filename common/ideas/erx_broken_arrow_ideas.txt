@@ -1131,7 +1131,7 @@ ideas = {
                 political_power_gain = 0.5
             }
         }
-##Arroyo Buff
+        ##Arroyo Buff
         ARR_chosen_one_spirit_idea = {
             picture = generic_atom
             allowed = {
@@ -1172,18 +1172,17 @@ ideas = {
                 stability_factor = -0.2
             }
         }
+        ##NCR Ideas
+        ncr_ba_eternal_summer_idea = {
+            #picture = x
+            modifier = {
+                local_resources_factor = -0.2
+                industrial_capacity_factory = 0.1
+                war_support_factor = 0.1
+                stability_weekly_factor = -0.005
+                caps_income_modifier = -0.15
+                consumer_goods_factor = 0.1
+            }
+        }
     }
 }
-
-
-
-     
-     
-
-
-
-
-
-
-
-
