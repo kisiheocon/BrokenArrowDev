@@ -15,4 +15,9 @@ spriteTypes = {
 		name = "GFX_decision_cat_picture_local_affairs"
 		texturefile = "gfx/interface/decisions/GFX_decision_cat_picture_local_affairs.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_cat_oss"
+		texturefile = "gfx/interface/decisions/GFX_decision_cat_oss.dds"
+		transparencecheck = yes
+	}
 }

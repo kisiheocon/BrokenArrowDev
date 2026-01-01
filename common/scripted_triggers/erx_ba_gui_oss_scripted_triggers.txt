@@ -1,0 +1,22 @@
+erx_ba_oss_target_button_click_enabled_trigg = {
+	if = {
+		limit = { check_variable = { erx_ba_oss_target_array^erx_ba_oss_target_idx = 1 } }
+		has_stability > 0.01
+	}
+	else_if = {
+		limit = { check_variable = { erx_ba_oss_target_array^erx_ba_oss_target_idx = 2 } }
+		has_stability > 0.02
+	}
+	else_if = {
+		limit = { check_variable = { erx_ba_oss_target_array^erx_ba_oss_target_idx = 3 } }
+		has_stability > 0.03
+	}
+	else_if = {
+		limit = { check_variable = { erx_ba_oss_target_array^erx_ba_oss_target_idx = 4 } }
+		has_stability > 0.04
+	}
+	else_if = {
+		limit = { check_variable = { erx_ba_oss_target_array^erx_ba_oss_target_idx = 5 } }
+		has_stability > 0.05
+	}
+}

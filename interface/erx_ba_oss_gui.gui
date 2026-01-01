@@ -1,0 +1,43 @@
+## OSS GUI - @Deez ##
+guiTypes = {
+	#Main Container
+	containerWindowType = {
+		name = "erx_ba_oss_container_outline"
+		position = { x = 0 y = 0 }
+		size = { height = 105 }
+		containerWindowType = {
+			name = "erx_ba_oss_container_main"
+			position = { x = 50 y = 0 }
+			size = { width = 409 height = 110 }
+			margin = { left = 0 right = 0 top = 17 bottom = 14 }
+			verticalScrollbar = "right_vertical_slider"
+			smooth_scrolling = yes
+			clipping = yes
+			background = {
+				name = "background"
+				spriteType = "GFX_tiled_window2_1b_border"
+			}
+			gridboxtype = {
+				position = { x = 63 y = 0 }
+				name = "erx_ba_oss_target_gridbox"
+				slotsize = { width = 93 height = 60 }
+				max_slots_horizontal = 4
+				add_horizontal = yes
+			}
+		}
+	}
+	#OSS Targets Entry
+	containerWindowType = {
+		name = "erx_ba_oss_target_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 82 height = 57 }
+		buttonType = {
+			name = "erx_ba_oss_target_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_erx_ba_oss_targets"
+			frame = 1
+			pdx_tooltip = erx_ba_oss_target_tt
+			#pdx_tooltip_delayed = erx_ba_oss_target_tt_delay
+		}
+	}
+}

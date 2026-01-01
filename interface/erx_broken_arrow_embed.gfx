@@ -34,6 +34,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_embed_oss_decision_text_picture"
+		textureFile = "gfx/texticons/embeds/oss_decision_text_picture.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_embed_empty"
 		textureFile = "gfx/texticons/embeds/empty.dds"
 		legacy_lazy_load = no

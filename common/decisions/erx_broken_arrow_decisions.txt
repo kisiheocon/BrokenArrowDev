@@ -1491,3 +1491,55 @@ erx_broken_arrow_espionage_cat = {
 		}
 	}
 }
+erx_ba_oss_decision_cat = {
+	erx_ba_oss_decision_1 = {
+		visible = {
+			check_variable = {
+				erx_ba_oss_selected_var = 1
+			}
+		}
+		complete_effect = {
+			add_political_power = 1
+		}
+	}
+	erx_ba_oss_decision_2 = {
+		visible = {
+			check_variable = {
+				erx_ba_oss_selected_var = 2
+			}
+		}
+		complete_effect = {
+			add_political_power = 2
+		}
+	}
+	erx_ba_oss_decision_3 = {
+		visible = {
+			check_variable = {
+				erx_ba_oss_selected_var = 3
+			}
+		}
+		complete_effect = {
+			add_political_power = 3
+		}
+	}
+	erx_ba_oss_decision_4 = {
+		visible = {
+			check_variable = {
+				erx_ba_oss_selected_var = 4
+			}
+		}
+		complete_effect = {
+			add_political_power = 4
+		}
+	}
+	erx_ba_oss_decision_5 = {
+		visible = {
+			check_variable = {
+				erx_ba_oss_selected_var = 5
+			}
+		}
+		complete_effect = {
+			add_political_power = 5
+		}
+	}
+}

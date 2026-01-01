@@ -1,0 +1,30 @@
+## OSS GUI - @Deez ##
+scripted_gui = {
+	erx_ba_oss_scripted_gui = {
+		context_type = decision_category
+		window_name = "erx_ba_oss_container_outline"
+		dirty = erx_ba_oss_scripted_gui_dirty
+		triggers = {
+			erx_ba_oss_target_button_click_enabled = { erx_ba_oss_target_button_click_enabled_trigg = yes }
+		}
+
+		effects = {
+			erx_ba_oss_target_button_click = { 
+				set_variable = { erx_ba_oss_selected_var = erx_ba_oss_target_array^erx_ba_oss_target_idx }
+				add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
+			}
+		}
+
+		dynamic_lists = {
+			erx_ba_oss_target_gridbox = {
+				array = erx_ba_oss_target_array
+				entry_container = erx_ba_oss_target_entry
+				index = erx_ba_oss_target_idx
+			}
+		}
+
+		properties = {
+			erx_ba_oss_target_button = { frame = erx_ba_oss_target_array^erx_ba_oss_target_idx }
+		}
+	}
+}
