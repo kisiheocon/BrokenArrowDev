@@ -4,6 +4,11 @@ defined_text = {
 	name = erx_ba_gui_oss_GetTargetName
 	text = { localization_key = erx_ba_oss_target_[?erx_ba_oss_target_array^erx_ba_oss_target_idx]_name }
 }
+## Target's Short Desc ##
+defined_text = {
+	name = erx_ba_gui_oss_GetTargetShortDesc
+	text = { localization_key = erx_ba_oss_target_[?erx_ba_oss_target_array^erx_ba_oss_target_idx]_short_desc }
+}
 
 ## Current Target's Name ##
 defined_text = {

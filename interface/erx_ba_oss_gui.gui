@@ -37,7 +37,7 @@ guiTypes = {
 			spriteType = "GFX_erx_ba_oss_targets"
 			frame = 1
 			pdx_tooltip = erx_ba_oss_target_tt
-			#pdx_tooltip_delayed = erx_ba_oss_target_tt_delay
+			pdx_tooltip_delayed = erx_ba_oss_target_tt_delay
 		}
 	}
 }

@@ -1,5 +1,6 @@
 erx_ba_clear_oss_array = {
 	clear_array = erx_ba_oss_target_array
+	add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
 }
 erx_ba_set_up_oss_array = {
 	add_to_array = { erx_ba_oss_target_array = 1 }
