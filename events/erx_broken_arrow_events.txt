@@ -100,6 +100,17 @@ country_event = {
 		178 = { add_dynamic_modifier = { modifier = ba_eur_oregon_mcnary_dam_dynamic_modifier } }
 	}
 }
+country_event = {
+	id = erx_broken_arrow_debug.7
+	title = erx_broken_arrow_debug.7.t
+	desc = erx_broken_arrow_debug.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_debug.7.a
+	}
+}
 #SAVED BY THE BELL
 country_event = {
 	id = erx_broken_arrow.1
