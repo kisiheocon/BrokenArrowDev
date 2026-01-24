@@ -582,7 +582,7 @@ erx_broken_arrow_freedom_law_keepers_desc: "Okay they were mercenaries, and are 
 ######### ESPIONAGE ##########
 erx_broken_arrow_intel_app: "Rebuilding the Intelligence Apparatus"
 erx_broken_arrow_intel_app_desc: "Our enemies are circling like vultures, waiting for the opportune moment to strike us down, we must prepare to prevent such incursions, and be prepared to return the favor to those who would assault our liberty. "
-erx_broken_arrow_intel_app_tt: "Create Intelligence Agency: §Y$Agency_EUR$§!"
+erx_broken_arrow_intel_app_tt: "Create Intelligence Agency: £GFX_counter_intelligence  §Y$Agency_EUR$§!"
 
 erx_broken_arrow_domestic_sec: "Domestic Security"
 erx_broken_arrow_domestic_sec_desc: "Whilst most focus is usually on international intelligence operations, domestic Security is paramount to national security, by having our top men in conjunction with local law enforcement patrol the streets we can monitor and deal with any potential threats before they threaten our country."
