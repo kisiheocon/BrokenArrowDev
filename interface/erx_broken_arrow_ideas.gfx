@@ -38,4 +38,8 @@ spriteTypes = {
 		name = "GFX_idea_EUR_national_park"
 		textureFile = "gfx/interface/ideas/EUR_national_park.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_eur_ba_oss_idea"
+		textureFile = "gfx/interface/ideas/eur_ba_oss_idea.dds"
+	}
 }

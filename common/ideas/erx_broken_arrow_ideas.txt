@@ -740,7 +740,7 @@ ideas = {
 		## Office of Strategic Services ##
 		erx_ba_oss_tier_0 = {
 			name = Agency_EUR
-			picture = generic_production_bonus
+			picture = eur_ba_oss_idea
 			modifier = {
 				operative_slot = 1
 				own_operative_detection_chance_factor = -0.05
