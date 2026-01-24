@@ -726,17 +726,30 @@ ideas = {
                 stability_weekly_factor = 0.0025
             }
         }
-        building_intel_agency = {
-            picture = generic_production_bonus
-            allowed = {
-            }
-            removal_cost = -1
 
-            modifier = {
-                consumer_goods_factor = 0.1
-                political_power_gain = -0.1
-            }
-        }
+		### OSS Stuff - START ###
+		## Increased Intelligence Agency Funding ##
+		erx_ba_increase_oss_funding = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+
+		## Office of Strategic Services ##
+		erx_ba_oss_tier_0 = {
+			name = Agency_EUR
+			picture = generic_production_bonus
+			modifier = {
+				operative_slot = 1
+				own_operative_detection_chance_factor = -0.05
+			}
+		}
+
+		### OSS Stuff - END ###
+
+
         domestic_sec = {
             picture = x
             allowed = {

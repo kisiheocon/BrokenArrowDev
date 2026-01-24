@@ -2,10 +2,11 @@ focus_tree = {
 	id = nf_erx_broken_arrow
 	country = {
 		factor = 0
-		#modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
-		#	add = 100
-		#	original_tag = EUR
-		#}
+		modifier = { #ONLY FOR WHEN MODDING/TESTING, DISABLE ON RELEASE - @Deez
+			add = 100
+			original_tag = EUR
+			is_debug = yes
+		}
 	}
 	default = no
 	###Fake Focus for Bookmark###
@@ -1568,28 +1569,39 @@ focus_tree = {
 	focus = {
 		id = erx_broken_arrow_intel_app
 		icon = GFX_enc_goal_usa_commandcontrol
-		cost = 20
 		x = 14
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
-	
-		prerequisite = {
-			focus = erx_broken_arrow_back_in_business
-		}
-		available = {
+
+		cost = 30
+		prerequisite = { focus = erx_broken_arrow_back_in_business }
+
+		select_effect = {
+			add_timed_idea = {
+				idea = erx_ba_increase_oss_funding 
+				days = 90
+			}
 		}
 
 		completion_reward = {
+			add_ideas = erx_ba_oss_tier_0
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
-				limit = {
+				limit = { 
 					has_dlc = "La Resistance"
+					has_intelligence_agency = no
 				}
-				create_intelligence_agency = {
-					name = "Office of Strategic Services"
-					icon = GFX_intelligence_agency_logo_usa
+				hidden_effect = { create_intelligence_agency = yes }
+				custom_effect_tooltip = erx_broken_arrow_intel_app_tt
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			custom_effect_tooltip = erx_ba_focus_on_select_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = erx_ba_increase_oss_funding 
+					days = 90
 				}
 			}
-			add_timed_idea = { idea = building_intel_agency  days = 90 }
 		}
 	}
 	##Infiltrate Brotherhood
@@ -2711,7 +2723,8 @@ focus_tree = {
 					add_compliance = 2.5
 				}
 			}
-			custom_effect_tooltip = nf_ba_eur_navarro_philanthropy_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		}
 	}
@@ -2741,7 +2754,8 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = nf_ba_eur_navarro_roadways_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = { add_timed_idea = { idea = navarro_roads days = 60 } }
 		}
 	}
@@ -2771,6 +2785,7 @@ focus_tree = {
 
 		completion_reward = {
 			NAT = { every_core_state = { add_core_of = ROOT } }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_province_name = {
 				id = 3434
 				name = "Camp Navarro"

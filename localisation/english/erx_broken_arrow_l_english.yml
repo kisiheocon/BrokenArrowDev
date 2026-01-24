@@ -577,11 +577,13 @@ erx_broken_arrow_freedom_unalieable_rights_desc: "We hold these truths to be sel
 erx_broken_arrow_freedom_law_keepers: "Experienced 'Law' Keepers"
 erx_broken_arrow_freedom_law_keepers_desc: "Okay they were mercenaries, and are well used to breaking the law, but with a series of reformations, killing the bad, and some good ol' fashioned bribes, they can be persuaded to keep our people safe from men they would once call friends!"
 
-#erx_broken_arrow_
-#erx_broken_arrow_
+#erx_broken_arrow_intel
+#erx_broken_arrow_intel
 ######### ESPIONAGE ##########
 erx_broken_arrow_intel_app: "Rebuilding the Intelligence Apparatus"
 erx_broken_arrow_intel_app_desc: "Our enemies are circling like vultures, waiting for the opportune moment to strike us down, we must prepare to prevent such incursions, and be prepared to return the favor to those who would assault our liberty. "
+erx_broken_arrow_intel_app_tt: "Create Intelligence Agency: §Y$Agency_EUR$§!"
+
 erx_broken_arrow_domestic_sec: "Domestic Security"
 erx_broken_arrow_domestic_sec_desc: "Whilst most focus is usually on international intelligence operations, domestic Security is paramount to national security, by having our top men in conjunction with local law enforcement patrol the streets we can monitor and deal with any potential threats before they threaten our country."
 erx_broken_arrow_domestic_sec_div: "Domestic Security Division"
@@ -646,10 +648,10 @@ nf_ba_eur_navarro_development: "Navarro Pacification Campaign"
 nf_ba_eur_navarro_development_desc: "Despite our victory of the region, enemy militants from Fusang and the Colonial Government still harass our troops from the roadways and countrysides. Granite has ordered an operation to pacify these rogue elements. "
 nf_ba_eur_navarro_philanthropy: "Philanthropy and Humanitarianism"
 nf_ba_eur_navarro_philanthropy_desc: "The Navarro Territories have been devastated by the three way war just waged in the region. By sending logistical support and general aid, we can increase public support amongst the population, and hopefully convince those still up in arms against us to lay down their arms."
-nf_ba_eur_navarro_philanthropy_tt: "\n£GFX_decision_icon_small §YBuilding Affordable Housing In Navarro§! is §Gavailable!§!\n\n§YWhen this focus is selected:§!"
+nf_ba_eur_navarro_philanthropy_tt: "\n£GFX_decision_icon_small §YBuilding Affordable Housing In Navarro§! is §Gavailable!§!"
 nf_ba_eur_navarro_roadways: "Rebuilding the Roadways"
 nf_ba_eur_navarro_roadways_desc: "Much like Eureka, The roadways and rail systems in Navarro have been left in a sorry state, which has only been exacerbated by the brutal war so recently waged"
-nf_ba_eur_navarro_roadways_tt: "\n£GFX_decision_icon_small §YSelf-Sufficient Work Programs§! is §Gavailable!§!\n\n§YWhen this focus is selected:§!"
+nf_ba_eur_navarro_roadways_tt: "\n£GFX_decision_icon_small §YSelf-Sufficient Work Programs§! is §Gavailable!§!"
 nf_ba_eur_navarro_accomplished: "Mission Accomplished"
 nf_ba_eur_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation. "
 nf_ba_eur_navarro_infrastructure_1: "Repairing Civil Infrastructure"
@@ -919,7 +921,9 @@ navarro_aid: "Sending Aid to Navarro"
 navarro_roads: "Navarro Development"
 navarro_military: "Military Reconstruction Charter"
 navarro_products: "Navarro Arms Division"
-building_intel_agency: "Building An Intelligence Agency"
+
+erx_ba_increase_oss_funding: "Increase OSS Funding"
+
 domestic_sec: "Domestic Security"
 domestic_sec_div: "Domestic Security Division"
 national_sec: "National Security"
@@ -1171,6 +1175,11 @@ erx_broken_arrow_mariposa.2.a: "'Risk Assessment: Negligible.'"
 erx_broken_arrow_mariposa.3.t: "Orbital Cleansing"
 erx_broken_arrow_mariposa.3.d: "President Anderson:\n\nDr. Ortiz of the Chemical Corps here. I'm glad the CC talked you out of simply nuking the base and being done with it. Even the most disgusting and impure mutants can still offer much in the way of scientific pursuits, at least more than what little we know of Chicago's scientific exploits. To be brief:\n\n1. FEV Extraction team entered at approximately 0500 hours, armed with all forms of pyroclastic and incendiary weapons and repellent tools.\n2. Team eliminated a small inhabited settlement housing close to 300 mutant beings on their way to enter the base, base itself almost completely uninhabited.\n3. Team secured pure FEV sample from mutagen container housed on 5th floor. Armor enhancements ensured no FEV toxins entered their armor or bodies.\n4. FEV sample successfully extracted by the Extraction team, sent to President Anderson.\n\nNow, I wanted to let you do the honors, so attached in this document is a remote detonator, modified to be triggered from up to 1000 miles away. It should be more than enough distance to let you see our newest handiwork. Now go ahead and press the button.\n\nPressed it? Good. If you didn't, press it now.\n\nAssuming you've pressed it, you will now be witnessing the activation of our NOSOI satellite array. Although we are hundreds of miles from activation, much like the nuclear bombs of then and now, you'll witness a once-in-a-lifetime event happen.\n\nWhat you are seeing is the result of untold decades of the finest scientific and biological minds coming together to engineer a substance close to the dispersant of the original FEV-Curling 13, although with significant limitations.\n\nThat green cloud of gas isn't just an optical illusion, it's a veritable 'beam' of mutant killer. But don't be alarmed, the 'beam' only has a radius of 15 miles, and dissipates after approximately 5 miles further out. Even more unfortunately, this was the only usable supply of the material. Coming up with another batch won't take decades, but it will take some months, years even. But hey, if you haven't pressed the button, you have yourself a free satellite of mutant cleanser to aim anywhere in the world!\n\nS.F"
 erx_broken_arrow_mariposa.3.a: "'What a weapon.'"
+
+### MISC ###
+Agency_EUR: "Office of Strategic Services"
+
+erx_ba_focus_on_select_tt: "§YWhen this focus is selected:§!"
 
 #############
 ##GAME RULE##
