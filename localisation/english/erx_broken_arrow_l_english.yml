@@ -253,7 +253,9 @@ erx_broken_arrow_navarro.9.b: "Perhaps Our Forefathers Can Provide A Better Solu
 
 erx_broken_arrow_navarro.10.t: "Federal Forces Routed On The Pacific"
 erx_broken_arrow_navarro.10.d: "Despite declaring martial law and President Granite taking direct command of the conflict to the south we have been dealt a crippling blow by the rebels. While we have managed to supress the lingering colonial remnants their settler allies have proven more difficult to pacify. Despite securing the central sectors the south has all but collapsed and we have been left no other alternative but to sue for peace. The Chinese will pay a terrible price for their treachery. But with Shady Sands ensuring their continued independence a larger war is for the moment out of the question.\n\nWe have failed. "
-erx_broken_arrow_navarro.10.a: "One Day The Bear Won’t Be There To Protect Them."
+erx_broken_arrow_navarro.10.a: "One Day The Bear Won't Be There To Protect Them."
+
+erx_ba_treaty_santa_rosa_dynamic_modifier: "Treaty of Santa Rosa"
 
 erx_broken_arrow_navarro.11.t: "Our Intervention." #Just for AI etc displaying, no need to be detailed
 

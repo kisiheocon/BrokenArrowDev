@@ -1298,7 +1298,7 @@ country_event = {
 		add_stability = 0.02
 		NAT = {
 			every_core_state = {
-				add_compliance = 5`
+				add_compliance = 5
 				add_resistance = -5
 			}
 		}
@@ -1341,8 +1341,8 @@ country_event = {
 					add_resistance = 10
 				}
 			}
-			216 = { add_dynamic_modifier = { modifier = autonomous_state } }
-			441 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			216 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
+			441 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
 			give_resource_rights = {
 				receiver = SHI
 				state = 216
@@ -1387,8 +1387,8 @@ country_event = {
 					add_resistance = 10
 				}
 			}
-			216 = { add_dynamic_modifier = { modifier = autonomous_state } }
-			441 = { add_dynamic_modifier = { modifier = autonomous_state } }
+			216 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
+			441 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
 			give_resource_rights = {
 				receiver = SHI
 				state = 216

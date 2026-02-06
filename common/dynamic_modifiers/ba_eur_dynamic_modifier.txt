@@ -1,9 +1,9 @@
 ##############################
 ##Oregon Military Department##
 ##############################
-###Note: Mainly used like a landmark modifier - @Deez
-##Oregon Military Department - Fake Version
-#Salem-493 is the real life location of the Department
+### Note: Mainly used like a landmark modifier - @Deez ###
+## Oregon Military Department - Fake Version ##
+# Salem-493 is the real life location of the Department #
 ba_eur_oregon_military_department_dynamic_modifier = {
 	icon = GFX_idea_EUR_oregon_military_department
 	caps_flat_income_modifier = 493.caps_flat_income_modifier_var
@@ -19,6 +19,7 @@ ba_eur_oregon_military_department_dynamic_modifier = {
 	air_ace_generation_chance_factor = 493.air_ace_generation_chance_factor_var
 	experience_gain_navy = 493.experience_gain_navy_var
 }
+## Oregon Construction Boom ##
 ba_eur_oregon_construction_dynamic_modifier = { 
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 	remove_trigger = {
@@ -26,7 +27,7 @@ ba_eur_oregon_construction_dynamic_modifier = {
 	}
 	state_production_speed_buildings_factor = 0.1
 }
-#Oregon State Park
+# Oregon State Park #
 ba_eur_oregon_state_park_dynamic_modifier = { 
 	icon = GFX_idea_EUR_national_park
 	local_building_slots_factor = -0.3
@@ -38,18 +39,30 @@ ba_eur_oregon_state_park_dynamic_modifier = {
 	enemy_army_speed_factor = -0.2
 }
 
-##Dams Project##
-#McNary Dam
+## Dams Project ##
+# McNary Dam #
 ba_eur_oregon_mcnary_dam_dynamic_modifier = { 
 	icon = GFX_idea_EUR_usace_idea
 	local_building_slots = 2
 	state_resource_water = 30
 	state_resource_energy = 20
 }
-#Bonneville Dam
+# Bonneville Dam #
 ba_eur_oregon_bonneville_dam_dynamic_modifier = { 
 	icon = GFX_idea_EUR_oregon_bonneville_dam
 	local_building_slots = 2
 	state_resource_water = 40
 	state_resource_energy = 30
+}
+
+## Treaty of Santa Rosa ##
+erx_ba_treaty_santa_rosa_dynamic_modifier = { 
+	icon = GFX_modifiers_sabotaged_resource
+
+	enable = { NOT = { ROOT.owner = { original_tag = SHI } } }
+
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
 }
