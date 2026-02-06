@@ -2,7 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_erx_ba_oss_targets"
 		textureFile = "gfx/interface/gui/erx_ba_oss_gui/OSS_targets.dds"
-		noOfFrames = 6
+		noOfFrames = 7
 		transparencecheck = yes
 	}
 }

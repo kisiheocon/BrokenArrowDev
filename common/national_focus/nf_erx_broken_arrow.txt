@@ -1563,12 +1563,12 @@ focus_tree = {
 			add_ideas = broken_arrow
 		}
 	}
-####################
-##Bond, James Bond##
-####################
+	####################
+	##OSS Focus Branch##
+	####################
 	focus = {
-		id = erx_broken_arrow_intel_app
-		icon = GFX_enc_goal_usa_commandcontrol
+		id = erx_ba_oss_start
+		icon = GFX_goal_oss_icon
 		x = 14
 		y = 1
 		relative_position_id = erx_broken_arrow_back_in_business
@@ -1578,7 +1578,7 @@ focus_tree = {
 
 		select_effect = {
 			add_timed_idea = {
-				idea = erx_ba_increase_oss_funding 
+				idea = erx_ba_increased_oss_funding_idea 
 				days = 90
 			}
 		}
@@ -1592,309 +1592,67 @@ focus_tree = {
 					has_intelligence_agency = no
 				}
 				hidden_effect = { create_intelligence_agency = yes }
-				custom_effect_tooltip = erx_broken_arrow_intel_app_tt
+				custom_effect_tooltip = erx_ba_oss_start_tt
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = {
 				add_timed_idea = {
-					idea = erx_ba_increase_oss_funding 
+					idea = erx_ba_increased_oss_funding_idea 
 					days = 90
 				}
 			}
 		}
 	}
-	##Infiltrate Brotherhood
-	focus = {
-		id = erx_broken_arrow_domestic_sec
-		icon = GFX_goal_enc_america_open
-		cost = 20
-		x = -2
-		y = 1
-		relative_position_id = erx_broken_arrow_intel_app
-		
-		prerequisite = {
-			focus = erx_broken_arrow_intel_app
-		}
 
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				upgrade_intelligence_agency = upgrade_anti_partisan
-				upgrade_intelligence_agency = upgrade_passive_defense
-			}
-			add_ideas = domestic_sec
-		}
-	}
-	
-	focus = {
-		id = erx_broken_arrow_oss
-		icon = GFX_goal_oss_icon
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_nat_sec
-	
-		prerequisite = {
-			focus = erx_broken_arrow_nat_sec
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				upgrade_intelligence_agency = upgrade_commando_training
-				upgrade_intelligence_agency = upgrade_form_department
-			}
-			swap_ideas = {
-				remove_idea = national_sec
-				add_idea = national_sec_div
-			}
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_infil_bos
-		icon = GFX_goal_enc_war_with_bos_reform
-		cost = 20
-		x = 1
-		y = 1
-		relative_position_id = erx_broken_arrow_oss
-	
-		prerequisite = {
-			focus = erx_broken_arrow_domestic_sec_div
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_oss
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_infil_bos_scribe
-		icon = GFX_goal_enc_bos_leadership
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_infil_bos
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_infil_bos_chains
-		icon = GFX_goal_BOS_generic
-		cost = 20
-		x = 2
-		y = 1
-		relative_position_id = erx_broken_arrow_infil_bos
-		
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_infil_bos_council
-		icon = GFX_goal_flag_burn_BOS
-		cost = 20
-		x = -2
-		y = 1
-		relative_position_id = erx_broken_arrow_infil_bos
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_brotherhood_propoganda
-		icon = GFX_goal_flag_burn_BOS
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_infil_bos_scribe
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos_council
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos_chains
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_infil_bos_scribe
-		}
-
-		completion_reward = {
-		}
-	}
 	##Infiltrate NCR
 	focus = {
-		id = erx_broken_arrow_nat_sec
-		icon = GFX_goal_enc_a_nation_reborn
-		cost = 20
-		x = 2
-		y = 1
-		relative_position_id = erx_broken_arrow_intel_app
-		
-		prerequisite = {
-			focus = erx_broken_arrow_intel_app
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				upgrade_intelligence_agency = upgrade_anti_partisan
-				upgrade_intelligence_agency = upgrade_passive_defense
-			}
-			add_ideas = national_sec
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_domestic_sec_div
-		icon = GFX_goal_enc_eyebot_reform
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_domestic_sec
-	
-		prerequisite = {
-			focus = erx_broken_arrow_domestic_sec
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				upgrade_intelligence_agency = upgrade_interrogation_techniques
-				upgrade_intelligence_agency = upgrade_passive_defense
-			}
-			swap_ideas = {
-				remove_idea = domestic_sec
-				add_idea = domestic_sec_div
-			}
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_infil_ncr
+		id = erx_ba_oss_ncr_start
 		icon = GFX_goal_enc_infiltrate_ncr
-		cost = 20
-		x = -1
-		y = 1
-		relative_position_id = erx_broken_arrow_domestic_sec_div
-	
-		prerequisite = {
-			focus = erx_broken_arrow_oss
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_domestic_sec_div
-		}
 
-		completion_reward = {
-			add_to_variable = { EUR_suspicion = 1 }
-			custom_effect_tooltip = eur_suspicion_increase_tt
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_corpo_espion
-		icon = GFX_goal_enc_ncr_dollar
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_infil_ncr
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_ncr
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_ncr_high_comm
-		icon = GFX_goal_enc_rangers
-		cost = 20
 		x = -2
 		y = 1
-		relative_position_id = erx_broken_arrow_infil_ncr
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_ncr
-		}
+		relative_position_id = erx_ba_oss_start
+
+		cost = 20
+		prerequisite = { focus = erx_ba_oss_start }
 
 		completion_reward = {
 		}
 	}
+
+	##Infiltrate Shi
 	focus = {
-		id = erx_broken_arrow_ncr_state
-		icon = GFX_goal_enc_suspend_elections
+		id = erx_ba_oss_shi_start
+		icon = GFX_goal_shi_focus_golden_dragon
+
+		x = 0
+		y = 1
+		relative_position_id = erx_ba_oss_start
+
 		cost = 20
+		prerequisite = { focus = erx_ba_oss_start }
+
+		completion_reward = {
+		}
+	}
+
+	##Infiltrate Brotherhood
+	focus = {
+		id = erx_ba_oss_bos_start
+		icon = GFX_goal_enc_war_with_bos_reform
+
 		x = 2
 		y = 1
-		relative_position_id = erx_broken_arrow_infil_ncr
-	
-		prerequisite = {
-			focus = erx_broken_arrow_infil_ncr
-		}
+		relative_position_id = erx_ba_oss_start
 
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = erx_broken_arrow_ncr_prep
-		icon = GFX_goal_enc_the_common_man
 		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_corpo_espion
-	
-		prerequisite = {
-			focus = erx_broken_arrow_corpo_espion
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_ncr_high_comm
-		}
-		prerequisite = {
-			focus = erx_broken_arrow_ncr_state
-		}
+		prerequisite = { focus = erx_ba_oss_start }
 
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = erx_broken_arrow_ncr_resistance
-		icon = GFX_goal_enc_support_armed_coup
-		cost = 20
-		x = 0
-		y = 1
-		relative_position_id = erx_broken_arrow_ncr_prep
-	
-		prerequisite = {
-			focus = erx_broken_arrow_ncr_prep
-		}
 
-		available = {
-			has_completed_focus = erx_broken_arrow_extend_reach
-		}
-
-		completion_reward = {
-			#load_oob = EUR_federal_militia
-		}
-	}
 #####################
 ##National Heritage##
 #####################
@@ -2656,6 +2414,7 @@ focus_tree = {
 			custom_effect_tooltip = erx_broken_arrow_rebuild_humboldt_tt
 		}
 	}
+
 	##################
 	##Navarro Crisis##
 	##################
@@ -3163,6 +2922,118 @@ focus_tree = {
 			custom_effect_tooltip = navarro_databases_unlocked
 		}
 	}
+
+	### Shi Border Conflict ###
+	focus = {
+		id = erx_ba_navarro_shi_start
+		icon = GFX_goal_EUR_shi_dragon
+		cost = 1
+		x = -10
+		y = 0
+		relative_position_id = erx_broken_arrow_back_in_business
+
+		allow_branch = {
+			OR = {
+				is_debug = yes
+				has_country_flag = erx_ba_navarro_shi_start_flag
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = erx_ba_navarro_shi_start_tt
+		}
+	}
+
+	### Win Against Shi ###
+	focus = {
+		id = erx_ba_navarro_shi_win
+		icon = GFX_goal_enc_agreement
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = erx_ba_navarro_shi_start
+
+		allow_branch = {
+			OR = {
+				is_debug = yes
+				has_country_flag = erx_ba_navarro_shi_end_flag
+			}
+		}
+		prerequisite = { focus = erx_ba_navarro_shi_start }
+		mutually_exclusive = { focus = erx_ba_navarro_shi_lose_start }
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	### Loses Against Shi ###
+	focus = {
+		id = erx_ba_navarro_shi_lose_start
+		icon = GFX_goal_enc_forced_deal
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = erx_ba_navarro_shi_start
+
+		allow_branch = {
+			OR = {
+				is_debug = yes
+				has_country_flag = erx_ba_navarro_shi_end_flag
+			}
+		}
+		prerequisite = { focus = erx_ba_navarro_shi_start }
+		mutually_exclusive = { focus = erx_ba_navarro_shi_win }
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+			}
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	### Circumventing The Treaty Of Santa Rosa ###
+	focus = {
+		id = erx_ba_navarro_shi_lose_treaty
+		icon = GFX_focus_AUS_disregard_the_treaties
+		cost = 25
+		x = -1
+		y = 1
+		relative_position_id = erx_ba_navarro_shi_lose_start
+
+		allow_branch = {
+			OR = {
+				is_debug = yes
+				has_country_flag = erx_ba_navarro_shi_end_flag
+			}
+		}
+		prerequisite = { focus = erx_ba_navarro_shi_lose_start }
+		mutually_exclusive = { focus = erx_ba_navarro_shi_win }
+		available = {
+			has_completed_focus = erx_ba_oss_shi_start
+		}
+
+		completion_reward = {
+
+		}
+	}
+
 	###################
 	###NCR Economics###
 	###################

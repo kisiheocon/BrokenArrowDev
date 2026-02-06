@@ -729,7 +729,7 @@ ideas = {
 
 		### OSS Stuff - START ###
 		## Increased Intelligence Agency Funding ##
-		erx_ba_increase_oss_funding = {
+		erx_ba_increased_oss_funding_idea = {
 			picture = generic_production_bonus
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -749,66 +749,16 @@ ideas = {
 
 		### OSS Stuff - END ###
 
+		relationships_rekindled = {
+			picture = generic_trifold
 
-        domestic_sec = {
-            picture = x
-            allowed = {
-            }
-            removal_cost = -1
+			cancel = { NOT = { country_exists = NVT } }
+			modifier = {
+				send_volunteer_size = 3
+			}
+		}
 
-            modifier = {
-                encryption_factor = 0.1
-                resistance_activity = -0.05
-            }
-        }
-        domestic_sec_div = {
-            picture = x
-            allowed = {
-            }
-            removal_cost = -1
-
-            modifier = {
-                encryption_factor = 0.2
-                resistance_activity = -0.08
-                operative_slot = 1
-            }
-        }
-        national_sec = {
-            picture = x
-            allowed = {
-            }
-            removal_cost = -1
-
-            modifier = {
-                decryption_factor_factor = 0.1
-                intel_network_gain_factor = 0.05
-            }
-        }
-        national_sec_div = {
-            picture = x
-            allowed = {
-            }
-            removal_cost = -1
-
-            modifier = {
-                decryption_factor = 0.2
-                intel_network_gain_factor = 0.1
-                operative_slot = 1
-            }
-        }
-        relationships_rekindled = {
-            picture = generic_trifold
-            allowed = {
-            }
-            removal_cost = -1
-
-            cancel = { NOT = { country_exists = NVT } }
-            modifier = {
-                send_volunteer_size = 3
-            }
-        }
         nat_atk_bonus = {
-
             picture = generic_military_draft
             allowed = {
             }

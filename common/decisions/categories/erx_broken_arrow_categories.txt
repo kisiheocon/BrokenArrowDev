@@ -75,7 +75,7 @@ erx_broken_arrow_espionage_cat = {
 		original_tag = EUR
 	}
 	visible = {
-		#has_completed_focus = erx_broken_arrow_intel_app
+		#has_completed_focus = erx_ba_oss_start
 	}
 	icon = GFX_decision_satellite
 }
