@@ -29,7 +29,7 @@ erx_ba_oss_target_4_desc: "Enclave's desc"
 
 erx_ba_oss_target_5_name: "[SHI.GetFlag] Shi"
 erx_ba_oss_target_5_short_desc: "§LChinese on American soils?§!"
-erx_ba_oss_target_5_desc: "Shi's desc"
+erx_ba_oss_target_5_desc: "Following the Great War of 2077, and several decades of chaos and violence, San Francisco and its surrounding regions fell under the control of a group calling themselves the \"Shi\" manned by Chinese immigrants alongside a significant number of Communist Chinese operatives, sailors and soldiers from throughout the east coast. All led by the Emperor. An enigmatic character with little to no information known. Regardless the Shi have consolidated their holdings in recent years. And now act as a regional power broker on the west coast. How we deal with them will surely shape the future of this region."
 
 erx_ba_oss_target_6_name: "[VIC.GetFlag] New Victoria"
 erx_ba_oss_target_6_short_desc: "§LMonarchy of a bygone era.§!"
@@ -38,3 +38,13 @@ erx_ba_oss_target_6_desc: "§t\"There's Another Country I Heard Of Long Ago\"§!
 erx_ba_oss_target_7_name: "[ARM.GetFlag] Mexico"
 erx_ba_oss_target_7_short_desc: "§LMexico§!"
 erx_ba_oss_target_7_desc: "Mexico's desc"
+
+## New California OSS Decisions ##
+erx_ba_oss_ncr_corporate_espionage_decision: "Corporate Espionage"
+erx_ba_oss_ncr_corporate_espionage_decision_desc: "By sending our operatives into the major industries that drive the N.C.R, we can learn their secrets. And their weaknesses."
+
+erx_ba_oss_ncr_high_command_decision: "Infiltrating High Command"
+erx_ba_oss_ncr_high_command_decision_desc: "Through our network of operatives we can infiltrate the N.C.R High Command, giving us an early warning for invasion, and if necessary the ability to cripple their military."
+
+erx_ba_oss_ncr_state_apparatus_decision: "Infiltrate The Apparatus Of State"
+erx_ba_oss_ncr_state_apparatus_decision_desc: "Via bribery, Intimidation and a sheer lack of good safeguards. Our operatives can have unabated access to the inner workings of the Californian Congress, and Government."

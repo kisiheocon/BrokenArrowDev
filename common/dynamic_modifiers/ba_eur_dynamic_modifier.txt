@@ -59,8 +59,6 @@ ba_eur_oregon_bonneville_dam_dynamic_modifier = {
 erx_ba_treaty_santa_rosa_dynamic_modifier = { 
 	icon = GFX_modifiers_sabotaged_resource
 
-	enable = { NOT = { ROOT.owner = { original_tag = SHI } } }
-
 	recruitable_population_factor = -0.5
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25

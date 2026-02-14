@@ -586,12 +586,15 @@ erx_ba_oss_start_tt: "Create Intelligence Agency: £GFX_counter_intelligence  §
 
 erx_ba_oss_ncr_start: "Infilitrate the NCR"
 erx_ba_oss_ncr_start_desc: "Regardless of our public statements, we need our eyes and ears inside the Californian Behemoth, lest we fall victim to their more militant urges. "
+erx_ba_oss_ncr_start_tt: "Unlocks §YOSS§! target: §Y[NCR.GetNameWithFlag]§!"
 
 erx_ba_oss_bos_start: "Infilitrate Lost Hills"
 erx_ba_oss_bos_start_desc: "The California Chapter of the Brotherhood, despite recent defeats against the NCR, is still a major power within the region, who also are the only organization besides ourselves to operation Vertibirds and utilize Power Armour en masse. Making them a clear threat to the region."
+erx_ba_oss_bos_start_tt: "Unlocks §YOSS§! target: §Y[BOS.GetFlag]The Brotherhood of Steel§!"
 
 erx_ba_oss_shi_start: "Infiltrating The Golden City"
 erx_ba_oss_shi_start_desc: "San Francisco, The City by the bay. Or as the Californians call it, El Dorado. The City Of Gold, not because of its material wealth. But because of its technological prowess rivaling pre war living. And in more ways then one surpassing it. With rumors of advanced technology and machinery that was once thought up only in the machinations of science fiction. Or Delusion. Regardless while not posing a direct threat to us the sheer volume of rumors varying from hydroponics to super-weapons is of concern. The O.S.S will figure out whats what down yonder in Fog City. Lets hope it isnt what we think it is. For their sake...\nAnd theirs...\n\nJust what is the Emperor hiding?"
+erx_ba_oss_shi_start_tt: "Unlocks §YOSS§! target: §Y[SHI.GetNameWithFlag]§!"
 
 erx_ba_oss_bos_scribe: "Infilitrate Scribe Castes"
 erx_ba_oss_bos_scribe_desc: "Scribes are tasked with creating and keeping records of the technology recovered and used by the Brotherhood and experimenting with new weapons and other useful devices to be used in the field by Brotherhoods men, Their vast databases have untold knowledge, With Our Operatives in the various castes of Scribes we can monitor brotherhood breakthroughs and scan their databases."
@@ -638,7 +641,7 @@ nf_ba_eur_ncr_trade_eco_low_desc: "A Deal with the Bear would be to costly. And 
 ###NAVARRO CRISIS###
 nf_ba_eur_navarro_crisis: "The Navarro Crisis"
 nf_ba_eur_navarro_crisis_desc: "The Navarro Territories are in flames.\n\nSmells like Opportunity"
-nf_ba_eur_navarro_crisis_trigger_tt: "This §YFocus§! will be completed by an §YEvent§!"
+erx_ba_focus_complete_trigger_tt: "This §YFocus§! will be completed by an §YEvent§!"
 nf_ba_eur_navarro_crisis_reward_tt: "Unlocks £GFX_decision_icon_small §YDecisions§! to help our §4ally§! in §YNavarro§!."
 erx_broken_arrow_navarro.1_tt: "New £GFX_decision_icon_small §YDecisions§! are available to help our allies in §YNavarro§!!\nIt is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
 nf_ba_eur_navarro_development: "Navarro Pacification Campaign"

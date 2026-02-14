@@ -100,12 +100,16 @@ EUR_political_infighting = {
 		}
 	}
 }
+### OSS ###
 erx_ba_oss_decision_cat = {
 	icon = GFX_decision_cat_oss
 	allowed = { original_tag = EUR }
 	priority = 999999
 	visible = {
-		is_debug = yes
+		OR = {
+			is_debug = yes
+			has_completed_focus = erx_ba_oss_start
+		}
 	}
 	visible_when_empty = yes
 	scripted_gui = erx_ba_oss_scripted_gui

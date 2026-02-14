@@ -1595,6 +1595,8 @@ focus_tree = {
 				custom_effect_tooltip = erx_ba_oss_start_tt
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
+			unlock_decision_category_tooltip = erx_ba_oss_decision_cat
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = {
 				add_timed_idea = {
@@ -1602,6 +1604,12 @@ focus_tree = {
 					days = 90
 				}
 			}
+
+			## OSS GUI ##
+			add_to_array = { erx_ba_oss_target_array = 1 } # NCR #
+			add_to_array = { erx_ba_oss_target_array = 3 } # BOS #
+			add_to_array = { erx_ba_oss_target_array = 5 } # Shi #
+			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
 		}
 	}
 
@@ -1618,6 +1626,10 @@ focus_tree = {
 		prerequisite = { focus = erx_ba_oss_start }
 
 		completion_reward = {
+			custom_effect_tooltip = erx_ba_oss_ncr_start_tt
+
+			## OSS GUI ##
+			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
 		}
 	}
 
@@ -1634,6 +1646,10 @@ focus_tree = {
 		prerequisite = { focus = erx_ba_oss_start }
 
 		completion_reward = {
+			custom_effect_tooltip = erx_ba_oss_shi_start_tt
+			
+			## OSS GUI ##
+			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
 		}
 	}
 
@@ -1650,6 +1666,10 @@ focus_tree = {
 		prerequisite = { focus = erx_ba_oss_start }
 
 		completion_reward = {
+			custom_effect_tooltip = erx_ba_oss_bos_start_tt
+			
+			## OSS GUI ##
+			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
 		}
 	}
 
@@ -2430,7 +2450,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				always = no
-				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+				tooltip = erx_ba_focus_complete_trigger_tt
 			}
 		}
 
@@ -2924,6 +2944,7 @@ focus_tree = {
 	}
 
 	### Shi Border Conflict ###
+	## The Affairs Of San Francisco ##
 	focus = {
 		id = erx_ba_navarro_shi_start
 		icon = GFX_goal_EUR_shi_dragon
@@ -2941,18 +2962,18 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				always = no
-				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+				tooltip = erx_ba_focus_complete_trigger_tt
 			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = erx_ba_navarro_shi_start_tt
 		}
 	}
 
 	### Win Against Shi ###
+	## Decisive Victory In The Shaolin Border Conflict ##
 	focus = {
-		id = erx_ba_navarro_shi_win
+		id = erx_ba_navarro_shi_win_0
 		icon = GFX_goal_enc_agreement
 		cost = 1
 		x = -1
@@ -2966,11 +2987,11 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = erx_ba_navarro_shi_start }
-		mutually_exclusive = { focus = erx_ba_navarro_shi_lose_start }
+		mutually_exclusive = { focus = erx_ba_navarro_shi_lose_0 }
 		available = {
 			custom_trigger_tooltip = {
 				always = no
-				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+				tooltip = erx_ba_focus_complete_trigger_tt
 			}
 		}
 
@@ -2980,8 +3001,9 @@ focus_tree = {
 	}
 
 	### Loses Against Shi ###
+	## Shattering Defeat In The Shaolin Border Conflict ##
 	focus = {
-		id = erx_ba_navarro_shi_lose_start
+		id = erx_ba_navarro_shi_lose_0
 		icon = GFX_goal_enc_forced_deal
 		cost = 1
 		x = 1
@@ -2995,11 +3017,33 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = erx_ba_navarro_shi_start }
-		mutually_exclusive = { focus = erx_ba_navarro_shi_win }
+		mutually_exclusive = { focus = erx_ba_navarro_shi_win_0 }
 		available = {
 			custom_trigger_tooltip = {
 				always = no
-				tooltip = nf_ba_eur_navarro_crisis_trigger_tt
+				tooltip = erx_ba_focus_complete_trigger_tt
+			}
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	## A Republic Scorned ##
+	focus = {
+		id = erx_ba_navarro_shi_lose_1
+		icon = GFX_goal_generic_attack_allies
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = erx_ba_navarro_shi_lose_0
+
+		prerequisite = { focus = erx_ba_navarro_shi_lose_0 }
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = erx_ba_focus_complete_trigger_tt
 			}
 		}
 
@@ -3015,16 +3059,9 @@ focus_tree = {
 		cost = 25
 		x = -1
 		y = 1
-		relative_position_id = erx_ba_navarro_shi_lose_start
+		relative_position_id = erx_ba_navarro_shi_lose_1
 
-		allow_branch = {
-			OR = {
-				is_debug = yes
-				has_country_flag = erx_ba_navarro_shi_end_flag
-			}
-		}
-		prerequisite = { focus = erx_ba_navarro_shi_lose_start }
-		mutually_exclusive = { focus = erx_ba_navarro_shi_win }
+		prerequisite = { focus = erx_ba_navarro_shi_lose_1 }
 		available = {
 			has_completed_focus = erx_ba_oss_shi_start
 		}
