@@ -1813,6 +1813,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = yorktown_legacy_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = erx_ba_national_heritage_event.10
 		}
 	}
 	###Texan Heritge

@@ -1258,7 +1258,7 @@ country_event = {
 				add_resistance = -10
 			}
 		}
-		216 = { 
+		216 = {
 			add_manpower = -2400 #30% leave Bodega-Eureka
 			damage_building = { #Damage 2 Infrastructure
 				type = infrastructure
@@ -1269,7 +1269,7 @@ country_event = {
 				damage = 1
 			}
 		} 
-		441 = { 
+		441 = {
 			add_manpower = -6000 #30% leave Santa Rosa-Eureka
 			damage_building = { #Damage 1 Infrastructure
 				type = infrastructure
@@ -1278,8 +1278,8 @@ country_event = {
 			damage_building = { #Damage 1 Civ
 				type = industrial_complex
 				damage = 1
-			}			
-		} 
+			}
+		}
 		474 = { add_manpower = 2000 } #25% join San Rafael-Shi
 		511 = { add_manpower = 5000 } #25% join Vallejo-Shi
 		SHI = {

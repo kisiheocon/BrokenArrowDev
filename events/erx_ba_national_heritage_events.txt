@@ -1,0 +1,15 @@
+add_namespace = erx_ba_national_heritage_event
+
+## A Revolution In More Ways Than One ##
+country_event = {
+	id = erx_ba_national_heritage_event.10
+	picture = GFX_event_legacy_of_yorktown
+	title = erx_ba_national_heritage_event.10.title
+	desc = erx_ba_national_heritage_event.10.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_ba_national_heritage_event.10.a
+	}
+}

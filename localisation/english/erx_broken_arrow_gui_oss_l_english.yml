@@ -48,3 +48,13 @@ erx_ba_oss_ncr_high_command_decision_desc: "Through our network of operatives we
 
 erx_ba_oss_ncr_state_apparatus_decision: "Infiltrate The Apparatus Of State"
 erx_ba_oss_ncr_state_apparatus_decision_desc: "Via bribery, Intimidation and a sheer lack of good safeguards. Our operatives can have unabated access to the inner workings of the Californian Congress, and Government."
+
+## The Brotherhood of Steel Decisions ##
+erx_ba_oss_bos_scribal_castes_decision: "Infiltrate The Scribal Castes"
+erx_ba_oss_bos_scribal_castes_decision_desc: "Scribes are tasked with creating and keeping records of the technology recovered and used by the Brotherhood and experimenting with new weapons and other useful devices to be used in the field by Brotherhoods men, Their vast databases have untold knowledge, With Our Operatives in the various castes of Scribes we can monitor brotherhood breakthroughs and scan their databases."
+
+erx_ba_oss_bos_chain_that_bind_decision: "Infiltrating The Chains That Bind"
+erx_ba_oss_bos_chain_that_bind_decision_desc: "In layman's terms the Chains are the Brotherhoods method for a High Command and the distribution of orders from said command. Having eyes and ears within it is integral to early warning of Brotherhood actions and general intelligence of the region and lost hills military."
+
+erx_ba_oss_bos_council_elders_decision: "Infiltrating The Council Of Elders"
+erx_ba_oss_bos_council_elders_decision_desc: "The \"Council\" as the Brotherhood refer to is acts as an oligarch like system which control the operations of the Brotherhood State, led by a \"High Elder\" they control the business of governance in all lands unfortunate enough to fall under their control. Having influence over this council can allow us to gain a clear image of Brotherhood Foreign policy."

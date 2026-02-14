@@ -75,4 +75,10 @@ spriteTypes = {
 		name = "GFX_event_carolina"
 		texturefile = "gfx/event_pictures/USA_navy.dds"
 	}
+
+	### Legacy of Yorktown ###
+	spriteType = {
+		name = "GFX_event_legacy_of_yorktown"
+		texturefile = "gfx/event_pictures/legacy_of_yorktown.dds"
+	}
 }
