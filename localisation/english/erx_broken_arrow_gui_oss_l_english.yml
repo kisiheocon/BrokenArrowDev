@@ -72,3 +72,10 @@ erx_ba_oss_shi_huangdi_yihui_decision_desc: "The \"Huangdi De Yihui\" or Emperor
 # Shi - Treaty of Santa Rosa #
 erx_ba_oss_shi_santa_rosa_treaty_0_decision: "Distract The Dragon"
 erx_ba_oss_shi_santa_rosa_treaty_0_decision_desc: "The settlers and \"Mercenaries\" in the border region get their directives and armaments from the imperial state directly. By conduction several terror attacks on their southern and eastern borders we can simultaneously divert attention from our region of interest and allow for a clean insertion of agents.\n\nWe will however have to supply our operatives with considerable explosive material and the naval vessels necessary for inserting themselves by sea.\n\n\"A costly distraction, but a worthwhile one.\""
+
+erx_ba_oss_shi_santa_rosa_treaty_1_decision: "Coordinate Raids On Settler Outposts"
+erx_ba_oss_shi_santa_rosa_treaty_1_decision_desc: "While previously haphazard and more akin to raider assaults, Federal-aligned rebels and our inserted operatives will strike settler outposts with planning and precision. Targeting strategically vital infrastructure and seizing usable resources. Both ensuring that imperial operations are stalled more efficiently, and that our forces on the ground can supply themselves more practically."
+erx_ba_oss_shi_santa_rosa_treaty_1_decision_trigger_tt: "Completed Decision: §Y$erx_ba_oss_shi_santa_rosa_treaty_0_decision$§!"
+
+erx_ba_oss_shi_santa_rosa_treaty_2_decision: "WIP - ASSASINATE"
+erx_ba_oss_shi_santa_rosa_treaty_2_decision_trigger_tt: "Completed Decision: §Y$erx_ba_oss_shi_santa_rosa_treaty_1_decision$§!"

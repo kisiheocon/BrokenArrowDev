@@ -303,7 +303,11 @@ erx_ba_oss_decision_cat = {
 	erx_ba_oss_shi_santa_rosa_treaty_0_decision = {
 		icon = GFX_decision_generic_ignite_civil_war
 		
-		highlight_states = { highlight_state_targets = { state = 312 } }
+		highlight_states = {
+			highlight_state_targets = { state = 539 }
+			highlight_provinces = { 4734 1013 4612 4834 4613 4841 4840 4611 4733 4833 1027 4839 4838 4732 4832 }
+			highlight_only_provinces = yes
+		}
 
 		visible = {
 			check_variable = { erx_ba_oss_selected_var = 5 }
@@ -327,11 +331,21 @@ erx_ba_oss_decision_cat = {
 		}
 
 		days_remove = 30
-		modifier = {
-			command_power_gain = -0.1
-		}
+		modifier = { command_power_gain = -0.1 }
 		remove_effect = {
-			312 = { damage_building = { type = infrastructure damage = 1 } }
+			NCR = {
+				random_core_state = {
+					limit = { state = 312 }
+					damage_building = { type = infrastructure damage = 1 }
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SHI = {
+				every_core_state = { # Nicer Tooltip #
+					limit = { OR = { state = 539 state = 132 } }
+					damage_building = { type = infrastructure damage = 1 }
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			SHI = {
 				add_opinion_modifier = { target = NCR modifier = protest_action }
@@ -339,7 +353,7 @@ erx_ba_oss_decision_cat = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = {
-				limit = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+				limit = { OR = { state = 441 state = 216 } }
 				effect_tooltip = { # Fake tooltip so it look better #
 					swap_ideas = {
 						remove_idea = erx_ba_treaty_santa_rosa_0_idea
@@ -349,6 +363,133 @@ erx_ba_oss_decision_cat = {
 				hidden_effect = { # Real effects here #
 					remove_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
 					add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier }
+					force_update_dynamic_modifier = yes
+				}
+			}
+			unlock_decision_tooltip = erx_ba_oss_shi_santa_rosa_treaty_1_decision
+		}
+	}
+
+	# Coordinate Raids On Settler Outposts #
+	erx_ba_oss_shi_santa_rosa_treaty_1_decision = {
+		icon = GFX_decision_infiltrate_state
+		
+		highlight_states = { highlight_state_targets = { state = 441 state = 216 } }
+
+		visible = {
+			check_variable = { erx_ba_oss_selected_var = 5 }
+			#441 = {
+			#	OR = {
+			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
+			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
+			#	}
+			#}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = erx_ba_oss_shi_santa_rosa_treaty_1_decision_trigger_tt
+				441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier }
+			}
+			has_manpower > 199
+			has_equipment = { infantry_equipment > 299 }
+			has_equipment = { support_equipment > 49 }
+		}
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_manpower = -200
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -300 }
+				add_equipment_to_stockpile = { type = support_equipment amount = -50 }
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 60
+		modifier = {
+			weekly_manpower = -7
+			command_power_gain = -0.1
+		}
+		remove_effect = {
+			every_owned_state = { # Nicer Tooltip #
+				limit = { OR = { state = 441 state = 216 } }
+				damage_building = { type = infrastructure damage = 1 }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = { OR = { state = 441 state = 216 } }
+				effect_tooltip = { # Fake tooltip so it look better #
+					swap_ideas = {
+						remove_idea = erx_ba_treaty_santa_rosa_1_idea
+						add_idea = erx_ba_treaty_santa_rosa_2_idea
+					}
+				}
+				hidden_effect = { # Real effects here #
+					remove_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier }
+					add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier }
+					force_update_dynamic_modifier = yes
+				}
+			}
+			unlock_decision_tooltip = erx_ba_oss_shi_santa_rosa_treaty_2_decision
+		}
+	}
+
+	# WIP - Assasinate #
+	erx_ba_oss_shi_santa_rosa_treaty_2_decision = {
+		icon = GFX_decision_generic_assassination
+		
+		highlight_states = { highlight_state_targets = { state = 474 } }
+
+		visible = {
+			check_variable = { erx_ba_oss_selected_var = 5 }
+			#441 = {
+			#	OR = {
+			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
+			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
+			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier
+			#	}
+			#}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = erx_ba_oss_shi_santa_rosa_treaty_2_decision_trigger_tt
+				441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier }
+			}
+			has_manpower > 29
+			has_equipment = { infantry_equipment > 29 }
+			has_equipment = { support_equipment > 49 }
+		}
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_manpower = -30
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -30 }
+				add_equipment_to_stockpile = { type = support_equipment amount = -50 }
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 90
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			SHI = {
+				add_manpower = -1
+				retire_character = SHI_dragon
+				add_opinion_modifier = { target = EUR modifier = protest_action_strong }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = { OR = { state = 441 state = 216 } }
+				effect_tooltip = { # Fake tooltip so it look better #
+					remove_ideas = erx_ba_treaty_santa_rosa_2_idea
+				}
+				hidden_effect = { # Real effects here #
+					remove_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier }
 					force_update_dynamic_modifier = yes
 				}
 			}
