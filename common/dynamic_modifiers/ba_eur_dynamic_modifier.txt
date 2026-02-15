@@ -56,11 +56,27 @@ ba_eur_oregon_bonneville_dam_dynamic_modifier = {
 }
 
 ## Treaty of Santa Rosa ##
-erx_ba_treaty_santa_rosa_dynamic_modifier = { 
-	icon = GFX_modifiers_sabotaged_resource
+# Start #
+erx_ba_treaty_santa_rosa_0_dynamic_modifier = {
+	icon = GFX_idea_HUN_treaty_of_triannon
 
 	recruitable_population_factor = -0.5
 	local_building_slots_factor = -0.25
-	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
+}
+
+erx_ba_treaty_santa_rosa_1_dynamic_modifier = {
+	icon = GFX_idea_HUN_treaty_of_triannon
+
+	recruitable_population_factor = -0.3
+	local_building_slots_factor = -0.15
+	state_production_speed_buildings_factor = -0.15
+}
+
+erx_ba_treaty_santa_rosa_2_dynamic_modifier = {
+	icon = GFX_idea_HUN_treaty_of_triannon
+
+	recruitable_population_factor = -0.1
+	local_building_slots_factor = -0.05
+	state_production_speed_buildings_factor = -0.05
 }

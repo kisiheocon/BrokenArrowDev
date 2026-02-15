@@ -58,3 +58,17 @@ erx_ba_oss_bos_chain_that_bind_decision_desc: "In layman's terms the Chains are 
 
 erx_ba_oss_bos_council_elders_decision: "Infiltrating The Council Of Elders"
 erx_ba_oss_bos_council_elders_decision_desc: "The \"Council\" as the Brotherhood refer to is acts as an oligarch like system which control the operations of the Brotherhood State, led by a \"High Elder\" they control the business of governance in all lands unfortunate enough to fall under their control. Having influence over this council can allow us to gain a clear image of Brotherhood Foreign policy."
+
+## Shi Decisions ##
+erx_ba_oss_shi_kexue_lianmeng_decision: "Slinking Through The Kexue Lianmeng"
+erx_ba_oss_shi_kexue_lianmeng_decision_desc: "The \"Kēxué liánméng\" Or \"Scientific Alliance\" is a conglomerate of all major science organizations in San Francisco and the surrounding areas. They while having no legal authority or power have great sway over San Francisco, and consequently the Emperor. As such our influence and ears in this Alliance is of paramount importance to our efforts. If we can puppeteer the actions of the scientists, we can control the state. As well as gaining a closer look at their various projects, classified or otherwise."
+
+erx_ba_oss_shi_qingming_decision: "Pervading The Ranks Of The Qingming"
+erx_ba_oss_shi_qingming_decision_desc: "The Emperor is hiding something, we just don't know what. Getting close enough to find out isn't gonna be easy, we'll need influence... and clearance. What better place to start then the Emperors personal army, the Qingming. If we can get our operatives into the right position, we can get the influence we need over the generals... especially those close to the Emperor."
+
+erx_ba_oss_shi_huangdi_yihui_decision: "Prowling Through The Huangdi De Yihui"
+erx_ba_oss_shi_huangdi_yihui_decision_desc: "The \"Huangdi De Yihui\" or Emperors Council, is the defacto government of San Francisco. Claiming to carry out the edicts of the Emperor himself. They control all policy and matters of state. Without influence here we wont get far. As they are the only ones who are said to have audiences with the Emperor. And they are also the only ones with access to the most classified materials and documents. Gaining a foothold here is important above all else."
+
+# Shi - Treaty of Santa Rosa #
+erx_ba_oss_shi_santa_rosa_treaty_0_decision: "Distract The Dragon"
+erx_ba_oss_shi_santa_rosa_treaty_0_decision_desc: "The settlers and \"Mercenaries\" in the border region get their directives and armaments from the imperial state directly. By conduction several terror attacks on their southern and eastern borders we can simultaneously divert attention from our region of interest and allow for a clean insertion of agents.\n\nWe will however have to supply our operatives with considerable explosive material and the naval vessels necessary for inserting themselves by sea.\n\n\"A costly distraction, but a worthwhile one.\""

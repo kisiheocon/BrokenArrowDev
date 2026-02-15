@@ -255,7 +255,15 @@ erx_broken_arrow_navarro.10.t: "Federal Forces Routed On The Pacific"
 erx_broken_arrow_navarro.10.d: "Despite declaring martial law and President Granite taking direct command of the conflict to the south we have been dealt a crippling blow by the rebels. While we have managed to supress the lingering colonial remnants their settler allies have proven more difficult to pacify. Despite securing the central sectors the south has all but collapsed and we have been left no other alternative but to sue for peace. The Chinese will pay a terrible price for their treachery. But with Shady Sands ensuring their continued independence a larger war is for the moment out of the question.\n\nWe have failed. "
 erx_broken_arrow_navarro.10.a: "One Day The Bear Won't Be There To Protect Them."
 
-erx_ba_treaty_santa_rosa_dynamic_modifier: "Treaty of Santa Rosa"
+erx_ba_treaty_santa_rosa_dynamic_modifier_name: "Treaty of Santa Rosa"
+erx_ba_treaty_santa_rosa_dynamic_modifier_desc: "With the defeat of Federal forces In this region, a treaty has been imposed as a concession in exchange for the border states continued governance by the Federal Government. True influence however rarely lies in the hands of the Federals. Countless stipulations, clauses, and provisions within the treaty grant unfettered decision power in the region to the Chinese settlers, and by obvious proxy the Emperor himself. §RResource Rights§!, §RAutonomy Agreements§!, §RTaxation Exemptions§! and various §RSpecial Privileges§! have skewed influence firmly towards the §YGolden City§! And the presence of Chinese \"Peacekeeping\" forces strain relations further. As long as the terms of the treaty are in effect, the Chinese will strip the region for all its worth, and those friendly to the Federal Government will remain in limbo, ever a victim of an undeclared occupation."
+
+erx_ba_treaty_santa_rosa_0_dynamic_modifier: "$erx_ba_treaty_santa_rosa_dynamic_modifier_name$"
+erx_ba_treaty_santa_rosa_0_dynamic_modifier_desc: "$erx_ba_treaty_santa_rosa_dynamic_modifier_desc$"
+erx_ba_treaty_santa_rosa_1_dynamic_modifier: "$erx_ba_treaty_santa_rosa_dynamic_modifier_name$"
+erx_ba_treaty_santa_rosa_1_dynamic_modifier_desc: "$erx_ba_treaty_santa_rosa_dynamic_modifier_desc$"
+erx_ba_treaty_santa_rosa_2_dynamic_modifier: "$erx_ba_treaty_santa_rosa_dynamic_modifier_name$"
+erx_ba_treaty_santa_rosa_2_dynamic_modifier_desc: "$erx_ba_treaty_santa_rosa_dynamic_modifier_desc$"
 
 erx_broken_arrow_navarro.11.t: "Our Intervention." #Just for AI etc displaying, no need to be detailed
 

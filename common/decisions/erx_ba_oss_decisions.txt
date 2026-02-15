@@ -1,8 +1,6 @@
 debug_decisions = {
 	load_all_oss_target = {
-		allowed = {
-			original_tag = EUR
-		}
+		allowed = { original_tag = EUR }
 		complete_effect = {
 			erx_ba_set_up_oss_array = yes
 		}
@@ -205,6 +203,158 @@ erx_ba_oss_decision_cat = {
 			add_political_power = 60
 		}
 	}
+
+	## Shi ##
+	# Slinking Through The Kexue Lianmeng #
+	erx_ba_oss_shi_kexue_lianmeng_decision = {
+		icon = GFX_decision_generic_research
+		
+		highlight_states = { highlight_state_targets = { state = SHI.capital } }
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 5 } }
+		available = { country_exists = SHI }
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		complete_effect = {
+			add_intel = { target = SHI civilian_intel = 20 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_command_power = -25
+		}
+
+		days_remove = 80
+		modifier = {
+			research_speed_factor = 0.05
+			command_power_gain = -0.1
+		}
+		remove_effect = {
+			add_intel = { target = SHI civilian_intel = -20 }
+		}
+	}
+
+	# Pervading The Ranks Of The Qingming #
+	erx_ba_oss_shi_qingming_decision = {
+		icon = GFX_decision_generic_army_support
+		
+		highlight_states = { highlight_state_targets = { state = SHI.capital } }
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 5 } }
+		available = { country_exists = SHI }
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		complete_effect = {
+			add_intel = { target = SHI army_intel = 20 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_command_power = -25
+		}
+
+		days_remove = 60
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			add_intel = { target = SHI army_intel = -20 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 20
+		}
+	}
+
+	# Prowling Through The Huangdi De Yihui #
+	erx_ba_oss_shi_huangdi_yihui_decision = {
+		icon = GFX_decision_generic_political_address
+		
+		highlight_states = { highlight_state_targets = { state = SHI.capital } }
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 5 } }
+		available = { country_exists = SHI }
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		complete_effect = {
+			add_intel = {
+				target = SHI
+				civilian_intel = 20
+				army_intel = 10
+				navy_intel = 10
+				airforce_intel = 10
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_command_power = -25
+		}
+
+		days_remove = 90
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			add_intel = {
+				target = SHI
+				civilian_intel = -20
+				army_intel = -10
+				navy_intel = -10
+				airforce_intel = -10
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 60
+		}
+	}
+
+	## Shi - Santa Rosa Treaty Decisions ##
+	# Distract The Dragon #
+	erx_ba_oss_shi_santa_rosa_treaty_0_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		highlight_states = { highlight_state_targets = { state = 312 } }
+
+		visible = {
+			check_variable = { erx_ba_oss_selected_var = 5 }
+			#441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+		}
+		available = {
+			has_completed_focus = erx_ba_navarro_shi_lose_treaty
+			has_equipment = { demolitions_equipment > 49 }
+			has_equipment = { convoy > 9 }
+		}
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = { type = demolitions_equipment amount = -50 }
+				add_equipment_to_stockpile = { type = convoy amount = -10 }
+				add_command_power = -25
+			}
+		}
+
+		days_remove = 30
+		modifier = {
+			command_power_gain = -0.1
+		}
+		remove_effect = {
+			312 = { damage_building = { type = infrastructure damage = 1 } }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SHI = {
+				add_opinion_modifier = { target = NCR modifier = protest_action }
+				reverse_add_opinion_modifier = { target = NCR modifier = protest_action }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+				effect_tooltip = { # Fake tooltip so it look better #
+					swap_ideas = {
+						remove_idea = erx_ba_treaty_santa_rosa_0_idea
+						add_idea = erx_ba_treaty_santa_rosa_1_idea
+					}
+				}
+				hidden_effect = { # Real effects here #
+					remove_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+					add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier }
+					force_update_dynamic_modifier = yes
+				}
+			}
+		}
+	}
+
 	
 	erx_ba_oss_decision_2 = {
 		visible = {
@@ -224,16 +374,6 @@ erx_ba_oss_decision_cat = {
 		}
 		complete_effect = {
 			add_political_power = 4
-		}
-	}
-	erx_ba_oss_decision_5 = {
-		visible = {
-			check_variable = {
-				erx_ba_oss_selected_var = 5
-			}
-		}
-		complete_effect = {
-			add_political_power = 5
 		}
 	}
 }

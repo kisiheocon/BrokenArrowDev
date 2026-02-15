@@ -1331,26 +1331,23 @@ country_event = {
 			add_stability = -0.03
 			add_war_support = -0.03
 			army_experience = 50
-			add_opinion_modifier = {
-				target = SHI
-				modifier = protest_action_strong
-			}
+			add_opinion_modifier = { target = SHI modifier = protest_action_strong }
 			NAT = {
 				every_core_state = {
 					add_compliance = -5
 					add_resistance = 10
 				}
 			}
-			216 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
-			441 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
-			give_resource_rights = {
-				receiver = SHI
-				state = 216
+			216 = {
+				add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+				force_update_dynamic_modifier = yes
 			}
-			give_resource_rights = {
-				receiver = SHI
-				state = 441
+			441 = {
+				add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+				force_update_dynamic_modifier = yes
 			}
+			give_resource_rights = { receiver = SHI state = 216 }
+			give_resource_rights = { receiver = SHI state = 441 }
 			add_corps_commander_role = {
 				character = EUR_oscar_mccormick
 				desc = EUR_oscar_mccormick_desc
@@ -1373,30 +1370,29 @@ country_event = {
 		name = erx_broken_arrow_navarro.10.a
 		effect_tooltip = { #Just for showing the effects, the effects already given out in the immediate block - @Deez
 			recruit_character = EUR_oscar_mccormick
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = -20
 			add_stability = -0.03
 			add_war_support = -0.03
 			army_experience = 50
-			add_opinion_modifier = {
-				target = SHI
-				modifier = protest_action_strong
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			NAT = {
 				every_core_state = {
 					add_compliance = -5
 					add_resistance = 10
 				}
 			}
-			216 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
-			441 = { add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_dynamic_modifier } }
-			give_resource_rights = {
-				receiver = SHI
-				state = 216
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = { # Better tooltip #
+				limit = { OR = { state = 216 state = 441 } }
+				add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+				force_update_dynamic_modifier = yes
 			}
-			give_resource_rights = {
-				receiver = SHI
-				state = 441
-			}		
+			custom_effect_tooltip = generic_skip_one_line_tt
+			give_resource_rights = { receiver = SHI state = 216 }
+			give_resource_rights = { receiver = SHI state = 441 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_opinion_modifier = { target = SHI modifier = protest_action_strong }
 		}
 	}
 }

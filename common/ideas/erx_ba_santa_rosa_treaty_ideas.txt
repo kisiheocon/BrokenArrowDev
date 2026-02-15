@@ -1,0 +1,36 @@
+## Treaty of Santa Rosa - Fake for tooltips ##
+# Start #
+ideas = {
+	country = {
+		erx_ba_treaty_santa_rosa_0_idea = {
+			name = erx_ba_treaty_santa_rosa_dynamic_modifier_name
+
+			modifier = {
+				recruitable_population_factor = -0.5
+				local_building_slots_factor = -0.25
+				state_production_speed_buildings_factor = -0.25
+			}
+		}
+
+		erx_ba_treaty_santa_rosa_1_idea = {
+			name = erx_ba_treaty_santa_rosa_dynamic_modifier_name
+
+			modifier = {
+				recruitable_population_factor = -0.3
+				local_building_slots_factor = -0.15
+				state_production_speed_buildings_factor = -0.15
+			}
+		}
+
+		erx_ba_treaty_santa_rosa_2_idea = {
+			name = erx_ba_treaty_santa_rosa_dynamic_modifier_name
+
+			modifier = {
+				recruitable_population_factor = -0.1
+				local_building_slots_factor = -0.05
+				state_production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+}
+
