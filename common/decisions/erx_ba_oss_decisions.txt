@@ -311,7 +311,7 @@ erx_ba_oss_decision_cat = {
 
 		visible = {
 			check_variable = { erx_ba_oss_selected_var = 5 }
-			#441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
+			441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
 		}
 		available = {
 			has_completed_focus = erx_ba_navarro_shi_lose_treaty
@@ -378,12 +378,12 @@ erx_ba_oss_decision_cat = {
 
 		visible = {
 			check_variable = { erx_ba_oss_selected_var = 5 }
-			#441 = {
-			#	OR = {
-			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
-			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
-			#	}
-			#}
+			441 = {
+				OR = {
+					has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
+					has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
+				}
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -444,13 +444,13 @@ erx_ba_oss_decision_cat = {
 
 		visible = {
 			check_variable = { erx_ba_oss_selected_var = 5 }
-			#441 = {
-			#	OR = {
-			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
-			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
-			#		has_dynamic_modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier
-			#	}
-			#}
+			441 = {
+				OR = {
+					has_dynamic_modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier
+					has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier
+					has_dynamic_modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier
+				}
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
