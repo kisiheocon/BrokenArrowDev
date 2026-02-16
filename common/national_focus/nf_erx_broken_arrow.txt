@@ -2359,6 +2359,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_navarro_housing_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		}
@@ -2383,12 +2389,14 @@ focus_tree = {
 				every_core_state = {
 					add_resistance = -5
 					add_compliance = 2.5
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+					add_building_construction = { type = infrastructure level = 1 }
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_navarro_workplace_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = erx_ba_focus_on_select_tt
@@ -2703,7 +2711,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_province_name = { id = 3434 name = "U.S Army Base Navarro" }
+			set_province_name = { id = 3434 name = erx_ba_navarro_base_name }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 50 producer = USA }
 			custom_effect_tooltip = generic_skip_one_line_tt
