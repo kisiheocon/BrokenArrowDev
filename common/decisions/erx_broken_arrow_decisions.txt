@@ -304,48 +304,6 @@ ba_local_affairs_decision_cat = {
 		}
 	}
 
-	commandeer_convoys = {
-		icon = x
-		cost = 30
-		available = {
-		}
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = erx_broken_arrow_anguish_mourning
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {type = convoy producer = USA amount = 50}
-			add_to_variable = { arr_atk_prep = 1 }
-		}
-	}
-	coordinate_vertibirds = {
-		icon = x
-		cost = 30
-		available = {
-		}
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = erx_broken_arrow_anguish_mourning
-		}
-		complete_effect = {
-			add_timed_idea = { idea = arr_atk_bonus days = 100 }
-			add_to_variable = { arr_atk_prep = 1 }
-		}
-	}
-	shock_and_awe_tactics = {
-		icon = x
-		cost = 30
-		available = {
-		}
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = erx_broken_arrow_anguish_mourning
-		}
-		complete_effect = {
-			add_timed_idea = { idea = shock_and_awe_dec_idea days = 180 }
-			add_to_variable = { arr_atk_prep = 1 }
-		}
-	}
 	#loot_stashes = {
 	#	icon = x
 	#	cost = 100

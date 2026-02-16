@@ -9,7 +9,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	###Fake Focus for Bookmark###
+	### Fake Focus for Bookmark ###
 	focus = {
 		id = erx_broken_arrow_granite_bookmark
 		icon = GFX_goal_enc_reform_douglas
@@ -19,9 +19,11 @@ focus_tree = {
 		allow_branch = { always = no }
 		completion_reward = { }
 	}
-#############
-##Beginning##
-#############
+
+	#############
+	### INTRO ###
+	#############
+	## Operation Mayflower ##
 	focus = {
 		id = erx_broken_arrow_operation_mayflower
 		icon = GFX_goal_enc_reform
@@ -37,6 +39,30 @@ focus_tree = {
 			}
 		}
 	}
+
+	## Arcata Divsion ##
+	focus = {
+		id = erx_broken_arrow_arcata_company
+		icon = GFX_enc_goal_doctrine_attack
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = erx_broken_arrow_operation_mayflower
+
+		prerequisite = { focus = erx_broken_arrow_operation_mayflower }
+
+		completion_reward = {
+			set_party_name = {
+				ideology = intellectuals
+				long_name = ERB_EUR1_intellectuals_party_long
+				name = ERB_EUR1_intellectuals_party
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = arcata_company
+		}
+	}
+
+	## Setting Up Shop ##
 	focus = {
 		id = erx_broken_arrow_setting_up_shop
 		icon = GFX_goal_USA_modern_recon
@@ -45,18 +71,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_operation_mayflower
 
-		available = {
-			has_completed_focus = erx_broken_arrow_arcata_company
-		}
+		prerequisite = { focus = erx_broken_arrow_operation_mayflower }
+		available = { has_completed_focus = erx_broken_arrow_arcata_company }
 
-		prerequisite = {
-			focus = erx_broken_arrow_operation_mayflower
-		}
-
-		completion_reward = {
-			country_event = erx_broken_arrow.19
-		}
+		completion_reward = { country_event = erx_broken_arrow.19 }
 	}
+
+	## A Surprisingly Warm Welcome ##
 	focus = {
 		id = erx_broken_arrow_warm_welcome
 		icon = GFX_goal_enc_agreement
@@ -65,45 +86,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_operation_mayflower
 	
-		available = {
-			has_completed_focus = erx_broken_arrow_setting_up_shop
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_operation_mayflower
-		}
+		prerequisite = { focus = erx_broken_arrow_operation_mayflower }
+		available = { has_completed_focus = erx_broken_arrow_setting_up_shop }
 
 		completion_reward = {
 			country_event = erx_broken_arrow.5
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.05
 			add_stability = 0.05
 		}
 	}
-	focus = {
-		id = erx_broken_arrow_arcata_company
-		icon = GFX_enc_goal_doctrine_attack
-		cost = 10
-		x = -2
-		y = 1
-		relative_position_id = erx_broken_arrow_operation_mayflower
 	
-		available = {
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_operation_mayflower
-		}
-
-		completion_reward = {
-			add_ideas = arcata_company
-			set_party_name = {
-				ideology = intellectuals
-				long_name = ERB_EUR1_intellectuals_party_long
-				name = ERB_EUR1_intellectuals_party
-			}
-		}
-	}
-	#Back In Business
+	## Back In Business ##
 	focus = {
 		id = erx_broken_arrow_back_in_business
 		icon = GFX_goal_enc_pass_the_amunition
@@ -117,11 +111,24 @@ focus_tree = {
 		prerequisite = { focus = erx_broken_arrow_warm_welcome }
 
 		completion_reward = {
-			remove_ideas = eur_enc_complete_chaos
 			country_event = erx_broken_arrow.6
-			custom_effect_tooltip = erx_broken_arrow_back_in_business_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = eur_enc_complete_chaos
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_category_tooltip = ba_local_affairs_decision_cat
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_merc_work_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
+
+	##################
+	### EARLY GAME ###
+	##################
+	### Main Story Branch ###
+	## Local Affairs ##
 	focus = {
 		id = erx_broken_arrow_local_affairs
 		icon = GFX_goal_USA_democracy_savior
@@ -134,9 +141,22 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = erx_broken_arrow.7
-			custom_effect_tooltip = erx_broken_arrow_local_affairs_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_cleaning_house_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_essentials_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
+
+	## Seizing the Apparatus of State ##
 	focus = {
 		id = erx_broken_arrow_seize_state_apparatus
 		icon = GFX_goal_enc_integrate_politicians
@@ -145,18 +165,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_local_affairs
 
-		available = {
-			intellectuals > 0.50
-		}
+		prerequisite = { focus = erx_broken_arrow_local_affairs }
+		available = { intellectuals > 0.50 }
 
-		prerequisite = {
-			focus = erx_broken_arrow_local_affairs
-		}
-
-		completion_reward = {
-			country_event = erx_broken_arrow.8
-		}
+		completion_reward = { country_event = erx_broken_arrow.8 }
 	}
+
+	## A New Administration ##
 	focus = {
 		id = erx_broken_arrow_new_administration
 		icon = GFX_goal_enc_president_reform
@@ -165,22 +180,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_seize_state_apparatus
 
-		available = {
-			has_country_flag = democratic_enc_takeover
-		}
+		prerequisite = { focus = erx_broken_arrow_seize_state_apparatus }
+		mutually_exclusive = { focus = erx_broken_arrow_cleaning_house }
+		available = { has_country_flag = democratic_enc_takeover }
 
-		prerequisite = {
-			focus = erx_broken_arrow_seize_state_apparatus
-		}
-
-		mutually_exclusive = {
-			focus = erx_broken_arrow_cleaning_house
-		}
-
-		completion_reward = {
-			country_event = erx_broken_arrow.12
-		}
+		completion_reward = { country_event = erx_broken_arrow.12 }
 	}
+
+	## Cleaning House ##
 	focus = {
 		id = erx_broken_arrow_cleaning_house
 		icon = GFX_goal_enc_smash
@@ -189,25 +196,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_seize_state_apparatus
 
-		available = {
-			has_country_flag = forceful_enc_takeover
-		}
-
-		prerequisite = {
-			focus = erx_broken_arrow_seize_state_apparatus
-		}
-
-		mutually_exclusive = {
-			focus = erx_broken_arrow_new_administration
-		}
+		prerequisite = { focus = erx_broken_arrow_seize_state_apparatus }
+		mutually_exclusive = { focus = erx_broken_arrow_new_administration }
+		available = { has_country_flag = forceful_enc_takeover }
 
 		completion_reward = {
 			#custom_effect_tooltip = mop_up_portmasters_tt
 			country_event = erx_broken_arrow.12
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = -0.05
 			add_war_support = 0.05
 		}
 	}
+
+	## A Meeting of National Important ##
 	focus = {
 		id = erx_broken_arrow_important_meeting
 		icon = GFX_goal_enc_agreement
@@ -216,18 +218,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = erx_broken_arrow_new_administration
 
-		available = {
-		}
-
 		prerequisite = {
 			focus = erx_broken_arrow_new_administration
 			focus = erx_broken_arrow_cleaning_house
 		}
 
-		completion_reward = {
-			country_event = erx_broken_arrow.15
-		}
+		completion_reward = { country_event = erx_broken_arrow.15 }
 	}
+
+	## American Exceptionalism ##
 	focus = {
 		id = erx_broken_arrow_american_exceptionalism
 		icon = GFX_goal_USA_call_of_race
@@ -235,38 +234,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_important_meeting
-	
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_important_meeting
-		}
+		prerequisite = { focus = erx_broken_arrow_important_meeting }
 
-		completion_reward = {
-			#set_temp_variable = {
-				#var = legitimacy_change_var
-				#value = 0.05
-			#}
-			#change_legitimacy = yes
-			add_ideas = republic_dreams
-			#every_state = {
-			#	tooltip = EFFECT_EVERY_STATE_STARTS
-			#	limit = {
-			#		#Not Terra Incognita
-			#		check_variable = {
-			#			var = core_countries
-			#			value = 1
-			#			compare = greater_than_or_equals
-			#		}
-			#	}
-			#	add_claim_by = EUR
-			#}
-		}
+		completion_reward = { add_ideas = republic_dreams }
 	}
-####################
-##Arroyo Expansion##
-####################
+
+	### Arroyo Expansion ###
+	## Prepare Expansion ##
 	focus = {
 		id = erx_broken_arrow_prep_expansion
 		icon = GFX_goal_enc_expansion_reform
@@ -277,10 +252,10 @@ focus_tree = {
 
 		prerequisite = { focus = erx_broken_arrow_american_exceptionalism }
 		
-		completion_reward = {
-			country_event = erx_broken_arrow.28
-		}
+		completion_reward = { country_event = erx_broken_arrow.28 }
 	}
+
+	## Welcome to Democracy ##
 	focus = {
 		id = erx_broken_arrow_welcome_democracy
 		icon = GFX_goal_GFX_USA_hoovers_america
@@ -292,10 +267,10 @@ focus_tree = {
 		prerequisite = { focus = erx_broken_arrow_prep_expansion }
 		bypass = { PAC = { all_core_land_owned_by_prev_sphere = yes } }
 		
-		completion_reward = {
-			country_event = erx_broken_arrow.29
-		}
+		completion_reward = { country_event = erx_broken_arrow.29 }
 	}
+
+	## Crushing The Bears Influence In The North ##
 	focus = {
 		id = erx_broken_arrow_calamity_days
 		icon = GFX_goal_EUR_attack_ncref
@@ -313,95 +288,13 @@ focus_tree = {
 		
 		will_lead_to_war_with = MXS
 		will_lead_to_war_with = FOU
-
 		completion_reward = {
 			MXS = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 			FOU = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 		}
 	}
-	#focus = {
-	#	id = erx_broken_arrow_sever_economic
-	#	icon = GFX_goal_USA_sweep_farm_tariffs
-	#	cost = 30
-	#	x = -2
-	#	y = 1
-	#	relative_position_id = erx_broken_arrow_prep_expansion
-	#
-	#	available = {
-	#		has_completed_focus = erx_broken_arrow_welcome_democracy
-	#	}
-	#	bypass = {
-	#		FOU = {
-	#			all_core_land_owned_by_prev_sphere = yes
-	#		}
-	#	}
-	#	prerequisite = {
-	#		focus = erx_broken_arrow_prep_expansion
-	#	}
-	#	
-	#	completion_reward = {
-	#		will_lead_to_war_with = FOU
-	#		FOU = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
-	#	}
-	#}
-	#focus = {
-	#	id = erx_broken_arrow_break_tribe
-	#	icon = GFX_goal_USA_congressional_authority
-	#	cost = 30
-	#	x = 0
-	#	y = 1
-	#	relative_position_id = erx_broken_arrow_welcome_democracy
-	#
-	#	available = {
-	#	}
-	#	bypass = {
-	#		UMB = {
-	#			all_core_land_owned_by_prev_sphere = yes
-	#		}
-	#	}
-	#
-	#	prerequisite = {
-	#		focus = erx_broken_arrow_sever_economic
-	#	}
-	#	prerequisite = {
-	#		focus = erx_broken_arrow_calamity_days
-	#	}
-	#	prerequisite = {
-	#		focus = erx_broken_arrow_welcome_democracy
-	#	}
-	#	
-	#	completion_reward = {
-	#		will_lead_to_war_with = UMB
-	#		UMB = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
-	#		add_timed_idea = { idea = EUR_fury_civilization  days = 30 }
-	#	}
-	#}
-	#focus = {
-	#	id = erx_broken_arrow_non_negotiable_civilization
-	#	icon = GFX_goal_enc_ANT_establish_tributaries
-	#	cost = 20
-	#	x = 0
-	#	y = 2
-	#	relative_position_id = erx_broken_arrow_prep_expansion
-	#
-	#	prerequisite = { focus = erx_broken_arrow_welcome_democracy }
-	#	prerequisite = { focus = erx_broken_arrow_calamity_days }
-	#	available = {
-	#		FOU = { all_core_land_owned_by_prev_sphere = yes }
-	#		MXS = { all_core_land_owned_by_prev_sphere = yes }
-	#	}
-	#	
-	#	completion_reward = {
-	#		hidden_effect = {
-	#			369 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-	#			467 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-	#			182 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-	#			372 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-	#			239 = { set_variable = { coring_cost_targeted_state_factor@EUR = -0.5 } }
-	#		}
-	#		custom_effect_tooltip = erx_broken_arrow_non_negotiable_civilization_tt
-	#	}
-	#}
+	
+	## Anguish and Mourning ##
 	focus = {
 		id = erx_broken_arrow_anguish_mourning
 		icon = GFX_goal_enc_remember_rig
@@ -418,10 +311,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = anguish_mourning_tt
 			country_event = erx_broken_arrow.18
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_war_support = 0.05
 		}
 	}
+
+	## War Plan Gold ##
 	focus = {
 		id = erx_broken_arrow_war_plan_gold
 		icon = GFX_goal_BDX_plangold
@@ -431,22 +327,18 @@ focus_tree = {
 		relative_position_id = erx_broken_arrow_anguish_mourning
 
 		prerequisite = { focus = erx_broken_arrow_anguish_mourning }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = arr_atk_prep_tt
-				check_variable = { arr_atk_prep =  3 }
-			}
-		}
 
 		will_lead_to_war_with = ARR
 		will_lead_to_war_with = UMB
-
 		completion_reward = {
 			country_event = erx_broken_arrow.27
+			custom_effect_tooltip = generic_skip_one_line_tt
 			ARR = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 			UMB = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } }
 		}
 	}
+
+
 	focus = {
 		id = erx_broken_arrow_new_city
 		icon = GFX_goal_USA_payment_protection
@@ -2231,7 +2123,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#######Industry/Rebuilding Eureka
+	### Eureka Industry Branch ###
+	## The First Brick ##
 	focus = {
 		id = erx_broken_arrow_first_brick
 		icon = GFX_goal_enc_reform_industry_1
@@ -2245,25 +2138,20 @@ focus_tree = {
 		completion_reward = {
 			39 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = infrastructure level = 1 }
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
 			}
-			custom_effect_tooltip = erx_broken_arrow_first_brick_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_eureka_housing_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
 		}
 	}
+
+	## Broken Glass and Cracked Pavement ##
 	focus = {
 		id = erx_broken_arrow_broken_glass
 		icon = GFX_goal_enc_construction_usa
@@ -2271,52 +2159,20 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_first_brick
-	
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_first_brick
-		}
+		prerequisite = { focus = erx_broken_arrow_first_brick }
 		
 		completion_reward = {
 			39 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+				add_building_construction = { type = infrastructure level = 2 }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = logistics_cons_bonus
 		}
 	}
-	focus = {
-		id = erx_broken_arrow_mic
-		icon = GFX_goal_enc_reform_industry_2
-		cost = 25
-		x = 2
-		y = 1
-		relative_position_id = erx_broken_arrow_broken_glass
-		
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_broken_glass
-		}
-		
-		completion_reward = {
-			39 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
+	## Civilian Infrastructure ##
 	focus = {
 		id = erx_broken_arrow_civ_inf
 		icon = GFX_goal_enc_reform_industry_3
@@ -2324,25 +2180,18 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = erx_broken_arrow_broken_glass
-	
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_broken_glass
-		}
+		prerequisite = { focus = erx_broken_arrow_broken_glass }
 		
 		completion_reward = {
 			39 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 2 }
 			}
 		}
 	}
+
+	## Clearing Out The Dockyards ##
 	focus = {
 		id = erx_broken_arrow_dockyards
 		icon = GFX_goal_enc_goal_enc_navy_dockyards
@@ -2350,25 +2199,37 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_broken_glass
-	
-		available = {
-		}
 
-		prerequisite = {
-			focus = erx_broken_arrow_broken_glass
-		}
+		prerequisite = { focus = erx_broken_arrow_broken_glass }
 		
 		completion_reward = {
 			39 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+				add_building_construction = { type = dockyard level = 2 }
 			}
 		}
 	}
+
+	## Military Industrial Complex ##
+	focus = {
+		id = erx_broken_arrow_mic
+		icon = GFX_goal_enc_reform_industry_2
+		cost = 25
+		x = 2
+		y = 1
+		relative_position_id = erx_broken_arrow_broken_glass
+
+		prerequisite = { focus = erx_broken_arrow_broken_glass }
+		
+		completion_reward = {
+			39 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 }
+			}
+		}
+	}
+
+	## Internal Security ##
 	focus = {
 		id = erx_broken_arrow_internal_security
 		icon = GFX_goal_USA_sphere_of_influence
@@ -2376,19 +2237,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = erx_broken_arrow_dockyards
-	
-		available = {
-		}
 
+		prerequisite = { focus = erx_broken_arrow_dockyards }
 		prerequisite = {
 			focus = erx_broken_arrow_mic
 			focus = erx_broken_arrow_civ_inf
 		}
 		
-		completion_reward = {
-			add_ideas = bunker_building
-		}
+		completion_reward = { add_ideas = bunker_building }
 	}
+
+	## Rebuilding Humboldt Bay Incorporated ##
 	focus = {
 		id = erx_broken_arrow_rebuild_humboldt
 		icon = GFX_goal_USA_By_the_People_For_the_People
@@ -2400,25 +2259,7 @@ focus_tree = {
 		prerequisite = { focus = erx_broken_arrow_internal_security }
 		
 		completion_reward = {
-			39 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_ideas = eureka_fisheries
+			## Trade Node Stuff ##
 			39 = {
 				hidden_effect = {
 					set_temp_variable = { new_node_target = THIS.id }
@@ -2433,14 +2274,26 @@ focus_tree = {
 				}
 				create_map_node = yes
 			}
-			custom_effect_tooltip = erx_broken_arrow_rebuild_humboldt_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			39 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = infrastructure level = 2 }
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = dockyard level = 1 }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = eureka_fisheries
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_eureka_invest_decision
+				show_effect_tooltip = yes
+				#show_modifiers = yes # OWB have a broken tooltip so had to disable this - @Deez #
+			}
 		}
 	}
 
-	##################
-	##Navarro Crisis##
-	##################
-	#The Navarro Crisis
+	### Navarro Crisis Branch ###
+	## The Navarro Crisis ##
 	focus = {
 		id = nf_ba_eur_navarro_crisis
 		icon = GFX_goal_enc_super_soldier
@@ -2461,7 +2314,7 @@ focus_tree = {
 			add_political_power = 30
 		}
 	}
-	#Navarro Pacification Campaign
+	## Navarro Pacification Campaign ##
 	focus = {
 		id = nf_ba_eur_navarro_development
 		icon = GFX_goal_enc_citizenship_for_service
@@ -2483,7 +2336,8 @@ focus_tree = {
 			}
 		}
 	}
-	#Philanthropy and Humanitarianism
+
+	## Philanthropy and Humanitarianism ##
 	focus = {
 		id = nf_ba_eur_navarro_philanthropy
 		icon = GFX_goal_america_goal_eagle_deal
@@ -2509,7 +2363,8 @@ focus_tree = {
 			effect_tooltip = { add_timed_idea = { idea = navarro_aid days = 60 } }
 		}
 	}
-	#Rebuilding the Roadways
+
+	## Rebuilding the Roadways ##
 	focus = {
 		id = nf_ba_eur_navarro_roadways
 		icon = GFX_goal_generic_usa_building
@@ -2540,7 +2395,8 @@ focus_tree = {
 			effect_tooltip = { add_timed_idea = { idea = navarro_roads days = 60 } }
 		}
 	}
-	#Mission Accomplished
+
+	## Mission Accomplished ##
 	focus = {
 		id = nf_ba_eur_navarro_accomplished
 		icon = GFX_goal_enc_reform_douglas
@@ -2554,26 +2410,24 @@ focus_tree = {
 
 		available = {
 			NAT = { all_core_land_owned_by_prev_sphere = yes }
-			NAT = { 
-				all_core_state = { 
-					OR = {
+			NAT = {
+				all_core_state = {
+					if = {
+						limit = { NOT = { is_core_of = ROOT } }
 						compliance > 79
-						is_core_of = EUR
 					}
-				} 
+				}
 			}
 		}
 
 		completion_reward = {
 			NAT = { every_core_state = { add_core_of = ROOT } }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			set_province_name = {
-				id = 3434
-				name = "Camp Navarro"
-			}
+			set_province_name = { id = 3434 name = erx_ba_camp_navarro_name }
 		}
 	}
-	#Repairing Civil Infrastructure
+
+	## Repairing Civil Infrastructure ##
 	focus = {
 		id = nf_ba_eur_navarro_infrastructure_1
 		icon = GFX_goal_USA_city_on_a_hill
@@ -2603,7 +2457,8 @@ focus_tree = {
 			}
 		}
 	}
-	#Scale Up Civilian Construction Efforts
+
+	## Scale Up Civilian Construction Efforts ##
 	focus = {
 		id = nf_ba_eur_navarro_infrastructure_2
 		icon = GFX_goal_enc_reform_industry_2
@@ -2618,50 +2473,18 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
 			}
-			340 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			353 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			56 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			441 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			216 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			340 = { add_building_construction = { type = infrastructure level = 1 } }
+			353 = { add_building_construction = { type = infrastructure level = 1 } }
+			56 = { add_building_construction = { type = infrastructure level = 1 } }
+			441 = { add_building_construction = { type = infrastructure level = 1 } }
+			216 = { add_building_construction = { type = infrastructure level = 1 } }
 		}
 	}
-	#Finalize Civilian Reconstruction Efforts
+
+	## Finalize Civilian Reconstruction Efforts ##
 	focus = {
 		id = nf_ba_eur_navarro_infrastructure_3
 		icon = GFX_goal_enc_reform_industry_1
@@ -2683,15 +2506,12 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
 			}
 		}
 	}
-	#Reignite The Navarro Military Behemoth
+
+	## Reignite The Navarro Military Behemoth ##
 	focus = {
 		id = nf_ba_eur_navarro_military_1
 		icon = GFX_goal_enc_military_sphere_reform
@@ -2713,15 +2533,12 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = arms_factory level = 1 }
 			}
 		}
 	}
-	#Scale Up Military Construction Efforts
+
+	## Scale Up Military Construction Efforts ##
 	focus = {
 		id = nf_ba_eur_navarro_military_2
 		icon = GFX_goal_enc_power_armor_integration
@@ -2743,15 +2560,11 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = arms_factory level = 1 }
 			}
 		}
 	}
-	#Finalize Armament Production Plans
+	## Finalize Armament Production Plans ##
 	focus = {
 		id = nf_ba_eur_navarro_military_3
 		icon = GFX_goal_enc_industrial_vehicles
@@ -2773,16 +2586,14 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+				add_building_construction = { type = arms_factory level = 2 }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = navarro_military days = 30 }
 		}
 	}
-	#Kickstart Maritime Industry
+
+	## Kickstart Maritime Industry ##
 	focus = {
 		id = nf_ba_eur_navarro_naval_1
 		icon = GFX_goal_USA_ports_atlantic
@@ -2800,55 +2611,19 @@ focus_tree = {
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = dockyard level = 1 }
 			}
-			340 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			353 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			56 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			441 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			216 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			340 = { add_building_construction = { type = infrastructure level = 1 } }
+			353 = { add_building_construction = { type = infrastructure level = 1 } }
+			56 = { add_building_construction = { type = infrastructure level = 1 } }
+			441 = { add_building_construction = { type = infrastructure level = 1 } }
+			216 = { add_building_construction = { type = infrastructure level = 1 } }
 		}
 	}
-	#Finalize Dockyard Repair Operations
+
+	## Finalize Dockyard Repair Operations ##
 	focus = {
 		id = nf_ba_eur_navarro_naval_2
 		icon = GFX_goal_enc_goal_enc_navy_dockyards
@@ -2865,20 +2640,17 @@ focus_tree = {
 					owner = { is_ally_with = ROOT }
 				}
 			}
-		}		
+		}
 
 		completion_reward = {
 			548 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
+				add_building_construction = { type = dockyard level = 1 }
 			}
 		}
 	}
-	#Reopen the Laboratories
+
+	## Reopen the Laboratories ##
 	focus = {
 		id = nf_ba_eur_navarro_labs
 		icon = GFX_goal_enc_science_reform
@@ -2892,7 +2664,8 @@ focus_tree = {
 
 		completion_reward = { add_research_slot = 1 }
 	}
-	#Top Shelf Products
+
+	## Top Shelf Products ##
 	focus = {
 		id = nf_ba_eur_navarro_products
 		icon = GFX_goal_USA_arsenal_of_democracy
@@ -2904,11 +2677,10 @@ focus_tree = {
 		prerequisite = { focus = nf_ba_eur_navarro_military_3 }
 		prerequisite = { focus = nf_ba_eur_navarro_naval_2 }
 
-		completion_reward = {
-			add_ideas = navarro_products
-		}
+		completion_reward = { add_ideas = navarro_products }
 	}
-	#Unveil The Navarro Databases
+
+	## Unveil The Navarro Databases ##
 	focus = {
 		id = nf_ba_eur_navarro_databases
 		icon = GFX_goal_enc_restore_the_base
@@ -2931,15 +2703,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_province_name = {
-				id = 3434
-				name = "U.S Army Base Navarro"
-			}
+			set_province_name = { id = 3434 name = "U.S Army Base Navarro" }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 50 producer = USA }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_technology = {
 				air_tech_level_settler = 1
 				robotics_tech_level_settler = 1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = navarro_databases
 			custom_effect_tooltip = navarro_databases_unlocked
 		}

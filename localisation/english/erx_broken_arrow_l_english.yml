@@ -328,11 +328,10 @@ erx_broken_arrow_arcata_company: "Arcata Division"
 erx_broken_arrow_arcata_company_desc: "Granite Division is no more. We must change In order to prevent premature discovery by the N.C.R & Anderson."
 erx_broken_arrow_back_in_business: "Back In Business"
 erx_broken_arrow_back_in_business_desc: "With our position for the moment secured and some breathing room its high time we got back to work."
-erx_broken_arrow_back_in_business_tt: "\nUnlocks £GFX_decision_icon_small §YLocal Affairs§! to raise §RIntellectuals§! popularity!"
 
 erx_broken_arrow_local_affairs: "Local Affairs"
 erx_broken_arrow_local_affairs_desc: "While we have taken efforts to gain support among the population many still question just why we are here. Among other things."
-erx_broken_arrow_local_affairs_tt: "§gOpens up a decision chain that allows you to take actions that cost P.P to gain public support, IE Legitimacy.§!\n\nUnlocks £GFX_decision_icon_small §YCleaning House§! and £GFX_decision_icon_small §YEssentials of Civilization§! to raise §RIntellectuals§! popularity!"
+
 erx_broken_arrow_seize_state_apparatus: "Seizing the Apparatus of State"
 erx_broken_arrow_seize_state_apparatus_desc: "Public support for our cause are at a record high, and with support for the increasingly unpopular boatmasters its time we call for a referendum."
 erx_broken_arrow_new_administration: "A New Administration"
@@ -383,6 +382,7 @@ oregon_trail_tt: "Unlocks Oregon focuses, base locations, etc WIP"
 erx_broken_arrow_anguish_mourning: "Anguish and Mourning"
 erx_broken_arrow_anguish_mourning_desc: "One of the few things we agreed with the purists on is our hatred for the \"Chosen One\" however unlike them we now have the opportunity to act on it."
 anguish_mourning_tt: "Unlocks §YDecisions§! to prepare for the invasion of [ARR.GetNameWithFlag]"
+
 erx_broken_arrow_war_plan_gold: "War Plan §YGold§!"
 erx_broken_arrow_war_plan_gold_desc: "We Remember the Rig.\nAnd the vast wealth of Arroyo of course."
 erx_broken_arrow_new_city: "Our New City"
@@ -515,23 +515,29 @@ desolated_industry_tt: "This will unlock missions/Decisions regarding industry a
 erx_broken_arrow_trains: "Rail Yards and Train Cars"
 erx_broken_arrow_trains_desc: "In order to transport the equipment necessary to rebuild this nation we need to rebuild its desolate rail infrastructure. "
 trains_tt: "Adds construction bonuses for railways, and decisions/missions etc.(WIP)"
-######### THE FIRST BRICK ###########
+
+### Eureka Industry Branch ###
 erx_broken_arrow_first_brick: "The First Brick"
 erx_broken_arrow_first_brick_desc: "Rome wasnt built in a day, neither was America.\n\nLets get to work."
-erx_broken_arrow_first_brick_tt: "\n£GFX_decision_icon_small §YHalf Measures§! is §Gavailable!§!"
+
 erx_broken_arrow_broken_glass: "Broken Glass and Cracked Pavement"
 erx_broken_arrow_broken_glass_desc: "We cant fix much of anything if the roads are unusable. Who would've thought we'd be paving roads?"
-erx_broken_arrow_mic: "Military Industrial Complex"
-erx_broken_arrow_mic_desc: "Despite protests from our economists, with the NCR breathing down our neck we must prioritize military industry."
+
 erx_broken_arrow_civ_inf: "Civilian Infrastructure"
 erx_broken_arrow_civ_inf_desc: "Our economists tell us it would be wise to focus on reconstruction and rejuvination"
+
 erx_broken_arrow_dockyards: "Clearing Out The Dockyards"
 erx_broken_arrow_dockyards_desc: "The Ports and dockyards of Eureka are either dilapidated ruins, filled to the brim with wrecked ships acting as quasi slums, or both. We must set ourselves upon the task of clearing these wrecks for our fleet, and civilian vessels."
+
+erx_broken_arrow_mic: "Military Industrial Complex"
+erx_broken_arrow_mic_desc: "Despite protests from our economists, with the NCR breathing down our neck we must prioritize military industry."
+
 erx_broken_arrow_internal_security: "Internal Security"
 erx_broken_arrow_internal_security_desc: "Despite our best efforts, our forces cannot be everywhere, as such our advisors tell us we should establish outposts throughout our country as a stopgap measure."
+
 erx_broken_arrow_rebuild_humboldt: "Rebuilding Humboldt Bay Incorporated"
 erx_broken_arrow_rebuild_humboldt_desc: "Before the war Eureka was host to one of the largest fishing companies on the entire western seaboard. Following the war this legacy was taken up by an army of private fisherman and small contracters, rebuilding the company, and supporting the fishing industry crippled by years of neglect by the port-masters will do wonders for our economy."
-erx_broken_arrow_rebuild_humboldt_tt: "\n£GFX_decision_icon_small §YDivert Funding To Trawling Industries§! is §Gavailable!§!"
+
 ######### FREEDOM ###############
 erx_broken_arrow_ensuring_liberty: "Ensuring Liberty"
 erx_broken_arrow_ensuring_liberty_desc: "Though we are a long way from restoring the constitution, We can act on our promises and restore the civil rights enshrined to all free men."
@@ -660,8 +666,11 @@ nf_ba_eur_navarro_philanthropy_tt: "\n£GFX_decision_icon_small §YBuilding Affo
 nf_ba_eur_navarro_roadways: "Rebuilding the Roadways"
 nf_ba_eur_navarro_roadways_desc: "Much like Eureka, The roadways and rail systems in Navarro have been left in a sorry state, which has only been exacerbated by the brutal war so recently waged"
 nf_ba_eur_navarro_roadways_tt: "\n£GFX_decision_icon_small §YSelf-Sufficient Work Programs§! is §Gavailable!§!"
+
 nf_ba_eur_navarro_accomplished: "Mission Accomplished"
-nf_ba_eur_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation. "
+nf_ba_eur_navarro_accomplished_desc: "Through offers of amnesty, our aid programs, and our military police rounding up the more stubborn elements, we have made way for the Navarro Territories to once again join the Union, The first step on a long road to restoring our great nation."
+erx_ba_camp_navarro_name: "Camp Navarro"
+
 nf_ba_eur_navarro_infrastructure_1: "Repairing Civil Infrastructure"
 nf_ba_eur_navarro_infrastructure_1_desc: "During the war, many homes, businesses and food production plants were either destroyed, or made temporarily unlivable, With peace returning to the region we should begin construction efforts to rebuild or repair these structures. "
 nf_ba_eur_navarro_infrastructure_2: "Scale Up Civilian Construction Efforts"

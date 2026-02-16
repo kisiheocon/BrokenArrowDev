@@ -3,6 +3,7 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "connect_to_power_container"
 		parent_window_token = selected_state_view
+		ai_enabled = { always = no }
 		visible = {
 			is_owned_and_controlled_by = ROOT
 			NOT = {
@@ -69,6 +70,7 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "connected_to_power_container"
 		parent_window_token = selected_state_view
+		ai_enabled = { always = no }
 		visible = {
 			is_core_of = ROOT
 			civilian_power_grid > 0
@@ -78,6 +80,7 @@ scripted_gui = {
 		context_type = selected_state_context
 		window_name = "install_police_force_container"
 		parent_window_token = selected_state_view
+		ai_enabled = { always = no }
 		visible = {
 			is_owned_and_controlled_by = ROOT
 			is_fully_controlled_by = ROOT
@@ -144,6 +147,7 @@ scripted_gui = {
 	enc_legitimacy = {
 		context_type = player_context
 		window_name = "legitimacy_container"
+		ai_enabled = { always = no }
 		visible = {
 			OR = {
 				AND = {
@@ -167,6 +171,7 @@ scripted_gui = {
 	enc_legitimacy_2 = { # for when there is slavery
 		context_type = player_context
 		window_name = "legitimacy_2_container"
+		ai_enabled = { always = no }
 		visible = {
 			original_tag = ERB
 			has_completed_focus = enc_reform			
@@ -186,6 +191,7 @@ scripted_gui = {
 
 		window_name = arm_rebels_container
 		parent_window_token = selected_state_view
+		ai_enabled = { always = no }
 
 		visible = {
 			is_core_of = BAR
@@ -251,6 +257,7 @@ scripted_gui = {
 		}
 	}
 	arm_slaves_ready = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = arm_slaves_ready_container
 		parent_window_token = selected_state_view
@@ -259,6 +266,7 @@ scripted_gui = {
 		}
 	}
 	arm_slaves = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = arm_slaves_container
 		parent_window_token = selected_state_view
@@ -332,6 +340,7 @@ scripted_gui = {
 		}
 	}
 	arm_patriots = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = arm_patriots_container
 		parent_window_token = selected_state_view
@@ -402,6 +411,7 @@ scripted_gui = {
 		}
 	}
 	arm_patriots_ready = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = arm_patriots_ready_container
 		parent_window_token = selected_state_view
@@ -411,6 +421,7 @@ scripted_gui = {
 	}
 
 	erb_light_up_america = {
+		ai_enabled = { always = no }
 		context_type = player_context
 		parent_window_token = politics_tab
 		visible = {
@@ -492,6 +503,7 @@ scripted_gui = {
 		}
 	}
 	power_grid_screen_container = {
+		ai_enabled = { always = no }
 		context_type = player_context
 
 		window_name = "power_grid_screen_container"
@@ -568,6 +580,7 @@ scripted_gui = {
 	############################
 
 	establish_outpost = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		parent_window_token = selected_state_view
 		window_name = establish_outpost_container
@@ -594,6 +607,7 @@ scripted_gui = {
 		}
 	}
 	abandon_outpost = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		parent_window_token = selected_state_view
 		window_name = abandon_outpost_container
@@ -620,6 +634,7 @@ scripted_gui = {
 
 	# unused
 	add_slaves = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = add_slaves_container
 		parent_window_token = selected_state_view
@@ -655,6 +670,7 @@ scripted_gui = {
 		}
 	}
 	LLW_state = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = LLW_state_container
 		parent_window_token = selected_state_view
@@ -665,6 +681,7 @@ scripted_gui = {
 	}
 
 	harvest_resources = {
+		ai_enabled = { always = no }
         context_type = selected_state_context
         window_name = harvest_resources_container
         parent_window_token = selected_state_view
@@ -710,6 +727,7 @@ scripted_gui = {
 		}
 	}
 	robotic_garrison = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = robotic_garrison_container
 		parent_window_token = selected_state_view
@@ -754,6 +772,7 @@ scripted_gui = {
 		}
 	}
 	harvest_resources_recall = {
+		ai_enabled = { always = no }
 		context_type = selected_state_context
 		window_name = harvest_resources_recall_container
 		parent_window_token = selected_state_view
@@ -778,6 +797,7 @@ scripted_gui = {
 		}
 	}
 	robotic_garrison_master = { 
+		ai_enabled = { always = no }
         context_type = selected_state_context
         window_name = robotic_garrison_master_container
         parent_window_token = selected_state_view

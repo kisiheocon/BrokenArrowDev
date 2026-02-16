@@ -1376,11 +1376,10 @@ country_event = {
 			add_war_support = -0.03
 			army_experience = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
-			NAT = {
-				every_core_state = {
-					add_compliance = -5
-					add_resistance = 10
-				}
+			every_owned_state = {
+				limit = { is_core_of = NAT }
+				add_compliance = -5
+				add_resistance = 10
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = { # Better tooltip #

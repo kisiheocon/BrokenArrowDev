@@ -387,7 +387,10 @@ erx_ba_oss_decision_cat = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = erx_ba_oss_shi_santa_rosa_treaty_1_decision_trigger_tt
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = erx_ba_oss_shi_santa_rosa_treaty_0_decision
+				}
 				441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_1_dynamic_modifier }
 			}
 			has_manpower > 199
@@ -436,7 +439,7 @@ erx_ba_oss_decision_cat = {
 		}
 	}
 
-	# WIP - Assasinate #
+	# Assassination Order Revenant #
 	erx_ba_oss_shi_santa_rosa_treaty_2_decision = {
 		icon = GFX_decision_generic_assassination
 		
@@ -454,7 +457,10 @@ erx_ba_oss_decision_cat = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = erx_ba_oss_shi_santa_rosa_treaty_2_decision_trigger_tt
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = erx_ba_oss_shi_santa_rosa_treaty_1_decision
+				}
 				441 = { has_dynamic_modifier = erx_ba_treaty_santa_rosa_2_dynamic_modifier }
 			}
 			has_manpower > 29
