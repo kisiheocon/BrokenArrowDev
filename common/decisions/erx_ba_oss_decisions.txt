@@ -483,6 +483,8 @@ erx_ba_oss_decision_cat = {
 		days_remove = 90
 		modifier = { command_power_gain = -0.1 }
 		remove_effect = {
+			country_event = erx_ba_oss_event.10
+			custom_effect_tooltip = generic_skip_one_line_tt
 			SHI = {
 				add_manpower = -1
 				retire_character = SHI_dragon
