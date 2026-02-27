@@ -13,3 +13,34 @@ bypass_generic_settler_political_focuses_scripted_effect = {
 	unlock_national_focus = settler_rivals
 	unlock_national_focus = settler_bodyguards
 }
+
+erx_ba_warplan_brown_upgrade_scripted_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_idea = erx_ba_war_plan_brown_0_idea }
+			swap_ideas = {
+				remove_idea = erx_ba_war_plan_brown_0_idea
+				add_idea = erx_ba_war_plan_brown_1_idea
+			}
+		}
+		else_if = {
+			limit = { has_idea = erx_ba_war_plan_brown_1_idea }
+			swap_ideas = {
+				remove_idea = erx_ba_war_plan_brown_1_idea
+				add_idea = erx_ba_war_plan_brown_2_idea
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = erx_ba_war_plan_brown_2_idea
+				add_idea = erx_ba_war_plan_brown_3_idea
+			}
+		}
+	}
+	effect_tooltip = {
+		swap_ideas = {
+			remove_idea = erx_ba_war_plan_brown_0_idea
+			add_idea = erx_ba_war_plan_brown_1_idea
+		}
+	}
+}

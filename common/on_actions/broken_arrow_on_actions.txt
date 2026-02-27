@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			SHI = { set_cosmetic_tag = SHI_ba_imperial_cosmetic_tag }
 			EUR = { country_event = { id = erx_broken_arrow_navarro.1 days = 100 } }
 			ERB = { country_event = { id = erx_broken_arrow.100 days = 15 } }
 			TRL = { 
@@ -187,6 +188,22 @@ on_actions = {
 						add_ideas = ba_EUR_oregon_military_department_air_academy_hidden_idea
 					}
 				}
+			}
+		}
+	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = EUR } }
+				FROM = { annex_country = { target = ROOT } }
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = EUR } }
+				FROM = { annex_country = { target = ROOT } }
 			}
 		}
 	}

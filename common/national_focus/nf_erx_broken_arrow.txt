@@ -392,7 +392,7 @@ focus_tree = {
 		id = erx_beaver_state
 		icon = GFX_goal_BRX2_oregontrail
 		cost = 30
-		x = 6
+		x = -8
 		y = 1
 		relative_position_id = erx_broken_arrow_new_city
 
@@ -1279,9 +1279,319 @@ focus_tree = {
 		}
 	}
 
-#################
-##Radio Freedom##
-#################
+	###########################
+	### NCR War Prep Branch ###
+	###########################
+	### Starting ###
+	## Dark Days, Bitter Realities ##
+	focus = {
+		id = nf_ba_prep_ncr_intro
+		icon = GFX_goal_NCR_Bears_Roar
+		relative_position_id = erx_broken_arrow_new_city
+		x = 8
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = erx_broken_arrow_new_city }
+		available = {
+			country_exists = NCR
+			NOT = { has_war_with = NCR }
+			MLT = { all_core_land_owned_by_prev_sphere = yes }
+			TRL = { all_core_land_owned_by_prev_sphere = yes }
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_warprep_ncr_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
+		}
+	}
+
+	## War Plan Brown ##
+	focus = {
+		id = nf_ba_prep_ncr_start
+		icon = GFX_goal_generic_major_war
+		relative_position_id = nf_ba_prep_ncr_intro
+		x = 0
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_intro }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		completion_reward = {
+			add_ideas = erx_ba_war_plan_brown_0_idea
+		}
+	}
+
+	### Defensive Preparations ###
+	## Fortification Against the Bear ##
+	focus = {
+		id = nf_ba_prep_ncr_defensive_0
+		icon = GFX_goal_generic_bunkers_focus
+		relative_position_id = nf_ba_prep_ncr_start
+		x = -2
+		y = 1
+
+		cost = 15
+		prerequisite = { focus = nf_ba_prep_ncr_start }
+		available = {
+			has_decision = ba_local_affairs_warprep_ncr_decision
+			has_completed_focus = erx_broken_arrow_internal_security
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = bunker_building_0
+				add_idea = bunker_building_1
+			}
+		}
+	}
+
+	## Fortifying The Navarro Sector ##
+	focus = {
+		id = nf_ba_prep_ncr_defensive_1
+		icon = GFX_goal_generic_defence
+		relative_position_id = nf_ba_prep_ncr_defensive_0
+		x = -1
+		y = 1
+
+		cost = 15
+		prerequisite = { focus = nf_ba_prep_ncr_defensive_0 }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		completion_reward = {
+			custom_effect_tooltip = nf_ba_prep_ncr_defensive_1_tt_1
+			hidden_effect = {
+				56 = {
+					add_building_construction = { type = bunker level = 3 province = 4934 }
+					add_building_construction = { type = bunker2 level = 1 province = 4934 }
+					add_building_construction = { type = bunker level = 3 province = 1624 }
+					add_building_construction = { type = bunker2 level = 1 province = 1624 }
+					add_building_construction = { type = bunker level = 3 province = 4930 }
+					add_building_construction = { type = bunker2 level = 1 province = 4930 }
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nf_ba_prep_ncr_defensive_1_tt_2
+			hidden_effect = {
+				548 = {
+					add_building_construction = { type = bunker level = 3 province = 3435 }
+					add_building_construction = { type = bunker2 level = 1 province = 3435 }
+					add_building_construction = { type = bunker level = 3 province = 3436 }
+					add_building_construction = { type = bunker2 level = 1 province = 3436 }
+					add_building_construction = { type = bunker level = 3 province = 3437 }
+					add_building_construction = { type = bunker2 level = 1 province = 3437 }
+					add_building_construction = { type = bunker2 level = 2 province = 3434 }
+				}
+			}
+		}
+	}
+
+	## Fortifying The Heartlands ##
+	focus = {
+		id = nf_ba_prep_ncr_defensive_2
+		icon = GFX_goal_generic_defence
+		relative_position_id = nf_ba_prep_ncr_defensive_0
+		x = 1
+		y = 1
+
+		cost = 15
+		prerequisite = { focus = nf_ba_prep_ncr_defensive_0 }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		completion_reward = {
+			custom_effect_tooltip = nf_ba_prep_ncr_defensive_2_tt_1
+			hidden_effect = {
+				369 = {
+					add_building_construction = { type = bunker level = 3 province = 4936 }
+					add_building_construction = { type = bunker2 level = 1 province = 4936 }
+					add_building_construction = { type = bunker level = 3 province = 4993 }
+					add_building_construction = { type = bunker2 level = 1 province = 4993 }
+					add_building_construction = { type = bunker level = 3 province = 4994 }
+					add_building_construction = { type = bunker2 level = 1 province = 4994 }
+					add_building_construction = { type = bunker level = 3 province = 5026 }
+					add_building_construction = { type = bunker2 level = 1 province = 5026 }
+					add_building_construction = { type = bunker level = 3 province = 2600 }
+					add_building_construction = { type = bunker2 level = 1 province = 2600 }
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nf_ba_prep_ncr_defensive_2_tt_2
+			hidden_effect = {
+				39 = {
+					add_building_construction = { type = bunker level = 3 province = 1191 }
+					add_building_construction = { type = bunker2 level = 1 province = 1191 }
+					add_building_construction = { type = bunker level = 3 province = 4923 }
+					add_building_construction = { type = bunker2 level = 1 province = 4923 }
+					add_building_construction = { type = bunker level = 3 province = 4904 }
+					add_building_construction = { type = bunker2 level = 1 province = 4904 }
+					add_building_construction = { type = bunker level = 3 province = 2065 }
+					add_building_construction = { type = bunker2 level = 1 province = 2065 }
+				}
+			}
+		}
+	}
+
+	## The National Redoubt ##
+	focus = {
+		id = nf_ba_prep_ncr_defensive_3
+		icon = GFX_focus_SWE_hedgehog_defense
+		relative_position_id = nf_ba_prep_ncr_defensive_0
+		x = 0
+		y = 2
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_defensive_1 }
+		prerequisite = { focus = nf_ba_prep_ncr_defensive_2 }
+		available = {
+			has_decision = ba_local_affairs_warprep_ncr_decision
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = eur_ba_oregon_reedsport_port_decision
+				}
+				has_country_flag = erx_ba_reedsport_restored_flag
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = nf_ba_prep_ncr_defensive_3_tt
+			hidden_effect = {
+				358 = {
+					add_building_construction = { type = bunker level = 3 province = 4195 }
+					add_building_construction = { type = bunker2 level = 1 province = 4195 }
+					add_building_construction = { type = bunker level = 3 province = 4196 }
+					add_building_construction = { type = bunker2 level = 1 province = 4196 }
+					add_building_construction = { type = bunker level = 3 province = 4197 }
+					add_building_construction = { type = bunker2 level = 1 province = 4197 }
+					add_building_construction = { type = bunker level = 3 province = 7132 }
+					add_building_construction = { type = bunker2 level = 1 province = 7132 }
+					add_building_construction = { type = bunker level = 3 province = 7131 }
+					add_building_construction = { type = bunker2 level = 1 province = 7131 }
+					add_building_construction = { type = bunker level = 3 province = 4114 }
+					add_building_construction = { type = bunker2 level = 1 province = 4114 }
+					add_building_construction = { type = bunker level = 3 province = 4110 }
+					add_building_construction = { type = bunker2 level = 1 province = 4110 }
+					add_building_construction = { type = bunker level = 3 province = 4200 }
+					add_building_construction = { type = bunker2 level = 1 province = 4200 }
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = erx_ba_national_redoubt_idea
+		}
+	}
+
+	### Production Preparations ###
+	## Industrialization Order Autumn ##
+	focus = {
+		id = nf_ba_prep_ncr_production_0
+		icon = GFX_focus_generic_military_industry
+		relative_position_id = nf_ba_prep_ncr_start
+		x = 0
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_start }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.02
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+
+	## Industrial Dispersion Order Meadowlark ##
+	focus = {
+		id = nf_ba_prep_ncr_production_1
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = nf_ba_prep_ncr_production_0
+		x = 0
+		y = 2
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_production_0 }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.02
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+
+	## Establishing Forward Thinking Strong-Points ##
+	focus = {
+		id = nf_ba_prep_ncr_oss_0
+		icon = GFX_goal_oss_icon
+		relative_position_id = nf_ba_prep_ncr_start
+		x = 2
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_start }
+		available = {
+			has_decision = ba_local_affairs_warprep_ncr_decision
+			has_completed_focus = erx_ba_oss_ncr_start
+		}
+
+		completion_reward = {
+			add_intel = { target = NCR army_intel = 10 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			erx_ba_warplan_brown_upgrade_scripted_effect = yes
+		}
+	}
+	## Preemptive Offensive Planning ##
+	focus = {
+		id = nf_ba_prep_ncr_oss_1
+		icon = GFX_goal_oss_icon
+		relative_position_id = nf_ba_prep_ncr_oss_0
+		x = -1
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_oss_0 }
+		available = {
+			has_decision = ba_local_affairs_warprep_ncr_decision
+		}
+
+		completion_reward = {
+			add_intel = { target = NCR army_intel = 10 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			erx_ba_warplan_brown_upgrade_scripted_effect = yes
+		}
+	}
+	## The Sacramento Campaign ##
+	focus = {
+		id = nf_ba_prep_ncr_oss_2
+		icon = GFX_goal_oss_icon
+		relative_position_id = nf_ba_prep_ncr_oss_0
+		x = 1
+		y = 1
+
+		cost = 30
+		prerequisite = { focus = nf_ba_prep_ncr_oss_0 }
+		available = {
+			has_decision = ba_local_affairs_warprep_ncr_decision
+		}
+
+		completion_reward = {
+			add_intel = { target = NCR army_intel = 10 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			erx_ba_warplan_brown_upgrade_scripted_effect = yes
+		}
+	}
+
+	#################
+	##Radio Freedom##
+	#################
 	focus = {
 		id = erx_broken_arrow_airwaves
 		icon = GFX_enc_goal_usa_overhorizon
@@ -2244,7 +2554,7 @@ focus_tree = {
 			focus = erx_broken_arrow_civ_inf
 		}
 		
-		completion_reward = { add_ideas = bunker_building }
+		completion_reward = { add_ideas = bunker_building_0 }
 	}
 
 	## Rebuilding Humboldt Bay Incorporated ##
@@ -2862,11 +3172,11 @@ focus_tree = {
 		id = nf_ba_eur_ncr_trade_start
 		icon = GFX_goal_BRX_eco_economy
 		cost = 30
-		x = -6
+		x = 0
 		y = 1
-		relative_position_id = erx_broken_arrow_new_city
+		relative_position_id = erx_broken_arrow_reverse_engineer
 
-		prerequisite = { focus = erx_broken_arrow_new_city }
+		prerequisite = { focus = erx_broken_arrow_reverse_engineer }
 
 		completion_reward = {
 			swap_ideas = {

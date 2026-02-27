@@ -141,6 +141,35 @@ erx_broken_arrow_radiowaves_cat = {
 }
 ###Local Affairs
 ba_local_affairs_decision_cat = {
+	## NCR War Prep ##
+	ba_local_affairs_warprep_ncr_decision = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		priority = 10
+
+		cost = 100
+		available = {
+			has_completed_focus = nf_ba_prep_ncr_intro
+			country_exists = NCR
+			NOT = { has_war_with = NCR }
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			complete_national_focus = nf_ba_prep_ncr_start
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = { add_ideas = erx_ba_war_plan_brown_0_idea }
+		}
+
+		modifier = {
+			command_power_gain_mult = 0.15
+			war_support_weekly = 0.005
+		}
+
+		days_remove = 10
+		remove_effect = {
+			declare_war_on = { target = NCR type = annex_everything }
+		}
+	}
 	##Generic Popularity Boost
 	#Mercenary Works
 	ba_local_affairs_merc_work_decision = {
@@ -411,18 +440,18 @@ erx_broken_arrow_navarro_cat = {
 				target = EUR
 				modifier = eureka_side_opinion_modifier
 			}
-            add_opinion_modifier = {
-                target = NVT
-                modifier = free_folk_side_opinion_modifier
-            }
 			add_opinion_modifier = {
-                target = EUR
-                modifier = eureka_side_trade_modifier
-            }
-            add_opinion_modifier = {
-                target = NVT
-                modifier = free_folk_side_trade_modifier
-            }
+				target = NVT
+				modifier = free_folk_side_opinion_modifier
+			}
+		add_opinion_modifier = {
+				target = EUR
+				modifier = eureka_side_trade_modifier
+			}
+			add_opinion_modifier = {
+				target = NVT
+				modifier = free_folk_side_trade_modifier
+			}
 		}
 	}
 	navarro_crisis_exiles = {
@@ -572,7 +601,7 @@ erx_broken_arrow_navarro_cat = {
 				state = 474
 			}
 			highlight_color_while_active = 3
-    		highlight_color_before_active = 2
+			highlight_color_before_active = 2
 		}
 		cancel_trigger = {
 			OR = {
@@ -1109,7 +1138,7 @@ erx_broken_arrow_development_oregon_cat = {
 		modifier = { civilian_factory_use = 4 }
 		remove_effect = {
 			add_ideas = eur_timber_industry
-			if = { 
+			if = {
 				limit = { BDT = { NOT = { has_completed_focus = bdt_the_pillars_of_rome } } }
 				71 = {
 					hidden_effect = {
@@ -1131,7 +1160,7 @@ erx_broken_arrow_development_oregon_cat = {
 				set_temp_variable = { development_to_add = 1 }
 				add_development_to_node = yes
 			}
-		}	
+		}
 	}
 	#Project Bonneville Dam
 	erx_broken_arrow_dam_oregon_bonneville = {
@@ -1183,6 +1212,7 @@ erx_broken_arrow_development_oregon_cat = {
 		days_remove = 50
 		modifier = { civilian_factory_use = 2 }
 		remove_effect = {
+			set_country_flag = erx_ba_reedsport_restored_flag
 			358 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {

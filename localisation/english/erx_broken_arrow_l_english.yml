@@ -26,9 +26,9 @@ erx_broken_arrow.3.d: "After dealing with Dornan, Granite began evacuating the g
 erx_broken_arrow.3.a: "Its not worth the trouble, their lives are more important"
 erx_broken_arrow.3.b: "Rain hell"
 
-erx_broken_arrow.4.t: "National Catastrophe"
-erx_broken_arrow.4.d: "Despite all that we do to restore our great nation, we are betrayed. We escaped just barely with all we could carry, to our fortune, our new home is quite familiar to our older members. But nevertheless, our thankfulness at the escape of our Army and so many men, whose loved ones have passed through an agonizing week, must not blind us to the fact that what has happened in Nevada and California is a colossal national disaster. Our cause has been weakened, some say it has been lost, all of those fortified lines and facilities in the Sierra Army Depot upon which so much faith had been reposed is gone, with all the tragic consequences that follow from that, and we must expect another blow to be struck almost immediately at us or at those who could not escape. But for now we must tend to our dead, and to our wounded. But make no mistake, we will not give up, we will fight again men, next time to victory, when the time is right."
-erx_broken_arrow.4.a: "..."
+erx_broken_arrow.4.t: "The Final Affront"
+erx_broken_arrow.4.d: "We have been betrayed by the purists for the last time.\n\nDespite our efforts\n\nDespite our dedication\n\nDespite our unyielding faith.\n\nWe have been forced to scatter ourselves to the high winds. And any idea of reform within the Enclave has been shattered. §RDoctor Anderson§! believes our cause has been eradicated. And he would be justified in thinking so. Many have died in recent days, and we have been forced into a rout towards the coast. Yet despite these failures our will is one of iron and cannot be broken.\n\nThe era of the Enclave has come to an unceremonious end. And our true journey has just begun.\n\nWith an idea §Bworth fighting for§!.\n\nA nation §Bworth dying for§!."
+erx_broken_arrow.4.a: "§RThe Good Doctor Cant Stop Us Now§!"
 
 erx_broken_arrow.5.t: "Home Sweet Home"
 erx_broken_arrow.5.d: "On our arrival and to our surprise, instead of pointed rifles or insults, we received food and medical attention.  Despite the initial awkwardness and general confusion, we became local celebrities of sorts. It seems our men, their families, and the locals appreciate our presence. Both providing top of the line protection and of course a good story or two.  It seems that Granite's time as a private security contracter here was well received by the population."
@@ -247,9 +247,9 @@ erx_broken_arrow_navarro.8.a: "Yellow Bastards! I Will Handle This Myself"
 erx_broken_arrow_navarro.8_tt: "A §Yborder war§! has broken out in the South!"
 
 erx_broken_arrow_navarro.9.t: "Victory In The Third Battle For Navarro"
-erx_broken_arrow_navarro.9.d: "After yet another infernal war in Navarro we are finally victorious. The last vestiges of Colonial resistance has surrendered or dispersed. And rebel Chinese settlers have either fled with their southern sponsors or have been captured. While their fate remains to be decided the fate of Navarro and the south is clear. President Granite has made it unequivocally clear that he will tolerate no further interruptions to his reconstruction and reconciliation plans. And we have have been given a blank check. As he has once again departed north to re-assume civil control of the government the garrison has been left with the job of securing the future. Order has been restored and the border regions are once again pacified. However the decision of those who rebelled or aided the invaders must be our first priority. Whatever our decision it will surely affect future relations with the powers that be for years to come. We will not choose lightly."
-erx_broken_arrow_navarro.9.a: "The Price Of Treason Is Death"
-erx_broken_arrow_navarro.9.b: "Perhaps Our Forefathers Can Provide A Better Solution"
+erx_broken_arrow_navarro.9.d: "After yet another infernal war in Navarro we are finally victorious. The last vestiges of colonial resistance has surrendered or dispersed. And rebel Chinese settlers have either fled with their southern sponsors or have been captured. While their fate remains to be decided, the fate of Navarro and the south is clear. President Granite has made it unequivocally clear that he will tolerate no further interruptions to his reconstruction and reconciliation plans. And we have have been given a blank check. As he has once again departed north to re-assume civil control of the government the garrison has been left with the job of securing the future. Order has been restored and the border regions are once again pacified. However the decision of those who rebelled or aided the invaders must be our first priority. Whatever our decision it will surely affect future relations with the powers that be for years to come.\n\nTo this end, military planners and civil advisors alike have debated endlessly on the subject, with everything from Presidential pardons for some rebels to internment camps and mass, indiscriminate expulsions. However, cooler heads have prevailed, and both the military and our civil advisors have proposed two courses of action.\n\nFirstly, our civil advisors, ever concerned with economic stability and a smooth transition of civil authority back into the region, have proposed a wholesale disempowerment of former partisans, Imperial-friendly business owners, and any confirmed or suspected accomplices in the revolt. Their property will be seized, their businesses placed under government administration, and they will be barred from participating in any election for three years. This will be paired by an extensive program of migration from other regions of the Republic, farmers, the poor, and any willing to help ensure a smooth return of Federal governance.\n\nA harsh proposal, but better then many would argue they deserve.\n\nIn contrast, our military planners are, in a word, displeased with continually managing a militant and often provocative population. And the recent bellicose move has shattered any pretensions of continued patience or goodwill. They have presented a proposal for an outright expulsion of all known rebels, major business owners who supported them, And firing squads for the most egregious foreign actors."
+erx_broken_arrow_navarro.9.a: "The Economists Win This Round"
+erx_broken_arrow_navarro.9.b: "A More Permanent Solution Is In Order"
 
 erx_broken_arrow_navarro.10.t: "Federal Forces Routed On The Pacific"
 erx_broken_arrow_navarro.10.d: "Despite declaring martial law and President Granite taking direct command of the conflict to the south we have been dealt a crippling blow by the rebels. While we have managed to supress the lingering colonial remnants their settler allies have proven more difficult to pacify. Despite securing the central sectors the south has all but collapsed and we have been left no other alternative but to sue for peace. The Chinese will pay a terrible price for their treachery. But with Shady Sands ensuring their continued independence a larger war is for the moment out of the question.\n\nWe have failed. "
@@ -793,6 +793,46 @@ nf_ba_eur_oregon_industry_end_desc: "Industry is booming and Oregon is quickly b
 nf_ba_eur_oregon_end: "A Bold New Day For Oregon"
 nf_ba_eur_oregon_end_desc: "The Road has been long, and it has been hard. But we can finally shout out with hope and pride. Oregon Is Reborn.\nOur faith, our hard work and dedication has brought a new age to this state. And it will now be a new shining beacon for all of the world to see the results of our rule. First Oregon. Then the Nation. Be proud. For you have done that which no one thought possible."
 
+nf_ba_prep_ncr_intro: "Dark Days, Bitter Realities"
+nf_ba_prep_ncr_intro_desc: "Shady Sands continuous interventions in the greater Navarro and Eurekan regions through, direct military force, vile acts of espionage and their increasingly concerning expansionist policies on the world stage set a picture that cannot be disregarded. Regardless of politics the likelihood of armed conflict with the N.C.R and further infiltration by their operatives has reached an unacceptable level. Our forces, while currently firmly on the defensive due to ongoing conflicts in the north are not yet prepared to face them. And should Kimball secure enough political capitol in Congress and public support from the masses, we have no doubts he will send the full might of the N.C.Rs northern field armies to not just reclaim Navarro, but push us to the sea and eradicate our new nation in its infancy. We can no longer be deluded into believing that further defensive engagements, successful as they may be, will sway the regime in Shady Sands into recognizing our strength and independence. Their ruling class have gambled everything in both the political and economic spheres on our defeat and resumed subjugation. We must prepare for a direct and inexhaustible push into the N.C.Rs heartland. For only then will their corrupt regime and common citizenry alike see the writing on the wall."
+
+nf_ba_prep_ncr_start: "War Plan §LBrown§!"
+nf_ba_prep_ncr_start_desc: "TODO DESCRIPTION HERE"
+erx_ba_war_plan_brown_idea: "War Plan §LBrown§!"
+
+nf_ba_prep_ncr_defensive_0: "Fortifications Against The Bear"
+nf_ba_prep_ncr_defensive_0_desc: "While our military planners are primarily focused on the upcoming \"Great Eastern Offensive\", a minority group of advisors and military officials have argued with a considerable amount of zeal that we should prepare a series of fallback lines and defensive perimeters should our offensive stall, or God Forbid, fail entirely. The President, recalling memories of N.C.R offensives in recent years and the destruction wrought as a result, has agreed, and construction will begin within the week."
+
+nf_ba_prep_ncr_defensive_1: "Fortifying The Navarro Sector"
+nf_ba_prep_ncr_defensive_1_desc: "The hills, plains, and roadways both within and leading towards Navarro are the prime target of any potential N.C.R invasion force, and as such, we must ensure that they can be properly defended. Through the construction of concrete bunkers and pillboxes, the excavation of trench lines, and setting targeted zones of fire for artillery, we will ensure that any force attempting entry into Navarro shall find it unassailable. This will give any nearby reinforcements the operational respite to move south from Oregon and Eureka to reinforce our most glittering prize."
+nf_ba_prep_ncr_defensive_1_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YNavarro Region§!-§YNCR§! border"
+nf_ba_prep_ncr_defensive_1_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[548.GetName]§!"
+
+nf_ba_prep_ncr_defensive_2: "Fortifying The Heartlands"
+nf_ba_prep_ncr_defensive_2_desc: "The Federal State Of Eureka, in it lies both our capitol city and the base of operations for our entire military and governmental apparatus of state. But more importantly to the masses, on it depends the survival of our entire way of life. Our coming offensive will shape the future of this entire region, and perhaps the country. But should we fail the Eurekan Region, and our capitol of Arcata specifically must be held at all costs. The President has given its defenders a blank cheque and already men, money, and armaments are flowing to its defense. Through every means at our disposal, we will make this region and city a citadel for our ideals and way of life.\nBut should we fail, and the city falls... Then we will be forced into exile in Oregon, and our future will look most uncertain..."
+nf_ba_prep_ncr_defensive_2_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YFourways§!-§YNCR§! border"
+nf_ba_prep_ncr_defensive_2_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[39.GetName]§!"
+
+nf_ba_prep_ncr_defensive_3: "The National Redoubt"
+nf_ba_prep_ncr_defensive_3_desc: "In the calamitous event of our dual failures in the Great Eastern Offensive and in our defensive operations in the heartland, we must prepare for a continuation of the war from our nascent territories in Oregon. To this end, the President has authorized the diversion of considerable funding, armaments, and critical personnel to the new would be capitol city and base of operations. The newly minted Reedsport Naval Base. From this position, we can continue to resist the perfidious Californians until final victory can be achieved."
+nf_ba_prep_ncr_defensive_3_tt: "Constructs a line of §YOutposts§! and §YBunkers§! surrounding §Y[358.GetName]§!"
+
+nf_ba_prep_ncr_production_0: "Industrialization Order Autumn"
+nf_ba_prep_ncr_production_0_desc: "With the renewed spectre of N.C.R invasion over our nation, our military and industrial experts have informed us that with our current industrial capacity, any full-scale invasion into the N.C.R would falter within mere months, leaving our forces undersupplied and once again on the defensive. To combat this vast numerical inferiority, the President has ordered the immediate construction of dozens of industrial-scale factories and scores of smaller hidden workshops within the Eurekan heartland and the vast territories of Oregon."
+
+nf_ba_prep_ncr_production_1: "Industrial Dispersion Order Meadowlark"
+nf_ba_prep_ncr_production_1_desc: "Alongside our industrial expansion programs throughout key sectors in our nation, the President has authorized the evacuation of significant portions of heavy industry, populations, and resources from potential conflict zones to the westernmost regions of Eureka and the newly liberated territories in Oregon. While nominally a temporary measure, should our southern holdings fall, Oregon may be the last redoubt of our industrial capabilities and major populations from Californian tyranny."
+erx_ba_national_redoubt_idea: "National Redoubt"
+
+nf_ba_prep_ncr_oss_0: "Establishing Forward Thinking Strong-Points"
+nf_ba_prep_ncr_oss_0_desc: "\"Operation Urban Edge\" has been a resounding success. Our operatives have successfully inserted themselves in the N.C.R and have secured enough intelligence from the regional command headquarters at Redding to confirm enemy staging points and offensive goals on the border. With this newfound knowledge, we can establish ambush points, impromptu fortifications, and reserve units to delay and ultimately blunt their offensive once a state of war has been declared."
+
+nf_ba_prep_ncr_oss_1: "Preemptive Offensive Planning"
+nf_ba_prep_ncr_oss_1_desc: "\"Operation Statehouse Strike\" has been another bold success for the Office Of Strategic Services. Our operatives have now confirmed the enemy's battle positions throughout the north conclusively. This intelligence will not only practically guarantee the blunting of their planned offensives but also ensure that ours will sideline, encircle, and force the capitulation of their strong points in short order.\n\nThis is a significant tactical advantage and should not be wasted."
+
+nf_ba_prep_ncr_oss_2: "The Sacramento Campaign"
+nf_ba_prep_ncr_oss_2_desc: "Yet again, the O.S.S has distinguished itself with the triumphant conclusion of \"Operation Alkali\", granting us the military and civil intelligence necessary for our final offensive to overrun both Travis and Beale Air Force Bases and storm the regional capitol of Sacramento, so called \"Sac City\" by its inhabitants. When Sacramento falls, our fortitude and independence will be demonstrated in short order. Victory will be beyond question."
+
 erx_broken_arrow..t: ""
 erx_broken_arrow..d: ""
 erx_broken_arrow..a: ""
@@ -811,10 +851,16 @@ ba_local_affairs_decision_cat_desc: "While we as a whole were not expecting much
 
 woodley_island: "Clear Out Woodley Island"
 woodley_island_desc: "The Anarchist filth that inhabit Woodley Island must be cleared out for our plans."
+
+ba_local_affairs_warprep_ncr_decision: "War Plan §LBrown§!"
+ba_local_affairs_warprep_ncr_decision_desc: "MISSING DESCRIPTION"
+
 ba_local_affairs_merc_work_decision: "Mercenary Work"
 ba_local_affairs_merc_work_decision_desc: "Helping out the good people of Eureka with security might seem like an odd way to gain support, but hey, a man in Power Armor between them and their children(or Merchandise) does wonders for the Ballot Box."
+
 ba_local_affairs_cleaning_house_decision: "Cleaning House"
 ba_local_affairs_cleaning_house_decision_desc: "Within the cities and towns of Eureka there is an epidemic of vagrants, criminals and other unruly characters. Due to the lack of a proper police force they are often left to fend for themselves. Helping them with this problem will guarantee their support in future matters"
+
 ba_local_affairs_essentials_decision: "Essentials of Civilization"
 ba_local_affairs_essentials_decision_desc: "The lifeblood of any modern civilization, the citizens of Eureka either because of scarcity, ignorance or plain old corruption often lack these basic necessities. By providing them not only with these tools, but the know-how to construct their own, we will guarantee that they will support us in future matters,(also that they will live long enough to do so.)"
 
@@ -917,7 +963,7 @@ the_continental_army: "The Continental Army"
 stash_houses: "Stash Houses"
 strike_down_bear: "Strike Down the Bear"
 eur_enc_complete_chaos: "Complete Chaos"
-bunker_building: "Internal Security"
+bunker_building_0: "Internal Security"
 prussian_idea: "Prussian Ingenuity"
 yorktown_legacy_idea: "Yorktown Legacy"
 yorktown_legacy_idea_dsec: "Empowering the role of the Militia, now it could take on another professional army with proper training and the spirit of never giving up till victory."
@@ -1119,6 +1165,10 @@ eur_ba_oregon_salem_port_decision_desc: "Unfortunately, due to the Brotherhood's
 
 eur_ba_oregon_portland_port_decision: "Portland Naval Facilities"
 eur_ba_oregon_salem_port_decision_tt: "If §YWest Portland§! and §YEast Portland§! are under our control, the effects will be §Gdouble!§!"
+
+SHI_ba_imperial_cosmetic_tag: "Shi"
+SHI_ba_imperial_cosmetic_tag_ADJ: "Chinese"
+SHI_ba_imperial_cosmetic_tag_DEF: "the Imperial State of San Francisco"
 
 ############
 ###Events###

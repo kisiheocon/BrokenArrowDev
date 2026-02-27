@@ -322,28 +322,26 @@ country_event = {
 		NEW = { annex_country = { target = ERB } }
 	}
 }
-#NATIONAL CATASTROPHE
+# The Final Affront #
 country_event = {
 	id = erx_broken_arrow.4
 	title = erx_broken_arrow.4.t
 	desc = erx_broken_arrow.4.d
-	picture = GFX_event_broken_arrow_eagle
+	picture = GFX_event_broken_arrow_free_america
 
 	is_triggered_only = yes
 
 	immediate = { 
 		hidden_effect = {
 			add_stability = -0.05
-			add_war_support = -0.05
-			add_manpower = -200
+			add_war_support = 0.05
 		}
 	}
 	option = {
 		name = erx_broken_arrow.4.a
 		effect_tooltip = {
 			add_stability = -0.05
-			add_war_support = -0.05
-			add_manpower = -200
+			add_war_support = 0.05
 		}
 	}
 }
@@ -362,11 +360,11 @@ country_event = {
 				ideology = intellectuals
 				popularity = 0.05
 			}
-			add_political_power = 60			
+			add_political_power = 60
 		}
 	}
 	option = {
-		name = erx_broken_arrow.5.a 
+		name = erx_broken_arrow.5.a
 		effect_tooltip = {
 			add_popularity = {
 				ideology = intellectuals
@@ -1123,6 +1121,7 @@ country_event = {
 	desc = erx_broken_arrow_navarro.5.d
 	is_triggered_only = yes
 	picture = GFX_event_report_event_generic_newspaper_event_pic
+	trigger = { has_war_with = NCR }
 
 	option = {
 		name = erx_broken_arrow_navarro.5.a
@@ -1250,7 +1249,32 @@ country_event = {
 	}
 
 	option = {
-		name = erx_broken_arrow_navarro.9.a #The harsh option
+		name = erx_broken_arrow_navarro.9.a #The soft option
+		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
+		add_political_power = 30
+		add_stability = 0.02
+		NAT = {
+			every_core_state = {
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
+		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
+		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
+		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
+		SHI = {
+			add_stability = -0.02
+			add_war_support = -0.02
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action
+			}
+		}
+	}
+
+	option = {
+		name = erx_broken_arrow_navarro.9.b #The harsh option
 		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
 		NAT = {
 			every_core_state = {
@@ -1288,30 +1312,6 @@ country_event = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = protest_action_strong
-			}
-		}
-	}
-	option = {
-		name = erx_broken_arrow_navarro.9.b #The soft option
-		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
-		add_political_power = 30
-		add_stability = 0.02
-		NAT = {
-			every_core_state = {
-				add_compliance = 5
-				add_resistance = -5
-			}
-		}
-		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
-		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
-		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
-		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
-		SHI = {
-			add_stability = -0.02
-			add_war_support = -0.02
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = protest_action
 			}
 		}
 	}
