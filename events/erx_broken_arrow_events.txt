@@ -1195,8 +1195,18 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = erx_ba_navarro_shi_start_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = erx_ba_navarro_shi_start
+		}
+	}
+
 	option = {
 		name = erx_broken_arrow_navarro.7.a
+		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_start }
+		custom_effect_tooltip = generic_skip_one_line_tt
 		custom_effect_tooltip = erx_broken_arrow_navarro.7_tt
 	}
 }
@@ -1245,6 +1255,9 @@ country_event = {
 					hill_fighter
 				}
 			}
+			set_country_flag = erx_ba_navarro_shi_end_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = erx_ba_navarro_shi_win_0
 		}
 	}
 
@@ -1271,6 +1284,8 @@ country_event = {
 				modifier = protest_action
 			}
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
 	}
 
 	option = {
@@ -1314,6 +1329,8 @@ country_event = {
 				modifier = protest_action_strong
 			}
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
 	}
 }
 #Lose against Shi in the border war - Federal Forces Routed On The Pacific
@@ -1363,6 +1380,10 @@ country_event = {
 					hill_fighter
 				}
 			}
+			set_country_flag = erx_ba_navarro_shi_end_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = erx_ba_navarro_shi_lose_0
+			complete_national_focus = erx_ba_navarro_shi_lose_1
 		}
 	}
 
@@ -1392,6 +1413,9 @@ country_event = {
 			give_resource_rights = { receiver = SHI state = 441 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_opinion_modifier = { target = SHI modifier = protest_action_strong }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_national_focus = erx_ba_navarro_shi_lose_0
+			complete_national_focus = erx_ba_navarro_shi_lose_1
 		}
 	}
 }
