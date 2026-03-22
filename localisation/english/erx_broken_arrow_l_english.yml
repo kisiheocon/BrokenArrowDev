@@ -212,7 +212,7 @@ erx_broken_arrow_fireside.6.a: "One might say its already here"
 ###########
 
 erx_broken_arrow_navarro.1.t: "Crisis To The South"
-erx_broken_arrow_navarro.1.d: "To The South of us lies the frontier of the N.C.R, The 'Navarro Territories'. Needless to say we have history there. After the fall of Navarro to a joint N.C.R, Brotherhood Alliance the territory has since been governed by the NCR, however this far north that means de facto cattle Barron's wield unprecedented control over the government and military. Leading to extensive corruption, unequal taxation, and discrimination. After several years of dissension, resentment and anger toward the colonial administration, combined with the influences of several major benefactors in the region, one of them being the former port-masters. War has erupted in the region. Dividing the territories in a three way conflict between the Shi backed 'Fusang', The remnants of the Colonial Administration with their Federal and Cattle Barron sponsors. And the 'Free Folks' A culmination of settlers, oppressed tribal’s, and from reports from our operatives in the colonial government suspected Enclave remnants. "
+erx_broken_arrow_navarro.1.d: "To The South of us lies the frontier of the N.C.R, The 'Navarro Territories'. Needless to say we have history there. After the fall of Navarro to a joint N.C.R, Brotherhood Alliance the territory has since been governed by the NCR, however this far north that means de facto cattle Barron's wield unprecedented control over the government and military. Leading to extensive corruption, unequal taxation, and discrimination. After several years of dissension, resentment and anger toward the colonial administration, combined with the influences of several major benefactors in the region, one of them being the former port-masters. War has erupted in the region. Dividing the territories in a three way conflict between the Shi backed 'Fusang', The remnants of the Colonial Administration with their Federal and Cattle Barron sponsors. And the 'Free Folks' A culmination of settlers, oppressed tribal's, and from reports from our operatives in the colonial government suspected Enclave remnants. "
 erx_broken_arrow_navarro.1.a: "Is Navarro within our grasp?"
 
 erx_broken_arrow_navarro.2.t: "Victory in Navarro"
@@ -657,7 +657,7 @@ nf_ba_eur_navarro_crisis: "The Navarro Crisis"
 nf_ba_eur_navarro_crisis_desc: "The Navarro Territories are in flames.\n\nSmells like Opportunity"
 erx_ba_focus_complete_trigger_tt: "This §YFocus§! will be completed by an §YEvent§!"
 nf_ba_eur_navarro_crisis_reward_tt: "Unlocks £GFX_decision_icon_small §YDecisions§! to help our §4ally§! in §YNavarro§!."
-erx_broken_arrow_navarro.1_tt: "New £GFX_decision_icon_small §YDecisions§! are available to help our allies in §YNavarro§!!\nIt is imperative for us to send volunteers and aid §B[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
+erx_broken_arrow_navarro.1_tt: "New £GFX_decision_icon_small §YDecisions§! are available to help our allies in §YNavarro§!!\nIt is imperative for us to send volunteers and aid §4[NVT.GetNameWithFlag]§! against §8[NAT.GetNameWithFlag]§! and §R[NVS.GetNameWithFlag]§!. Their success will greatly expand our §Yinfluence§! in the region!"
 nf_ba_eur_navarro_development: "Navarro Pacification Campaign"
 nf_ba_eur_navarro_development_desc: "Despite our victory of the region, enemy militants from Fusang and the Colonial Government still harass our troops from the roadways and countrysides. Granite has ordered an operation to pacify these rogue elements. "
 nf_ba_eur_navarro_philanthropy: "Philanthropy and Humanitarianism"
@@ -894,8 +894,6 @@ eureka_espionage_ncr_3: "Red Tape and Incompetence"
 spies_yes: " DEPLOYED"
 spies_no: "UNDEPLOYED"
 
-
-erx_broken_arrow_enclave_cat: "Broken Arrow"
 rescue_granite: "Rescue Granite"
 ##NavarroCrisisDecisions
 erx_broken_arrow_navarro_cat: "The Navarro Crisis"

@@ -615,6 +615,7 @@ country_event = {
 	id = erx_broken_arrow.19
 	title = erx_broken_arrow.19.t
 	desc = erx_broken_arrow.19.d
+	picture = GFX_event_sunset_binoculars
 
 	is_triggered_only = yes
 
@@ -1846,38 +1847,44 @@ country_event = {
 	id = erx_broken_arrow_incep.1
 	title = erx_broken_arrow_incep.1.t
 	desc = erx_broken_arrow_incep.1.d
+	picture = GFX_event_ash_barrens
 
 	is_triggered_only = yes
+
 	option = {
 		name = erx_broken_arrow_incep.1.a
-			hidden_effect = {
-				country_event = { id = erx_broken_arrow_incep.2 days = 10 }
-			}
-			add_stability = -0.05
-			add_war_support = -0.05
+		hidden_effect = {
+			country_event = { id = erx_broken_arrow_incep.2 days = 10 }
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
 	}
 }
 country_event = {
 	id = erx_broken_arrow_incep.2
 	title = erx_broken_arrow_incep.2.t
 	desc = erx_broken_arrow_incep.2.d
+	picture = GFX_event_ash_barrens
 
 	is_triggered_only = yes
+
 	option = {
 		name = erx_broken_arrow_incep.2.a
-			hidden_effect = {
-				country_event = { id = erx_broken_arrow_incep.3 days = 10 }
-			}
-			add_stability = 0.02
-			add_political_power = 20
+		hidden_effect = {
+			country_event = { id = erx_broken_arrow_incep.3 days = 10 }
+		}
+		add_stability = 0.02
+		add_political_power = 20
 	}
 }
 country_event = {
 	id = erx_broken_arrow_incep.3
 	title = erx_broken_arrow_incep.3.t
 	desc = erx_broken_arrow_incep.3.d
+	picture = GFX_event_enc_washington_monument
 
 	is_triggered_only = yes
+
 	option = {
 		name = erx_broken_arrow_incep.3.a
 		add_political_power = 50

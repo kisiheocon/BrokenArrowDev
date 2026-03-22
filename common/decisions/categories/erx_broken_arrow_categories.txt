@@ -11,22 +11,28 @@ erx_broken_arrow_development_oregon_cat = {
 	priority = 2000
 }
 erx_broken_arrow_navarro_cat = {
-	allowed = {
-		original_tag = EUR
-	}
+	allowed = { original_tag = EUR }
 	visible = {
-		has_completed_focus = nf_ba_eur_navarro_crisis
-		NOT = { has_country_flag = conquered_navarro }
+		OR = {
+			AND = {
+				has_completed_focus = nf_ba_eur_navarro_crisis
+				NOT = { has_country_flag = conquered_navarro }
+			}
+			is_debug = yes
+		}
 	}
+
 	icon = GFX_decision_category_border_war
+	picture = GFX_decision_cat_picture_navarro_crisis
 	priority = 998
 }
 erx_broken_arrow_radiowaves_cat = {
-	allowed = {
-		original_tag = EUR
-	}
+	allowed = { original_tag = EUR }
 	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
+		OR = {
+			has_completed_focus = erx_broken_arrow_airwaves
+			is_debug = yes
+		}
 	}
 	icon = GFX_decision_satellite
 }
@@ -43,24 +49,16 @@ ba_local_affairs_decision_cat = {
 	picture = GFX_decision_cat_local_affairs
 	priority = 997
 }
-erx_broken_arrow_stashes_cat = {
-	allowed = {
-		original_tag = EUR
-	}
-	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
-	}
-	icon = x
-}
-erx_broken_arrow_enclave_cat = {
-	allowed = {
-		original_tag = ERB
-	}
-	visible = {
-		#has_completed_focus = erx_broken_arrow_airwaves
-	}
-	icon = x
-}
+#erx_broken_arrow_stashes_cat = {
+#	allowed = {
+#		original_tag = EUR
+#	}
+#	visible = {
+#		#has_completed_focus = erx_broken_arrow_airwaves
+#	}
+#	icon = x
+#}
+
 #erx_broken_arrow_armory_gfx_cat = {
 #	allowed = {
 #		original_tag = EUR
@@ -70,47 +68,50 @@ erx_broken_arrow_enclave_cat = {
 #	}
 #	icon = x
 #}
-erx_broken_arrow_espionage_cat = {
-	allowed = {
-		original_tag = EUR
-	}
-	visible = {
-		#has_completed_focus = erx_ba_oss_start
-	}
-	icon = GFX_decision_satellite
-}
-EUR_political_infighting = {
-	icon = GFX_decision_trifold_flag
-	priority = { base = 10 }
-	allowed = {
-		original_tag = EUR
-	}
-	visible_when_empty = yes
-	visible = {
-		has_country_flag = granite_plots
-		NOT = {
-			OR = {
-				has_country_leader = {
-					character = MCA_Douglas_Granite
-				}
-				has_country_leader = {
-					character = ERB_Douglas_Granite
-				}
-			}
-		}
-	}
-}
+#erx_broken_arrow_espionage_cat = {
+#	allowed = {
+#		original_tag = EUR
+#	}
+#	visible = {
+#		has_completed_focus = erx_ba_oss_start
+#	}
+#	icon = GFX_decision_satellite
+#}
+#EUR_political_infighting = {
+#	icon = GFX_decision_trifold_flag
+#	priority = { base = 10 }
+#	allowed = {
+#		original_tag = EUR
+#	}
+#	visible_when_empty = yes
+#	visible = {
+#		has_country_flag = granite_plots
+#		NOT = {
+#			OR = {
+#				has_country_leader = {
+#					character = MCA_Douglas_Granite
+#				}
+#				has_country_leader = {
+#					character = ERB_Douglas_Granite
+#				}
+#			}
+#		}
+#	}
+#}
+
 ### OSS ###
 erx_ba_oss_decision_cat = {
-	icon = GFX_decision_cat_oss
 	allowed = { original_tag = EUR }
-	priority = 999999
 	visible = {
 		OR = {
 			is_debug = yes
 			has_completed_focus = erx_ba_oss_start
 		}
 	}
+
+	icon = GFX_decision_cat_oss
+
+	priority = 999999
 	visible_when_empty = yes
 	scripted_gui = erx_ba_oss_scripted_gui
 }

@@ -47,9 +47,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_kpdj
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			set_country_flag = kpdj_cleared
 		}
@@ -61,9 +59,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow.17
 		}
@@ -75,9 +71,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow_fireside.1
 		}
@@ -89,9 +83,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow_fireside.3
 		}
@@ -103,9 +95,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow_fireside.4
 		}
@@ -117,9 +107,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow_fireside.5
 		}
@@ -131,9 +119,7 @@ erx_broken_arrow_radiowaves_cat = {
 			has_completed_focus = erx_broken_arrow_voice_of_nation
 		}
 		fire_only_once = yes
-		visible = {
-			always = yes
-		}
+
 		complete_effect = {
 			country_event = erx_broken_arrow_fireside.6
 		}
