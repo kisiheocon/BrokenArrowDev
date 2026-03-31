@@ -219,4 +219,44 @@ spriteTypes = {
 		name = "GFX_goal_oregon_end"
 		texturefile = "gfx/interface/goals/GFX_goal_oregon_end.dds"
 	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_intro"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_intro.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_start"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_start.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_production_0"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_production_0.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_production_1"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_production_1.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_defensive_0"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_defensive_0.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_defensive_1"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_defensive_1.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_defensive_2"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_defensive_2.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_defensive_3"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_defensive_3.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_oss_1"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_1.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_oss_2"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_2.dds"
+	}
 }

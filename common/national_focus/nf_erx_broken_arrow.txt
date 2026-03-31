@@ -1286,7 +1286,7 @@ focus_tree = {
 	## Dark Days, Bitter Realities ##
 	focus = {
 		id = nf_ba_prep_ncr_intro
-		icon = GFX_goal_NCR_Bears_Roar
+		icon = GFX_goal_prep_ncr_intro
 		relative_position_id = erx_broken_arrow_new_city
 		x = 8
 		y = 1
@@ -1312,7 +1312,7 @@ focus_tree = {
 	## War Plan Brown ##
 	focus = {
 		id = nf_ba_prep_ncr_start
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_prep_ncr_start
 		relative_position_id = nf_ba_prep_ncr_intro
 		x = 0
 		y = 1
@@ -1330,7 +1330,7 @@ focus_tree = {
 	## Fortification Against the Bear ##
 	focus = {
 		id = nf_ba_prep_ncr_defensive_0
-		icon = GFX_goal_generic_bunkers_focus
+		icon = GFX_goal_prep_ncr_defensive_0
 		relative_position_id = nf_ba_prep_ncr_start
 		x = -2
 		y = 1
@@ -1353,7 +1353,7 @@ focus_tree = {
 	## Fortifying The Navarro Sector ##
 	focus = {
 		id = nf_ba_prep_ncr_defensive_1
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_prep_ncr_defensive_1
 		relative_position_id = nf_ba_prep_ncr_defensive_0
 		x = -1
 		y = 1
@@ -1393,7 +1393,7 @@ focus_tree = {
 	## Fortifying The Heartlands ##
 	focus = {
 		id = nf_ba_prep_ncr_defensive_2
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_prep_ncr_defensive_2
 		relative_position_id = nf_ba_prep_ncr_defensive_0
 		x = 1
 		y = 1
@@ -1438,7 +1438,7 @@ focus_tree = {
 	## The National Redoubt ##
 	focus = {
 		id = nf_ba_prep_ncr_defensive_3
-		icon = GFX_focus_SWE_hedgehog_defense
+		icon = GFX_goal_prep_ncr_defensive_3
 		relative_position_id = nf_ba_prep_ncr_defensive_0
 		x = 0
 		y = 2
@@ -1488,7 +1488,7 @@ focus_tree = {
 	## Industrialization Order Autumn ##
 	focus = {
 		id = nf_ba_prep_ncr_production_0
-		icon = GFX_focus_generic_military_industry
+		icon = GFX_goal_prep_ncr_production_0
 		relative_position_id = nf_ba_prep_ncr_start
 		x = 0
 		y = 1
@@ -1509,7 +1509,7 @@ focus_tree = {
 	## Industrial Dispersion Order Meadowlark ##
 	focus = {
 		id = nf_ba_prep_ncr_production_1
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_prep_ncr_production_1
 		relative_position_id = nf_ba_prep_ncr_production_0
 		x = 0
 		y = 2
@@ -1551,7 +1551,7 @@ focus_tree = {
 	## Preemptive Offensive Planning ##
 	focus = {
 		id = nf_ba_prep_ncr_oss_1
-		icon = GFX_goal_oss_icon
+		icon = GFX_goal_prep_ncr_oss_1
 		relative_position_id = nf_ba_prep_ncr_oss_0
 		x = -1
 		y = 1
@@ -1571,7 +1571,7 @@ focus_tree = {
 	## The Sacramento Campaign ##
 	focus = {
 		id = nf_ba_prep_ncr_oss_2
-		icon = GFX_goal_oss_icon
+		icon = GFX_goal_prep_ncr_oss_2
 		relative_position_id = nf_ba_prep_ncr_oss_0
 		x = 1
 		y = 1
