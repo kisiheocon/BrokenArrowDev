@@ -45,6 +45,11 @@ spriteTypes = {
 		name = "GFX_EUR_cargo_plane_tech_2_medium"
 		texturefile = "gfx/interface/technologies/USA_transport_plane_equipment_3.dds"
 	}
+	#Vertibird Transport Plane
+	SpriteType = {
+		name = "GFX_EUR_vertibird_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/vehicle/chinook_helicopter.dds"
+	}
 	##Vehicle##
 	#Tier 1 Light Vehicle
 	SpriteType = {

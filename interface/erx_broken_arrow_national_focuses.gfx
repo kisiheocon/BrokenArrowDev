@@ -252,11 +252,31 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_defensive_3.dds"
 	}
 	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_oss_0"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_0.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
 		name = "GFX_goal_prep_ncr_oss_1"
 		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_1.dds"
 	}
 	spriteType = { #Special Thanks to N64GC
 		name = "GFX_goal_prep_ncr_oss_2"
 		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_2.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_ba_navarro_shi_start"
+		texturefile = "gfx/interface/goals/GFX_goal_ba_navarro_shi_start.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_ba_navarro_shi_lose_0"
+		texturefile = "gfx/interface/goals/GFX_goal_ba_navarro_shi_lose_0.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_ba_navarro_shi_lose_1"
+		texturefile = "gfx/interface/goals/GFX_goal_ba_navarro_shi_lose_1.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_ba_navarro_shi_lose_treaty"
+		texturefile = "gfx/interface/goals/GFX_goal_ba_navarro_shi_lose_treaty.dds"
 	}
 }

@@ -79,6 +79,11 @@ EUR_cargo_plane_equipment_2: "Douglas C-47 Skytrain"
 EUR_cargo_plane_equipment_2_short: "Skytrain"
 EUR_cargo_plane_equipment_2_desc: "The Douglas C-47 Skytrain is a military transport aircraft developed from the civilian Douglas DC-3 airliner. It was used extensively by the Allies during World War II. During the war the C-47 was used for troop transport, cargo, paratrooper drops, glider towing, and military cargo parachute drops. The C-47 remained in front-line service with various military operators for many years."
 
+#Vertibird Transport Plane
+EUR_vb_transport_plane_equipment: "Boeing CH-47 Chinook"
+EUR_vb_transport_plane_equipment_short: "Chinook"
+EUR_vb_transport_plane_equipment_desc: "The Boeing CH-47 Chinook is a tandem-rotor helicopter originally developed by the rotorcraft company Vertol in the 1960s. It has since been reactivated by direct order of the President and now manufactured directly by the Department Of Defense."
+
 ##Vehicle
 #Tier 1 Light Vehicle
 EUR_light_motorized_equipment_1: "Cunningham M1 Armored Car"
