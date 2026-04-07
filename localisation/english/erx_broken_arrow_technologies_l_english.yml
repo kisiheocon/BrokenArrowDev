@@ -82,7 +82,7 @@ EUR_cargo_plane_equipment_2_desc: "The Douglas C-47 Skytrain is a military trans
 #Vertibird Transport Plane
 EUR_vb_transport_plane_equipment: "Boeing CH-47 Chinook"
 EUR_vb_transport_plane_equipment_short: "Chinook"
-EUR_vb_transport_plane_equipment_desc: "The Boeing CH-47 Chinook is a tandem-rotor helicopter originally developed by the rotorcraft company Vertol in the 1960s. It has since been reactivated by direct order of the President and now manufactured directly by the Department Of Defense."
+EUR_vb_transport_plane_equipment_desc: "The Boeing CH-47 Chinook is a tandem-rotor helicopter originally developed by the rotorcraft company Vertol in the 1960s."
 
 ##Vehicle
 #Tier 1 Light Vehicle

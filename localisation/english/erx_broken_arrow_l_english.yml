@@ -805,17 +805,17 @@ nf_ba_prep_ncr_defensive_0_desc: "While our military planners are primarily focu
 
 nf_ba_prep_ncr_defensive_1: "Fortifying The Navarro Sector"
 nf_ba_prep_ncr_defensive_1_desc: "The hills, plains, and roadways both within and leading towards Navarro are the prime target of any potential N.C.R invasion force, and as such, we must ensure that they can be properly defended. Through the construction of concrete bunkers and pillboxes, the excavation of trench lines, and setting targeted zones of fire for artillery, we will ensure that any force attempting entry into Navarro shall find it unassailable. This will give any nearby reinforcements the operational respite to move south from Oregon and Eureka to reinforce our most glittering prize."
-nf_ba_prep_ncr_defensive_1_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YNavarro Region§!-§YNCR§! border"
-nf_ba_prep_ncr_defensive_1_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[548.GetName]§!"
+nf_ba_prep_ncr_defensive_1_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YNavarro Region§!-§YNCR§! border."
+nf_ba_prep_ncr_defensive_1_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[548.GetName]§!."
 
 nf_ba_prep_ncr_defensive_2: "Fortifying The Heartlands"
 nf_ba_prep_ncr_defensive_2_desc: "The Federal State Of Eureka, in it lies both our capitol city and the base of operations for our entire military and governmental apparatus of state. But more importantly to the masses, on it depends the survival of our entire way of life. Our coming offensive will shape the future of this entire region, and perhaps the country. But should we fail the Eurekan Region, and our capitol of Arcata specifically must be held at all costs. The President has given its defenders a blank cheque and already men, money, and armaments are flowing to its defense. Through every means at our disposal, we will make this region and city a citadel for our ideals and way of life.\nBut should we fail, and the city falls... Then we will be forced into exile in Oregon, and our future will look most uncertain..."
-nf_ba_prep_ncr_defensive_2_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YFourways§!-§YNCR§! border"
-nf_ba_prep_ncr_defensive_2_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[39.GetName]§!"
+nf_ba_prep_ncr_defensive_2_tt_1: "Constructs a line of §YOutposts§! and §YBunkers§! along the §YFourways§!-§YNCR§! border."
+nf_ba_prep_ncr_defensive_2_tt_2: "Constructs additional §YOutposts§! and §YBunkers§! at §Y[39.GetName]§!."
 
 nf_ba_prep_ncr_defensive_3: "The National Redoubt"
 nf_ba_prep_ncr_defensive_3_desc: "In the calamitous event of our dual failures in the Great Eastern Offensive and in our defensive operations in the heartland, we must prepare for a continuation of the war from our nascent territories in Oregon. To this end, the President has authorized the diversion of considerable funding, armaments, and critical personnel to the new would be capitol city and base of operations. The newly minted Reedsport Naval Base. From this position, we can continue to resist the perfidious Californians until final victory can be achieved."
-nf_ba_prep_ncr_defensive_3_tt: "Constructs a line of §YOutposts§! and §YBunkers§! surrounding §Y[358.GetName]§!"
+nf_ba_prep_ncr_defensive_3_tt: "Constructs a line of §YOutposts§! and §YBunkers§! surrounding §Y[358.GetName]§!."
 
 nf_ba_prep_ncr_production_0: "Industrialization Order Autumn"
 nf_ba_prep_ncr_production_0_desc: "With the renewed spectre of N.C.R invasion over our nation, our military and industrial experts have informed us that with our current industrial capacity, any full-scale invasion into the N.C.R would falter within mere months, leaving our forces undersupplied and once again on the defensive. To combat this vast numerical inferiority, the President has ordered the immediate construction of dozens of industrial-scale factories and scores of smaller hidden workshops within the Eurekan heartland and the vast territories of Oregon."

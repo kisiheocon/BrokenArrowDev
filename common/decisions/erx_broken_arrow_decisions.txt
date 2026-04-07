@@ -144,6 +144,7 @@ ba_local_affairs_decision_cat = {
 			complete_national_focus = nf_ba_prep_ncr_start
 			custom_effect_tooltip = generic_skip_one_line_tt
 			effect_tooltip = { add_ideas = erx_ba_war_plan_brown_0_idea }
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 
 		modifier = {
@@ -151,7 +152,7 @@ ba_local_affairs_decision_cat = {
 			war_support_weekly = 0.005
 		}
 
-		days_remove = 10
+		days_remove = 150
 		remove_effect = {
 			declare_war_on = { target = NCR type = annex_everything }
 		}
