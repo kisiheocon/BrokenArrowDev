@@ -796,9 +796,10 @@ nf_ba_eur_oregon_end_desc: "The Road has been long, and it has been hard. But we
 nf_ba_prep_ncr_intro: "Dark Days, Bitter Realities"
 nf_ba_prep_ncr_intro_desc: "Shady Sands continuous interventions in the greater Navarro and Eurekan regions through, direct military force, vile acts of espionage and their increasingly concerning expansionist policies on the world stage set a picture that cannot be disregarded. Regardless of politics the likelihood of armed conflict with the N.C.R and further infiltration by their operatives has reached an unacceptable level. Our forces, while currently firmly on the defensive due to ongoing conflicts in the north are not yet prepared to face them. And should Kimball secure enough political capitol in Congress and public support from the masses, we have no doubts he will send the full might of the N.C.Rs northern field armies to not just reclaim Navarro, but push us to the sea and eradicate our new nation in its infancy. We can no longer be deluded into believing that further defensive engagements, successful as they may be, will sway the regime in Shady Sands into recognizing our strength and independence. Their ruling class have gambled everything in both the political and economic spheres on our defeat and resumed subjugation. We must prepare for a direct and inexhaustible push into the N.C.Rs heartland. For only then will their corrupt regime and common citizenry alike see the writing on the wall."
 
-nf_ba_prep_ncr_start: "War Plan §LBrown§!"
-nf_ba_prep_ncr_start_desc: "TODO DESCRIPTION HERE"
+nf_ba_prep_ncr_start: "The Illusion Of Choice"
+nf_ba_prep_ncr_start_desc: "Our signal analysts have intercepted communiques between N.C.R high command in Shady Sands and the regional commands of field armies across California. Due to unexpectedly sophisticated levels of encryption we have been unable to determine the exact scope and purpose for this rapid increase in N.C.R military activity. However our network of informants have reported a concurrent rise in local military activity. The President has been informed and has pushed up our timetable for the activation of war plan brown.\nWe cannot say for certain what Kimball is planning, but whatever it is, we will be ahead of the curve. Our more diplomatic personnel may decry a preemptive strike, but this nation is tired of being blind sided by Shady Sands."
 erx_ba_war_plan_brown_idea: "War Plan §LBrown§!"
+nf_ba_prep_ncr_start_tt: "Unlocks £GFX_decision_icon_small §YOSS Decisions§! for §Y[NCR.GetNameWithFlag]§! to §Glaunch§! various §YIntelligence Operations§!."
 
 nf_ba_prep_ncr_defensive_0: "Fortifications Against The Bear"
 nf_ba_prep_ncr_defensive_0_desc: "While our military planners are primarily focused on the upcoming \"Great Eastern Offensive\", a minority group of advisors and military officials have argued with a considerable amount of zeal that we should prepare a series of fallback lines and defensive perimeters should our offensive stall, or God Forbid, fail entirely. The President, recalling memories of N.C.R offensives in recent years and the destruction wrought as a result, has agreed, and construction will begin within the week."
@@ -833,6 +834,10 @@ nf_ba_prep_ncr_oss_1_desc: "\"Operation Statehouse Strike\" has been another bol
 nf_ba_prep_ncr_oss_2: "The Sacramento Campaign"
 nf_ba_prep_ncr_oss_2_desc: "Yet again, the O.S.S has distinguished itself with the triumphant conclusion of \"Operation Alkali\", granting us the military and civil intelligence necessary for our final offensive to overrun both Travis and Beale Air Force Bases and storm the regional capitol of Sacramento, so called \"Sac City\" by its inhabitants. When Sacramento falls, our fortitude and independence will be demonstrated in short order. Victory will be beyond question."
 
+nf_ba_prep_ncr_oss_3: "War Plan §LBrown§!"
+nf_ba_prep_ncr_oss_3_desc: "The O.S.S has proved itself invaluable yet again, and the armies of Navarro, Eureka and Oregon are now poised to strike into the very heartlands of those who would seek to oppress us.\n\nThe Great Eastern Offensive is authorized, all commands advance on schedule."
+nf_ba_prep_ncr_oss_3_tt: "§gWe can only hope that we prepared as best as we could. For we have gambled everything. The cards have been played, the dice have been rolled. The very survival of our nation depends on the outcome of this offensive. Now we must win, or all will be lost!§!"
+
 erx_broken_arrow..t: ""
 erx_broken_arrow..d: ""
 erx_broken_arrow..a: ""
@@ -851,6 +856,10 @@ ba_local_affairs_decision_cat_desc: "While we as a whole were not expecting much
 
 woodley_island: "Clear Out Woodley Island"
 woodley_island_desc: "The Anarchist filth that inhabit Woodley Island must be cleared out for our plans."
+
+ba_local_affairs_intercept_ncr_decision: "Intercept NCR Communications"
+ba_local_affairs_intercept_ncr_decision_desc: "TODO DESCRIPTION"
+ba_local_affairs_intercept_ncr_decision_tt: "§gThis will eventually lead to war with §L[NCR.GetNameWithFlag]§!.§!"
 
 ba_local_affairs_warprep_ncr_decision: "War Plan §LBrown§!"
 ba_local_affairs_warprep_ncr_decision_desc: "MISSING DESCRIPTION"

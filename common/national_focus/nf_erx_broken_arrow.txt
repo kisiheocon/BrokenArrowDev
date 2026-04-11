@@ -1294,6 +1294,7 @@ focus_tree = {
 		cost = 30
 		prerequisite = { focus = erx_broken_arrow_new_city }
 		available = {
+			has_completed_focus = erx_ba_oss_ncr_start
 			country_exists = NCR
 			NOT = { has_war_with = NCR }
 			MLT = { all_core_land_owned_by_prev_sphere = yes }
@@ -1302,14 +1303,13 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = {
-				decision = ba_local_affairs_warprep_ncr_decision
+				decision = ba_local_affairs_intercept_ncr_decision
 				show_effect_tooltip = yes
-				show_modifiers = yes
 			}
 		}
 	}
 
-	## War Plan Brown ##
+	## The Illusion Of Choice ##
 	focus = {
 		id = nf_ba_prep_ncr_start
 		icon = GFX_goal_prep_ncr_start
@@ -1319,10 +1319,29 @@ focus_tree = {
 
 		cost = 30
 		prerequisite = { focus = nf_ba_prep_ncr_intro }
-		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = ba_local_affairs_intercept_ncr_decision
+				}
+				has_decision = ba_local_affairs_warprep_ncr_decision
+			}
+		}
 
 		completion_reward = {
-			add_ideas = erx_ba_war_plan_brown_0_idea
+			unlock_decision_tooltip = {
+				decision = ba_local_affairs_warprep_ncr_decision
+				show_effect_tooltip = yes
+				show_modifiers = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			activate_decision = ba_local_affairs_warprep_ncr_decision
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nf_ba_prep_ncr_start_tt
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_0_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_1_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_2_decision
 		}
 	}
 
@@ -1538,8 +1557,13 @@ focus_tree = {
 		cost = 30
 		prerequisite = { focus = nf_ba_prep_ncr_start }
 		available = {
-			has_decision = ba_local_affairs_warprep_ncr_decision
-			has_completed_focus = erx_ba_oss_ncr_start
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = erx_ba_oss_ncr_warplan_brown_0_decision
+				}
+				has_completed_focus = nf_ba_prep_ncr_oss_0
+			}
 		}
 
 		completion_reward = {
@@ -1559,7 +1583,13 @@ focus_tree = {
 		cost = 30
 		prerequisite = { focus = nf_ba_prep_ncr_oss_0 }
 		available = {
-			has_decision = ba_local_affairs_warprep_ncr_decision
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = erx_ba_oss_ncr_warplan_brown_1_decision
+				}
+				has_completed_focus = nf_ba_prep_ncr_oss_1
+			}
 		}
 
 		completion_reward = {
@@ -1579,13 +1609,47 @@ focus_tree = {
 		cost = 30
 		prerequisite = { focus = nf_ba_prep_ncr_oss_0 }
 		available = {
-			has_decision = ba_local_affairs_warprep_ncr_decision
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = erx_ba_oss_ncr_warplan_brown_2_decision
+				}
+				has_completed_focus = nf_ba_prep_ncr_oss_2
+			}
 		}
 
 		completion_reward = {
 			add_intel = { target = NCR army_intel = 10 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			erx_ba_warplan_brown_upgrade_scripted_effect = yes
+		}
+	}
+	## War Plan Brown ##
+	focus = {
+		id = nf_ba_prep_ncr_oss_3
+		icon = GFX_goal_prep_ncr_oss_3
+		relative_position_id = nf_ba_prep_ncr_oss_0
+		x = 0
+		y = 2
+
+		cost = 10
+		prerequisite = { focus = nf_ba_prep_ncr_oss_1 }
+		prerequisite = { focus = nf_ba_prep_ncr_oss_2 }
+		available = { has_decision = ba_local_affairs_warprep_ncr_decision }
+
+		will_lead_to_war_with = NCR # This might be unnecessary due to the warning mission already have this - @Deez #
+
+		completion_reward = {
+			if = {
+				limit = { country_exists = NCR }
+				declare_war_on = {
+					target = NCR
+					type = annex_everything
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = nf_ba_prep_ncr_oss_3_tt
+			}
+			else = { NCR = { ROOT = { grant_wargoals_on_core_states_of_prev = yes } } }
 		}
 	}
 
@@ -1829,6 +1893,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = erx_ba_oss_ncr_start_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = erx_ba_oss_ncr_corporate_espionage_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_high_command_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_state_apparatus_decision
 
 			## OSS GUI ##
 			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
@@ -1849,6 +1917,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = erx_ba_oss_shi_start_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = erx_ba_oss_shi_kexue_lianmeng_decision
+			unlock_decision_tooltip = erx_ba_oss_shi_qingming_decision
+			unlock_decision_tooltip = erx_ba_oss_shi_huangdi_yihui_decision
 			
 			## OSS GUI ##
 			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }
@@ -1869,6 +1941,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = erx_ba_oss_bos_start_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = erx_ba_oss_bos_scribal_castes_decision
+			unlock_decision_tooltip = erx_ba_oss_bos_chain_that_bind_decision
+			unlock_decision_tooltip = erx_ba_oss_bos_council_elders_decision
 			
 			## OSS GUI ##
 			add_to_variable = { erx_ba_oss_scripted_gui_dirty = 0.01 }

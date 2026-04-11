@@ -107,6 +107,76 @@ erx_ba_oss_decision_cat = {
 		}
 	}
 
+	# Operation Urban Edge #
+	erx_ba_oss_ncr_warplan_brown_0_decision = {
+		icon = GFX_decision_oss
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 1 } }
+		available = { has_completed_focus = nf_ba_prep_ncr_start }
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		days_remove = 30
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			complete_national_focus = nf_ba_prep_ncr_oss_0
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_intel = { target = NCR army_intel = 10 }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				erx_ba_warplan_brown_upgrade_scripted_effect = yes
+			}
+		}
+	}
+	# Operation Statehouse Strike #
+	erx_ba_oss_ncr_warplan_brown_1_decision = {
+		icon = GFX_decision_oss
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 1 } }
+		available = {
+			has_completed_focus = nf_ba_prep_ncr_start
+			has_completed_focus = nf_ba_prep_ncr_oss_0
+		}
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		days_remove = 30
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			complete_national_focus = nf_ba_prep_ncr_oss_1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_intel = { target = NCR army_intel = 10 }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				erx_ba_warplan_brown_upgrade_scripted_effect = yes
+			}
+		}
+	}
+	# Operation Alkali #
+	erx_ba_oss_ncr_warplan_brown_2_decision = {
+		icon = GFX_decision_oss
+
+		visible = { check_variable = { erx_ba_oss_selected_var = 1 } }
+		available = {
+			has_completed_focus = nf_ba_prep_ncr_start
+			has_completed_focus = nf_ba_prep_ncr_oss_0
+		}
+		custom_cost_trigger = { command_power > 24 }
+		custom_cost_text = decision_cost_CP_25
+
+		days_remove = 30
+		modifier = { command_power_gain = -0.1 }
+		remove_effect = {
+			complete_national_focus = nf_ba_prep_ncr_oss_2
+			custom_effect_tooltip = generic_skip_one_line_tt
+			effect_tooltip = {
+				add_intel = { target = NCR army_intel = 10 }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				erx_ba_warplan_brown_upgrade_scripted_effect = yes
+			}
+		}
+	}
+
 	## BOS ##
 	# Infiltrate The Scribal Castes #
 	erx_ba_oss_bos_scribal_castes_decision = {

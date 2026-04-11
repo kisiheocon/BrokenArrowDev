@@ -49,6 +49,16 @@ erx_ba_oss_ncr_high_command_decision_desc: "Through our network of operatives we
 erx_ba_oss_ncr_state_apparatus_decision: "Infiltrate The Apparatus Of State"
 erx_ba_oss_ncr_state_apparatus_decision_desc: "Via bribery, Intimidation and a sheer lack of good safeguards. Our operatives can have unabated access to the inner workings of the Californian Congress, and Government."
 
+erx_ba_oss_ncr_warplan_brown_0_decision: "Operation Urban Edge"
+erx_ba_oss_ncr_warplan_brown_0_decision_desc: ""
+
+erx_ba_oss_ncr_warplan_brown_1_decision: "Operation Statehouse Strike"
+erx_ba_oss_ncr_warplan_brown_1_decision_desc: ""
+
+erx_ba_oss_ncr_warplan_brown_2_decision: "Operation Alkali"
+erx_ba_oss_ncr_warplan_brown_2_decision_desc: ""
+
+
 ## The Brotherhood of Steel Decisions ##
 erx_ba_oss_bos_scribal_castes_decision: "Infiltrate The Scribal Castes"
 erx_ba_oss_bos_scribal_castes_decision_desc: "Scribes are tasked with creating and keeping records of the technology recovered and used by the Brotherhood and experimenting with new weapons and other useful devices to be used in the field by Brotherhoods men, Their vast databases have untold knowledge, With Our Operatives in the various castes of Scribes we can monitor brotherhood breakthroughs and scan their databases."

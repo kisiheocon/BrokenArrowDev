@@ -24,4 +24,8 @@ spriteTypes = {
 		name = "GFX_decision_cat_picture_navarro_crisis"
 		texturefile = "gfx/interface/decisions/GFX_decision_cat_picture_navarro_crisis.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_oss"
+		texturefile = "gfx/interface/decisions/GFX_decision_oss.dds"
+	}
 }

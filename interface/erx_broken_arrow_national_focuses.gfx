@@ -264,6 +264,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_2.dds"
 	}
 	spriteType = { #Special Thanks to N64GC
+		name = "GFX_goal_prep_ncr_oss_3"
+		texturefile = "gfx/interface/goals/GFX_goal_prep_ncr_oss_3.dds"
+	}
+	spriteType = { #Special Thanks to N64GC
 		name = "GFX_goal_ba_navarro_shi_start"
 		texturefile = "gfx/interface/goals/GFX_goal_ba_navarro_shi_start.dds"
 	}
