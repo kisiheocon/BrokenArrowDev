@@ -3,12 +3,15 @@
 ###Characters Names###
 ######################
 EUR_oscar_mccormick: "Oscar McCormick"
-EUR_oscar_mccormick_desc: "§YName:§! Oscar McCormick\n§YPlace Of Birth:§! Arcata (West Coast)\n§YAge:§! Twenty-seven\n§YRank:§! Brigadier General\n§YTraits:§! Youthful Vigor, Authoritarian Tendecies, Navarro War Veteran\n§YDescription:§! The would be General hailing from far off Arcata did not have military service planned for his future, let alone in a military as spontaneous and incredulous as this new \"Federal Government\" He was drafted from his uneventful job as a general store clerk on the outskirts of his hometown to fight in the Navarro wars by the new administration and fought with distinction against both the Colonials and the Chinese throughout the course of the war. The rising casualty lists and a need for experienced command saw him being promoted to lieutenant Colonel by the conclusion of the 3rd war for Navarro. Following the formal annexation of these territories by the Federal Government the newly minted \"Brigadier General\" was uplifted alongside several others to help corral the territories and the swaths of fresh recruits from various tribes and counties."
+EUR_oscar_mccormick_desc: "§YName:§! Oscar McCormick\n§YPlace Of Birth:§! Arcata (West Coast)\n§YAge:§! Twenty-Seven\n§YRank:§! Brigadier General\n§YTraits:§! Youthful Vigor, Authoritarian Tendecies, Navarro War Veteran\n§YDescription:§! The would be General hailing from far off Arcata did not have military service planned for his future, let alone in a military as spontaneous and incredulous as this new \"Federal Government\" He was drafted from his uneventful job as a general store clerk on the outskirts of his hometown to fight in the Navarro wars by the new administration and fought with distinction against both the Colonials and the Chinese throughout the course of the war. The rising casualty lists and a need for experienced command saw him being promoted to lieutenant Colonel by the conclusion of the 3rd war for Navarro. Following the formal annexation of these territories by the Federal Government the newly minted \"Brigadier General\" was uplifted alongside several others to help corral the territories and the swaths of fresh recruits from various tribes and counties."
+EUR_oscar_mccormick_army_chief_token_desc: "$EUR_oscar_mccormick_desc$"
+EUR_oscar_mccormick_unit_leader_tt: "§g$EFFECT_CHARACTER_LIST_SKILL$§!: 3 (£trait_attack §Y3§!, £trait_defense §Y2§!, £trait_planning §Y1§!, £trait_logistics §Y2§!)\n§g$traits$§!: §Y$EUR_BA_youthful_vigor_unit_leader_trait$§!, §Y$EUR_BA_authoritarian_tendencies_unit_leader_trait$§!, §Y$EUR_BA_navarro_unit_leader_trait$§!, §Y$hill_fighter$§!."
 
-EUR_sullivan_mcclain: "Sullivan McClain"
-EUR_sullivan_mcclain_desc: ""
+EUR_sullivan_mcclain: "Director Sullivan"
+EUR_sullivan_mcclain_desc: "§YName:§! Sullivan McClain\n§YPlace Of Birth:§! Eugene (Willamette Valley)\n§YAge:§! Fifty-Four\n§YRank:§! Director\n§YTraits:§! Stern Nature, Bureaucratic Bulldog\n§YDescription:§! Sullivan McClain does not look like the sort of man who changes the course of history. He looks like a clerk—pressed suit, tired eyes behind round glasses, hair combed into place with the stubborn discipline of routine. And that is exactly why he is dangerous. Where other officials chase glory, McClain chases leaks, missing signatures, mismatched totals, a report that arrived an hour too late, a patrol that \"forgot\" to file its log. In his mind, every failure of state begins the same way: a small inconsistency that someone waved through because it was inconvenient to question.\nMcClain is a relentless administrator of intelligence work—skeptical, methodical, and stubborn to the point of infuriating his peers. He doesn't \"trust his gut.\" He trusts paper trails, cross-checks, and the quiet certainty that someone is always lying.\n\n§g\"A ledger has no opinions. People do.\"§!"
+EUR_sullivan_mcclain_high_command_token_desc: "$EUR_sullivan_mcclain_desc$"
 
-EUR_BA_granite_desc: "Granite’s faith in the Enclave has long been tested, but with a final betrayal by Doctor Anderson it has finally shattered. The Enclave has betrayed the American People for the last time. The future is at hand, and it won't be written by the likes of the purists. To find the true way forward, Granite and his followers have looked back to what came before. The vision and framework set forth by the Founding Fathers and those great Americans who followed. With God as his witness... Granite and the American people will be free...\n\n§ROr Die In The Attempt.§!"
+EUR_BA_granite_desc: "Granite's faith in the Enclave has long been tested, but with a final betrayal by Doctor Anderson it has finally shattered. The Enclave has betrayed the American People for the last time. The future is at hand, and it won't be written by the likes of the purists. To find the true way forward, Granite and his followers have looked back to what came before. The vision and framework set forth by the Founding Fathers and those great Americans who followed. With God as his witness... Granite and the American people will be free...\n\n§ROr Die In The Attempt.§!"
 
 #######################
 ###Characters Traits###
@@ -22,8 +25,8 @@ EUR_BA_authoritarian_tendencies_unit_leader_trait_desc: "While generally committ
 EUR_BA_navarro_unit_leader_trait: "Medal of Navarro"
 EUR_BA_navarro_unit_leader_trait_desc: "This medal is awarded to those who have distinguished themselves during the Wars for Navarro."
 
-EUR_BA_authoritarian_tendencies_country_leader_trait: "Authoritarian Tendecies"
-EUR_BA_authoritarian_tendencies_country_leader_trait_tt: "§gWhile generally committed to just treatment and respect for the pinnacle of American principles, The rule of law, Granite is a complicated man with a violent and brutal past. As such he can at times can have... §!§Rdarker moments§!§g. Spurring rash acts of cruelty in battle or in governance with what some may consider dictatorial behavior when faced with intense pressure or fighting particularly heinous foes. Much to his and the people's dismay. Though it at times has its uses...§!"
+EUR_BA_authoritarian_tendencies_country_leader_trait: "$EUR_BA_authoritarian_tendencies_unit_leader_trait$"
+EUR_BA_authoritarian_tendencies_country_leader_trait_tt: "§g$EUR_BA_authoritarian_tendencies_unit_leader_trait_desc$§!"
 
 EUR_BA_president_level_1_country_leader_trait: "President In Name Only"
 EUR_BA_president_level_1_country_leader_trait_tt: "§gDespite taking the role and title of President Granite was not duly elected by the citizenry he now represents. While their support was integral to his rise, Granite is a military leader at heart and is both untrained and unprepared for higher office. He will have to make significant efforts to win over both the people and himself. For only then will he be able to truly claim the mantle of §!§C\"President Of The United States\"§!"
@@ -35,11 +38,16 @@ trl_ba_tyrant_of_mariposa_country_leader_trait: "Tyrant of Mariposa"
 trl_ba_attis_of_the_west_country_leader_trait: "Attis Of The West"
 trl_ba_the_first_desc: "§gThe First stands separate from his mutant brethren. Firstly, because he, unlike most, can largely recall his past life as a human. The second is for his unparalleled skills in strategy & leadership. In the post-nuclear war. these skills together are rare in man, rarer still in mutants. This competence and wit in battle, and what can be considered \"Governance\", is like no other mutant, save one. §!\n\n§RAttis§!\n\n§gLike the great confidant and general of the Master's armies, the First has swept over all who oppose him and has proven a competent leader of both mutant and man. With the many tribals of Oregon considering him a God, they have pledged their fealty and lives to his cause. What that cause is remains to be seen, but if the whispers of his subordinates and followers bear any truth, the first may just yet claim the title so sought by all mutants before him...§!\n\n§0\"The New Master.\"§!"
 
-###################
-###Company Names###
-###################
-
-###Economic Advisor###
+### Advisors ###
 EUR_oregon_dot_name: "Oregon D.O.T"
 EUR_oregon_dot_eco_advisor_token_desc: "£GFX_embed_empty \n\n\n£GFX_embed_oregon_department_transportation \n\n\n\nThe Oregon Department of Transportation is a department of the state government of the U.S. state of Oregon responsible for systems of transportation. It was first established in 1969. It had been preceded by the Oregon State Highway Department which, along with the Oregon State Highway Commission, was created by an act of the Oregon Legislative Assembly in 1913. It works closely with the five-member Oregon Transportation Commission in managing the state's transportation systems."
 oregon_department_transportation_company_trait: "Infrastructure Development"
+
+eur_ba_stern_nature_advisor_trait: "Stern Nature"
+
+eur_ba_youthful_vigor_advisor_trait: "$EUR_BA_youthful_vigor_unit_leader_trait$"
+
+eur_ba_authoritarian_tendencies_advisor_trait: "Authoritarian"
+
+eur_ba_bureaucratic_bulldog_0_advisor_trait: "Bureaucratic Bulldog"
+eur_ba_bureaucratic_bulldog_1_advisor_trait: "$eur_ba_bureaucratic_bulldog_0_advisor_trait$"

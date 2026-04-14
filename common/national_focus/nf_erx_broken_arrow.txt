@@ -1863,6 +1863,9 @@ focus_tree = {
 			}
 			unlock_decision_category_tooltip = erx_ba_oss_decision_cat
 			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = EUR_sullivan_mcclain_high_command_token
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = erx_ba_focus_on_select_tt
 			effect_tooltip = {
 				add_timed_idea = {

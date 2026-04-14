@@ -1,0 +1,44 @@
+leader_traits = {
+	## Stern Nature ##
+	eur_ba_stern_nature_advisor_trait = { random = no } # Act more like personality trait, shouldn't affect an entire country - @Deez #
+
+	## Stern Nature ##
+	eur_ba_youthful_vigor_advisor_trait = { random = no } # Act more like personality trait, shouldn't affect an entire country - @Deez #
+
+	## Authoritarian Tendecies ##
+
+	eur_ba_authoritarian_tendencies_advisor_trait = {
+		sprite = 7
+		random = no
+
+		army_attack_factor = 0.1
+		breakthrough_factor = 0.05
+		army_morale_factor = -0.05
+		war_support_factor = -0.03
+	}
+
+	## Bureaucratic Bulldog ##
+	# Pre Arcata Incident #
+	eur_ba_bureaucratic_bulldog_0_advisor_trait = {
+		sprite = 15
+		random = no
+
+		caps_expense_modifier = 0.1
+		operative_slot = 1
+		agency_upgrade_time = -0.2
+		decryption_factor = 0.05
+		encryption_factor = 0.05
+	}
+	# After Arcata Incident #
+	eur_ba_bureaucratic_bulldog_1_advisor_trait = {
+		sprite = 15
+		random = no
+
+		caps_expense_modifier = 0.1
+		operative_slot = 1
+		enemy_operative_detection_chance_factor = 0.2
+		agency_upgrade_time = -0.2
+		decryption_factor = 0.1
+		encryption_factor = 0.1
+	}
+}

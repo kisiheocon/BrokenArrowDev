@@ -296,6 +296,7 @@
 			}
 		}
 	}
+
 	## Oscar McCormick ##
 	EUR_oscar_mccormick = {
 		portraits = {
@@ -307,6 +308,17 @@
 				large = GFX_portrait_eur_oscar_mccormick_large
 				small = GFX_portrait_eur_oscar_mccormick_small
 			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = EUR_oscar_mccormick_army_chief_token
+
+			allowed = { original_tag = EUR }
+			available = { has_country_flag = erx_ba_navarro_shi_end_flag }
+			cost = 100
+
+			traits = { eur_ba_authoritarian_tendencies_advisor_trait eur_ba_youthful_vigor_advisor_trait }
 		}
 	}
 	## Sullivan McClain ##
@@ -329,7 +341,7 @@
 			available = { has_completed_focus = erx_ba_oss_start }
 			cost = 100
 
-			traits = { settler_spymaster }
+			traits = { eur_ba_bureaucratic_bulldog_0_advisor_trait eur_ba_stern_nature_advisor_trait }
 		}
 	}
 

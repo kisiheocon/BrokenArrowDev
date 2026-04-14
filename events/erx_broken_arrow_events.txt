@@ -1264,34 +1264,31 @@ country_event = {
 
 	option = {
 		name = erx_broken_arrow_navarro.9.a #The soft option
-		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
 		add_political_power = 30
 		add_stability = 0.02
 		NAT = {
 			every_core_state = {
-				add_compliance = 5
-				add_resistance = -5
+				add_compliance = 2.5
+				add_resistance = -2.5
 			}
 		}
-		216 = { add_manpower = -1600 } #20% leave Bodega-Eureka
-		441 = { add_manpower = -4000 } #20% leave Santa Rosa-Eureka
-		474 = { add_manpower = 1200 } #15% join San Rafael-Shi
-		511 = { add_manpower = 3000 } #15% join Vallejo-Shi
 		SHI = {
 			add_stability = -0.02
 			add_war_support = -0.02
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = protest_action
-			}
+			add_opinion_modifier = { target = ROOT modifier = protest_action }
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		show_unit_leaders_tooltip = EUR_oscar_mccormick
+		custom_effect_tooltip = EUR_oscar_mccormick_unit_leader_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = available_army_chief
+		show_ideas_tooltip = EUR_oscar_mccormick_army_chief_token
 		custom_effect_tooltip = generic_skip_one_line_tt
 		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
 	}
 
 	option = {
 		name = erx_broken_arrow_navarro.9.b #The harsh option
-		effect_tooltip = { recruit_character = EUR_oscar_mccormick }
 		NAT = {
 			every_core_state = {
 				add_compliance = 10
@@ -1299,37 +1296,24 @@ country_event = {
 			}
 		}
 		216 = {
-			add_manpower = -2400 #30% leave Bodega-Eureka
-			damage_building = { #Damage 2 Infrastructure
-				type = infrastructure
-				damage = 2
-			}
-			damage_building = { #Damage 1 Civ
-				type = industrial_complex
-				damage = 1
-			}
+			damage_building = { type = infrastructure damage = 2 }
+			damage_building = { type = industrial_complex damage = 1 }
 		} 
 		441 = {
-			add_manpower = -6000 #30% leave Santa Rosa-Eureka
-			damage_building = { #Damage 1 Infrastructure
-				type = infrastructure
-				damage = 1
-			}
-			damage_building = { #Damage 1 Civ
-				type = industrial_complex
-				damage = 1
-			}
+			damage_building = { type = infrastructure damage = 1 }
+			damage_building = { type = industrial_complex damage = 1 }
 		}
-		474 = { add_manpower = 2000 } #25% join San Rafael-Shi
-		511 = { add_manpower = 5000 } #25% join Vallejo-Shi
 		SHI = {
 			add_stability = -0.05
 			add_war_support = -0.05
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = protest_action_strong
-			}
+			add_opinion_modifier = { target = ROOT modifier = protest_action_strong }
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		show_unit_leaders_tooltip = EUR_oscar_mccormick
+		custom_effect_tooltip = EUR_oscar_mccormick_unit_leader_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = available_army_chief
+		show_ideas_tooltip = EUR_oscar_mccormick_army_chief_token
 		custom_effect_tooltip = generic_skip_one_line_tt
 		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
 	}

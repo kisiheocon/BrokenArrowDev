@@ -251,34 +251,34 @@ characters = {
 			}
 		}
 	}
-	EUR_portmaster_bander = {
-		name = EUR_portmaster_bander_NAME
-		portraits = {
-			army = {
-				#large = gfx_sprite_type_name_or_file_path
-				small = GFX_idea_ghoul_generic13
-			}
-			civilian = {
-				#large = gfx_sprite_type_name_or_file_path
-				small = GFX_idea_ghoul_generic13
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = EUR_portmaster_bander_idea_token
-			ledger = army
-			allowed = {
-				original_tag = EUR
-			}
-			traits = {
-				owb_army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 10
-			}
-		}
-	}
+	#EUR_portmaster_bander = {
+	#	name = EUR_portmaster_bander_NAME
+	#	portraits = {
+	#		army = {
+	#			#large = gfx_sprite_type_name_or_file_path
+	#			small = GFX_idea_ghoul_generic13
+	#		}
+	#		civilian = {
+	#			#large = gfx_sprite_type_name_or_file_path
+	#			small = GFX_idea_ghoul_generic13
+	#		}
+	#	}
+	#	advisor = {
+	#		slot = army_chief
+	#		idea_token = EUR_portmaster_bander_idea_token
+	#		ledger = army
+	#		allowed = {
+	#			original_tag = EUR
+	#		}
+	#		traits = {
+	#			owb_army_chief_offensive_2
+	#		}
+	#		cost = 100
+	#		ai_will_do = {
+	#			factor = 10
+	#		}
+	#	}
+	#}
 	EUR_jeff_waters = {
 		name = EUR_jeff_waters_NAME
 		portraits = {

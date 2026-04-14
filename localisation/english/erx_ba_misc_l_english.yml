@@ -1,5 +1,8 @@
 ﻿l_english:
 
+## Country_flags ##
+erx_ba_navarro_shi_end_flag: "The §YBattles for Navarro§! has §Yconcluded§!"
+
 ## Decision Tooltips ##
 erx_ba_completed_decision_trigger_tt: "Completed Decision: $DECISION|Y$"
 
