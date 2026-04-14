@@ -307,29 +307,29 @@ characters = {
 			}
 		}
 	}
-	EUR_tiny_joe = {
-		name = EUR_tiny_joe
-		portraits = {
-			army = {
-				small = GFX_idea_generic_advisor31
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = EUR_tiny_joe_high_command
-			ledger = army
-			allowed = {
-				original_tag = EUR
-			}
-			traits = {
-				settler_spymaster
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 10
-			}
-		}
-	}
+	#EUR_tiny_joe = {
+	#	name = EUR_tiny_joe
+	#	portraits = {
+	#		army = {
+	#			small = GFX_idea_generic_advisor31
+	#		}
+	#	}
+	#	advisor = {
+	#		slot = high_command
+	#		idea_token = EUR_tiny_joe_high_command
+	#		ledger = army
+	#		allowed = {
+	#			original_tag = EUR
+	#		}
+	#		traits = {
+	#			settler_spymaster
+	#		}
+	#		cost = 100
+	#		ai_will_do = {
+	#			factor = 10
+	#		}
+	#	}
+	#}
 	EUR_vega_poseidon = {
 		name = EUR_vega_poseidon
 		portraits = {

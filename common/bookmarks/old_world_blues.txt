@@ -679,7 +679,7 @@ bookmarks = {
 		# Majors
 		"ORO" = {
 			history = "ORO_OWB_DESC"
-			minor = no
+			#major = no
 			ideology = intellectuals
 			ideas = {
 				oro_gene_warriors_idea
@@ -691,7 +691,7 @@ bookmarks = {
 			}
 		}
 		"NCN" = {
-			minor = no
+			#minor = no
 			history = "NCN_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -706,7 +706,7 @@ bookmarks = {
 			}
 		}
 		"WHT" = {
-			minor = no
+			#minor = no
 			history = "WHT_OWB_DESC"
 			ideology = elites
 			ideas = {
@@ -720,7 +720,7 @@ bookmarks = {
 			}
 		}
 		"EHT" = {
-			minor = no
+			#minor = no
 			history = "EHT_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -735,7 +735,7 @@ bookmarks = {
 		}
 		"CLK" = {
 			history = "CLK_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = ruler
 			ideas = {
 				clk_crushing_white
@@ -749,7 +749,7 @@ bookmarks = {
 			}
 		}
 		"SLE" = {
-			minor = no
+			#minor = no
 			history = "SLE_OWB_DESC"
 			ideology = intellectuals
 			ideas = {
@@ -763,7 +763,7 @@ bookmarks = {
 			}
 		}
 		"HAM" = {
-			minor = no
+			#minor = no
 			history = "HAM_OWB_DESC"
 			ideology = intellectuals
 			ideas = {
@@ -1036,7 +1036,7 @@ bookmark = {
 
 	"RCK" = {
 		history = "RCK_OWB_DESC"
-		minor = no
+		#minor = no
 		ideology = ruler
 		ideas = {
 			RCK_manpower_agreement
@@ -1049,7 +1049,7 @@ bookmark = {
 		}
 	}
 	"MNC" = {
-		minor = no
+		#minor = no
 		history = "MNC_OWB_DESC"
 		ideology = intellectuals
 		ideas = {
@@ -1064,7 +1064,7 @@ bookmark = {
 		}
 	}
 	"STR" = {
-		minor = no
+		#minor = no
 		history = "STR_OWB_DESC"
 		ideology = ruler
 		ideas = {
@@ -1080,7 +1080,7 @@ bookmark = {
 	}
 	"KHA" = {
 		history = "KHA_OWB_DESC"
-		minor = no
+		#minor = no
 		ideology = people
 		ideas = {
 			KHA_rowdy_khans
@@ -1095,7 +1095,7 @@ bookmark = {
 	}
 	"WYR" = {
 		history = "WYR_OWB_DESC"
-		minor = no
+		#minor = no
 		ideology = elites
 		ideas = {
 			wyr_economical
@@ -1110,7 +1110,7 @@ bookmark = {
 	}
 	"SIE" = {
 		history = "SIE_OWB_DESC"
-		minor = no
+		#minor = no
 		ideology = people
 		ideas = {
 			sie_mole_miner_bonus
@@ -1123,7 +1123,7 @@ bookmark = {
 		}
 	}
 	"MCA" = {
-		minor = no
+		#minor = no
 		history = "MCA_OWB_DESC"
 		ideology = intellectuals
 		ideas = {
@@ -1266,7 +1266,7 @@ bookmark = {
 
 		# Majors
 		"STC" = {
-			minor = no
+			#minor = no
 			history = "STC_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1281,7 +1281,7 @@ bookmark = {
 			}
 		}
 		"COM" = {
-			minor = no
+			#minor = no
 			history = "COM_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1296,7 +1296,7 @@ bookmark = {
 			}
 		}
 		"STA" = {
-			minor = no
+			#minor = no
 			history = "STA_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1311,7 +1311,7 @@ bookmark = {
 			}
 		}
 		"STN" = {
-			minor = no
+			#minor = no
 			history = "STN_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1326,7 +1326,7 @@ bookmark = {
 			}
 		}
 		"TPA" = {
-			minor = no
+			#minor = no
 			history = "TPA_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -1341,7 +1341,7 @@ bookmark = {
 			}
 		}
 		"BRA" = {
-			minor = no
+			#minor = no
 			history = "BRA_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -1356,7 +1356,7 @@ bookmark = {
 			}
 		}
 		"WPG" = {
-			minor = no
+			#minor = no
 			history = "WPG_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1526,7 +1526,7 @@ bookmark = {
 
 		# Majors
 		"WBH" = {
-			minor = no
+			#minor = no
 			history = "WBH_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1541,7 +1541,7 @@ bookmark = {
 			}
 		}
 		"BRK" = {
-			minor = no
+			#minor = no
 			history = "BRK_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1555,7 +1555,7 @@ bookmark = {
 			}
 		}
 		"TOC" = {
-			minor = no
+			#minor = no
 			history = "TOC_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1569,7 +1569,7 @@ bookmark = {
 			}
 		}
 		"ROT" = {
-			minor = no
+			#minor = no
 			history = "ROT_OWB_DESC"
 			ideology = people
 			ideas = {
@@ -1583,7 +1583,7 @@ bookmark = {
 			}
 		}
 		"TRL" = {
-			minor = no
+			#minor = no
 			history = "TRL_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -1596,7 +1596,7 @@ bookmark = {
 			}
 		}
 		"BDT" = {
-			minor = no
+			#minor = no
 			history = "BDT_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -1611,7 +1611,7 @@ bookmark = {
 			}
 		}
 		"HEA" = {
-			minor = no
+			#minor = no
 			history = "HEA_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -1786,7 +1786,7 @@ bookmark = {
 		}
 		"BLC" = {
 			history = "BLC_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = people
 			ideas = {
 				blc_caravan_13
@@ -1801,7 +1801,7 @@ bookmark = {
 		}
 		"BAG" = {
 			history = "BAG_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = intellectuals
 			ideas = {
 				bag_lost_expedition
@@ -1814,7 +1814,7 @@ bookmark = {
 		}
 		"LUM" = {
 			history = "LUM_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = elites
 			ideas = {
 				lum_singular_faith
@@ -1827,7 +1827,7 @@ bookmark = {
 		}
 		"WHD" = {
 			history = "WHD_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = ruler
 			ideas = {
 				whd_chinese_remnants
@@ -1841,7 +1841,7 @@ bookmark = {
 		}
 		"MXC" = {
 			history = "MXC_OWB_DESC"
-			minor = no
+			#minor = no
 			ideology = intellectuals
 			ideas = {
 				bunkerblues

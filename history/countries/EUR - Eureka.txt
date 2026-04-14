@@ -222,7 +222,7 @@ recruit_character = EUR_coastal_supplier
 recruit_character = EUR_trash_pile_scavenger
 recruit_character = EUR_portmaster_bander
 recruit_character = EUR_jeff_waters
-recruit_character = EUR_tiny_joe
+#recruit_character = EUR_tiny_joe # Role Replaced With A Different Broken Arrow Character #
 recruit_character = EUR_vega_poseidon
 recruit_character = EUR_commander_diablo
 recruit_character = EUR_jay_livard
@@ -247,8 +247,11 @@ recruit_character = EUR_george_jackson
 recruit_character = EUR_morgan_heath
 recruit_character = EUR_lisa_tess
 recruit_character = EUR_tom_barrow
+
+## Broken Arrow ##
 recruit_character = EUR_oscar_mccormick
 recruit_character = EUR_oregon_dot
+recruit_character = EUR_sullivan_mcclain
 
 every_unit_leader = {
 	set_unit_leader_flag = eureka_general

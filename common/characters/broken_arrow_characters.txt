@@ -276,45 +276,62 @@
 		name = boris_t_name
 		portraits = {
 			army = {
-			small = GFX_idea_boris_t
+				small = GFX_idea_boris_t
 			}
 		}
 		advisor = {
 			slot = cultural_advisor
 			idea_token = boris_t
 			allowed = {
-			original_tag = EUR
-		}
+				original_tag = EUR
+			}
 			traits = {
-			reformer
+				reformer
 			}
 			ai_will_do = {
-			factor = 1
+				factor = 1
 			}
 			visible = {
-			has_completed_focus = erx_broken_arrow_operation_mayflower
+				has_completed_focus = erx_broken_arrow_operation_mayflower
 			}
 		}
 	}
+	## Oscar McCormick ##
 	EUR_oscar_mccormick = {
-		name = EUR_oscar_mccormick_name
 		portraits = {
 			army = {
-			large = GFX_portrait_eur_oscar_mccormick_large
+				large = GFX_portrait_eur_oscar_mccormick_large
+				small = GFX_portrait_eur_oscar_mccormick_small
 			}
 			civilian = {
-			large = GFX_portrait_eur_oscar_mccormick_large
+				large = GFX_portrait_eur_oscar_mccormick_large
+				small = GFX_portrait_eur_oscar_mccormick_small
 			}
 		}
 	}
+	## Sullivan McClain ##
+	EUR_sullivan_mcclain = {
+		portraits = {
+			army = {
+				large = GFX_portrait_eur_sullivan_mcclain_large
+				small = GFX_portrait_eur_sullivan_mcclain_small
+			}
+			civilian = {
+				large = GFX_portrait_eur_sullivan_mcclain_large
+				small = GFX_portrait_eur_sullivan_mcclain_small
+			}
+		}
+	}
+
+
 	EUR_oregon_dot = {
 		name = EUR_oregon_dot_name
 		portraits = {
 			army = {
-			small = GFX_idea_EUR_ba_oregon_department_transportation_company
+				small = GFX_idea_EUR_ba_oregon_department_transportation_company
 			}
 			civilian = {
-			small = GFX_idea_EUR_ba_oregon_department_transportation_company
+				small = GFX_idea_EUR_ba_oregon_department_transportation_company
 			}
 		}
 		advisor = {
@@ -322,11 +339,11 @@
 			idea_token = EUR_oregon_dot_eco_advisor_token
 			cost = 50
 			available = { 
-			has_completed_focus = nf_ba_eur_oregon_industry_start
-			493 = { is_owned_and_controlled_by = ROOT }
-		}
+				has_completed_focus = nf_ba_eur_oregon_industry_start
+				493 = { is_owned_and_controlled_by = ROOT }
+			}
 			traits = {
-			oregon_department_transportation_company_trait
+				oregon_department_transportation_company_trait
 			}
 			research_bonus = { construction_category = 0.1 }
 		}

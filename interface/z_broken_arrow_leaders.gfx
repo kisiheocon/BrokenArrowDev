@@ -1,18 +1,33 @@
+######################
+### Characters GFX ###
+######################
 spriteTypes = {
-	#####################
-	###Characters GFXs###
-	#####################
-
-	###EUR###
-	##Oscar McCormick
-	#Large
+	### EUR ###
+	## Oscar McCormick ##
+	# Large #
 	spriteType = {
 		name = "GFX_portrait_eur_oscar_mccormick_large"
 		textureFile = "gfx/leaders/EUR/portrait_eur_oscar_mccormick_large.dds"
 	}
+	# Small #
+	spriteType = {
+		name = "GFX_portrait_eur_oscar_mccormick_small"
+		textureFile = "gfx/leaders/EUR/portrait_eur_oscar_mccormick_small.dds"
+	}
+	## Sullivan McClain ##
+	# Large #
+	spriteType = {
+		name = "GFX_portrait_eur_sullivan_mcclain_large"
+		textureFile = "gfx/leaders/EUR/portrait_eur_sullivan_mcclain_large.dds"
+	}
+	# Small #
+	spriteType = {
+		name = "GFX_portrait_eur_sullivan_mcclain_small"
+		textureFile = "gfx/leaders/EUR/portrait_eur_sullivan_mcclain_small.dds"
+	}
 
-	##Traits##
-	#Medal of Navarro
+	## Traits ##
+	# Medal of Navarro #
 	spriteType = {
 		name = "GFX_trait_EUR_BA_navarro_unit_leader_trait"
 		texturefile = "gfx/interface/traits/trait_inspirational_leader.dds"
