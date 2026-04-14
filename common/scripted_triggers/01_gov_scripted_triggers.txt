@@ -57,11 +57,11 @@ has_unique_officer_training_law = {
 		OR = {
 			# Tags
 			original_tag = TNK
+			original_tag = CES
+			original_tag = LAC
 			original_tag = ERB
-
 			# Currently Disabled for the sake of performance as it's unused. WARNING: reenabling will require editing the laws themselves somewhat @Tran
 			# has_country_flag = has_unique_officer_laws
-
 			# This trigger has been moved to the allowed section of the laws to save on performance which requires using the allowed block @Tran
 			# is_super_mutant_nation = yes
 			is_super_mutant_nation_allowed_block = yes
@@ -79,7 +79,11 @@ use_generic_army_training_laws = {
 
 has_unique_army_training_law = {
 	hidden_trigger = {
-		original_tag = TNK
+		OR = {
+			original_tag = TNK
+			original_tag = CES
+			original_tag = LAC
+		}
 	}
 }
 
@@ -99,10 +103,8 @@ has_unique_outsider_law = {
 			# This trigger has been moved to the allowed section of the laws to save on performance which requires using the allowed block @Tran
 			# is_brotherhood_nation_proper = yes
 			is_brotherhood_nation_proper_allowed_block = yes
-
-			# Currently Disabled for the sake of performance as it's unused. WARNING: reenabling will require editing the laws themselves somewhat @Tran
-			# has_country_flag = has_unique_outsider_laws
-
+			# Priorly Disabled for the sake of performance as it's unused. WARNING: reenabling will require editing the laws themselves somewhat @Tran
+			#has_country_flag = has_unique_outsider_laws
 			# This trigger has been moved to the allowed section of the laws to save on performance which requires using the allowed block @Tran
 			# is_enclave_nation_proper = yes
 			is_enclave_nation_proper_allowed_block = yes
@@ -125,7 +127,7 @@ has_unique_economic_law = {
 			original_tag = EUR
 			# Currently Disabled for the sake of performance in favor of the allowed check below. WARNING: reenabling will require editing the laws themselves somewhat @Tran
 			# has_country_flag = has_unique_economic_laws
-			is_nation_with_unique_economy_law = yes #ADD YOUR TAG HERE
+			is_nation_with_unique_economy_law = yes			#ADD YOUR TAG HERE
 		}
 	}
 }
@@ -158,6 +160,7 @@ use_generic_press_laws = {
 	hidden_trigger = {
 		NOT = {
 			has_unique_press_law = yes
+			has_BOS_unique_press_law = yes
 		}
 	}
 }
@@ -166,8 +169,9 @@ has_unique_press_law = {
 	hidden_trigger = {
 		OR = {
 			#Tag
-			original_tag = ACH
-			original_tag = BOS
+			original_tag = DED
+			original_tag = MLT
+			original_tag = RRR
 			original_tag = ERB
 			# Currently Disabled for the sake of performance as it's unused. WARNING: reenabling will require editing the laws themselves somewhat @Tran
 			# has_country_flag = has_unique_press_laws
@@ -175,19 +179,29 @@ has_unique_press_law = {
 	}
 }
 
-use_generic_slavery_laws = {
+has_BOS_unique_press_law = {
 	hidden_trigger = {
-		NOT = {
-			has_unique_slavery_law = yes
+		OR = {
+			#Tag
+			original_tag = ACH
+			original_tag = BOS
 		}
 	}
 }
 
-has_unique_slavery_law = {
+use_generic_centralization_laws = {
+	hidden_trigger = {
+		NOT = {
+			has_unique_centralization_law = yes
+		}
+	}
+}
+
+has_unique_centralization_law = {
 	hidden_trigger = {
 		OR = {
 			#Tags
-			has_country_flag = has_unique_slave_laws
+			has_country_flag = has_unique_centralization_laws
 		}
 	}
 }

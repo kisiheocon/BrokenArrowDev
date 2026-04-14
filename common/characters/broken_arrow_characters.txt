@@ -321,6 +321,16 @@
 				small = GFX_portrait_eur_sullivan_mcclain_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = EUR_sullivan_mcclain_high_command_token
+
+			allowed = { original_tag = EUR }
+			available = { has_completed_focus = erx_ba_oss_start }
+			cost = 100
+
+			traits = { settler_spymaster }
+		}
 	}
 
 

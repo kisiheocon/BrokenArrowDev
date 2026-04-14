@@ -5,23 +5,23 @@ spriteTypes = {
 	### EUR ###
 	## Oscar McCormick ##
 	# Large #
-	spriteType = {
+	spriteType = { # Credits to KX #
 		name = "GFX_portrait_eur_oscar_mccormick_large"
 		textureFile = "gfx/leaders/EUR/portrait_eur_oscar_mccormick_large.dds"
 	}
 	# Small #
-	spriteType = {
+	spriteType = { # Credits to KX #
 		name = "GFX_portrait_eur_oscar_mccormick_small"
 		textureFile = "gfx/leaders/EUR/portrait_eur_oscar_mccormick_small.dds"
 	}
 	## Sullivan McClain ##
 	# Large #
-	spriteType = {
+	spriteType = { # Credits to KX #
 		name = "GFX_portrait_eur_sullivan_mcclain_large"
 		textureFile = "gfx/leaders/EUR/portrait_eur_sullivan_mcclain_large.dds"
 	}
 	# Small #
-	spriteType = {
+	spriteType = { # Credits to KX #
 		name = "GFX_portrait_eur_sullivan_mcclain_small"
 		textureFile = "gfx/leaders/EUR/portrait_eur_sullivan_mcclain_small.dds"
 	}
