@@ -1375,8 +1375,6 @@ country_event = {
 	option = {
 		name = erx_broken_arrow_navarro.10.a
 		effect_tooltip = { #Just for showing the effects, the effects already given out in the immediate block - @Deez
-			recruit_character = EUR_oscar_mccormick
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = -20
 			add_stability = -0.03
 			add_war_support = -0.03
@@ -1387,17 +1385,20 @@ country_event = {
 				add_compliance = -5
 				add_resistance = 10
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = { # Better tooltip #
 				limit = { OR = { state = 216 state = 441 } }
+				give_resource_rights = { receiver = SHI state = THIS }
 				add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
 				force_update_dynamic_modifier = yes
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			give_resource_rights = { receiver = SHI state = 216 }
-			give_resource_rights = { receiver = SHI state = 441 }
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_opinion_modifier = { target = SHI modifier = protest_action_strong }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			show_unit_leaders_tooltip = EUR_oscar_mccormick
+			custom_effect_tooltip = EUR_oscar_mccormick_unit_leader_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_army_chief
+			show_ideas_tooltip = EUR_oscar_mccormick_army_chief_token
 			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_national_focus = erx_ba_navarro_shi_lose_0
 			complete_national_focus = erx_ba_navarro_shi_lose_1
