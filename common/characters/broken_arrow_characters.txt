@@ -321,6 +321,30 @@
 			traits = { eur_ba_authoritarian_tendencies_advisor_trait eur_ba_youthful_vigor_advisor_trait }
 		}
 	}
+	## Elias "Hawk" Mercer ##
+	EUR_BA_elias_mercer = {
+		portraits = {
+			army = {
+				large = GFX_portrait_eur_elias_mercer_large
+				small = GFX_portrait_eur_elias_mercer_small
+			}
+			civilian = {
+				large = GFX_portrait_eur_elias_mercer_large
+				small = GFX_portrait_eur_elias_mercer_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = EUR_BA_elias_mercer_high_command_token
+			ledger = army
+
+			allowed = { original_tag = EUR }
+			cost = 100
+
+			traits = { frontline_operative }
+		}
+	}
 	## Sullivan McClain ##
 	EUR_sullivan_mcclain = {
 		portraits = {
@@ -345,28 +369,23 @@
 		}
 	}
 
-
+	## Oregon Department of Transportation ##
 	EUR_oregon_dot = {
-		name = EUR_oregon_dot_name
 		portraits = {
-			army = {
-				small = GFX_idea_EUR_ba_oregon_department_transportation_company
-			}
-			civilian = {
-				small = GFX_idea_EUR_ba_oregon_department_transportation_company
-			}
+			army = { small = GFX_idea_EUR_ba_oregon_department_transportation_company }
+			civilian = { small = GFX_idea_EUR_ba_oregon_department_transportation_company }
 		}
 		advisor = {
 			slot = economic_advisor
 			idea_token = EUR_oregon_dot_eco_advisor_token
-			cost = 50
+
 			available = { 
 				has_completed_focus = nf_ba_eur_oregon_industry_start
 				493 = { is_owned_and_controlled_by = ROOT }
 			}
-			traits = {
-				oregon_department_transportation_company_trait
-			}
+			cost = 50
+
+			traits = { oregon_department_transportation_company_trait }
 			research_bonus = { construction_category = 0.1 }
 		}
 	}

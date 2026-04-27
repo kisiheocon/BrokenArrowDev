@@ -168,7 +168,12 @@ focus_tree = {
 		prerequisite = { focus = erx_broken_arrow_local_affairs }
 		available = { intellectuals > 0.50 }
 
-		completion_reward = { country_event = erx_broken_arrow.8 }
+		completion_reward = {
+			country_event = erx_broken_arrow.8
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = eur_ba_granite_off_field_tt
+			clr_country_flag = eur_ba_granite_on_field_flag
+		}
 	}
 
 	## A New Administration ##

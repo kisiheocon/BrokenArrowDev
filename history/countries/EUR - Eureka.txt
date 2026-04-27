@@ -214,6 +214,7 @@ add_to_array = {
 recruit_character = EUR_sullivan_mcclain
 recruit_character = EUR_oscar_mccormick
 recruit_character = EUR_oregon_dot
+recruit_character = EUR_BA_elias_mercer
 
 ## Vanilla OWB ##
 
@@ -231,7 +232,7 @@ recruit_character = EUR_trash_pile_scavenger
 recruit_character = EUR_jeff_waters
 #recruit_character = EUR_tiny_joe # Role Replaced With A Different Broken Arrow Character #
 recruit_character = EUR_vega_poseidon
-recruit_character = EUR_commander_diablo
+#recruit_character = EUR_commander_diablo # Role Replaced With A Different Broken Arrow Character #
 recruit_character = EUR_jay_livard
 recruit_character = EUR_even_eleven
 recruit_character = EUR_land_doctrine_guy
@@ -258,6 +259,21 @@ recruit_character = EUR_tom_barrow
 every_unit_leader = {
 	set_unit_leader_flag = eureka_general
 }
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = EUR_BA_elias_mercer
+		gfx = GFX_portrait_eur_elias_mercer_large
+		skill = 3
+		traits = { operative_ninja }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		gender = male
+		nationalities = { EUR ERB }
+	}
+}
+
 
 set_variable = {
 	bribe_cost = 30

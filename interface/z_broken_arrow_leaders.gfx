@@ -25,6 +25,40 @@ spriteTypes = {
 		name = "GFX_portrait_eur_sullivan_mcclain_small"
 		textureFile = "gfx/leaders/EUR/portrait_eur_sullivan_mcclain_small.dds"
 	}
+	### Douglass Granite ### # Credits to Duke Horner #
+	## Army ##
+	# Large #
+	spriteType = {
+		name = "GFX_portrait_eur_douglas_granite_army_large"
+		textureFile = "gfx/leaders/EUR/portrait_eur_douglas_granite_army_large.dds"
+	}
+	# Small #
+	spriteType = {
+		name = "GFX_portrait_eur_douglas_granite_army_small"
+		textureFile = "gfx/leaders/EUR/portrait_eur_douglas_granite_army_small.dds"
+	}
+	## Civilian ##
+	# Large #
+	spriteType = {
+		name = "GFX_portrait_eur_douglas_granite_civilian_large"
+		textureFile = "gfx/leaders/EUR/portrait_eur_douglas_granite_civilian_large.dds"
+	}
+	# Small #
+	spriteType = {
+		name = "GFX_portrait_eur_douglas_granite_civilian_small"
+		textureFile = "gfx/leaders/EUR/portrait_eur_douglas_granite_civilian_small.dds"
+	}
+	### Elias "Hawk" Mercer ###
+	# Large #
+	spriteType = {
+		name = "GFX_portrait_eur_elias_mercer_large"
+		textureFile = "gfx/leaders/EUR/portrait_eur_elias_mercer_large.dds"
+	}
+	# Small #
+	spriteType = {
+		name = "GFX_portrait_eur_elias_mercer_small"
+		textureFile = "gfx/leaders/EUR/portrait_eur_elias_mercer_small.dds"
+	}
 
 	## Traits ##
 	# Medal of Navarro #

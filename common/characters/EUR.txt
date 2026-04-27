@@ -2,10 +2,16 @@ characters = {
 	MCA_Douglas_Granite = {
 		name = ERB_GRANITE_NAME
 		portraits = {
+			army = {
+				large = GFX_portrait_eur_douglas_granite_army_large
+				small = GFX_portrait_eur_douglas_granite_army_small
+			}
 			civilian = {
-				large = GFX_Portrait_EUR_douglas_enclave
+				large = GFX_portrait_eur_douglas_granite_civilian_large
+				small = GFX_portrait_eur_douglas_granite_civilian_small
 			}
 		}
+
 		country_leader = {
 			desc = EUR_BA_granite_desc
 			ideology = technocracy
@@ -13,6 +19,28 @@ characters = {
 			traits = {
 				EUR_BA_authoritarian_tendencies_country_leader_trait
 				EUR_BA_president_level_1_country_leader_trait
+			}
+		}
+
+		field_marshal = {
+			desc = EUR_BA_granite_desc
+			visible = {
+				OR = {
+					is_debug = yes
+					has_country_flag = eur_ba_granite_on_field_flag
+				}
+			}
+
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				EUR_BA_youthful_vigor_unit_leader_trait
+				EUR_BA_authoritarian_tendencies_unit_leader_trait
+				cult_of_personality_trait
+				ferocious_loyalty_trait
 			}
 		}
 	}
@@ -353,29 +381,29 @@ characters = {
 			}
 		}
 	}
-	EUR_commander_diablo = {
-		name = EUR_commander_diablo
-		portraits = {
-			army = {
-				small = GFX_idea_enclave_advisor_1
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = EUR_commander_diablo_idea_token
-			ledger = army
-			allowed = {
-				original_tag = EUR
-			}
-			traits = {
-				frontline_operative
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 10
-			}
-		}
-	}
+	#EUR_commander_diablo = {
+	#	name = EUR_commander_diablo
+	#	portraits = {
+	#		army = {
+	#			small = GFX_idea_enclave_advisor_1
+	#		}
+	#	}
+	#	advisor = {
+	#		slot = high_command
+	#		idea_token = EUR_commander_diablo_idea_token
+	#		ledger = army
+	#		allowed = {
+	#			original_tag = EUR
+	#		}
+	#		traits = {
+	#			frontline_operative
+	#		}
+	#		cost = 100
+	#		ai_will_do = {
+	#			factor = 10
+	#		}
+	#	}
+	#}
 	EUR_jay_livard = {
 		name = EUR_jay_livard
 		portraits = {
