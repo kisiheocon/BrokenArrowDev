@@ -44,3 +44,9 @@ erx_ba_warplan_brown_upgrade_scripted_effect = {
 		}
 	}
 }
+
+erx_ba_update_kimball_desc = {
+	NCR = {
+		set_country_leader_description = { desc = NCR_BA_kimball_desc }
+	}
+}

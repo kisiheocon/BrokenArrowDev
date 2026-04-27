@@ -24,6 +24,7 @@ on_actions = {
 					name = "Mariposa Military Base Ruins"
 				}
 			}
+			erx_ba_update_kimball_desc = yes
 		}
 	}
 	on_peaceconference_ended = {
