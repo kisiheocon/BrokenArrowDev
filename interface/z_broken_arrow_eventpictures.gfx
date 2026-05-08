@@ -65,10 +65,10 @@ spriteTypes = {
 	}
 
 	###Escape from Sierra### - WOOHOO OUR FIRST COMMISSIONED ART
-	spriteType = {
-		name = "GFX_event_escape_from_sierra_event_pic"
-		texturefile = "gfx/event_pictures/escape_from_sierra.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_event_escape_from_sierra_event_pic"
+	#	texturefile = "gfx/event_pictures/escape_from_sierra.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_event_attis_west"
@@ -85,5 +85,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_legacy_of_yorktown"
 		texturefile = "gfx/event_pictures/legacy_of_yorktown.dds"
+	}
+
+	### Office of Strategic Services ###
+	spriteType = {
+		name = "GFX_event_oss"
+		texturefile = "gfx/event_pictures/broken_arrow_oss.dds"
 	}
 }

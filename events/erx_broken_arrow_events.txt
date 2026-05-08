@@ -5,6 +5,7 @@ add_namespace = erx_broken_arrow_navarro
 add_namespace = erx_broken_arrow_mariposa
 add_namespace = erx_broken_arrow_incep
 add_namespace = erx_broken_arrow_event_oregon
+add_namespace = erx_broken_arrow_warplan_brown_event
 
 
 #debug event
@@ -2019,6 +2020,48 @@ country_event = {
 		name = erx_broken_arrow_event_oregon.5.a
 		effect_tooltip = {
 			add_ideas = eur_oregon_cannibal
+		}
+	}
+}
+### War Plan Brown ###
+## The Illusion of Choice ##
+country_event = {
+	id = erx_broken_arrow_warplan_brown_event.0
+	title = erx_broken_arrow_warplan_brown_event.0.title
+	desc = erx_broken_arrow_warplan_brown_event.0.desc
+	picture = GFX_event_NCR_watch
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_warplan_brown_event.0.a
+		effect_tooltip = {
+			complete_national_focus = nf_ba_prep_ncr_start
+			custom_effect_tooltip = generic_skip_one_line_tt
+			activate_decision = ba_local_affairs_warprep_ncr_decision
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nf_ba_prep_ncr_start_tt
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_0_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_1_decision
+			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_2_decision
+		}
+	}
+}
+
+## Reinstating The National Security Act Of 1947 ##
+country_event = {
+	id = erx_broken_arrow_warplan_brown_event.1
+	title = erx_broken_arrow_warplan_brown_event.1.title
+	desc = erx_broken_arrow_warplan_brown_event.1.desc
+	picture = GFX_event_oss
+
+	is_triggered_only = yes
+
+	option = {
+		name = erx_broken_arrow_warplan_brown_event.0.a
+		swap_ideas = {
+			remove_idea = erx_ba_oss_tier_0
+			add_idea = erx_ba_oss_tier_1
 		}
 	}
 }

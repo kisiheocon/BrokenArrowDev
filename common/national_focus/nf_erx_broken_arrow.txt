@@ -1307,6 +1307,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = nf_ba_prep_ncr_intro_tt
 			unlock_decision_tooltip = {
 				decision = ba_local_affairs_intercept_ncr_decision
 				show_effect_tooltip = yes
@@ -1347,6 +1348,13 @@ focus_tree = {
 			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_0_decision
 			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_1_decision
 			unlock_decision_tooltip = erx_ba_oss_ncr_warplan_brown_2_decision
+
+			hidden_effect = {
+				country_event = {
+					id = erx_broken_arrow_warplan_brown_event.1
+					days = 30
+				}
+			}
 		}
 	}
 
