@@ -456,7 +456,7 @@ erx_broken_arrow_navarro_cat = {
 				target = NVT
 				modifier = free_folk_side_opinion_modifier
 			}
-		add_opinion_modifier = {
+			add_opinion_modifier = {
 				target = EUR
 				modifier = eureka_side_trade_modifier
 			}
@@ -507,7 +507,7 @@ erx_broken_arrow_navarro_cat = {
 		fire_only_once = no
 
 		days_remove = 25
-		modifier = { send_volunteer_size = 1 }
+		modifier = { send_volunteer_size = 2 }
 	}
 	navarro_ncr_attack_warning_mission = {
 		icon = GFX_decision_border_war
@@ -537,6 +537,7 @@ erx_broken_arrow_navarro_cat = {
 				country_event = erx_broken_arrow_navarro.4
 				activate_mission = navarro_survive_ncr
 				custom_effect_tooltip = navarro_ncr_attack_warning_mission_tt
+				hidden_effect = { add_ideas = ba_EUR_navarro_buff_hidden_idea }
 			}
 			else = {
 				declare_war_on = {
@@ -579,7 +580,8 @@ erx_broken_arrow_navarro_cat = {
 					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war part 2
 					days = 15
 				}
-				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission }  #Mission timer for Shi border war - 20 days until outbreak
+				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } #Mission timer for Shi border war - 20 days until outbreak
+				remove_ideas = ba_EUR_navarro_buff_hidden_idea
 			}
 		}
 		timeout_effect = {
@@ -595,7 +597,8 @@ erx_broken_arrow_navarro_cat = {
 					id = erx_broken_arrow_navarro.7 #Buildup event for Shi border war
 					days = 15
 				}
-				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } 
+				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission }
+				remove_ideas = ba_EUR_navarro_buff_hidden_idea
 			}
 		}
 	}
@@ -1012,7 +1015,7 @@ erx_broken_arrow_development_oregon_cat = {
 			add_manpower = 400
 			358 = {
 				set_temp_variable = { pop_add = 2000 }
-                add_state_population_no_state_name = yes
+				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1087,7 +1090,7 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 			37 = {
 				set_temp_variable = { pop_add = 3000 }
-                add_state_population_no_state_name = yes
+				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex

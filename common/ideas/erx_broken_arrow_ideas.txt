@@ -32,32 +32,37 @@ ideas = {
 			modifier = {
 				caps_flat_income_modifier = -20
 				civilian_factory_use = 10
-			mobilization_speed = 0.2
-			modifier_army_sub_unit_heavy_infantry_attack_factor = 0.1
-			modifier_army_sub_unit_heavy_infantry_defence_factor = 0.1
+				mobilization_speed = 0.2
+				modifier_army_sub_unit_heavy_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_heavy_infantry_defence_factor = 0.1
 			}
 		}
 		ba_EUR_oregon_military_department_army_academy_hidden_idea = {
 			modifier = {
-			experience_gain_army = 0.1
+				experience_gain_army = 0.1
 			}
 		}
 		ba_EUR_oregon_military_department_civil_hidden_idea = {
 			modifier = {
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
 		ba_EUR_oregon_military_department_air_academy_hidden_idea = {
 			modifier = {
-			experience_gain_air = 0.1
-			air_ace_generation_chance_factor = 0.15
+				experience_gain_air = 0.1
+				air_ace_generation_chance_factor = 0.15
 			}
 		}
 		ba_EUR_oregon_military_department_naval_militia_hidden_idea = {
 			modifier = {
-			experience_gain_navy = 0.1
+				experience_gain_navy = 0.1
 			}
+		}
+
+		## Hidden buff to take Redding Easier ##
+		ba_EUR_navarro_buff_hidden_idea = {
+			modifier = { river_crossing_factor = -0.6 }
 		}
 	}
 	country = {
@@ -771,12 +776,7 @@ ideas = {
 		#####Local/Regional Economics
 		eur_ncr_eco_low = {
 			picture = eur_ncr_eco_low
-			cancel = {
-				OR = {
-					has_war_with = NCR
-					NCR = { exists = no }
-				}
-			}
+			cancel = { NCR = { exists = no } }
 			targeted_modifier = {
 				tag = NCR
 				cic_to_target_factor = 0.05
@@ -788,12 +788,7 @@ ideas = {
 
 		eur_ncr_eco_mid_1 = {
 			picture = eur_ncr_eco_mid
-			cancel = {
-				OR = {
-					has_war_with = NCR
-					NCR = { exists = no }
-				}
-			}
+			cancel = { NCR = { exists = no } }
 			targeted_modifier = {
 				tag = NCR
 				cic_to_target_factor = 0.1
@@ -805,12 +800,7 @@ ideas = {
 
 		eur_ncr_eco_mid_2 = {
 			picture = eur_ncr_eco_mid
-			cancel = {
-				OR = {
-					has_war_with = NCR
-					NCR = { exists = no }
-				}
-			}
+			cancel = { NCR = { exists = no } }
 			modifier = { production_speed_buildings_factor = 0.05 }
 			targeted_modifier = {
 				tag = NCR
@@ -823,12 +813,7 @@ ideas = {
 
 		eur_ncr_eco_high = {
 			picture = eur_ncr_eco_high
-			cancel = {
-				OR = {
-					has_war_with = NCR
-					NCR = { exists = no }
-				}
-			}
+			cancel = { NCR = { exists = no } }
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				stability_factor = 0.05

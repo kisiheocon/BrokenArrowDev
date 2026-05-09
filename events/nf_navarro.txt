@@ -207,6 +207,7 @@ news_event = {
 				}
 				add_civil_war_target = NAT
 				load_oob = free_folk_2275
+				load_oob = free_folk_2275
 
 			}
 			NVT = {
