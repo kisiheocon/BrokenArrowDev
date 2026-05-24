@@ -2,8 +2,8 @@
 	name = "NCREF Troopers"
 	template_counter = 84
 	regiments = {
-		infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
-		infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 }
 		infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 }
 	}
 	support = {
@@ -18,7 +18,7 @@ division_template = {
 	regiments = {
 		spec_ops = { x = 0 y = 0 } spec_ops = { x = 1 y = 0 }
 		spec_ops = { x = 0 y = 1 } spec_ops = { x = 1 y = 1 }
-		spec_ops = { x = 0 y = 2 } spec_ops = { x = 1 y = 2 }
+		spec_ops = { x = 0 y = 2 }
 	}
 	support = {
 		recon_company = { x = 0 y = 0 }
@@ -29,35 +29,35 @@ division_template = {
 
 units = {
 	division = {
-		name = "9th NCREF Troopers"
+		name = "2nd NCREF Troopers"
 		location = 7152
 		division_template = "NCREF Troopers"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "10th NCREF Troopers"
+		name = "4thth NCREF Troopers"
 		location = 7152
 		division_template = "NCREF Troopers"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "12nd NCREF Troopers"
+		name = "5th NCREF Troopers"
 		location = 7152
 		division_template = "NCREF Troopers"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.6
 	}
 	division = {
-		name = "3rd NCREF Rangers"
+		name = "2nd NCREF Rangers"
 		location = 7152
 		division_template = "NCREF Rangers"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.6
 	}
 	division = {
-		name = "5th NCREF Rangers"
+		name = "3th NCREF Rangers"
 		location = 7152
 		division_template = "NCREF Rangers"
 		start_experience_factor = 0.9

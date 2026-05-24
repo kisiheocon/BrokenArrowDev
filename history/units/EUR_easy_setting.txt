@@ -15,18 +15,14 @@
 
 units = {
 	division = {
-		division_name = {
-			is_name_ordered = yes
-		}
+		division_name = { is_name_ordered = yes }
 		location = 1191
 		division_template = "Power Armor Company"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		division_name = {
-			is_name_ordered = yes
-		}
+		division_name = { is_name_ordered = yes }
 		location = 1191
 		division_template = "Power Armor Company"
 		start_experience_factor = 0.3
