@@ -15,7 +15,7 @@ division_template = {
 	}
 }
 units = {
-		division = {
+	division = {
 		name = "Arroyo-Guard"
 		location = 2722
 		division_template = "Settlement-Guard"

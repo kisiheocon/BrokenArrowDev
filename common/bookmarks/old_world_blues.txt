@@ -52,8 +52,48 @@ bookmarks = {
 				ces_triumph
 			}
 		}
-
-		"ERB"={
+		"BOS" = {
+			history = "BOS_OWB_DESC"
+			ideology = intellectuals
+			ideas = {
+				bos_underground_hangars
+				bos_army_confusion_4
+				bos_civilian_distrust
+			}
+			focuses = {
+				bos_nf_new_expeditions
+				bos_nf_taking_back_california
+				bos_nf_purpose_fulfilled
+			}
+		}
+		"SHI" = {
+			history = "SHI_OWB_DESC"
+			ideology = elites
+			ideas = {
+				shi_ghosts_of_the_pacific
+				SHI_the_emperor
+				shi_battle_for_streets
+			}
+			focuses = {
+				shi_dragon_assert_ncr
+				shi_steel_bosification
+				shi_crane_join_ncr
+			}
+		}
+		#"NEW" = {
+		#	history = "NEW_OWB_DESC"
+		#	ideology = people
+		#	ideas = {
+		#		NEW_a_city_of_sin
+		#		NEW_tourist_economy
+		#	}
+		#	focuses = {
+		#		new_queen_of_reno
+		#		new_renoproclamation
+		#		new_brokenpurge
+		#	}
+		#}
+		"ERB" = {
 			history = "ERB_OWB_DESC"
 			ideology = ruler
 			ideas = {
@@ -65,33 +105,6 @@ bookmarks = {
 				enc_purity
 				erx_broken_arrow_granite_bookmark
 				enc_reform
-			}
-		}
-
-#		"NAV" = {
-#			history = "NAV_OWB_DESC"
-#			ideology = ruler
-#			ideas = {
-#			}
-#			focuses = {
-#				NAV_fight_some_more_forever
-#				NAV_caesar_legion
-#				NAV_dinetah_1
-#			}
-#		}
-
-		"BOS" = {
-			history = "BOS_OWB_DESC"
-			ideology = intellectuals
-			ideas = {
-				bos_underground_hangars
-				bos_army_confusion_4
-				bos_civilian_distrust
-			}
-			focuses = {
-				bos_nf_learning_from_the_ncr_bos_war
-				bos_nf_taking_back_california
-				bos_nf_purpose_fulfilled
 			}
 		}
 		"VLT" = {
@@ -109,20 +122,32 @@ bookmarks = {
 			}
 		}
 
+#		"NAV" = {
+#			history = "NAV_OWB_DESC"
+#			ideology = ruler
+#			ideas = {
+#			}
+#			focuses = {
+#				NAV_fight_some_more_forever
+#				NAV_caesar_legion
+#				NAV_dinetah_1
+#			}
+#		}
+
 		#Minor
-		"ARR" = {
-			minor = yes
-			history = "ARR_OWB_DESC"
-			ideology = ruler
-			ideas = {
-				ARR_legacy_of_the_dweller
-			}
-			focuses = {
-				arr_finding_the_geck
-				arr_meet_max_sec
-				arr_building_a_nation
-			}
-		}
+		#"ARR" = {
+		#	minor = yes
+		#	history = "ARR_OWB_DESC"
+		#	ideology = ruler
+		#	ideas = {
+		#		ARR_legacy_of_the_dweller
+		#	}
+		#	focuses = {
+		#		arr_finding_the_geck
+		#		arr_meet_max_sec
+		#		arr_building_a_nation
+		#	}
+		#}
 		"TVT" = {
 			minor = yes
 			history = "TVT_OWB_DESC" #Made last minute for release. Can be changed
@@ -221,6 +246,7 @@ bookmarks = {
 			}
 		}
 		"EUR" = {
+			minor = yes
 			history = "EUR_OWB_DESC"
 			ideology = elites
 			ideas = {
@@ -1026,7 +1052,7 @@ bookmark = {
 	desc = "RUSHMORE_NAME_DESC"
 	date = 2275.1.1.12
 	picture = "GFX_rushmore_bookmark"
-	default_country = "RCK"
+	default_country = "ROS"
 	default = no
 
 	effect = {
@@ -1034,18 +1060,19 @@ bookmark = {
 		#123 = { rain_light = yes }
 	}
 
-	"RCK" = {
-		history = "RCK_OWB_DESC"
+	"ROS" = {
+		history = "ROS_OWB_DESC"
 		#minor = no
-		ideology = ruler
+		ideology = people
 		ideas = {
-			RCK_manpower_agreement
-			RCK_roach_king_1
+			ros_pacifism
+			ros_EPA_idea
+			ros_electrophobia
 		}
 		focuses = {
-			RCK_vault_cracking
-			RCK_the_king_is_dead
-			RCK_to_the_capital_wasteland
+			ROS_knights_of_hephaestus
+			ROS_EPA
+			ROS_decentralized
 		}
 	}
 	"MNC" = {
@@ -1093,21 +1120,6 @@ bookmark = {
 			khan_esen_intro
 		}
 	}
-	"WYR" = {
-		history = "WYR_OWB_DESC"
-		#minor = no
-		ideology = elites
-		ideas = {
-			wyr_economical
-			wyr_elite_mercenaries
-			wyr_marshall_defense
-		}
-		focuses = {
-			WYR_slash_and_burn
-			WYR_a_chip
-			WYR_stmatthewsdue
-		}
-	}
 	"SIE" = {
 		history = "SIE_OWB_DESC"
 		#minor = no
@@ -1135,75 +1147,21 @@ bookmark = {
 			MCA_commies
 		}
 	}
+	"RCK" = {
+		history = "RCK_OWB_DESC"
+		#minor = no
+		ideology = ruler
+		ideas = {
+			RCK_manpower_agreement
+			RCK_roach_king_1
+		}
+		focuses = {
+			RCK_vault_cracking
+			RCK_the_king_is_dead
+			RCK_to_the_capital_wasteland
+		}
+	}
 	#Minor
-	"PRO" = {
-		history = "PRO_OWB_DESC"
-		minor = yes
-		ideology = ruler
-		ideas = {
-			sie_mole_miner_nation
-		}
-		focuses = {
-			pro_out_of_the_mine
-			pro_rockets_red_glare
-			pro_atomic_mining_techniques
-		}
-	}
-	"STM" = {
-		minor = yes
-		history = "STM_OWB_DESC"
-		ideology = ruler
-		ideas = {
-			STM_sky_war
-			stm_god_happy
-		}
-		focuses = {
-			STM_wasteland_macarthur
-			STM_chariots_of_god
-			STM_great_white_north
-		}
-	}
-	"HVR" = {
-		minor = yes
-		history = "HVR_OWB_DESC"
-		ideology = people
-		ideas = {
-			hvr_beast_of_america
-			mdm_middlemark_support
-		}
-		focuses = {
-			HVR_remember_old_dues
-			HVR_americas_grace
-			HVR_landing_pad
-		}
-	}
-	"MET" = {
-		history = "MET_OWB_DESC"
-		minor = yes
-		ideology = ruler
-		ideas = {
-			metal_salvaged_corpses
-			MET_cybernetics_son
-		}
-		focuses = {
-			MET_youcantkillthemetal
-			MET_meeting_the_wolf
-			MET_masters_of_montana
-		}
-	}
-	"JCK" = {
-		minor = yes
-		history = "JCK_OWB_DESC"
-		ideology = people
-		ideas = {
-			jackson_family_ties
-		}
-		focuses = {
-			jck_kill_the_ruminators
-			jck_welcome_back
-			jck_friends_out_west
-		}
-	}
 	"NIT" = {
 		history = "NIT_OWB_DESC"
 		minor = yes
@@ -1218,17 +1176,32 @@ bookmark = {
 			NIT_decide_focus
 		}
 	}
-	"BTH" = {
-		history = "BTH_OWB_DESC"
+	#"STM" = {
+	#	minor = yes
+	#	history = "STM_OWB_DESC"
+	#	ideology = ruler
+	#	ideas = {
+	#		STM_sky_war
+	#		stm_god_happy
+	#	}
+	#	focuses = {
+	#		STM_wasteland_macarthur
+	#		STM_chariots_of_god
+	#		STM_great_white_north
+	#	}
+	#}
+	"MET" = {
+		history = "MET_OWB_DESC"
 		minor = yes
-		ideology = people
+		ideology = ruler
 		ideas = {
-			ruminator_book
+			metal_salvaged_corpses
+			MET_cybernetics_son
 		}
 		focuses = {
-			bth_a_place_for_everyone
-			bth_listen_to_the_fireflies
-			bth_much_ado_about_saints
+			MET_youcantkillthemetal
+			MET_meeting_the_wolf
+			MET_masters_of_montana
 		}
 	}
 	"MRR" = {
@@ -1245,6 +1218,75 @@ bookmark = {
 			mrr_free_states_legacy
 		}
 	}
+	"WYR" = {
+		history = "WYR_OWB_DESC"
+		minor = yes
+		ideology = elites
+		ideas = {
+			wyr_economical
+			wyr_elite_mercenaries
+			wyr_marshall_defense
+		}
+		focuses = {
+			WYR_slash_and_burn
+			WYR_a_chip
+			WYR_stmatthewsdue
+		}
+	}
+	"PRO" = {
+		history = "PRO_OWB_DESC"
+		minor = yes
+		ideology = ruler
+		ideas = {
+			sie_mole_miner_nation
+		}
+		focuses = {
+			pro_out_of_the_mine
+			pro_rockets_red_glare
+			pro_atomic_mining_techniques
+		}
+	}
+	"JCK" = {
+		minor = yes
+		history = "JCK_OWB_DESC"
+		ideology = people
+		ideas = {
+			jackson_family_ties
+		}
+		focuses = {
+			jck_kill_the_ruminators
+			jck_welcome_back
+			jck_friends_out_west
+		}
+	}
+	"BTH" = {
+		history = "BTH_OWB_DESC"
+		minor = yes
+		ideology = people
+		ideas = {
+			ruminator_book
+		}
+		focuses = {
+			bth_a_place_for_everyone
+			bth_listen_to_the_fireflies
+			bth_much_ado_about_saints
+		}
+	}
+	"HVR" = {
+		minor = yes
+		history = "HVR_OWB_DESC"
+		ideology = people
+		ideas = {
+			hvr_beast_of_america
+			mdm_middlemark_support
+		}
+		focuses = {
+			HVR_remember_old_dues
+			HVR_americas_grace
+			HVR_landing_pad
+		}
+	}
+
 
 	"---" = {
 		history = "OTHER_OWB_DESC"
@@ -1525,6 +1567,21 @@ bookmark = {
 		}
 
 		# Majors
+		"HEA" = {
+			#minor = no
+			history = "HEA_OWB_DESC"
+			ideology = ruler
+			ideas = {
+				hea_nucleus_level_1
+				hea_theocratic_elite
+				hea_steam_powered_weapons
+			}
+			focuses = {
+				hea_michael_sunday_coup
+				hea_conclave_supreme
+				hea_nucleus_new_steam_age
+			}
+		}
 		"WBH" = {
 			#minor = no
 			history = "WBH_OWB_DESC"
@@ -1608,20 +1665,6 @@ bookmark = {
 				bdt_hail_to_the_king
 				bdt_road_warriors_of_the_eighty_four
 				bdt_listen_to_the_pilgrims
-			}
-		}
-		"HEA" = {
-			#minor = no
-			history = "HEA_OWB_DESC"
-			ideology = ruler
-			ideas = {
-				hea_steam_power
-				hea_theocratic_elite_good_1
-			}
-			focuses = {
-				hea_nf_age_of_steam
-				hea_nf_grand_cathedral
-				hea_nf_innocence_lost_deal
 			}
 		}
 

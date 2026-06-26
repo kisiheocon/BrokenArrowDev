@@ -22,7 +22,6 @@ GRD_brotherhood = {
 	color = rgb { 39 0 97 }
 	color_ui = rgb { 39 0 97 }
 }
-
 SOK_navarro = {
 	color = rgb { 0 78 102 }
 	color_ui = rgb { 0 78 102 }
@@ -34,6 +33,11 @@ MXC_chapter = {
 }
 
 MXC_colorado = {
+	color = rgb { 0 39 104 }
+	color_ui = rgb { 0 39 104 }
+}
+
+MXC_brotherhood = {
 	color = rgb { 0 39 104 }
 	color_ui = rgb { 0 39 104 }
 }
@@ -914,7 +918,17 @@ HGH_NCN = {
 	color_ui = rgb { 237 211 166 }
 }
 
-### Heaven's Gate
+### Heaven's Guard (Heaven's Gate)
+
+HEA_CON = {
+	color = rgb { 125 196 26 }
+	color_ui = rgb { 125 196 26 }
+}
+
+HEA_SOH = {
+	color = rgb { 0 0 153 }
+	color_ui = rgb { 0 0 153 }
+}
 
 IRE_HEA = {
 	color = rgb { 225 225 225 }
@@ -1208,10 +1222,10 @@ SHI_BOS = {
 	color_ui = rgb { 192 38 0 }
 }
 
-SHI_Closed_Fist = {
-	color = rgb { 206 0 48 }
-	color_ui = rgb { 206 0 48 }
-}
+#SHI_Closed_Fist = {
+#	color = rgb { 206 0 48 }
+#	color_ui = rgb { 206 0 48 }
+#}
 
 NCR_shady_sands = {
 	color = rgb { 153 76 0 }
@@ -1747,6 +1761,11 @@ ROB_republic = {
 	color = rgb { 191 0 0 }
 	color_ui = rgb { 191 0 9 }
 }
+#Broken Hearts
+BRT_starman = {
+	color = rgb { 196 0 0 }
+	color_ui = rgb { 196 0 0 }
+}
 #Redding
 RDS_People_Republic = {
 	color = rgb { 255 51 51}
@@ -1900,6 +1919,10 @@ MTC_RED_RIVER = {
 ROS_republic = {
 	color = rgb { 70 175 120 }
 	color_ui = rgb { 70 175 120 }
+}
+ROS_monad = {
+	color = rgb { 170 175 120 }
+	color_ui = rgb { 170 175 120 }
 }
 #OLY
 OLY_erebus = {
@@ -2230,6 +2253,10 @@ MET_masters = {
 HST_academics = {
 	color = rgb { 125 25 125 }
 	color_ui = rgb { 125 25 125 }
+}
+HST_american_historical_association = {
+	color = rgb { 225 10 50 }
+	color_ui = rgb { 225 10 50 }
 }
 BGR_union = {
 	color = rgb { 144 77 100 }
