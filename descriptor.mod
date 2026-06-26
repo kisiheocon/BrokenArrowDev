@@ -11,5 +11,5 @@ dependencies={
 }
 name="ERX Broken Arrow"
 picture="Thumbnail.png"
-supported_version="1.17.*"
+supported_version="1.19.*"
 remote_file_id="3116919391"
