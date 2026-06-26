@@ -583,6 +583,7 @@ erx_broken_arrow_navarro_cat = {
 				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission } #Mission timer for Shi border war - 20 days until outbreak
 				remove_ideas = ba_EUR_navarro_buff_hidden_idea
 			}
+			set_truce = { target = NCR days = 1460 }
 		}
 		timeout_effect = {
 			white_peace = NCR
@@ -600,6 +601,7 @@ erx_broken_arrow_navarro_cat = {
 				SHI = { activate_mission = navarro_eur_shi_border_war_warning_mission }
 				remove_ideas = ba_EUR_navarro_buff_hidden_idea
 			}
+			set_truce = { target = NCR days = 1460 }
 		}
 	}
 	navarro_eur_shi_border_war_warning_mission = {

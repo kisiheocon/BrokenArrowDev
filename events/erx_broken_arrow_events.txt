@@ -1286,6 +1286,7 @@ country_event = {
 		show_ideas_tooltip = EUR_oscar_mccormick_army_chief_token
 		custom_effect_tooltip = generic_skip_one_line_tt
 		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
+		set_truce = { target = SHI days = 1460 }
 	}
 
 	option = {
@@ -1317,6 +1318,7 @@ country_event = {
 		show_ideas_tooltip = EUR_oscar_mccormick_army_chief_token
 		custom_effect_tooltip = generic_skip_one_line_tt
 		effect_tooltip = { complete_national_focus = erx_ba_navarro_shi_win_0 }
+		set_truce = { target = SHI days = 1460 }
 	}
 }
 #Lose against Shi in the border war - Federal Forces Routed On The Pacific
@@ -1403,6 +1405,7 @@ country_event = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_national_focus = erx_ba_navarro_shi_lose_0
 			complete_national_focus = erx_ba_navarro_shi_lose_1
+			set_truce = { target = SHI days = 1460 }
 		}
 	}
 }
