@@ -182,7 +182,7 @@ characters = {
 			logistics_skill = 1
 			traits = {
 				intelligent_trait
-				robotics_expert_trait
+				pain_train_trait
 			}
 			legacy_id = -1
 		}
@@ -490,7 +490,7 @@ characters = {
 		name = EUR_george_jackson
 		portraits = {
 			army = {
-				small = GFX_idea_enclave_advisor
+				small = GFX_idea_enclave_advisor_2
 			}
 		}
 	}
