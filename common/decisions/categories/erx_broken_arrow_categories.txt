@@ -115,3 +115,33 @@ erx_ba_oss_decision_cat = {
 	visible_when_empty = yes
 	scripted_gui = erx_ba_oss_scripted_gui
 }
+
+### Powering The Nation ###
+erx_powergrid_decisions_cat = {
+	allowed = {
+		OR = {
+			original_tag = ERB
+			original_tag = EUR
+		}
+	}
+	icon = GFX_icons_powered
+	picture = GFX_decision_cat_picture_poseidon_energy
+	
+	priority = {
+		modifier = {
+			add = 1000000
+			is_debug = yes
+		}
+	}
+
+	on_map_area = {
+		name = erx_powergrid_decisions_cat_inactive_powergrid_on_map
+		target_array = ROOT.erx_powergrid_inactive_grid_map_array
+		zoom = 600
+	}
+	on_map_area = {
+		name = erx_powergrid_decisions_cat_no_police_on_map
+		target_array = ROOT.erx_powergrid_no_police_map_array
+		zoom = 600
+	}
+}

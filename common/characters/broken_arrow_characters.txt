@@ -46,7 +46,6 @@
 
 	eur_ERC_defensive_army = {
 		name = erc_gerald_stewart
-		token_base = generic_army_chief_def
 		portraits = {
 			army = { small = GFX_idea_enc_generic_arma_4 }
 		}
@@ -107,7 +106,6 @@
 	}
 	eur_ERC_weather_air_chief = {
 	name = "Margaret Curtiss"
-	token_base = generic_air_chief_all_weather
 	portraits = {
 		army = {
 			small = GFX_idea_enc_generic_aira_6
@@ -181,18 +179,17 @@
 			small = GFX_idea_enc_generic_aira_4
 			}
 		}
-		advisor = {
-			slot = research_advisor
-			idea_token = enc_bomber_man
-		visible = {
-			has_completed_focus = erx_broken_arrow_operation_mayflower
-			}
-			available = {
-			original_tag = EUR
-			}
-
-		traits = { vertibird_ace }
-		}
+		#advisor = {
+		#	slot = research_advisor
+		#	idea_token = enc_bomber_man
+		#	visible = {
+		#		has_completed_focus = erx_broken_arrow_operation_mayflower
+		#	}
+		#	available = {
+		#		original_tag = EUR
+		#	}
+		#	traits = { vertibird_ace }
+		#}
 	} 
 	eur_felix_grayson = {
 		name = felix_grayson_name
@@ -249,27 +246,21 @@
 			small = "gfx/interface/ideas/ministers/enc_richardson_III.tga"
 			}
 		}
-	visible = {
-			NOT = {
-				has_country_flag = reformers_purged
-			}
-		}
+
 		advisor = {
 			slot = cultural_advisor
-		desc = erx_harold_richardson_desc
+			desc = erx_harold_richardson_desc
 			idea_token = erx_harold_richardson
-		allowed = {
-			original_tag = EUR
-		}
-		traits = { 
-			
-		unbreakable_will
-		civilian_constructor
-		
-		}
-		ai_will_do = {
-			factor = 1
-		}
+			allowed = {
+				original_tag = EUR
+			}
+			traits = { 
+				unbreakable_will
+				civilian_constructor
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	eur_boris_t = {

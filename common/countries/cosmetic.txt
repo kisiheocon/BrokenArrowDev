@@ -358,6 +358,10 @@ LUM_hallowed = {
 #MEXICO
 
 
+ARM_mexico = {
+	color = rgb { 0 128 87 }
+	color_ui = rgb { 0 128 87 }
+}
 RRG_ARM = {
 	color = rgb { 0 80 71 }
 	color_ui = rgb { 0 80 71 }
@@ -1381,6 +1385,11 @@ TEX_chile = {
 	color_ui = rgb { 0 10 124 }
 }
 
+TEX_new_old = {
+	color = rgb { 0 10 124 }
+	color_ui = rgb { 0 10 124 }
+}
+
 TEX_proper = {
 	color = rgb { 0 10 124 }
 	color_ui = rgb { 0 10 124 }
@@ -1399,6 +1408,21 @@ TEX_proper_stateflag = {
 TEX_proper_chile = {
 	color = rgb { 0 10 124 }
 	color_ui = rgb { 0 10 124 }
+}
+
+TEX_proper_new_old = {
+	color = rgb { 0 10 124 }
+	color_ui = rgb { 0 10 124 }
+}
+
+TEX_california = {
+	color = rgb { 153 116 93 }
+	color_ui = rgb { 199 151 121 }
+}
+
+TEX_mexas = {
+	color = rgb { 0 128 87 }
+	color_ui = rgb { 0 128 87 }
 }
 
 #TAA texas
@@ -1968,10 +1992,6 @@ TPA_gang = {
 TPA_destiny = {
 	color = rgb { 161 0 0 }
 	color_ui = rgb { 161 0 0 }
-}
-UOA_Crusher = {
-	color = rgb { 183 92 0 }
-	color_ui = rgb { 183 92 0 }
 }
 
 NCR_Canyonlands = {

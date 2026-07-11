@@ -157,7 +157,6 @@ ideas = {
 					build_cost_ic = 0.15
 					soft_attack = 0.05
 					hard_attack = 0.05
-					piercing_factor = 0.05
 					instant = yes
 				}
 				power_armor_equipment = {
@@ -177,7 +176,6 @@ ideas = {
 					build_cost_ic = 0.15
 					soft_attack = 0.05
 					hard_attack = 0.05
-					piercing_factor = 0.05
 					instant = yes
 				}
 				power_armor_equipment = {
@@ -196,7 +194,6 @@ ideas = {
 					build_cost_ic = -0.15
 					soft_attack = -0.05
 					hard_attack = -0.05
-					piercing_factor = -0.05
 					instant = yes
 				}
 				power_armor_equipment = {
@@ -216,7 +213,6 @@ ideas = {
 					build_cost_ic = -0.17
 					soft_attack = -0.05
 					hard_attack = -0.05
-					piercing_factor = -0.05
 					instant = yes
 				}
 				power_armor_equipment = {
@@ -365,7 +361,6 @@ ideas = {
 		maine_naval_idea = {
 			modifier = {
 				naval_coordination = 0.05
-				naval_org = 0.05
 			}
 		}
 

@@ -763,9 +763,7 @@ country_event = {
 	}
 	option = {
 		name = erx_broken_arrow.24.b
-		337 = {
-			add_core_of = EUR
-		}
+		337 = { add_core_of = EUR }
 		add_war_support = -0.05
 		add_political_power = -50
 		add_stability = -0.05
@@ -871,28 +869,25 @@ country_event = {
 }
 country_event = {
 	id = erx_broken_arrow.30
-	title = erx_broken_arrow.30.t
-	desc = erx_broken_arrow.30.d
+	hidden = yes
 
 	is_triggered_only = yes
-	hidden = yes
-	option = {
-		name = erx_broken_arrow.30.a 
-				hidden_effect = {
+
+	immediate = {
+		hidden_effect = {
 			set_country_leader_description = {
-			ideology = chieftain
-			desc = "Thanks to President Granite, no one doubts who's in charge of the Pack...excuse that, the Insular Government of the Packers (try saying that five times fast)."
+				ideology = ruler
+				desc = "Thanks to President Granite, no one doubts who's in charge of the Pack...excuse that, the Insular Government of the Packers (try saying that five times fast)."
 			}
 			set_country_leader_name = {
-			ideology = chieftain
-			name = "Jim"
-				}
+				ideology = ruler
+				name = "Jim"
+			}
 			set_country_leader_portrait = {
-			ideology = chieftain
-			portrait = GFX_Portrait_Tribal_Generic_8
-				}
+				ideology = ruler
+				portrait = GFX_Portrait_Tribal_Generic_8
+			}
 		}
-	
 	}
 }
 ###Oregon Unlock
@@ -1390,7 +1385,7 @@ country_event = {
 			}
 			every_owned_state = { # Better tooltip #
 				limit = { OR = { state = 216 state = 441 } }
-				give_resource_rights = { receiver = SHI state = THIS }
+				SHI = { give_resource_rights = { receiver = THIS state = PREV } }
 				add_dynamic_modifier = { modifier = erx_ba_treaty_santa_rosa_0_dynamic_modifier }
 				force_update_dynamic_modifier = yes
 			}
@@ -1664,10 +1659,10 @@ country_event = {
 				set_technology = {
 					fireteam_weaponry_tech = 1
 					recon_company_tech_1 = 1
-					add_manpower = 100 #Additional Manpower without equipments retreated from MXS
 				}
+				add_manpower = 100 #Additional Manpower without equipments retreated from MXS
 				load_oob = "ARR_FOU_retreat_oob"
-			}			
+			}
 		}
 	}
 
@@ -2118,4 +2113,3 @@ country_event = { #Difficulty Setting - @Deez
 		hidden_effect = { load_oob = "EUR_easy_setting" }
 	}
 }
-			

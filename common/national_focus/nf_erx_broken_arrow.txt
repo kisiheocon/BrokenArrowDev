@@ -375,18 +375,18 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			set_technology = {
-				enc_civilian_power_grid_tech = 1
-			}
+			set_technology = { enc_police_tech = 1 }
+			custom_effect_tooltip = tech_effect|enc_police_tech
+			custom_effect_tooltip = spacer_tt
+			set_technology = { enc_civilian_power_grid_tech = 1 }
+			custom_effect_tooltip = tech_effect|enc_civilian_power_grid_tech
 			custom_effect_tooltip = enc_rebuild_the_power_grid_tt
-			every_owned_state = {
-				set_state_flag = needs_civilian_power_grid
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = civilian_power_grid
-					level = 1
-					instant_build = yes
+			hidden_effect = {
+				every_core_state = {
+					set_state_flag = erx_powergrid_installed_police_state_flag
+					add_building_construction = { type = civilian_power_grid level = 1 }
 				}
+				scoped_sound_effect = ERB_electric
 			}
 		}
 	}

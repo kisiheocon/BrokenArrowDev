@@ -45,35 +45,13 @@ set_technology = {
 	scav_pa_tech = 1
 	basic_supply_transport_tech = 1
 	pre_agriculture_industry_tech = 1
+	nautics_tech_1 = 1
+	light_navy_hull_tech_1 = 1
+	#waterproof_sealing_tech = 1
+	naval_invasion_tech_1 = 1
+	### Broken Arrow Tech ###
 	bike_tech_1 = 1
 	robotics_tech_level_tribal = 1
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		nautics_tech_1 = 1
-		light_navy_hull_tech_1 = 1
-		#waterproof_sealing_tech = 1
-		naval_invasion_tech_1 = 1
-	}
-}
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		nautics_tech_non_mtg_1 = 1
-		light_navy_hull_tech_non_mtg_1 = 1
-		waterproof_sealing_tech_non_mtg = 1
-		naval_invasion_tech_non_mtg_1 = 1
-		naval_module_tech = 1
-	}
 }
 
 set_stability = 0.35
@@ -153,6 +131,7 @@ set_country_flag = is_california_nation
 set_country_flag = has_unique_manpower_law #Unique for Broken Arrow - @Deez
 set_country_flag = has_unique_economic_laws #Unique for Broken Arrow - @Deez
 set_country_flag = has_unique_trade_laws #Not being used by OWB right now but still added in case of OWB re-enable the flag check - @Deez
+set_country_flag = coring_button_hidden # Unique for Broken Arrow - @Deez #
 # Trying to do valid Eureka volunteers as an array - values are region id's
 add_to_array = {
 	volunteer_targets = 84
@@ -255,7 +234,6 @@ recruit_character = EUR_george_jackson
 recruit_character = EUR_morgan_heath
 recruit_character = EUR_lisa_tess
 recruit_character = EUR_tom_barrow
-
 every_unit_leader = {
 	set_unit_leader_flag = eureka_general
 }
@@ -273,7 +251,6 @@ if = {
 		nationalities = { EUR ERB }
 	}
 }
-
 
 set_variable = {
 	bribe_cost = 30
