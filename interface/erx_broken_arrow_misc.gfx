@@ -1,0 +1,13 @@
+spriteTypes = {
+	### Faction ###
+	spriteType = {
+		name = "GFX_faction_logo_entente_cordial"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_entente_cordial.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_faction_logo_entente_cordial_miniature"
+		texturefile = "gfx/interface/factions/faction_logos/faction_logo_entente_cordial_miniature.dds"
+	}
+}

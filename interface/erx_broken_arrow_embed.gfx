@@ -43,4 +43,9 @@ spriteTypes = {
 		textureFile = "gfx/texticons/embeds/empty.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_dog_support_icon"
+		textureFile = "gfx/texticons/dog_support_icon.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -405,7 +405,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = erx_broken_arrow.31
-			create_faction = "Entente Cordial"
+			create_faction_from_template = entente_cordial_template
 		}
 	}
 	focus = {
