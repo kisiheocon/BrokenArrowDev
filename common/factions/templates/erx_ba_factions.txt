@@ -10,3 +10,16 @@ entente_cordial_template = {
 	icon = GFX_faction_logo_entente_cordial
 	can_leader_join_other_factions = yes
 }
+
+ncref_tempplate = {
+	name = ncref
+	manifest = faction_manifest_conquest_of_territory
+	goals = { }
+	default_rules = {
+		change_leader_rule_never
+		call_to_war_rule_independent_only
+		government_in_exile_allowed
+	}
+	icon = GFX_faction_logo_new_california
+	can_leader_join_other_factions = yes
+}

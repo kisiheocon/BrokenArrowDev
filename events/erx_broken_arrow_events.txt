@@ -6,6 +6,7 @@ add_namespace = erx_broken_arrow_mariposa
 add_namespace = erx_broken_arrow_incep
 add_namespace = erx_broken_arrow_event_oregon
 add_namespace = erx_broken_arrow_warplan_brown_event
+add_namespace = erx_broken_arrow_tech_event
 
 
 #debug event
@@ -1484,7 +1485,7 @@ country_event = {
 			}
 			FOU = {
 				bypass_generic_settler_political_focuses_scripted_effect = yes
-				create_faction = "NCREF"
+				create_faction_from_template = ncref_tempplate
 				add_to_faction = MXS
 				set_technology = { #FOU don't start out with this so they need this so their rangers unit get bugged without the required tech
 					spec_ops_equipment_tech_1 = 1
@@ -2111,5 +2112,17 @@ country_event = { #Difficulty Setting - @Deez
 			popularity = 0.15
 		}
 		hidden_effect = { load_oob = "EUR_easy_setting" }
+	}
+}
+
+#### Hidden Tech Rewards ####
+country_event = { ## Vertibird CAS ##
+	id = erx_broken_arrow_tech_event.10
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_technology = { vertibird_cas_tech = 1 }
 	}
 }

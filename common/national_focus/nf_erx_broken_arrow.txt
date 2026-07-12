@@ -847,10 +847,15 @@ focus_tree = {
 		available = { NOT = { has_idea = eur_oregon_cannibal } }
 
 		completion_reward = {
-			for_each_scope_loop = {
-				array = global.oregon_state_array
-				set_variable = { coring_cost_targeted_state_factor@EUR = -0.9 }
+			every_owned_state = {
+				limit = {
+					is_in_array = { array = global.oregon_state_array value = this.ID }
+					NOT = { is_core_of = ROOT }
+				}
+				add_resistance = -20
+				add_compliance = 30
 			}
+			custom_effect_tooltip = spacer_tt
 			custom_effect_tooltip = nf_ba_eur_oregon_pacification_end_tt
 		}
 	}
@@ -3124,6 +3129,13 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_country_flag = navarro_databases
 			custom_effect_tooltip = navarro_databases_unlocked
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nf_ba_eur_navarro_databases_tt
+			effect_tooltip = {
+				set_technology = { vertibird_cas_tech = 1 }
+				custom_effect_tooltip = tech_effect|vertibird_cas_tech
+			}
+			hidden_effect = { country_event = { id = erx_broken_arrow_tech_event.10 days = 200 } }
 		}
 	}
 
