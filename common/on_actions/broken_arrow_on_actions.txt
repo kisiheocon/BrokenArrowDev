@@ -17,7 +17,10 @@ on_actions = {
 				set_country_leader_description = { desc = trl_ba_the_first_desc }
 			}
 			NEW = {
-				annex_country = { target = TDN }
+				load_focus_tree = settler_generic
+			}
+			TDN = {
+				load_focus_tree = settler_generic
 			}
 			235 = {
 				set_province_name = {
