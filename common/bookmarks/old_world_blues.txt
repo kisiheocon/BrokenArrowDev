@@ -422,12 +422,11 @@ bookmarks = {
 			minor = yes
 			ideology = ruler
 			ideas = {
-				pet_idea_fuel_nation
 			}
 			focuses = {
-				PET_board_of_directors
-				PET_tlaloc_has_fallen
-				PET_reactivate_petronet
+				PET_the_war
+				PET_prosperity_corruption
+				PET_new_tlalocan
 			}
 		}
 		"SIN" = {

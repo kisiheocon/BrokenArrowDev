@@ -57,6 +57,11 @@ state_oklahoma = {
 	color_ui = rgb { 99 167 105 }
 }
 
+scrapper_oklahoma = {
+	color = rgb { 165 55 0 }
+	color_ui = rgb { 165 55 0 }
+}
+
 TVT_FORMABLE = {
 	color = rgb { 159 159 159 }
 	color_ui = rgb { 159 159 159 }
@@ -85,6 +90,16 @@ MOJ_cosmetic = {
 VIC_cosmetic_april = {
 	color = rgb { 230 0 41 }
 	color_ui = rgb { 230 0 41 }
+}
+
+RAP_colorado_riders = {
+	color = rgb { 0 182 225 }
+	color_ui = rgb { 0 182 225 }
+}
+
+RAP_california = {
+	color = rgb { 140 182 225 }
+	color_ui = rgb { 140 182 225 }
 }
 
 PMR_cosmetic_april = {
@@ -390,15 +405,14 @@ FFI_ARM = {
 	color = rgb { 0 80 71 }
 	color_ui = rgb { 0 80 71 }
 }
-PET_ARM = {
-	color = rgb { 0 80 71 }
-	color_ui = rgb { 0 80 71 }
-}
 PET_petronet_tag = {
-	color = rgb { 235 165 30 }
-	color_ui = rgb { 235 165 30 }
+	color = rgb { 89 89 89 }
+	color_ui = rgb { 89 89 89 }
 }
-
+PET_TLA = {
+	color = rgb { 90 166 143 }
+	color_ui = rgb { 90 166 143 }
+}
 TDT_CIR = {
 	color = rgb { 186 7 18 }
 	color_ui = rgb { 186 7 18 }
@@ -1197,9 +1211,46 @@ RRG_rosado = {
 	color_ui = rgb { 92 96 215 }
 }
 
+TLA_RRG_pending = {
+	color = rgb { 92 96 215 }
+	color_ui = rgb { 92 96 215 }
+}
 TLA_RRG = {
 	color = rgb { 92 96 215 }
 	color_ui = rgb { 92 96 215 }
+}
+TLA_RRG_wife = {
+	color = rgb { 92 96 215 }
+	color_ui = rgb { 92 96 215 }
+}
+
+PET_PRO = {
+	color = rgb { 0 80 71 }
+	color_ui = rgb { 0 80 71 }
+}
+PET_TLA = {
+	color = rgb { 51 184 181 }
+	color_ui = rgb { 51 184 181 }
+}
+
+ARM_PET = {
+	color = rgb { 0 80 71 }
+	color_ui = rgb { 0 80 71 }
+}
+
+MAX_PET = {
+	color = rgb { 0 80 71 }
+	color_ui = rgb { 0 80 71 }
+}
+
+MOC_PET = {
+	color = rgb { 0 80 71 }
+	color_ui = rgb { 0 80 71 }
+}
+
+ZAP_PET = {
+	color = rgb { 0 80 71 }
+	color_ui = rgb { 0 80 71 }
 }
 
 USM = {
@@ -1542,8 +1593,8 @@ NCR_redding = {
 	color_ui = rgb { 255 215 0 }
 }
 ARR_NCR = {
-    color = rgb { 153 76 0 }
-    color_ui = rgb { 153 76 0 }
+	color = rgb { 153 76 0 }
+	color_ui = rgb { 153 76 0 }
 }
 NCR_moore = {
 	color = rgb { 64 64 64 }
@@ -1588,53 +1639,53 @@ NCR_Pacific_States = {
 
 #Roach King
 RCK_PURGE = {
-    color = rgb { 10 10 10 }
-    color_ui = rgb { 10 10 10 }
+	color = rgb { 10 10 10 }
+	color_ui = rgb { 10 10 10 }
 }
 
 RCK_roach_swarm_two = {
-    color = rgb { 10 10 10 }
-    color_ui = rgb { 10 10 10 }
+	color = rgb { 10 10 10 }
+	color_ui = rgb { 10 10 10 }
 }
 
 RCK_phase_2 = {
-    color = rgb { 32 7 54 }
-    color_ui = rgb { 32 7 54 }
+	color = rgb { 32 7 54 }
+	color_ui = rgb { 32 7 54 }
 }
 
 RCK_phase_3 = {
-    color = rgb { 101 29 163 }
-    color_ui = rgb { 101 29 163 }
+	color = rgb { 101 29 163 }
+	color_ui = rgb { 101 29 163 }
 }
 
 RCK_crook = {
-    color = rgb { 101 29 163 }
-    color_ui = rgb { 101 29 163 }
+	color = rgb { 101 29 163 }
+	color_ui = rgb { 101 29 163 }
 }
 # Commonwealth Occupation Zones
 COM_MDM = {
-    color = rgb { 30 91 170 }
-    color_ui = rgb { 30 91 170 }
+	color = rgb { 30 91 170 }
+	color_ui = rgb { 30 91 170 }
 }
 COM_STA = {
-    color = rgb { 30 91 170 }
-    color_ui = rgb { 30 91 170 }
+	color = rgb { 30 91 170 }
+	color_ui = rgb { 30 91 170 }
 }
 CPL_DUC = {
-    color = rgb { 27 24 77 }
-    color_ui = rgb { 27 24 77 }
+	color = rgb { 27 24 77 }
+	color_ui = rgb { 27 24 77 }
 }
 CPL_WAR = {
-    color = rgb { 27 24 77 }
-    color_ui = rgb { 27 24 77 }
+	color = rgb { 27 24 77 }
+	color_ui = rgb { 27 24 77 }
 }
 CPL_OBU = {
-    color = rgb { 179 25 66 }
-    color_ui = rgb { 179 25 66 }
+	color = rgb { 179 25 66 }
+	color_ui = rgb { 179 25 66 }
 }
 CPL_ANC = {
-    color = rgb { 122 17 45 }
-    color_ui = rgb { 122 17 45 }
+	color = rgb { 122 17 45 }
+	color_ui = rgb { 122 17 45 }
 }
 
 #### BINARY COUNTS
@@ -2227,6 +2278,121 @@ HVR_liberty = {
 	color_ui = rgb { 181 74 47 }
 }
 
+BYE_collective = {
+	color = rgb { 72 32 27 }
+	color_ui = rgb { 72 32 27 }
+}
+
+KIN_greater = {
+	color = rgb { 13 50 108 }
+	color_ui = rgb { 13 50 108 }
+}
+
+BLK_legion = {
+	color = rgb { 122 50 50 }
+	color_ui = rgb { 122 50 50 }
+}
+
+HUA_legion = {
+	color = rgb { 257 201 45 }
+	color_ui = rgb { 257 201 45 }
+}
+
+TWI_legion = {
+	color = rgb { 152 115 75 }
+	color_ui = rgb { 152 115 75 }
+}
+
+FLA_legion = {
+	color = rgb { 199 197 203 }
+	color_ui = rgb { 199 197 203 }
+}
+
+WAP_legion = {
+	color = rgb { 207 68 24 }
+	color_ui = rgb { 207 68 24 }
+}
+
+PHR_legion = {
+	color = rgb { 112 0 51 }
+	color_ui = rgb { 112 0 51 }
+}
+
+TSI_legion = {
+	color = rgb { 10 63 135 }
+	color_ui = rgb { 10 63 135 }
+}
+
+RSR_legion = {
+	color = rgb { 209 15 46 }
+	color_ui = rgb { 209 15 46 }
+}
+
+FVR_coaly = {
+	color = rgb { 176 175 208 }
+	color_ui = rgb { 176 175 208 }
+}
+
+FVR_montana = {
+	color = rgb { 176 205 188 }
+	color_ui = rgb { 176 205 188 }
+}
+
+NOE_noemens_land = {
+	color = rgb { 31 158 88 }
+	color_ui = rgb { 31 158 88 }
+}
+
+WEN_wendover_port = {
+	color = rgb { 20 56 224 }
+	color_ui = rgb { 20 56 224 }
+}
+
+MRA_united_mojave = {
+	color = rgb { 93 248 221 }
+	color_ui = rgb { 93 248 221 }
+}
+
+UTO_united_mojave = {
+	color = rgb { 255 140 31 }
+	color_ui = rgb { 255 140 31 }
+}
+
+BOO_united_mojave = {
+	color = rgb { 5 126 108 }
+	color_ui = rgb { 5 126 108 }
+}
+
+JCT_united_mojave = {
+	color = rgb { 28 29 51 }
+	color_ui = rgb { 28 29 51 }
+}
+
+FIE_united_mojave = {
+	color = rgb { 148 242 32 }
+	color_ui = rgb { 148 242 32 }
+}
+
+FIE_united_mojave = {
+	color = rgb { 121 71 71 }
+	color_ui = rgb { 121 71 71 }
+}
+
+FAR_utah_terrors = {
+	color = rgb { 35 186 88 }
+	color_ui = rgb { 35 186 88 }
+}
+
+BRI_monopoly = {
+	color = rgb { 55 126 78 }
+	color_ui = rgb { 55 126 78 }
+}
+
+STB_beekeepers = {
+	color = rgb { 140 119 0 }
+	color_ui = rgb { 140 119 0 }
+}
+
 STC_cadets = {
 	color = rgb { 64 0 0 }
 	color_ui = rgb { 64 0 0 }
@@ -2267,8 +2433,8 @@ COM_PIO = {
 	color_ui = rgb { 51 101 55 }
 }
 MET_masters = {
-	color = rgb { 219 226 233 }
-	color_ui = rgb { 219 226 233 }
+	color = rgb { 27 17 17 }
+	color_ui = rgb { 27 17 17 }
 }
 HST_academics = {
 	color = rgb { 125 25 125 }
@@ -2373,8 +2539,8 @@ MCA_COM_Canada = {
 
 #Bismarck Formable
 BIS_bismarck_union = {
-    color = rgb { 218 165 32 }
-    color_ui = rgb { 218 165 32 }
+	color = rgb { 218 165 32 }
+	color_ui = rgb { 218 165 32 }
 }
 
 #Zhang Gang
