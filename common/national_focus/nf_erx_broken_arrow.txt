@@ -271,6 +271,7 @@ focus_tree = {
 
 		prerequisite = { focus = erx_broken_arrow_prep_expansion }
 		bypass = { PAC = { all_core_land_owned_by_prev_sphere = yes } }
+		bypass_effect = { PAC = { ROOT = { claim_owned_core_states_of_prev = yes } } }
 		
 		completion_reward = { country_event = erx_broken_arrow.29 }
 	}
@@ -289,6 +290,10 @@ focus_tree = {
 		bypass = {
 			MXS = { all_core_land_owned_by_prev_sphere = yes }
 			FOU = { all_core_land_owned_by_prev_sphere = yes }
+		}
+		bypass_effect = {
+			MXS = { ROOT = { claim_owned_core_states_of_prev = yes } }
+			FOU = { ROOT = { claim_owned_core_states_of_prev = yes } }
 		}
 		
 		will_lead_to_war_with = MXS
@@ -480,6 +485,7 @@ focus_tree = {
 			}
 		}
 		bypass = { MLT = { all_core_land_owned_by_prev_sphere = yes } }
+		bypass_effect = { MLT = { ROOT = { claim_owned_core_states_of_prev = yes } } }
 
 		will_lead_to_war_with = MLT
 		completion_reward = {
@@ -687,6 +693,12 @@ focus_tree = {
 			CHE = { all_core_land_owned_by_prev_sphere = yes }
 			MDT = { all_core_land_owned_by_prev_sphere = yes }
 			RBT = { all_core_land_owned_by_prev_sphere = yes }
+		}
+		bypass_effect = {
+			BDT = { ROOT = { claim_owned_core_states_of_prev = yes } }
+			CHE = { ROOT = { claim_owned_core_states_of_prev = yes } }
+			MDT = { ROOT = { claim_owned_core_states_of_prev = yes } }
+			RBT = { ROOT = { claim_owned_core_states_of_prev = yes } }
 		}
 
 		will_lead_to_war_with = BDT
