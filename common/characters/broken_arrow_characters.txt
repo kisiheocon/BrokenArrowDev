@@ -161,7 +161,7 @@
 	eur_felix_grayson = {
 		name = felix_grayson_name
 		portraits = {
-			army = { small = GFX_idea_generic_political_advisor_europe_3 }
+			army = { small = GFX_idea_enc_felix_grayson }
 		}
 
 		advisor = {
@@ -181,7 +181,7 @@
 	eur_lt_kolyis = {
 		name = lt_kolyis_name
 		portraits = {
-			army = { small = GFX_idea_enc_generic_arma_1 }
+			army = { small = GFX_idea_enc_director_koylis }
 		}
 
 		advisor = {
@@ -200,7 +200,7 @@
 	eur_erx_harold_richardson = {
 		name = erx_harold_richardson_name
 		portraits = {
-			army = { small = "gfx/interface/ideas/ministers/enc_richardson_III.tga" }
+			army = { small = GFX_idea_enc_richardson_III }
 		}
 
 		advisor = {

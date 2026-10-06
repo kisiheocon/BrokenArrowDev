@@ -207,10 +207,12 @@ ba_local_affairs_decision_cat = {
 	#Cleaning House
 	ba_local_affairs_cleaning_house_decision = {
 		icon = GFX_decision_deagle
-		cost = 30
-		days_remove = 30
-		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+		
 		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
+		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+		cost = 30
+
+		days_remove = 30
 		modifier = {
 			weekly_manpower = -5
 			intellectuals_drift = 0.1
@@ -225,10 +227,12 @@ ba_local_affairs_decision_cat = {
 	#Essentials of Civilization
 	ba_local_affairs_essentials_decision = {
 		icon = GFX_decision_stew_pot
-		cost = 20
-		days_remove = 30
-		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+
 		visible = { NOT = { has_completed_focus = erx_broken_arrow_seize_state_apparatus } }
+		available = { has_completed_focus = erx_broken_arrow_local_affairs }
+		cost = 20
+
+		days_remove = 30
 		modifier = {
 			intellectuals_drift = 0.1
 			consumer_goods_factor = 0.2
@@ -244,10 +248,12 @@ ba_local_affairs_decision_cat = {
 	#Building Affordable Housing in Navarro
 	ba_local_affairs_navarro_housing_decision = {
 		icon = GFX_decision_generic_electricity
-		cost = 30
-		days_remove = 60
+		
 		available = { has_completed_focus = nf_ba_eur_navarro_philanthropy }
 		fire_only_once = yes
+		cost = 30
+
+		days_remove = 60
 		modifier = {
 			political_power_gain = -0.2
 			consumer_goods_factor = 0.25
@@ -273,10 +279,12 @@ ba_local_affairs_decision_cat = {
 	#Self-Sufficient Work Programs
 	ba_local_affairs_navarro_workplace_decision = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		cost = 30
-		days_remove = 60
+
 		available = { has_completed_focus = nf_ba_eur_navarro_roadways }
 		fire_only_once = yes
+		cost = 30
+
+		days_remove = 60
 		modifier = {
 			political_power_gain = -0.1
 			consumer_goods_factor = 0.3
@@ -443,11 +451,14 @@ ba_local_affairs_decision_cat = {
 #		}
 #	}
 #}
+### The Navarro Crisis ###
 erx_broken_arrow_navarro_cat = {
+	## Reignite Old Relationships ##
 	navarro_crisis_old_relations = {
 		icon = GFX_decision_trifold_flag
-		cost = 20
+
 		fire_only_once = yes
+		cost = 20
 
 		complete_effect = {
 			set_country_flag = eur_navarro_intervention
@@ -470,63 +481,109 @@ erx_broken_arrow_navarro_cat = {
 			}
 		}
 	}
+
+	## Contact Exiles and Retirees ##
 	navarro_crisis_exiles = {
 		icon = GFX_decision_beacon
-		available = { has_country_flag = eur_navarro_intervention }
-		cost = 50
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = navarro_crisis_old_relations
+				}
+				has_country_flag = eur_navarro_intervention
+			}
+		}
 		fire_only_once = yes
+		cost = 50
 
 		days_remove = 70
 		modifier = { weekly_manpower = 70 }
 	}
+
+	## Harass the Colonials ##
 	navarro_crisis_harass_colonials = {
 		icon = GFX_decision_deagle
-		available = { has_country_flag = eur_navarro_intervention }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = navarro_crisis_old_relations
+				}
+				has_country_flag = eur_navarro_intervention
+			}
+		}
 		cost = 20
-		days_re_enable = 30
-		fire_only_once = no
 
 		complete_effect = {
 			NVT = { add_timed_idea = { idea = nat_atk_bonus days = 20 } }
 			NAT = { add_timed_idea = { idea = nat_atk_nerf days = 20 } }
 		}
+
+		days_remove = 30 # Cooldown #
 	}
+
+	## Push Back the Shi ##
 	navarro_crisis_harass_chinese = {
 		icon = GFX_decision_deagle
-		available = { has_country_flag = eur_navarro_intervention }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = navarro_crisis_old_relations
+				}
+				has_country_flag = eur_navarro_intervention
+			}
+		}
 		cost = 20
-		days_re_enable = 30
-		fire_only_once = no
 
 		complete_effect = {
 			NVT = { add_timed_idea = { idea = shi_atk_bonus days = 20 } }
 			NVS = { add_timed_idea = { idea = shi_atk_nerf days = 20 } }
 		}
+
+		days_remove = 30 # Cooldown #
 	}
+
+	## Call to Action ##
 	navarro_crisis_volunteers = {
 		icon = GFX_decision_army_helmet
-		available = { has_country_flag = eur_navarro_intervention }
-		cost = 50
-		days_re_enable = 30
-		fire_only_once = no
 
-		days_remove = 25
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = {
+					localization_key = erx_ba_completed_decision_trigger_tt
+					DECISION = navarro_crisis_old_relations
+				}
+				has_country_flag = eur_navarro_intervention
+			}
+		}
+		cost = 50
+
+		days_remove = 30
 		modifier = { send_volunteer_size = 2 }
 	}
+
+	## Rumors of NCR Intervention! ##
 	navarro_ncr_attack_warning_mission = {
 		icon = GFX_decision_border_war
-		days_mission_timeout = 30
 		is_good = no
+
 		allowed = { always = no } #Handled by events - @Deez
 		available = { always = no } #Can't complete the warning - @Deez
-		war_with_on_timeout = NCR #Letting the AI know to prepare troops on the border
-		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
 		cancel_trigger = {
 			OR = {
 				EUR = { exists = no }
 				NCR = { exists = no }
 			}
 		}
+
+		days_mission_timeout = 30
+		war_with_on_timeout = NCR #Letting the AI know to prepare troops on the border
+		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
 		timeout_effect = {
 			if = { #EUR's POV is just showing the effect, the real declare war effect is on NCR's side
 				limit = { original_tag = EUR }
@@ -551,10 +608,12 @@ erx_broken_arrow_navarro_cat = {
 			}
 		}
 	}
+
+	## Survive the Bear! ##
 	navarro_survive_ncr = {
 		icon = GFX_decision_border_war
-		days_mission_timeout = 60
 		is_good = yes
+
 		allowed = { always = no } #Handled by events - @Deez
 		available = {
 			custom_trigger_tooltip = {
@@ -571,6 +630,7 @@ erx_broken_arrow_navarro_cat = {
 			#	surrender_progress > 0.02
 			#}
 		}
+
 		complete_effect = {
 			white_peace = NCR
 			country_event = erx_broken_arrow_navarro.6
@@ -589,6 +649,8 @@ erx_broken_arrow_navarro_cat = {
 			}
 			set_truce = { target = NCR days = 1460 }
 		}
+
+		days_mission_timeout = 60
 		timeout_effect = {
 			white_peace = NCR
 			activate_mission = navarro_eur_shi_border_war_warning_mission
@@ -608,14 +670,12 @@ erx_broken_arrow_navarro_cat = {
 			set_truce = { target = NCR days = 1460 }
 		}
 	}
+
+	## Skirmishes in the south! ##
 	navarro_eur_shi_border_war_warning_mission = {
 		icon = GFX_decision_border_war
-		days_mission_timeout = 20
 		is_good = no
-		allowed = { always = no } #Handled by events - @Deez
-		available = { always = no } #Can't complete the warning - @Deez
-		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
-		war_with_on_timeout = SHI #Letting the AI know to prepare troops on the border
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 216
@@ -624,12 +684,19 @@ erx_broken_arrow_navarro_cat = {
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
+		allowed = { always = no } #Handled by events - @Deez
+		available = { always = no } #Can't complete the warning - @Deez
 		cancel_trigger = {
 			OR = {
 				EUR = { exists = no }
 				SHI = { exists = no }
 			}
 		}
+
+		days_mission_timeout = 20
+		war_with_on_timeout = EUR #Letting the AI know to prepare troops on the border
+		war_with_on_timeout = SHI #Letting the AI know to prepare troops on the border
 		timeout_effect = {
 			if = { #EUR's POV is just showing the effect, the real border war effect is on Shi's side
 				limit = { original_tag = EUR }
@@ -678,18 +745,18 @@ erx_broken_arrow_navarro_cat = {
 		}
 	}
 }
-#Oregon Reconstruction Authority - The Beaver State
+### The Beaver State ###
 erx_broken_arrow_development_oregon_cat = {
-	#The Carolina
+	## The Carolina ##
 	eur_ba_oregon_carolina_decision = {
 		icon = GFX_decision_generic_naval
-		fire_only_once = yes
+		is_good = yes
 
 		allowed = { always = no }
 		available = { always = no }
+		fire_only_once = yes
 
 		days_mission_timeout = 400
-		is_good = yes
 		timeout_effect = {
 			hidden_effect = {
 				set_technology = {
@@ -703,32 +770,32 @@ erx_broken_arrow_development_oregon_cat = {
 			custom_effect_tooltip = eur_ba_oregon_carolina_decision_tt
 		}
 	}
-	#Invite Timberline
+	## Invite Timberline ##
 	erx_broken_arrow_oregon_invite_timberline = {
 		icon = GFX_decision_eng_trade_unions_support
-		cost = 50
-		fire_only_once = yes
 
-		visible = { 
+		visible = {
 			TIM = {
 				exists = yes
 				is_in_faction = no
-				is_puppet = no
+				is_subject = no
 			}
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 20
 		remove_effect = {
 			country_event = erx_broken_arrow_event_oregon.2
 		}
 	}
-	#Annex Packers
+	## Annex Packers ##
 	erx_broken_arrow_oregon_annex_packers = {
 		icon = GFX_decision_infiltrate_state
-		cost = 50
-		fire_only_once = yes
 
-		visible = { PAC = { is_ally_with = ROOT } }
+		visible = { is_ally_with = PAC }
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 60
 		remove_effect = {
@@ -736,13 +803,13 @@ erx_broken_arrow_development_oregon_cat = {
 			PAC = { every_core_state = { add_compliance = 50 } }
 		}
 	}
-	#Annex Apostle
+	## Annex Apostle ##
 	erx_broken_arrow_oregon_annex_apostle = {
 		icon = GFX_decision_infiltrate_state
-		cost = 50
-		fire_only_once = yes
 
-		visible = { DIS = { is_ally_with = EUR } }
+		visible = { is_ally_with = DIS }
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 60
 		remove_effect = {
@@ -750,23 +817,24 @@ erx_broken_arrow_development_oregon_cat = {
 			DIS = { every_core_state = { add_compliance = 50 } }
 		}
 	}
-	#Deploy National Guard
+	## Deploy National Guard ##
 	eur_ba_oregon_pacification_deploy_national_guard_decision = {
 		icon = GFX_div_templ_6_large
-		custom_cost_trigger = { command_power > 9 }
-		custom_cost_text = decision_cost_CP_10
 
-		available = { 
+		visible = { NOT = { has_completed_focus = nf_ba_eur_oregon_pacification_end } }
+		available = {
 			has_completed_focus = nf_ba_eur_oregon_pacification_left
 			has_manpower > 500
 		}
-		visible = { NOT = { has_completed_focus = nf_ba_eur_oregon_pacification_end } }
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_CP_10
 
-		days_remove = 20
-		complete_effect = { 
+		complete_effect = {
 			hidden_effect = { add_command_power = -10 }
 			add_manpower = -500
 		}
+
+		days_remove = 20
 		remove_effect = {
 			add_manpower = 400
 			every_controlled_state = {
@@ -782,23 +850,24 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Deploy Special Forces
+	## Deploy Special Forces ##
 	eur_ba_oregon_pacification_deploy_special_forces_decision = {
 		icon = GFX_unit_category_spec_ops
-		custom_cost_trigger = { command_power > 19 }
-		custom_cost_text = decision_cost_CP_20
 
-		available = { 
+		visible = { has_idea = eur_oregon_cannibal }
+		available = {
 			has_completed_focus = nf_ba_eur_oregon_pacification_left
 			has_manpower > 200
 		}
-		visible = { has_idea = eur_oregon_cannibal }
+		custom_cost_trigger = { command_power > 19 }
+		custom_cost_text = decision_cost_CP_20
 
-		days_remove = 20
 		complete_effect = {
 			hidden_effect = { add_command_power = -20 }
 			add_manpower = -200
 		}
+
+		days_remove = 20
 		remove_effect = {
 			add_manpower = 150
 			modify_timed_idea = {
@@ -807,17 +876,17 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Increase Oregon National Guard Funding
+	## Increase Oregon National Guard Funding ##
 	eur_ba_oregon_reconstruction_guard_funding_decision = {
 		icon = GFX_decision_army_helmet
-		cost = 50
-		fire_only_once = yes
 
-		available = { 
+		available = {
 			has_completed_focus = nf_ba_eur_oregon_military_department_army_guard
 			493 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 4
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 60
 		modifier = { civilian_factory_use = 5 }
@@ -844,13 +913,10 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Excavate Future-Tec Facility
+	## Excavate Future-Tec Facility ##
 	eur_ba_oregon_excavate_futuretec_decision = {
 		icon = GFX_decision_minning_helmet
-		fire_only_once = yes
 
-		custom_cost_trigger = { command_power > 9 }
-		custom_cost_text = decision_cost_CP_10
 
 		available = {
 			71 = { is_owned_and_controlled_by = ROOT }
@@ -858,6 +924,9 @@ erx_broken_arrow_development_oregon_cat = {
 			has_equipment = { support_equipment_1 > 99 }
 			has_manpower > 300
 		}
+		fire_only_once = yes
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_CP_10
 
 		complete_effect = {
 			add_manpower = -300
@@ -871,6 +940,7 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 			hidden_effect = { add_command_power = -10 }
 		}
+
 		days_remove = 60
 		remove_effect = {
 			add_manpower = 200
@@ -882,13 +952,11 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Umatilla Chemical Depot
+
+	## Umatilla Chemical Depot ##
 	eur_ba_oregon_excavate_umatilla_decision = {
 		icon = GFX_decision_flamer
-		fire_only_once = yes
 
-		custom_cost_trigger = { command_power > 9 }
-		custom_cost_text = decision_cost_CP_10
 
 		available = {
 			178 = { is_owned_and_controlled_by = ROOT }
@@ -896,6 +964,9 @@ erx_broken_arrow_development_oregon_cat = {
 			has_equipment = { support_equipment_1 > 99 }
 			has_manpower > 300
 		}
+		fire_only_once = yes
+		custom_cost_trigger = { command_power > 9 }
+		custom_cost_text = decision_cost_CP_10
 
 		complete_effect = {
 			hidden_effect = { add_command_power = -10 }
@@ -909,6 +980,7 @@ erx_broken_arrow_development_oregon_cat = {
 				amount = -100
 			}
 		}
+
 		days_remove = 60
 		remove_effect = {
 			add_manpower = 200
@@ -920,16 +992,9 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#A City Divided
+	## A City Divided ##
 	erx_broken_arrow_development_oregon_salem = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		fire_only_once = yes
-
-		custom_cost_trigger = { 
-			command_power > 29
-			has_political_power > 29
-		}
-		custom_cost_text = decision_cost_CP_30_PP_30
 
 		available = {
 			493 = { is_owned_and_controlled_by = ROOT }
@@ -938,8 +1003,13 @@ erx_broken_arrow_development_oregon_cat = {
 			has_equipment = { support_equipment_1 > 99 }
 			has_manpower > 799
 		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			command_power > 29
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30_PP_30
 
-		modifier = { civilian_factory_use = 4 }
 		complete_effect = {
 			add_manpower = -800
 			add_equipment_to_stockpile = {
@@ -955,47 +1025,28 @@ erx_broken_arrow_development_oregon_cat = {
 				add_command_power = -30
 			}
 		}
+
 		days_remove = 120
+		modifier = { civilian_factory_use = 4 }
 		remove_effect = {
 			add_manpower = 650
 			set_country_flag = ba_eur_oregon_salem_rebuilt_flag
 			493 = {
 				set_temp_variable = { pop_add = 2500 }
-                add_state_population_no_state_name = yes
+				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
+				add_building_construction = { type = infrastructure level = 3 }
 				set_state_category = large_city
-				add_victory_points = {
-					province = 4101
-					value = 10
-				}
+				add_victory_points = { province = 4101 value = 10 }
 			}
 		}
 	}
-	#Civilization Triumphant
+	## Civilization Triumphant ##
 	erx_broken_arrow_development_oregon_eugene = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		fire_only_once = yes
 
-		custom_cost_trigger = { 
-			command_power > 29
-			has_political_power > 29
-		}
-		custom_cost_text = decision_cost_CP_30_PP_30
 
 		available = {
 			358 = { is_owned_and_controlled_by = ROOT }
@@ -1003,8 +1054,13 @@ erx_broken_arrow_development_oregon_cat = {
 			has_equipment = { support_equipment_1 > 299 }
 			has_manpower > 499
 		}
+		fire_only_once = yes
+		custom_cost_trigger = { 
+			command_power > 29
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30_PP_30
 
-		modifier = { civilian_factory_use = 4 }
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = support_equipment_1
@@ -1016,108 +1072,60 @@ erx_broken_arrow_development_oregon_cat = {
 				add_command_power = -30
 			}
 		}
+
 		days_remove = 120
+		modifier = { civilian_factory_use = 4 }
 		remove_effect = {
 			add_manpower = 400
 			358 = {
 				set_temp_variable = { pop_add = 2000 }
 				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
+				add_building_construction = { type = infrastructure level = 3 }
 				set_province_name = { id = 4200 name = "Eugene" }
 				set_province_name = { id = 1983 name = "Rowland" }
 				set_state_category = large_city
-				add_victory_points = {
-					province = 4200
-					value = 12
-				}
+				add_victory_points = { province = 4200 value = 12 }
 			}
 			country_event = erx_broken_arrow_event_oregon.1
 		}
 	}
-	#Making Port At Portland
+	## Making Port At Portland ##
 	erx_broken_arrow_development_oregon_portland = {
 		icon = GFX_decision_generic_merge_plant_materiel
-		cost = 60
-		fire_only_once = yes
 
 		available = {
 			23 = { is_owned_and_controlled_by = ROOT }
 			37 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 7
 		}
+		fire_only_once = yes
+		cost = 60
 
-		modifier = { civilian_factory_use = 8 }
 		days_remove = 120
+		modifier = { civilian_factory_use = 8 }
 		remove_effect = {
 			23 = {
 				set_temp_variable = { pop_add = 3000 }
-                add_state_population_no_state_name = yes
+				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
+				add_building_construction = { type = dockyard level = 1 }
+				add_building_construction = { type = infrastructure level = 3 }
 				set_state_category = large_city
-				add_victory_points = {
-					province = 3882
-					value = 9
-				}
+				add_victory_points = { province = 3882 value = 9 }
 			}
 			37 = {
 				set_temp_variable = { pop_add = 3000 }
 				add_state_population_no_state_name = yes
 				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
+				add_building_construction = { type = industrial_complex level = 1 }
+				add_building_construction = { type = arms_factory level = 1 }
+				add_building_construction = { type = dockyard level = 1 }
+				add_building_construction = { type = infrastructure level = 3 }
 				set_state_category = large_city
 			}
 			23 = {
@@ -1126,16 +1134,16 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Silicon Forest
+	## Silicon Forest ##
 	erx_broken_arrow_development_oregon_silicon_forest = {
 		icon = GFX_decision_generic_research
-		cost = 50
-		fire_only_once = yes
 
-		available = { 
-			has_completed_focus = nf_ba_eur_oregon_industry_left 
+		available = {
+			has_completed_focus = nf_ba_eur_oregon_industry_left
 			num_of_civilian_factories_available_for_projects > 1
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 60
 		modifier = { civilian_factory_use = 2 }
@@ -1143,17 +1151,17 @@ erx_broken_arrow_development_oregon_cat = {
 			add_ideas = eur_silicon_forest
 		}
 	}
-	#Tree Cuttin Frenzy
+	## Tree Cuttin Frenzy ##
 	erx_broken_arrow_development_oregon_timber_industry = {
 		icon = GFX_decision_generic_forestry
-		cost = 50
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_industry_left 
 			71 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 3
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 60
 		modifier = { civilian_factory_use = 4 }
@@ -1183,17 +1191,17 @@ erx_broken_arrow_development_oregon_cat = {
 			}
 		}
 	}
-	#Project Bonneville Dam
+	## Project Bonneville Dam ##
 	erx_broken_arrow_dam_oregon_bonneville = {
 		icon = GFX_decision_generic_construction
-		cost = 30
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_industry_left
 			345 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 2
 		}
+		fire_only_once = yes
+		cost = 30
 
 		days_remove = 120
 		modifier = { civilian_factory_use = 3 }
@@ -1201,17 +1209,17 @@ erx_broken_arrow_development_oregon_cat = {
 			345 = { add_dynamic_modifier = { modifier = ba_eur_oregon_bonneville_dam_dynamic_modifier } }
 		}
 	}
-	#Project McNary Dam
+	## Project McNary Dam ##
 	erx_broken_arrow_dam_oregon_mcnary = {
 		icon = GFX_decision_generic_construction
-		cost = 30
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_industry_left
 			178 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 2
 		}
+		fire_only_once = yes
+		cost = 30
 
 		days_remove = 120
 		modifier = { civilian_factory_use = 3 }
@@ -1219,16 +1227,17 @@ erx_broken_arrow_development_oregon_cat = {
 			178 = { add_dynamic_modifier = { modifier = ba_eur_oregon_mcnary_dam_dynamic_modifier } }
 		}
 	}
+	## Reconsecrating Reedsport Naval Base ##
 	eur_ba_oregon_reedsport_port_decision = {
 		icon = GFX_decision_generic_merge_plant_ship
-		cost = 30
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia
 			358 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 1
 		}
+		fire_only_once = yes
+		cost = 30
 
 		days_remove = 50
 		modifier = { civilian_factory_use = 2 }
@@ -1236,83 +1245,53 @@ erx_broken_arrow_development_oregon_cat = {
 			set_country_flag = erx_ba_reedsport_restored_flag
 			358 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_province_name = {
-					id = 7064
-					name = "Reedsport Federal Naval Station"
-				}
-				add_victory_points = {
-					province = 7064
-					value = 5
-				}
+				add_building_construction = { type = dockyard level = 2 }
+				set_province_name = { id = 7064 name = "Reedsport Federal Naval Station" }
+				add_victory_points = { province = 7064 value = 5 }
 			}
-			add_days_mission_timeout = {
-				mission = eur_ba_oregon_carolina_decision
-				days = -60
-			}
+			add_days_mission_timeout = { mission = eur_ba_oregon_carolina_decision days = -60 }
 		}
 	}
+	## Irritations In Salem ##
 	eur_ba_oregon_salem_port_decision = {
 		icon = GFX_decision_generic_merge_plant_ship
-		cost = 50
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia
 			493 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 3
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 50
 		modifier = { civilian_factory_use = 4 }
 		remove_effect = {
 			if = {
-				limit = { 
+				limit = {
 					37 = { is_owned_and_controlled_by = ROOT }
-					23 = { is_owned_and_controlled_by = ROOT } 
+					23 = { is_owned_and_controlled_by = ROOT }
 				}
 				493 = {
 					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = dockyard
-						level = 4
-						instant_build = yes
-					}
-					add_victory_points = {
-						province = 4101
-						value = 10
-					}
+					add_building_construction = { type = dockyard level = 4 }
+					add_victory_points = { province = 4101 value = 10 }
 				}
 			}
 			else = {
 				493 = {
 					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					add_victory_points = {
-						province = 4101
-						value = 5
-					}
+					add_building_construction = { type = dockyard level = 2 }
+					add_victory_points = { province = 4101 value = 5 }
 				}
 				custom_effect_tooltip = eur_ba_oregon_salem_port_decision_tt
 			}
-			add_days_mission_timeout = {
-				mission = eur_ba_oregon_carolina_decision
-				days = -60
-			}
+			add_days_mission_timeout = { mission = eur_ba_oregon_carolina_decision days = -60 }
 		}
 	}
+	## Portland Naval Facilities ##
 	eur_ba_oregon_portland_port_decision = {
 		icon = GFX_decision_generic_merge_plant_ship
-		cost = 50
-		fire_only_once = yes
 
 		available = {
 			has_completed_focus = nf_ba_eur_oregon_military_department_naval_militia
@@ -1320,42 +1299,27 @@ erx_broken_arrow_development_oregon_cat = {
 			23 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 4
 		}
+		fire_only_once = yes
+		cost = 50
 
 		days_remove = 80
 		modifier = { civilian_factory_use = 5 }
 		remove_effect = {
 			37 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_victory_points = {
-					province = 4336
-					value = 5
-				}
+				add_building_construction = { type = dockyard level = 2 }
+				add_victory_points = { province = 4336 value = 5 }
 			}
 			23 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_victory_points = {
-					province = 3867
-					value = 5
-				}
+				add_building_construction = { type = dockyard level = 2 }
+				add_victory_points = { province = 3867 value = 5 }
 			}
 			23 = {
 				set_temp_variable = { development_to_add = 1 }
 				add_development_to_node = yes
 			}
-			add_days_mission_timeout = {
-				mission = eur_ba_oregon_carolina_decision
-				days = -60
-			}
+			add_days_mission_timeout = { mission = eur_ba_oregon_carolina_decision days = -60 }
 		}
 	}
 }
