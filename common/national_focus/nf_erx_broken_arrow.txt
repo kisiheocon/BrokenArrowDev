@@ -1324,7 +1324,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = nf_ba_prep_ncr_intro_tt
+			unlock_decision_category_tooltip = ba_local_affairs_decision_cat
 			unlock_decision_tooltip = {
 				decision = ba_local_affairs_intercept_ncr_decision
 				show_effect_tooltip = yes
@@ -1353,6 +1353,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_category_tooltip = ba_local_affairs_decision_cat
 			unlock_decision_tooltip = {
 				decision = ba_local_affairs_warprep_ncr_decision
 				show_effect_tooltip = yes

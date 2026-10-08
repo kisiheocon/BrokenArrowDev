@@ -142,12 +142,15 @@ ba_local_affairs_decision_cat = {
 
 		complete_effect = {
 			custom_effect_tooltip = ba_local_affairs_intercept_ncr_decision_tt
-			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 
 		days_remove = 10
 		remove_effect = {
-			complete_national_focus = nf_ba_prep_ncr_start
+			effect_tooltip = { complete_national_focus = nf_ba_prep_ncr_start }
+			hidden_effect = {
+				## Delayed trigger due to crashing, don't understand why - @Deez ##
+				country_event = { id = erx_broken_arrow_hidden.0 days = 1 }
+			}
 		}
 	}
 	## NCR War Prep ##
@@ -157,7 +160,7 @@ ba_local_affairs_decision_cat = {
 
 		highlight_states = { highlight_state_targets = { state = NCR.capital } }
 
-		allowed = { always = no }
+		visible = { hidden_trigger = { always = no } }
 
 		cancel_trigger = {
 			OR = {

@@ -861,10 +861,10 @@ woodley_island_desc: "The Anarchist filth that inhabit Woodley Island must be cl
 
 ba_local_affairs_intercept_ncr_decision: "Green Light New Radio Monitoring Protocols"
 ba_local_affairs_intercept_ncr_decision_desc: "In accordance with a vast array of revisions, reallocation of assets, and fast tracked performance reviews in an overall effort by Director Sullivan to, as he puts it, “Have some damn common sense”, he has formulated a new series of protocols to enhance and streamline our surveillance endeavors. With the protocols covering everything from shift changes to maintenance and encryption schedules.\n\nWhile the President is certainly taken aback by the sheer number of changes and the Director's bluntness in presenting them, he has authorized the initiative and provided a considerable boost in funding! We cannot say for certain how effective these procedures will be, but with Director Sullivan at the helm, it's likely the same result as always.\n\n\"Peerless And Uncompromising Efficiency\""
-ba_local_affairs_intercept_ncr_decision_tt: "§gThis will eventually lead to war with §L[NCR.GetNameWithFlag]§!.§!"
+ba_local_affairs_intercept_ncr_decision_tt: "§gThis will eventually lead to war with §L[NCR.GetNameWithFlag]§!.§!\n"
 
 ba_local_affairs_warprep_ncr_decision: "War Plan §LBrown§!"
-ba_local_affairs_warprep_ncr_decision_desc: "MISSING DESCRIPTION"
+ba_local_affairs_warprep_ncr_decision_desc: ""
 
 ba_local_affairs_merc_work_decision: "Mercenary Work"
 ba_local_affairs_merc_work_decision_desc: "Helping out the good people of Eureka with security might seem like an odd way to gain support, but hey, a man in Power Armor between them and their children(or Merchandise) does wonders for the Ballot Box."

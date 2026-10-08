@@ -1,5 +1,5 @@
-add_namespace = erx_broken_arrow_debug
 add_namespace = erx_broken_arrow
+add_namespace = erx_broken_arrow_debug
 add_namespace = erx_broken_arrow_fireside
 add_namespace = erx_broken_arrow_navarro
 add_namespace = erx_broken_arrow_mariposa
@@ -7,7 +7,17 @@ add_namespace = erx_broken_arrow_incep
 add_namespace = erx_broken_arrow_event_oregon
 add_namespace = erx_broken_arrow_warplan_brown_event
 add_namespace = erx_broken_arrow_tech_event
+add_namespace = erx_broken_arrow_hidden
 
+country_event = {
+	id = erx_broken_arrow_hidden.0
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { complete_national_focus = nf_ba_prep_ncr_start }
+	}
+}
 
 #debug event
 country_event = { #Switch focus tree
