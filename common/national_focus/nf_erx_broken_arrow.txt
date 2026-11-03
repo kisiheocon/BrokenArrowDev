@@ -392,6 +392,7 @@ focus_tree = {
 					add_building_construction = { type = civilian_power_grid level = 1 }
 				}
 				scoped_sound_effect = ERB_electric
+				erx_powergrid_update_energy_cost_scripted_effect = yes
 			}
 		}
 	}
